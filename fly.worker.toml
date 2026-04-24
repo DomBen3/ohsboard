@@ -1,0 +1,33 @@
+# Fly.io deployment for the OhsBoard scraping worker.
+# Deploy from repo root: fly deploy --config fly.worker.toml
+app = "ohsboard-worker"
+primary_region = "ewr"
+
+[build]
+  dockerfile = "Dockerfile.worker"
+
+[env]
+  PORT = "8080"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "off"
+  auto_start_machines = false
+  min_machines_running = 1
+
+  [[http_service.checks]]
+    grace_period = "10s"
+    interval = "30s"
+    method = "get"
+    path = "/healthz"
+    timeout = "5s"
+
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 1
+  memory_mb = 512
+
+[mounts]
+  source = "playwright_data"
+  destination = "/data"

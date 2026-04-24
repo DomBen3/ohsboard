@@ -1,0 +1,219 @@
+@import "tailwindcss";
+
+@theme {
+  /* —— Palette: late-night dugout / scoreboard lighting ———————————————— */
+  --color-ink:           #06070a;
+  --color-ink-soft:      #0b0e15;
+  --color-ink-raised:    #10141d;
+  --color-ink-hover:     #161c28;
+  --color-rule:          rgba(255, 255, 255, 0.06);
+  --color-rule-bright:   rgba(111, 241, 156, 0.22);
+  --color-chalk:         #f3f0e2;
+  --color-chalk-soft:    #c9c4af;
+  --color-chalk-dim:     #6c7487;
+  --color-chalk-dimmer:  #3a4152;
+  --color-signal:        #6ff19c;
+  --color-signal-dim:    #4ccf7a;
+  --color-signal-glow:   rgba(111, 241, 156, 0.35);
+  --color-warn:          #f7b955;
+  --color-alert:         #ff5a5f;
+  --color-brass:         #d4b86a;
+  --color-brass-soft:    #8b7a44;
+  /* Distinct color for line-over-time charts so they don't visually blend
+     with the price charts' green/brass lines. Soft violet reads as "data". */
+  --color-chart-line:    #a48cff;
+  --color-chart-line-glow: rgba(164, 140, 255, 0.35);
+}
+
+html,
+body {
+  background-color: var(--color-ink);
+  color: var(--color-chalk);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: "tnum" 1, "ss01" 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Atmosphere: faint grain + warm stadium-light gradients baked into the body.
+   No full-screen overlays (they fight scrolling). */
+body {
+  background-image:
+    radial-gradient(
+      ellipse 1200px 800px at 15% -10%,
+      rgba(111, 241, 156, 0.05),
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 900px 700px at 95% 110%,
+      rgba(212, 184, 106, 0.04),
+      transparent 55%
+    ),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.05 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-attachment: fixed;
+}
+
+.font-display {
+  font-family: var(--font-display), "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.font-seg {
+  font-family: var(--font-mono), ui-monospace, "SF Mono", monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.05em;
+}
+
+/* Reveal stagger for scoreboard rows on first paint ——————————————————— */
+@keyframes row-rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.row-rise {
+  opacity: 0;
+  animation: row-rise 520ms cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+
+/* Live dot pulse ——————————————————————————————————————————————————— */
+@keyframes signal-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 var(--color-signal-glow);
+  }
+  50% {
+    box-shadow: 0 0 0 6px transparent;
+  }
+}
+
+.signal-dot {
+  background: var(--color-signal);
+  box-shadow: 0 0 8px var(--color-signal-glow);
+  animation: signal-pulse 2.2s ease-in-out infinite;
+}
+
+/* Row expand/collapse using a CSS grid trick (height animates cleanly) —— */
+.expansion {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 260ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.expansion > .expansion-inner {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.expansion.is-open {
+  grid-template-rows: 1fr;
+}
+
+/* Accent glow under the active row bottom border */
+.row-active {
+  background: linear-gradient(
+    180deg,
+    rgba(111, 241, 156, 0.04) 0%,
+    rgba(111, 241, 156, 0.02) 50%,
+    transparent 100%
+  );
+}
+
+.row-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-signal-glow) 50%,
+    transparent
+  );
+}
+
+/* Subtle shimmer on refresh button while loading */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-bg {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(111, 241, 156, 0.12) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.6s linear infinite;
+}
+
+/* Shared grid layout for the scoreboard header + rows ————————————————— */
+.scoreboard-grid {
+  display: grid;
+  grid-template-columns:
+    minmax(260px, 1.8fr) /* matchup */
+    96px                 /* total line */
+    100px                /* over */
+    100px                /* under */
+    116px                /* moneyline (stacked away/home) */
+    minmax(140px, 0.7fr) /* updated */
+    28px;                /* expand caret */
+  align-items: center;
+  column-gap: 18px;
+}
+
+@media (max-width: 1100px) {
+  .scoreboard-grid {
+    grid-template-columns:
+      minmax(200px, 1fr)
+      64px
+      76px
+      76px
+      88px
+      minmax(100px, 0.6fr)
+      24px;
+    column-gap: 12px;
+  }
+}
+
+/* Pulse a row when its captured timestamp just updated — gives "just arrived"
+   feedback as the worker streams new odds in during a scrape. */
+@keyframes row-flash {
+  0% {
+    background-color: rgba(111, 241, 156, 0.16);
+    box-shadow: inset 2px 0 0 0 var(--color-signal);
+  }
+  100% {
+    background-color: transparent;
+    box-shadow: inset 2px 0 0 0 transparent;
+  }
+}
+
+.row-flash {
+  animation: row-flash 1.4s cubic-bezier(0.2, 0.7, 0.2, 1) 1;
+}
+
+/* Hairline ticker running across the header */
+.ticker-rule {
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--color-rule) 0,
+    var(--color-rule) 6px,
+    transparent 6px,
+    transparent 12px
+  );
+  height: 1px;
+  width: 100%;
+}

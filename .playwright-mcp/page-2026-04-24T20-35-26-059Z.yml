@@ -1,0 +1,2900 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "DraftKings Sportsbook home" [ref=e8] [cursor=pointer]:
+        - /url: https://sportsbook.draftkings.com
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - navigation "platform navigation" [ref=e13]:
+            - list [ref=e14]:
+              - listitem [ref=e15]:
+                - link "Daily Fantasy" [ref=e16] [cursor=pointer]:
+                  - /url: https://www.draftkings.com/dfs
+              - listitem [ref=e17]:
+                - link "Sportsbook" [ref=e18] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com
+              - listitem [ref=e19]:
+                - link "Casino" [ref=e20] [cursor=pointer]:
+                  - /url: https://casino.draftkings.com/
+              - listitem [ref=e21]:
+                - link "Pick6" [ref=e22] [cursor=pointer]:
+                  - /url: https://pick6.draftkings.com
+              - listitem [ref=e23]:
+                - link "Lottery" [ref=e24] [cursor=pointer]:
+                  - /url: https://lottery.jackpocket.com?intendedSiteExp=US-SB
+              - listitem [ref=e25]:
+                - button "More" [ref=e26] [cursor=pointer]:
+                  - generic [ref=e27]:
+                    - text: More
+                    - img [ref=e28]
+          - generic [ref=e30]:
+            - link "Visit Responsible Gaming page" [ref=e31] [cursor=pointer]:
+              - /url: https://rg.draftkings.com/?intendedSiteExp=US-SB&flowType=rge-header
+              - generic [ref=e33]: Responsible Gaming
+            - generic [ref=e36] [cursor=pointer]: 
+        - generic [ref=e37]:
+          - navigation [ref=e38]:
+            - list [ref=e39]:
+              - listitem [ref=e40]:
+                - link "Home" [ref=e41] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/
+              - listitem [ref=e42]:
+                - link "My Bets" [ref=e43] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/mybets
+              - listitem [ref=e44]:
+                - link "Live In-Game" [ref=e45] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/live
+              - listitem [ref=e46]:
+                - link "Rewards" [ref=e47] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/promos
+              - listitem [ref=e48]:
+                - button "More" [ref=e49] [cursor=pointer]:
+                  - generic [ref=e50]:
+                    - generic [ref=e51]: More
+                    - img [ref=e52]
+          - generic [ref=e55]:
+            - generic [ref=e56]: Want to start placing bets?
+            - link "Log In" [ref=e57] [cursor=pointer]:
+              - /url: /login?returnUrlPath=/event/pit-pirates-@-mil-brewers/34039677
+  - generic [ref=e60]:
+    - generic [ref=e61]:
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - generic "Expandable container POPULAR" [ref=e64]:
+            - heading "POPULAR" [level=2] [ref=e67] [cursor=pointer]
+          - list [ref=e69]:
+            - listitem [ref=e70] [cursor=pointer]:
+              - link "MLB" [ref=e71]:
+                - /url: /leagues/baseball/mlb
+                - generic [ref=e72]: MLB
+            - listitem [ref=e73] [cursor=pointer]:
+              - link "NBA" [ref=e74]:
+                - /url: /leagues/basketball/nba
+                - generic [ref=e75]: NBA
+            - listitem [ref=e76] [cursor=pointer]:
+              - link "NHL" [ref=e77]:
+                - /url: /leagues/hockey/nhl
+                - generic [ref=e78]: NHL
+            - listitem [ref=e79] [cursor=pointer]:
+              - link "ATP - Madrid" [ref=e80]:
+                - /url: /leagues/tennis/atp-madrid
+                - generic [ref=e81]: ATP - Madrid
+            - listitem [ref=e82] [cursor=pointer]:
+              - link "English Premier League" [ref=e83]:
+                - /url: /leagues/soccer/england---premier-league
+                - generic [ref=e84]: English Premier League
+            - listitem [ref=e85] [cursor=pointer]:
+              - link "NFL" [ref=e86]:
+                - /url: /leagues/football/nfl
+                - generic [ref=e87]: NFL
+            - listitem [ref=e88] [cursor=pointer]:
+              - link "UFC" [ref=e89]:
+                - /url: /leagues/mma/ufc
+                - generic [ref=e90]: UFC
+            - listitem [ref=e91] [cursor=pointer]:
+              - link "Germany - Bundesliga" [ref=e92]:
+                - /url: /leagues/soccer/germany---1.bundesliga
+                - generic [ref=e93]: Germany - Bundesliga
+            - listitem [ref=e94] [cursor=pointer]:
+              - link "Zurich Classic" [ref=e95]:
+                - /url: /leagues/golf/zurich-classic-of-new-orleans
+                - generic [ref=e96]: Zurich Classic
+            - listitem [ref=e97] [cursor=pointer]:
+              - link "Italy - Serie A" [ref=e98]:
+                - /url: /leagues/soccer/italy---serie-a
+                - generic [ref=e99]: Italy - Serie A
+            - listitem [ref=e100] [cursor=pointer]:
+              - link "France - Ligue 1" [ref=e101]:
+                - /url: /leagues/soccer/france---ligue-1
+                - generic [ref=e102]: France - Ligue 1
+            - listitem [ref=e103] [cursor=pointer]:
+              - link "College Baseball" [ref=e104]:
+                - /url: /leagues/baseball/ncaa-baseball
+                - generic [ref=e105]: College Baseball
+            - listitem [ref=e106] [cursor=pointer]:
+              - link "WTA - Madrid" [ref=e107]:
+                - /url: /leagues/tennis/wta-madrid
+                - generic [ref=e108]: WTA - Madrid
+            - listitem [ref=e109] [cursor=pointer]:
+              - link "Spain - La Liga" [ref=e110]:
+                - /url: /leagues/soccer/spain---la-liga
+                - generic [ref=e111]: Spain - La Liga
+            - listitem [ref=e112] [cursor=pointer]:
+              - link "EuroLeague" [ref=e113]:
+                - /url: /leagues/basketball/euroleague
+                - generic [ref=e114]: EuroLeague
+            - listitem [ref=e115] [cursor=pointer]:
+              - link "Netherlands - Eerste Divisie" [ref=e116]:
+                - /url: /leagues/soccer/netherlands---eerste-divisie
+                - generic [ref=e117]: Netherlands - Eerste Divisie
+        - list [ref=e118]:
+          - listitem [ref=e119] [cursor=pointer]:
+            - link "SPORT TEAMS" [ref=e120]:
+              - /url: /teams
+        - generic [ref=e121]:
+          - generic "Expandable container A-Z SPORTS" [ref=e122]:
+            - heading "A-Z SPORTS" [level=2] [ref=e125] [cursor=pointer]
+          - generic [ref=e126]:
+            - generic "Expandable container AUSSIE RULES" [ref=e128]:
+              - heading "AUSSIE RULES" [level=2] [ref=e131] [cursor=pointer]
+            - generic "Expandable container BASEBALL" [ref=e133]:
+              - heading "BASEBALL" [level=2] [ref=e136] [cursor=pointer]
+            - generic "Expandable container BASKETBALL" [ref=e138]:
+              - heading "BASKETBALL" [level=2] [ref=e141] [cursor=pointer]
+            - generic "Expandable container BOXING" [ref=e143]:
+              - heading "BOXING" [level=2] [ref=e146] [cursor=pointer]
+            - generic "Expandable container CRICKET" [ref=e148]:
+              - heading "CRICKET" [level=2] [ref=e151] [cursor=pointer]
+            - generic "Expandable container CYCLING" [ref=e153]:
+              - heading "CYCLING" [level=2] [ref=e156] [cursor=pointer]
+            - generic "Expandable container DARTS" [ref=e158]:
+              - heading "DARTS" [level=2] [ref=e161] [cursor=pointer]
+            - generic "Expandable container E-SPORTS" [ref=e163]:
+              - heading "E-SPORTS" [level=2] [ref=e166] [cursor=pointer]
+            - generic "Expandable container FOOTBALL" [ref=e168]:
+              - heading "FOOTBALL" [level=2] [ref=e171] [cursor=pointer]
+            - generic "Expandable container GOLF" [ref=e173]:
+              - heading "GOLF" [level=2] [ref=e176] [cursor=pointer]
+            - generic "Expandable container HANDBALL" [ref=e178]:
+              - heading "HANDBALL" [level=2] [ref=e181] [cursor=pointer]
+            - generic "Expandable container HOCKEY" [ref=e183]:
+              - heading "HOCKEY" [level=2] [ref=e186] [cursor=pointer]
+            - generic "Expandable container JAI ALAI" [ref=e188]:
+              - heading "JAI ALAI" [level=2] [ref=e191] [cursor=pointer]
+            - generic "Expandable container LACROSSE" [ref=e193]:
+              - heading "LACROSSE" [level=2] [ref=e196] [cursor=pointer]
+            - generic "Expandable container MMA" [ref=e198]:
+              - heading "MMA" [level=2] [ref=e201] [cursor=pointer]
+            - generic "Expandable container MOTORSPORTS" [ref=e203]:
+              - heading "MOTORSPORTS" [level=2] [ref=e206] [cursor=pointer]
+            - generic "Expandable container RODEO" [ref=e208]:
+              - heading "RODEO" [level=2] [ref=e211] [cursor=pointer]
+            - generic "Expandable container RUGBY LEAGUE" [ref=e213]:
+              - heading "RUGBY LEAGUE" [level=2] [ref=e216] [cursor=pointer]
+            - generic "Expandable container RUGBY UNION" [ref=e218]:
+              - heading "RUGBY UNION" [level=2] [ref=e221] [cursor=pointer]
+            - generic "Expandable container SAILING" [ref=e223]:
+              - heading "SAILING" [level=2] [ref=e226] [cursor=pointer]
+            - generic "Expandable container SNOOKER" [ref=e228]:
+              - heading "SNOOKER" [level=2] [ref=e231] [cursor=pointer]
+            - generic "Expandable container SOCCER" [ref=e233]:
+              - heading "SOCCER" [level=2] [ref=e236] [cursor=pointer]
+            - generic "Expandable container TABLE TENNIS" [ref=e238]:
+              - heading "TABLE TENNIS" [level=2] [ref=e241] [cursor=pointer]
+            - generic "Expandable container TENNIS" [ref=e243]:
+              - heading "TENNIS" [level=2] [ref=e246] [cursor=pointer]
+        - generic "Expandable container NFL WEEKLY ODDS" [ref=e248]:
+          - heading "NFL WEEKLY ODDS" [level=2] [ref=e251] [cursor=pointer]
+        - generic "Expandable container PRIMETIME GAMES" [ref=e253]:
+          - heading "PRIMETIME GAMES" [level=2] [ref=e256] [cursor=pointer]
+        - generic "Expandable container FUTURES" [ref=e258]:
+          - heading "FUTURES" [level=2] [ref=e261] [cursor=pointer]
+        - generic "Expandable container PROP BETS" [ref=e263]:
+          - heading "PROP BETS" [level=2] [ref=e266] [cursor=pointer]
+        - generic [ref=e267]:
+          - generic "Expandable container PLAYOFF PAGES" [ref=e268]:
+            - heading "PLAYOFF PAGES" [level=2] [ref=e271] [cursor=pointer]
+          - generic [ref=e272]:
+            - link "College Football Playoffs" [ref=e274] [cursor=pointer]:
+              - /url: /college-football-playoffs--odds
+            - link "NBA Playoffs" [ref=e276] [cursor=pointer]:
+              - /url: /page/nba-playoffs-odds
+            - link "NFL Playoffs" [ref=e278] [cursor=pointer]:
+              - /url: /playoffs/nfl--odds
+        - generic [ref=e279]:
+          - generic "Expandable container CHAMPIONSHIP PAGES" [ref=e280]:
+            - heading "CHAMPIONSHIP PAGES" [level=2] [ref=e283] [cursor=pointer]
+          - generic [ref=e284]:
+            - link "Daytona 500" [ref=e286] [cursor=pointer]:
+              - /url: /daytona-500--odds
+            - link "NBA Finals" [ref=e288] [cursor=pointer]:
+              - /url: /page/nba-finals-odds
+            - link "Ryder Cup" [ref=e290] [cursor=pointer]:
+              - /url: /ryder-cup--odds
+            - link "Stanley Cup" [ref=e292] [cursor=pointer]:
+              - /url: /page/stanley-cup-odds
+            - link "Super Bowl" [ref=e294] [cursor=pointer]:
+              - /url: /super-bowl--odds
+            - link "World Series" [ref=e296] [cursor=pointer]:
+              - /url: /page/world-series-odds
+      - generic [ref=e297]:
+        - navigation "breadcrumb" [ref=e299]:
+          - list [ref=e300]:
+            - listitem [ref=e301]:
+              - link "Sportsbook" [ref=e302] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e303]:
+              - text: /
+              - link "Baseball Odds" [ref=e304] [cursor=pointer]:
+                - /url: /sports/baseball
+            - listitem [ref=e305]:
+              - text: /
+              - link "MLB Odds" [ref=e306] [cursor=pointer]:
+                - /url: /leagues/baseball/mlb
+            - listitem [ref=e307]:
+              - text: /
+              - heading "PIT Pirates @ MIL Brewers Odds" [level=1] [ref=e308]
+        - list [ref=e313]:
+          - listitem [ref=e314]:
+            - link "Today 6:40 PM DET Tigers logo DET Tigers CIN Reds logo CIN Reds" [ref=e315] [cursor=pointer]:
+              - /url: /event/det-tigers-%40-cin-reds/34039545
+              - generic [ref=e316]:
+                - generic [ref=e317]: Today 6:40 PM
+                - img [ref=e319]
+              - generic [ref=e323]:
+                - generic [ref=e325]:
+                  - img "DET Tigers logo" [ref=e326]
+                  - generic [ref=e327]: DET Tigers
+                - generic [ref=e329]:
+                  - img "CIN Reds logo" [ref=e330]
+                  - generic [ref=e331]: CIN Reds
+          - listitem [ref=e332]:
+            - link "Today 7:05 PM BOS Red Sox logo BOS Red Sox BAL Orioles logo BAL Orioles" [ref=e333] [cursor=pointer]:
+              - /url: /event/bos-red-sox-%40-bal-orioles/34039549
+              - generic [ref=e334]:
+                - generic [ref=e335]: Today 7:05 PM
+                - img [ref=e337]
+              - generic [ref=e341]:
+                - generic [ref=e343]:
+                  - img "BOS Red Sox logo" [ref=e344]
+                  - generic [ref=e345]: BOS Red Sox
+                - generic [ref=e347]:
+                  - img "BAL Orioles logo" [ref=e348]
+                  - generic [ref=e349]: BAL Orioles
+          - listitem [ref=e350]:
+            - link "Today 7:07 PM CLE Guardians logo CLE Guardians TOR Blue Jays logo TOR Blue Jays" [ref=e351] [cursor=pointer]:
+              - /url: /event/cle-guardians-%40-tor-blue-jays/34039550
+              - generic [ref=e352]:
+                - generic [ref=e353]: Today 7:07 PM
+                - img [ref=e355]
+              - generic [ref=e359]:
+                - generic [ref=e361]:
+                  - img "CLE Guardians logo" [ref=e362]
+                  - generic [ref=e363]: CLE Guardians
+                - generic [ref=e365]:
+                  - img "TOR Blue Jays logo" [ref=e366]
+                  - generic [ref=e367]: TOR Blue Jays
+          - listitem [ref=e368]:
+            - link "Today 7:10 PM COL Rockies logo COL Rockies NY Mets logo NY Mets" [ref=e369] [cursor=pointer]:
+              - /url: /event/col-rockies-%40-ny-mets/34039671
+              - generic [ref=e370]:
+                - generic [ref=e371]: Today 7:10 PM
+                - img [ref=e373]
+              - generic [ref=e377]:
+                - generic [ref=e379]:
+                  - img "COL Rockies logo" [ref=e380]
+                  - generic [ref=e381]: COL Rockies
+                - generic [ref=e383]:
+                  - img "NY Mets logo" [ref=e384]
+                  - generic [ref=e385]: NY Mets
+          - listitem [ref=e386]:
+            - link "Today 7:10 PM MIN Twins TB Rays" [ref=e387] [cursor=pointer]:
+              - /url: /event/min-twins-%40-tb-rays/34039672
+              - generic [ref=e388]:
+                - generic [ref=e389]: Today 7:10 PM
+                - img [ref=e391]
+              - generic [ref=e395]:
+                - generic [ref=e398]: MIN Twins
+                - generic [ref=e401]: TB Rays
+          - listitem [ref=e402]:
+            - link "Today 7:15 PM PHI Phillies ATL Braves" [ref=e403] [cursor=pointer]:
+              - /url: /event/phi-phillies-%40-atl-braves/34039674
+              - generic [ref=e404]:
+                - generic [ref=e405]: Today 7:15 PM
+                - img [ref=e407]
+              - generic [ref=e411]:
+                - generic [ref=e414]: PHI Phillies
+                - generic [ref=e417]: ATL Braves
+          - listitem [ref=e418]:
+            - link "Today 7:40 PM WAS Nationals CHI White Sox" [ref=e419] [cursor=pointer]:
+              - /url: /event/was-nationals-%40-chi-white-sox/34039675
+              - generic [ref=e420]:
+                - generic [ref=e421]: Today 7:40 PM
+                - img [ref=e423]
+              - generic [ref=e427]:
+                - generic [ref=e430]: WAS Nationals
+                - generic [ref=e433]: CHI White Sox
+          - listitem [ref=e434]:
+            - link "Today 7:40 PM LA Angels KC Royals" [ref=e435] [cursor=pointer]:
+              - /url: /event/la-angels-%40-kc-royals/34039676
+              - generic [ref=e436]:
+                - generic [ref=e437]: Today 7:40 PM
+                - img [ref=e439]
+              - generic [ref=e443]:
+                - generic [ref=e446]: LA Angels
+                - generic [ref=e449]: KC Royals
+          - listitem [ref=e450]:
+            - link "Today 8:05 PM Athletics TEX Rangers" [ref=e451] [cursor=pointer]:
+              - /url: /event/athletics-%40-tex-rangers/34039678
+              - generic [ref=e452]:
+                - generic [ref=e453]: Today 8:05 PM
+                - img [ref=e455]
+              - generic [ref=e459]:
+                - generic [ref=e462]: Athletics
+                - generic [ref=e465]: TEX Rangers
+          - listitem [ref=e466]:
+            - link "Today 8:10 PM NY Yankees HOU Astros" [ref=e467] [cursor=pointer]:
+              - /url: /event/ny-yankees-%40-hou-astros/34039679
+              - generic [ref=e468]:
+                - generic [ref=e469]: Today 8:10 PM
+                - img [ref=e471]
+              - generic [ref=e475]:
+                - generic [ref=e478]: NY Yankees
+                - generic [ref=e481]: HOU Astros
+          - listitem [ref=e482]:
+            - link "Today 8:15 PM SEA Mariners STL Cardinals" [ref=e483] [cursor=pointer]:
+              - /url: /event/sea-mariners-%40-stl-cardinals/34039680
+              - generic [ref=e484]:
+                - generic [ref=e485]: Today 8:15 PM
+                - img [ref=e487]
+              - generic [ref=e491]:
+                - generic [ref=e494]: SEA Mariners
+                - generic [ref=e497]: STL Cardinals
+          - listitem [ref=e498]:
+            - link "Today 10:15 PM CHI Cubs LA Dodgers" [ref=e499] [cursor=pointer]:
+              - /url: /event/chi-cubs-%40-la-dodgers/34039681
+              - generic [ref=e500]:
+                - generic [ref=e501]: Today 10:15 PM
+                - img [ref=e503]
+              - generic [ref=e507]:
+                - generic [ref=e510]: CHI Cubs
+                - generic [ref=e513]: LA Dodgers
+          - listitem [ref=e514]:
+            - link "Today 10:15 PM MIA Marlins SF Giants" [ref=e515] [cursor=pointer]:
+              - /url: /event/mia-marlins-%40-sf-giants/34039682
+              - generic [ref=e516]:
+                - generic [ref=e517]: Today 10:15 PM
+                - img [ref=e519]
+              - generic [ref=e523]:
+                - generic [ref=e526]: MIA Marlins
+                - generic [ref=e529]: SF Giants
+          - listitem [ref=e530]:
+            - link "Tomorrow 6:05 PM SD Padres ARI Diamondbacks" [ref=e531] [cursor=pointer]:
+              - /url: /event/sd-padres-%40-ari-diamondbacks/34044032
+              - generic [ref=e532]:
+                - generic [ref=e533]: Tomorrow 6:05 PM
+                - img [ref=e535]
+              - generic [ref=e539]:
+                - generic [ref=e542]: SD Padres
+                - generic [ref=e545]: ARI Diamondbacks
+        - generic [ref=e548]:
+          - generic [ref=e553]:
+            - generic [ref=e554]:
+              - img "PIT Pirates-logo" [ref=e556]
+              - generic [ref=e558]: PIT Pirates
+            - generic [ref=e559]:
+              - paragraph [ref=e560]:
+                - text: "Starts In:"
+                - generic [ref=e561]: 03:04:34
+              - paragraph [ref=e562]: Today 7:40 PM
+            - generic [ref=e563]:
+              - img "MIL Brewers-logo" [ref=e565]
+              - generic [ref=e567]: MIL Brewers
+          - generic [ref=e569]:
+            - generic [ref=e573] [cursor=pointer]:
+              - generic [ref=e575]: All Odds
+              - generic [ref=e577]:
+                - generic [ref=e578]: SGP
+                - text: Builder
+            - generic [ref=e581] [cursor=pointer]: GameScript
+            - generic [ref=e584] [cursor=pointer]: Quick SGP
+            - generic [ref=e587] [cursor=pointer]: Stats
+          - generic [ref=e590]:
+            - generic [ref=e592]:
+              - button [ref=e593] [cursor=pointer]:
+                - img [ref=e594]
+              - generic [ref=e596]:
+                - generic [ref=e597]:
+                  - link "Popular" [ref=e599] [cursor=pointer]:
+                    - /url: /event/pit-pirates-%40-mil-brewers/34039677?category=all-odds&subcategory=popular
+                  - link "Game Lines" [ref=e601] [cursor=pointer]:
+                    - /url: /event/pit-pirates-%40-mil-brewers/34039677?category=all-odds&subcategory=game-lines
+                  - link "Batter Props" [ref=e603] [cursor=pointer]:
+                    - /url: /event/pit-pirates-%40-mil-brewers/34039677?category=all-odds&subcategory=batter-props
+                  - link "Pitcher Props" [ref=e605] [cursor=pointer]:
+                    - /url: /event/pit-pirates-%40-mil-brewers/34039677?category=all-odds&subcategory=pitcher-props
+                  - link "Either Player Props" [ref=e607] [cursor=pointer]:
+                    - /url: /event/pit-pirates-%40-mil-brewers/34039677?category=all-odds&subcategory=either-player-props
+                  - link "Combined Player Props" [ref=e609] [cursor=pointer]:
+                    - /url: /event/pit-pirates-%40-mil-brewers/34039677?category=all-odds&subcategory=combined-player-props
+                  - link "1st Inning" [ref=e611] [cursor=pointer]:
+                    - /url: /event/pit-pirates-%40-mil-brewers/34039677?category=all-odds&subcategory=1st-inning
+                  - link "Plate Appearance" [ref=e613] [cursor=pointer]:
+                    - /url: /event/pit-pirates-%40-mil-brewers/34039677?category=all-odds&subcategory=plate-appearance
+                    - text: Plate Appearance
+                    - img [ref=e614]
+                  - link "1st of Game" [ref=e617] [cursor=pointer]:
+                    - /url: /event/pit-pirates-%40-mil-brewers/34039677?category=all-odds&subcategory=1st-of-game
+                  - link "1st X Innings" [ref=e619] [cursor=pointer]:
+                    - /url: /event/pit-pirates-%40-mil-brewers/34039677?category=all-odds&subcategory=1st-x-innings
+                  - link "Game Totals" [ref=e621] [cursor=pointer]:
+                    - /url: /event/pit-pirates-%40-mil-brewers/34039677?category=all-odds&subcategory=game-totals
+                  - link "Team Props" [ref=e623] [cursor=pointer]:
+                    - /url: /event/pit-pirates-%40-mil-brewers/34039677?category=all-odds&subcategory=team-props
+                  - link "Game Props" [ref=e625] [cursor=pointer]:
+                    - /url: /event/pit-pirates-%40-mil-brewers/34039677?category=all-odds&subcategory=game-props
+                  - link "Innings" [ref=e627] [cursor=pointer]:
+                    - /url: /event/pit-pirates-%40-mil-brewers/34039677?category=all-odds&subcategory=innings
+                  - link "Correct Score" [ref=e629] [cursor=pointer]:
+                    - /url: /event/pit-pirates-%40-mil-brewers/34039677?category=all-odds&subcategory=correct-score
+                - separator [ref=e631]
+            - generic [ref=e632]:
+              - generic [ref=e636]:
+                - generic [ref=e638]:
+                  - generic [ref=e640]:
+                    - img "background image" [ref=e642]
+                    - generic [ref=e643]:
+                      - generic [ref=e644]:
+                        - paragraph [ref=e645]: Ace O'Clock ⏰
+                        - generic [ref=e646]: Parlay
+                      - generic [ref=e647]: "Earned Runs last start: Skenes 0, Williams 1, Eovaldi 2 | Peralta 1 Earned Run in 2 of L4"
+                      - generic [ref=e650]:
+                        - generic [ref=e651]:
+                          - generic [ref=e652]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e653]: Paul Skenes 1 or Fewer Earned Runs
+                        - generic [ref=e654]:
+                          - generic [ref=e655]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e656]: Freddy Peralta 1 or Fewer Earned Runs
+                        - generic [ref=e657]:
+                          - generic [ref=e658]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e659]: Gavin Williams 2 or Fewer Earned Runs
+                        - generic [ref=e660]:
+                          - generic [ref=e661]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e662]: Nathan Eovaldi 2 or Fewer Earned Runs
+                    - generic [ref=e663]:
+                      - generic [ref=e665]:
+                        - img [ref=e666]
+                        - generic [ref=e669]: 105 People Placed This Bet
+                      - button "+804 $10 pays $90" [ref=e670] [cursor=pointer]:
+                        - generic [ref=e671]: "+804"
+                        - generic [ref=e672]: $10 pays $90
+                  - generic [ref=e674]:
+                    - img "background image" [ref=e676]
+                    - generic [ref=e677]:
+                      - generic [ref=e678]:
+                        - paragraph [ref=e679]: Mr. Do-It-All
+                        - generic [ref=e680]: Parlay
+                      - generic [ref=e681]: Take these star players to record 2+ Hits + Runs + RBIs!
+                      - generic [ref=e683]:
+                        - generic [ref=e684]:
+                          - generic [ref=e685]:
+                            - generic [ref=e686]:
+                              - generic:
+                                - img "team logo"
+                            - generic [ref=e687]: Aaron Judge 2+ Hits + Runs + RBIs
+                          - generic [ref=e688]:
+                            - generic [ref=e689]:
+                              - generic:
+                                - img "team logo"
+                            - generic [ref=e690]: Bobby Witt Jr. 2+ Hits + Runs + RBIs
+                          - generic [ref=e691]:
+                            - generic [ref=e692]:
+                              - generic:
+                                - img "team logo"
+                            - generic [ref=e693]: Oneil Cruz 2+ Hits + Runs + RBIs
+                          - generic [ref=e694]:
+                            - generic [ref=e695]:
+                              - generic:
+                                - img "team logo"
+                            - generic [ref=e696]: Nick Kurtz 2+ Hits + Runs + RBIs
+                          - generic [ref=e697]:
+                            - generic [ref=e698]:
+                              - generic:
+                                - img "team logo"
+                            - generic [ref=e699]: James Wood 2+ Hits + Runs + RBIs
+                        - button "View All Legs (5)" [ref=e700] [cursor=pointer]:
+                          - img [ref=e702]
+                          - generic [ref=e705]: View All Legs (5)
+                    - generic [ref=e706]:
+                      - generic [ref=e708]:
+                        - img [ref=e709]
+                        - generic [ref=e712]: 465 People Placed This Bet
+                      - button "+1417 $10 pays $151" [ref=e713] [cursor=pointer]:
+                        - generic [ref=e714]: "+1417"
+                        - generic [ref=e715]: $10 pays $151
+                  - generic [ref=e717]:
+                    - img "background image" [ref=e719]
+                    - generic [ref=e720]:
+                      - generic [ref=e721]:
+                        - paragraph [ref=e722]: Skenes Mode Activated
+                        - generic [ref=e723]: SGP
+                      - generic [ref=e724]: Back the reigning NL Cy Young to dominate tonight vs the Brewers!
+                      - generic [ref=e727]:
+                        - generic [ref=e728]:
+                          - generic [ref=e729]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e730]: Paul Skenes 8+ Strikeouts
+                        - generic [ref=e731]:
+                          - generic [ref=e732]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e733]: Paul Skenes 0 Earned Runs Allowed
+                        - generic [ref=e734]:
+                          - generic [ref=e735]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e736]: Paul Skenes Over 17.5 Outs
+                    - button "+700 $10 pays $80" [ref=e738] [cursor=pointer]:
+                      - generic [ref=e739]: "+700"
+                      - generic [ref=e740]: $10 pays $80
+                  - generic [ref=e742]:
+                    - img "background image" [ref=e744]
+                    - generic [ref=e745]:
+                      - generic [ref=e746]:
+                        - paragraph [ref=e747]: Go for 2!
+                        - generic [ref=e748]: Parlay
+                      - generic [ref=e749]: "Extra base hits: Alvarez 19 (leads MLB), Wood 16 (3rd), Cruz 13 (T-6th)"
+                      - generic [ref=e752]:
+                        - generic [ref=e753]:
+                          - generic [ref=e754]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e755]: Yordan Alvarez 1+ Extra Base Hit
+                        - generic [ref=e756]:
+                          - generic [ref=e757]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e758]: James Wood 1+ Extra Base Hit
+                        - generic [ref=e759]:
+                          - generic [ref=e760]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e761]: Oneil Cruz 1+ Extra Base Hit
+                    - generic [ref=e762]:
+                      - generic [ref=e764]:
+                        - img [ref=e765]
+                        - generic [ref=e768]: 127 People Placed This Bet
+                      - button "+1109 $10 pays $120" [ref=e769] [cursor=pointer]:
+                        - generic [ref=e770]: "+1109"
+                        - generic [ref=e771]: $10 pays $120
+                  - generic [ref=e773]:
+                    - img "background image" [ref=e775]
+                    - generic [ref=e776]:
+                      - generic [ref=e777]:
+                        - paragraph [ref=e778]: Across the Board
+                        - generic [ref=e779]: Parlay
+                      - generic [ref=e780]: "H+R+RBI this season: Wood 73, Cruz 71, Trout 63"
+                      - generic [ref=e783]:
+                        - generic [ref=e784]:
+                          - generic [ref=e785]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e786]: James Wood 3+ Hits + Runs + RBI
+                        - generic [ref=e787]:
+                          - generic [ref=e788]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e789]: Oneil Cruz 3+ Hits + Runs + RBI
+                        - generic [ref=e790]:
+                          - generic [ref=e791]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e792]: Mike Trout 3+ Hits + Runs + RBI
+                    - button "+1139 $10 pays $123" [ref=e794] [cursor=pointer]:
+                      - generic [ref=e795]: "+1139"
+                      - generic [ref=e796]: $10 pays $123
+                  - generic [ref=e798]:
+                    - img "background image" [ref=e800]
+                    - generic [ref=e801]:
+                      - generic [ref=e802]:
+                        - paragraph [ref=e803]: Business Trip 💼
+                        - generic [ref=e804]: Parlay
+                      - generic [ref=e805]: Count on these away teams to kick off the weekend with an away victory on Friday!
+                      - generic [ref=e807]:
+                        - generic [ref=e808]:
+                          - generic [ref=e809]:
+                            - generic [ref=e810]:
+                              - generic:
+                                - img "team logo"
+                            - generic [ref=e811]: DET Tigers to Win (@ CIN)
+                          - generic [ref=e812]:
+                            - generic [ref=e813]:
+                              - generic:
+                                - img "team logo"
+                            - generic [ref=e814]: CLE Guardians to Win (@ TOR)
+                          - generic [ref=e815]:
+                            - generic [ref=e816]:
+                              - generic:
+                                - img "team logo"
+                            - generic [ref=e817]: PIT Pirates to Win (@ MIL)
+                          - generic [ref=e818]:
+                            - generic [ref=e819]:
+                              - generic:
+                                - img "team logo"
+                            - generic [ref=e820]: NY Yankees to Win (@ HOU)
+                          - generic [ref=e821]:
+                            - generic [ref=e822]:
+                              - generic:
+                                - img "team logo"
+                            - generic [ref=e823]: SEA Mariners to Win (@ STL)
+                          - generic [ref=e824]:
+                            - generic [ref=e825]:
+                              - generic:
+                                - img "team logo"
+                            - generic [ref=e826]: MIA Marlins to Win (@ SF)
+                        - button "View All Legs (6)" [ref=e827] [cursor=pointer]:
+                          - img [ref=e829]
+                          - generic [ref=e832]: View All Legs (6)
+                    - generic [ref=e833]:
+                      - generic [ref=e835]:
+                        - img [ref=e836]
+                        - generic [ref=e839]: 546 People Placed This Bet
+                      - button "+3041 $10 pays $314" [ref=e840] [cursor=pointer]:
+                        - generic [ref=e841]: "+3041"
+                        - generic [ref=e842]: $10 pays $314
+                  - generic [ref=e844]:
+                    - generic [ref=e845]:
+                      - generic [ref=e846]:
+                        - paragraph [ref=e847]: Nothing Comes Easy
+                        - generic [ref=e848]: SGP
+                      - generic [ref=e849]: Power is limited, extra base hits stay down, and walks are hard to find.
+                      - generic [ref=e852]:
+                        - generic [ref=e853]:
+                          - generic [ref=e854]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e855]: Under 2.5 Total Home Runs
+                        - generic [ref=e856]:
+                          - generic [ref=e857]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e858]: Under 5.5 Total Extra Base Hits
+                        - generic [ref=e859]:
+                          - generic [ref=e860]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e861]: Under 6.5 Total Walks
+                    - button "+242 $10 pays $34" [ref=e863] [cursor=pointer]:
+                      - generic [ref=e864]: "+242"
+                      - generic [ref=e865]: $10 pays $34
+                  - generic [ref=e867]:
+                    - img "background image" [ref=e869]
+                    - generic [ref=e870]:
+                      - generic [ref=e871]:
+                        - paragraph [ref=e872]: Power Swings 💪
+                        - generic [ref=e873]: SGP
+                      - generic [ref=e874]: Back these sluggers from each team to show out and go yard!
+                      - generic [ref=e877]:
+                        - generic [ref=e878]:
+                          - generic [ref=e879]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e880]: 1+ Jake Bauers Home Runs
+                        - generic [ref=e881]:
+                          - generic [ref=e882]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e883]: 1+ Oneil Cruz Home Runs
+                    - button "+1800 $10 pays $190" [ref=e885] [cursor=pointer]:
+                      - generic [ref=e886]: "+1800"
+                      - generic [ref=e887]: $10 pays $190
+                  - generic [ref=e889]:
+                    - img "background image" [ref=e891]
+                    - generic [ref=e892]:
+                      - generic [ref=e893]:
+                        - paragraph [ref=e894]: Hits All Around 🔥
+                        - generic [ref=e895]: SGP
+                      - generic [ref=e896]: Star hitters from both sides aim to fill the stat sheet.
+                      - generic [ref=e899]:
+                        - generic [ref=e900]:
+                          - generic [ref=e901]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e902]: 1+ William Contreras Hits
+                        - generic [ref=e903]:
+                          - generic [ref=e904]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e905]: 1+ Brice Turang Hits
+                        - generic [ref=e906]:
+                          - generic [ref=e907]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e908]: 1+ Oneil Cruz Hits
+                        - generic [ref=e909]:
+                          - generic [ref=e910]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e911]: 1+ Nick Gonzales Hits
+                    - button "+435 $10 pays $53" [ref=e913] [cursor=pointer]:
+                      - generic [ref=e914]: "+435"
+                      - generic [ref=e915]: $10 pays $53
+                  - generic [ref=e917]:
+                    - img "background image" [ref=e919]
+                    - generic [ref=e920]:
+                      - generic [ref=e921]:
+                        - paragraph [ref=e922]: Home Cookin'
+                        - generic [ref=e923]: SGP
+                      - generic [ref=e924]: Back this trio to deliver at the plate with hits at home.
+                      - generic [ref=e927]:
+                        - generic [ref=e928]:
+                          - generic [ref=e929]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e930]: 1+ William Contreras Hits
+                        - generic [ref=e931]:
+                          - generic [ref=e932]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e933]: 1+ Brice Turang Hits
+                        - generic [ref=e934]:
+                          - generic [ref=e935]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e936]: 1+ Sal Frelick Hits
+                    - button "+288 $10 pays $38" [ref=e938] [cursor=pointer]:
+                      - generic [ref=e939]: "+288"
+                      - generic [ref=e940]: $10 pays $38
+                  - generic [ref=e942]:
+                    - img "background image" [ref=e944]
+                    - generic [ref=e945]:
+                      - generic [ref=e946]:
+                        - paragraph [ref=e947]: Pitcher’s Duel Incoming ⚔️
+                        - generic [ref=e948]: SGP
+                      - generic [ref=e949]: Strikeouts stack up while the scoreboard stays quiet.
+                      - generic [ref=e952]:
+                        - generic [ref=e953]:
+                          - generic [ref=e954]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e955]: 7+ Brandon Woodruff Strikeouts Thrown
+                        - generic [ref=e956]:
+                          - generic [ref=e957]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e958]: 7+ Paul Skenes Strikeouts Thrown
+                        - generic [ref=e959]:
+                          - generic [ref=e960]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e961]: Under 7 Total
+                    - button "+600 $10 pays $70" [ref=e963] [cursor=pointer]:
+                      - generic [ref=e964]: "+600"
+                      - generic [ref=e965]: $10 pays $70
+                  - generic [ref=e967]:
+                    - img "background image" [ref=e969]
+                    - generic [ref=e970]:
+                      - generic [ref=e971]:
+                        - paragraph [ref=e972]: Connected Offense 🔗
+                        - generic [ref=e973]: SGP
+                      - generic [ref=e974]: From hits to run production, the home squad gets it done!
+                      - generic [ref=e977]:
+                        - generic [ref=e978]:
+                          - generic [ref=e979]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e980]: 1+ William Contreras Hits
+                        - generic [ref=e981]:
+                          - generic [ref=e982]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e983]: 1+ William Contreras RBIs
+                        - generic [ref=e984]:
+                          - generic [ref=e985]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e986]: MIL Brewers Moneyline
+                    - button "+370 $10 pays $47" [ref=e988] [cursor=pointer]:
+                      - generic [ref=e989]: "+370"
+                      - generic [ref=e990]: $10 pays $47
+                  - generic [ref=e992]:
+                    - img "background image" [ref=e994]
+                    - generic [ref=e995]:
+                      - generic [ref=e996]:
+                        - paragraph [ref=e997]: Patience, Power, Precision
+                        - generic [ref=e998]: SGP
+                      - generic [ref=e999]: Held scoreless early, the away side takes charge late.
+                      - generic [ref=e1002]:
+                        - generic [ref=e1003]:
+                          - generic [ref=e1004]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1005]: Under 0.5 Runs - 1st Inning
+                        - generic [ref=e1006]:
+                          - generic [ref=e1007]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1008]: 1+ Oneil Cruz Home Runs
+                        - generic [ref=e1009]:
+                          - generic [ref=e1010]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1011]: 7+ Paul Skenes Strikeouts Thrown
+                    - button "+1200 $10 pays $130" [ref=e1013] [cursor=pointer]:
+                      - generic [ref=e1014]: "+1200"
+                      - generic [ref=e1015]: $10 pays $130
+                  - generic [ref=e1017]:
+                    - img "background image" [ref=e1019]
+                    - generic [ref=e1020]:
+                      - generic [ref=e1021]:
+                        - paragraph [ref=e1022]: Pitchers Dominate 🧊
+                        - generic [ref=e1023]: SGP
+                      - generic [ref=e1024]: Brilliant arms and tidy defense keep runs at a premium.
+                      - generic [ref=e1027]:
+                        - generic [ref=e1028]:
+                          - generic [ref=e1029]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1030]: MIL Brewers +1.5 Run Line
+                        - generic [ref=e1031]:
+                          - generic [ref=e1032]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1033]: Under 7 Total
+                    - button "+186 $10 pays $28" [ref=e1035] [cursor=pointer]:
+                      - generic [ref=e1036]: "+186"
+                      - generic [ref=e1037]: $10 pays $28
+                  - generic [ref=e1039]:
+                    - img "background image" [ref=e1041]
+                    - generic [ref=e1042]:
+                      - generic [ref=e1043]:
+                        - paragraph [ref=e1044]: Controlled Comeback 🔄
+                        - generic [ref=e1045]: SGP
+                      - generic [ref=e1046]: Early deficit erased as pitching and defense carry the day.
+                      - generic [ref=e1049]:
+                        - generic [ref=e1050]:
+                          - generic [ref=e1051]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1052]: MIL Brewers Moneyline
+                        - generic [ref=e1053]:
+                          - generic [ref=e1054]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1055]: PIT Pirates 1st Inning (3 Way)
+                        - generic [ref=e1056]:
+                          - generic [ref=e1057]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1058]: Under 7 Total
+                    - button "+3300 $10 pays $340" [ref=e1060] [cursor=pointer]:
+                      - generic [ref=e1061]: "+3300"
+                      - generic [ref=e1062]: $10 pays $340
+                  - generic [ref=e1064]:
+                    - img "background image" [ref=e1066]
+                    - generic [ref=e1067]:
+                      - generic [ref=e1068]:
+                        - paragraph [ref=e1069]: Traveling Bats 🧳
+                        - generic [ref=e1070]: SGP
+                      - generic [ref=e1071]: Three away sluggers stacking the box score.
+                      - generic [ref=e1074]:
+                        - generic [ref=e1075]:
+                          - generic [ref=e1076]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1077]: 1+ Oneil Cruz Hits
+                        - generic [ref=e1078]:
+                          - generic [ref=e1079]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1080]: 1+ Nick Gonzales Hits
+                        - generic [ref=e1081]:
+                          - generic [ref=e1082]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1083]: 1+ Ryan O'Hearn Hits
+                    - button "+232 $10 pays $33" [ref=e1085] [cursor=pointer]:
+                      - generic [ref=e1086]: "+232"
+                      - generic [ref=e1087]: $10 pays $33
+                  - generic [ref=e1089]:
+                    - img "background image" [ref=e1091]
+                    - generic [ref=e1092]:
+                      - generic [ref=e1093]:
+                        - paragraph [ref=e1094]: Quiet Bats, Sharp Pitching
+                        - generic [ref=e1095]: SGP
+                      - generic [ref=e1096]: Missed barrels and quick frames stifle scoring.
+                      - generic [ref=e1099]:
+                        - generic [ref=e1100]:
+                          - generic [ref=e1101]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1102]: PIT Pirates -1.5 Run Line
+                        - generic [ref=e1103]:
+                          - generic [ref=e1104]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1105]: Under 7 Total
+                    - button "+415 $10 pays $51" [ref=e1107] [cursor=pointer]:
+                      - generic [ref=e1108]: "+415"
+                      - generic [ref=e1109]: $10 pays $51
+                  - generic [ref=e1111]:
+                    - img "background image" [ref=e1113]
+                    - generic [ref=e1114]:
+                      - generic [ref=e1115]:
+                        - paragraph [ref=e1116]: Fireworks at the Plate
+                        - generic [ref=e1117]: SGP
+                      - generic [ref=e1118]: Hard contact and crooked numbers keep piling up.
+                      - generic [ref=e1121]:
+                        - generic [ref=e1122]:
+                          - generic [ref=e1123]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1124]: PIT Pirates -1.5 Run Line
+                        - generic [ref=e1125]:
+                          - generic [ref=e1126]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1127]: Over 7 Total
+                    - button "+290 $10 pays $39" [ref=e1129] [cursor=pointer]:
+                      - generic [ref=e1130]: "+290"
+                      - generic [ref=e1131]: $10 pays $39
+                  - generic [ref=e1133]:
+                    - img "background image" [ref=e1135]
+                    - generic [ref=e1136]:
+                      - generic [ref=e1137]:
+                        - paragraph [ref=e1138]: Runs and Rallies All Night
+                        - generic [ref=e1139]: SGP
+                      - generic [ref=e1140]: Explosive innings light up the scoreboard.
+                      - generic [ref=e1143]:
+                        - generic [ref=e1144]:
+                          - generic [ref=e1145]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1146]: MIL Brewers +1.5 Run Line
+                        - generic [ref=e1147]:
+                          - generic [ref=e1148]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1149]: Over 7 Total
+                    - button "+230 $10 pays $33" [ref=e1151] [cursor=pointer]:
+                      - generic [ref=e1152]: "+230"
+                      - generic [ref=e1153]: $10 pays $33
+                  - generic [ref=e1155]:
+                    - img "background image" [ref=e1157]
+                    - generic [ref=e1158]:
+                      - generic [ref=e1159]:
+                        - paragraph [ref=e1160]: Fast Start & Firepower 🚀
+                        - generic [ref=e1161]: SGP
+                      - generic [ref=e1162]: Early runs, a big swing, and strikeouts from the road ace.
+                      - generic [ref=e1165]:
+                        - generic [ref=e1166]:
+                          - generic [ref=e1167]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1168]: Over 0.5 Runs - 1st Inning
+                        - generic [ref=e1169]:
+                          - generic [ref=e1170]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1171]: 1+ Oneil Cruz Home Runs
+                        - generic [ref=e1172]:
+                          - generic [ref=e1173]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1174]: 7+ Paul Skenes Strikeouts Thrown
+                    - button "+1100 $10 pays $120" [ref=e1176] [cursor=pointer]:
+                      - generic [ref=e1177]: "+1100"
+                      - generic [ref=e1178]: $10 pays $120
+                  - generic [ref=e1180]:
+                    - img "background image" [ref=e1182]
+                    - generic [ref=e1183]:
+                      - generic [ref=e1184]:
+                        - paragraph [ref=e1185]: Dinger & Defeat 🧨
+                        - generic [ref=e1186]: SGP
+                      - generic [ref=e1187]: A long ball at home can’t stop the visitors from taking the W.
+                      - generic [ref=e1190]:
+                        - generic [ref=e1191]:
+                          - generic [ref=e1192]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1193]: PIT Pirates Moneyline
+                        - generic [ref=e1194]:
+                          - generic [ref=e1195]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1196]: 1+ Gary Sanchez Home Runs
+                    - button "+1500 $10 pays $160" [ref=e1198] [cursor=pointer]:
+                      - generic [ref=e1199]: "+1500"
+                      - generic [ref=e1200]: $10 pays $160
+                  - generic [ref=e1202]:
+                    - img "background image" [ref=e1204]
+                    - generic [ref=e1205]:
+                      - generic [ref=e1206]:
+                        - paragraph [ref=e1207]: Dealt & Delivered 📦
+                        - generic [ref=e1208]: SGP
+                      - generic [ref=e1209]: Ks from the ace and a solid cover on the road.
+                      - generic [ref=e1212]:
+                        - generic [ref=e1213]:
+                          - generic [ref=e1214]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1215]: 7+ Paul Skenes Strikeouts Thrown
+                        - generic [ref=e1216]:
+                          - generic [ref=e1217]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1218]: PIT Pirates -1.5 Run Line
+                    - button "+320 $10 pays $42" [ref=e1220] [cursor=pointer]:
+                      - generic [ref=e1221]: "+320"
+                      - generic [ref=e1222]: $10 pays $42
+                  - generic [ref=e1224]:
+                    - img "background image" [ref=e1226]
+                    - generic [ref=e1227]:
+                      - generic [ref=e1228]:
+                        - paragraph [ref=e1229]: Ice Cold on the Road
+                        - generic [ref=e1230]: SGP
+                      - generic [ref=e1231]: Ks and a clutch win away from home.
+                      - generic [ref=e1234]:
+                        - generic [ref=e1235]:
+                          - generic [ref=e1236]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1237]: 7+ Paul Skenes Strikeouts Thrown
+                        - generic [ref=e1238]:
+                          - generic [ref=e1239]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1240]: PIT Pirates Moneyline
+                    - button "+230 $10 pays $33" [ref=e1242] [cursor=pointer]:
+                      - generic [ref=e1243]: "+230"
+                      - generic [ref=e1244]: $10 pays $33
+                  - generic [ref=e1246]:
+                    - img "background image" [ref=e1248]
+                    - generic [ref=e1249]:
+                      - generic [ref=e1250]:
+                        - paragraph [ref=e1251]: Road Warriors at the Plate ✈️
+                        - generic [ref=e1252]: SGP
+                      - generic [ref=e1253]: Away hitters firing on all cylinders!
+                      - generic [ref=e1256]:
+                        - generic [ref=e1257]:
+                          - generic [ref=e1258]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1259]: 1+ Oneil Cruz Hits
+                        - generic [ref=e1260]:
+                          - generic [ref=e1261]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1262]: 1+ Nick Gonzales Hits
+                        - generic [ref=e1263]:
+                          - generic [ref=e1264]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1265]: PIT Pirates Moneyline
+                    - button "+236 $10 pays $33" [ref=e1267] [cursor=pointer]:
+                      - generic [ref=e1268]: "+236"
+                      - generic [ref=e1269]: $10 pays $33
+                  - generic [ref=e1271]:
+                    - generic [ref=e1272]:
+                      - generic [ref=e1273]:
+                        - paragraph [ref=e1274]: Held Early, Hit Hard Later
+                        - generic [ref=e1275]: SGP
+                      - generic [ref=e1276]: A quiet start turns into power hitting and strikeout control.
+                      - generic [ref=e1279]:
+                        - generic [ref=e1280]:
+                          - generic [ref=e1281]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1282]: Under 0.5 Runs - 1st Inning
+                        - generic [ref=e1283]:
+                          - generic [ref=e1284]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1285]: 1+ Jake Bauers Home Runs
+                        - generic [ref=e1286]:
+                          - generic [ref=e1287]:
+                            - generic:
+                              - img "team logo"
+                          - generic [ref=e1288]: 7+ Brandon Woodruff Strikeouts Thrown
+                    - button "+2200 $10 pays $230" [ref=e1290] [cursor=pointer]:
+                      - generic [ref=e1291]: "+2200"
+                      - generic [ref=e1292]: $10 pays $230
+                - button "next" [ref=e1293] [cursor=pointer]:
+                  - img [ref=e1294]
+              - generic [ref=e1296]:
+                - button "Game" [ref=e1298]:
+                  - generic [ref=e1299]:
+                    - heading "Game" [level=2] [ref=e1300] [cursor=pointer]
+                    - generic "Open game in SGP mode" [ref=e1301]:
+                      - img [ref=e1302]
+                  - img [ref=e1308]
+                - generic [ref=e1315]:
+                  - generic [ref=e1317]:
+                    - paragraph [ref=e1321]: Run Line
+                    - paragraph [ref=e1323]: Total
+                    - paragraph [ref=e1325]: Moneyline
+                  - generic [ref=e1326]:
+                    - generic [ref=e1329]:
+                      - generic [ref=e1330]:
+                        - generic [ref=e1333]:
+                          - img "PIT Pirates-logo" [ref=e1335]
+                          - generic [ref=e1336]:
+                            - generic [ref=e1337]: PIT Pirates
+                            - generic [ref=e1338]: Paul Skenes
+                        - generic [ref=e1339]: at
+                        - generic [ref=e1342]:
+                          - img "MIL Brewers-logo" [ref=e1344]
+                          - generic [ref=e1345]:
+                            - generic [ref=e1346]: MIL Brewers
+                            - generic [ref=e1347]: Brandon Woodruff
+                      - generic [ref=e1348]:
+                        - button "-1.5 +141" [ref=e1349] [cursor=pointer]:
+                          - generic [ref=e1351]: "-1.5"
+                          - generic [ref=e1352]: "+141"
+                        - button "O 7 −110" [ref=e1353] [cursor=pointer]:
+                          - generic [ref=e1354]:
+                            - generic [ref=e1355]: O
+                            - generic [ref=e1356]: "7"
+                          - generic [ref=e1357]: −110
+                        - button "−126" [ref=e1358] [cursor=pointer]:
+                          - generic [ref=e1359]: −126
+                        - button "+1.5 −171" [ref=e1360] [cursor=pointer]:
+                          - generic [ref=e1362]: "+1.5"
+                          - generic [ref=e1363]: −171
+                        - button "U 7 −110" [ref=e1364] [cursor=pointer]:
+                          - generic [ref=e1365]:
+                            - generic [ref=e1366]: U
+                            - generic [ref=e1367]: "7"
+                          - generic [ref=e1368]: −110
+                        - button "+104" [ref=e1369] [cursor=pointer]:
+                          - generic [ref=e1370]: "+104"
+                    - button "Expand bet breakdown" [ref=e1376] [cursor=pointer]:
+                      - generic [ref=e1377]:
+                        - img "PIT Pirates logo" [ref=e1379]
+                        - generic [ref=e1380]: PIT Pirates
+                        - generic [ref=e1381]: 70%
+                      - generic [ref=e1382]:
+                        - generic [ref=e1383]: "% of bets placed"
+                        - img [ref=e1386]
+                      - generic [ref=e1388]:
+                        - img "MIL Brewers logo" [ref=e1390]
+                        - generic [ref=e1391]: MIL Brewers
+                        - generic [ref=e1392]: 30%
+              - generic [ref=e1393]:
+                - button "Home Runs" [ref=e1395]:
+                  - generic [ref=e1396]:
+                    - heading "Home Runs" [level=2] [ref=e1397] [cursor=pointer]
+                    - generic "Open game in SGP mode" [ref=e1398]:
+                      - img [ref=e1399]
+                  - img [ref=e1405]
+                - generic [ref=e1413]:
+                  - generic [ref=e1415]:
+                    - generic [ref=e1417]:
+                      - link "player image Oneil Cruz" [ref=e1418] [cursor=pointer]:
+                        - /url: /players/baseball/oneil-cruz-odds-112214
+                        - img "player image" [ref=e1420]
+                        - paragraph [ref=e1421]: Oneil Cruz
+                      - generic [ref=e1422]:
+                        - generic [ref=e1423]: "HR:"
+                        - generic [ref=e1425]:
+                          - generic [ref=e1426]: "0"
+                          - generic [ref=e1427]: "1"
+                          - generic [ref=e1428]: "2"
+                          - generic [ref=e1429]: "3"
+                          - generic [ref=e1430]: "4"
+                          - generic [ref=e1431]: "5"
+                          - generic [ref=e1432]: "6"
+                          - generic [ref=e1433]: "7"
+                          - generic [ref=e1434]: "8"
+                          - generic [ref=e1435]: "9"
+                    - generic [ref=e1437]:
+                      - img [ref=e1439]
+                      - generic [ref=e1443]:
+                        - button "1+ +241" [ref=e1444] [cursor=pointer]:
+                          - generic [ref=e1445]: 1+
+                          - generic [ref=e1446]: "+241"
+                        - button "2+" [ref=e1447] [cursor=pointer]:
+                          - generic [ref=e1448]: 2+
+                        - button "3+" [ref=e1449] [cursor=pointer]:
+                          - generic [ref=e1450]: 3+
+                      - button "Arrow pointing right icon" [ref=e1451] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1452]
+                  - generic [ref=e1455]:
+                    - generic [ref=e1457]:
+                      - link "player image Brandon Lowe" [ref=e1458] [cursor=pointer]:
+                        - /url: /players/baseball/brandon-lowe-odds-31753
+                        - img "player image" [ref=e1460]
+                        - paragraph [ref=e1461]: Brandon Lowe
+                      - generic [ref=e1462]:
+                        - generic [ref=e1463]: "HR:"
+                        - generic [ref=e1465]:
+                          - generic [ref=e1466]: "0"
+                          - generic [ref=e1467]: "1"
+                          - generic [ref=e1468]: "2"
+                          - generic [ref=e1469]: "3"
+                          - generic [ref=e1470]: "4"
+                          - generic [ref=e1471]: "5"
+                          - generic [ref=e1472]: "6"
+                          - generic [ref=e1473]: "7"
+                          - generic [ref=e1474]: "8"
+                          - generic [ref=e1475]: "9"
+                    - generic [ref=e1477]:
+                      - img [ref=e1479]
+                      - generic [ref=e1483]:
+                        - button "1+ +350" [ref=e1484] [cursor=pointer]:
+                          - generic [ref=e1485]: 1+
+                          - generic [ref=e1486]: "+350"
+                        - button "2+" [ref=e1487] [cursor=pointer]:
+                          - generic [ref=e1488]: 2+
+                      - button "Arrow pointing right icon" [ref=e1489] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1490]
+                  - generic [ref=e1493]:
+                    - generic [ref=e1495]:
+                      - link "player image Bryan Reynolds" [ref=e1496] [cursor=pointer]:
+                        - /url: /players/baseball/bryan-reynolds-odds-32238
+                        - img "player image" [ref=e1498]
+                        - paragraph [ref=e1499]: Bryan Reynolds
+                      - generic [ref=e1500]:
+                        - generic [ref=e1501]: "HR:"
+                        - generic [ref=e1503]:
+                          - generic [ref=e1504]: "0"
+                          - generic [ref=e1505]: "1"
+                          - generic [ref=e1506]: "2"
+                          - generic [ref=e1507]: "3"
+                          - generic [ref=e1508]: "4"
+                          - generic [ref=e1509]: "5"
+                          - generic [ref=e1510]: "6"
+                          - generic [ref=e1511]: "7"
+                          - generic [ref=e1512]: "8"
+                          - generic [ref=e1513]: "9"
+                    - generic [ref=e1515]:
+                      - img [ref=e1517]
+                      - generic [ref=e1521]:
+                        - button "1+ +456" [ref=e1522] [cursor=pointer]:
+                          - generic [ref=e1523]: 1+
+                          - generic [ref=e1524]: "+456"
+                        - button "2+" [ref=e1525] [cursor=pointer]:
+                          - generic [ref=e1526]: 2+
+                      - button "Arrow pointing right icon" [ref=e1527] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1528]
+                  - generic [ref=e1531]:
+                    - generic [ref=e1533]:
+                      - link "player image Marcell Ozuna" [ref=e1534] [cursor=pointer]:
+                        - /url: /players/baseball/marcell-ozuna-odds-32350
+                        - img "player image" [ref=e1536]
+                        - paragraph [ref=e1537]: Marcell Ozuna
+                      - generic [ref=e1538]:
+                        - generic [ref=e1539]: "HR:"
+                        - generic [ref=e1541]:
+                          - generic [ref=e1542]: "0"
+                          - generic [ref=e1543]: "1"
+                          - generic [ref=e1544]: "2"
+                          - generic [ref=e1545]: "3"
+                          - generic [ref=e1546]: "4"
+                          - generic [ref=e1547]: "5"
+                          - generic [ref=e1548]: "6"
+                          - generic [ref=e1549]: "7"
+                          - generic [ref=e1550]: "8"
+                          - generic [ref=e1551]: "9"
+                    - generic [ref=e1553]:
+                      - img [ref=e1555]
+                      - generic [ref=e1559]:
+                        - button "1+ +414" [ref=e1560] [cursor=pointer]:
+                          - generic [ref=e1561]: 1+
+                          - generic [ref=e1562]: "+414"
+                        - button "2+" [ref=e1563] [cursor=pointer]:
+                          - generic [ref=e1564]: 2+
+                      - button "Arrow pointing right icon" [ref=e1565] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1566]
+                  - generic [ref=e1569]:
+                    - generic [ref=e1571]:
+                      - link "player image Gary Sanchez" [ref=e1572] [cursor=pointer]:
+                        - /url: /players/baseball/gary-sanchez-odds-32479
+                        - img "player image" [ref=e1574]
+                        - paragraph [ref=e1575]: Gary Sanchez
+                      - generic [ref=e1576]:
+                        - generic [ref=e1577]: "HR:"
+                        - generic [ref=e1579]:
+                          - generic [ref=e1580]: "0"
+                          - generic [ref=e1581]: "1"
+                          - generic [ref=e1582]: "2"
+                          - generic [ref=e1583]: "3"
+                          - generic [ref=e1584]: "4"
+                          - generic [ref=e1585]: "5"
+                          - generic [ref=e1586]: "6"
+                          - generic [ref=e1587]: "7"
+                          - generic [ref=e1588]: "8"
+                          - generic [ref=e1589]: "9"
+                    - generic [ref=e1591]:
+                      - img [ref=e1593]
+                      - generic [ref=e1597]:
+                        - button "1+ +494" [ref=e1598] [cursor=pointer]:
+                          - generic [ref=e1599]: 1+
+                          - generic [ref=e1600]: "+494"
+                        - button "2+" [ref=e1601] [cursor=pointer]:
+                          - generic [ref=e1602]: 2+
+                      - button "Arrow pointing right icon" [ref=e1603] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1604]
+                  - generic [ref=e1607]:
+                    - generic [ref=e1609]:
+                      - link "player image Jake Bauers" [ref=e1610] [cursor=pointer]:
+                        - /url: /players/baseball/jake-bauers-odds-31771
+                        - img "player image" [ref=e1612]
+                        - paragraph [ref=e1613]: Jake Bauers
+                      - generic [ref=e1614]:
+                        - generic [ref=e1615]: "HR:"
+                        - generic [ref=e1617]:
+                          - generic [ref=e1618]: "0"
+                          - generic [ref=e1619]: "1"
+                          - generic [ref=e1620]: "2"
+                          - generic [ref=e1621]: "3"
+                          - generic [ref=e1622]: "4"
+                          - generic [ref=e1623]: "5"
+                          - generic [ref=e1624]: "6"
+                          - generic [ref=e1625]: "7"
+                          - generic [ref=e1626]: "8"
+                          - generic [ref=e1627]: "9"
+                    - generic [ref=e1629]:
+                      - img [ref=e1631]
+                      - generic [ref=e1635]:
+                        - button "1+ +460" [ref=e1636] [cursor=pointer]:
+                          - generic [ref=e1637]: 1+
+                          - generic [ref=e1638]: "+460"
+                        - button "2+" [ref=e1639] [cursor=pointer]:
+                          - generic [ref=e1640]: 2+
+                      - button "Arrow pointing right icon" [ref=e1641] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1642]
+                  - generic [ref=e1645]:
+                    - generic [ref=e1647]:
+                      - link "player image William Contreras" [ref=e1648] [cursor=pointer]:
+                        - /url: /players/baseball/william-contreras-odds-111559
+                        - img "player image" [ref=e1650]
+                        - paragraph [ref=e1651]: William Contreras
+                      - generic [ref=e1652]:
+                        - generic [ref=e1653]: "HR:"
+                        - generic [ref=e1655]:
+                          - generic [ref=e1656]: "0"
+                          - generic [ref=e1657]: "1"
+                          - generic [ref=e1658]: "2"
+                          - generic [ref=e1659]: "3"
+                          - generic [ref=e1660]: "4"
+                          - generic [ref=e1661]: "5"
+                          - generic [ref=e1662]: "6"
+                          - generic [ref=e1663]: "7"
+                          - generic [ref=e1664]: "8"
+                          - generic [ref=e1665]: "9"
+                    - generic [ref=e1667]:
+                      - img [ref=e1669]
+                      - generic [ref=e1673]:
+                        - button "1+ +594" [ref=e1674] [cursor=pointer]:
+                          - generic [ref=e1675]: 1+
+                          - generic [ref=e1676]: "+594"
+                        - button "2+" [ref=e1677] [cursor=pointer]:
+                          - generic [ref=e1678]: 2+
+                      - button "Arrow pointing right icon" [ref=e1679] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1680]
+                  - generic [ref=e1683]:
+                    - generic [ref=e1685]:
+                      - link "player image Ryan O'Hearn" [ref=e1686] [cursor=pointer]:
+                        - /url: /players/baseball/ryan-o'hearn-odds-32101
+                        - img "player image" [ref=e1688]
+                        - paragraph [ref=e1689]: Ryan O'Hearn
+                      - generic [ref=e1690]:
+                        - generic [ref=e1691]: "HR:"
+                        - generic [ref=e1693]:
+                          - generic [ref=e1694]: "0"
+                          - generic [ref=e1695]: "1"
+                          - generic [ref=e1696]: "2"
+                          - generic [ref=e1697]: "3"
+                          - generic [ref=e1698]: "4"
+                          - generic [ref=e1699]: "5"
+                          - generic [ref=e1700]: "6"
+                          - generic [ref=e1701]: "7"
+                          - generic [ref=e1702]: "8"
+                          - generic [ref=e1703]: "9"
+                    - generic [ref=e1705]:
+                      - img [ref=e1707]
+                      - generic [ref=e1711]:
+                        - button "1+ +630" [ref=e1712] [cursor=pointer]:
+                          - generic [ref=e1713]: 1+
+                          - generic [ref=e1714]: "+630"
+                        - button "2+" [ref=e1715] [cursor=pointer]:
+                          - generic [ref=e1716]: 2+
+                      - button "Arrow pointing right icon" [ref=e1717] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1718]
+                  - generic [ref=e1721]:
+                    - link "player image Henry Davis" [ref=e1723] [cursor=pointer]:
+                      - /url: /players/baseball/henry-davis-odds-587691
+                      - img "player image" [ref=e1725]
+                      - paragraph [ref=e1726]: Henry Davis
+                    - generic [ref=e1728]:
+                      - img [ref=e1730]
+                      - generic [ref=e1734]:
+                        - button "1+ +820" [ref=e1735] [cursor=pointer]:
+                          - generic [ref=e1736]: 1+
+                          - generic [ref=e1737]: "+820"
+                        - button "2+" [ref=e1738] [cursor=pointer]:
+                          - generic [ref=e1739]: 2+
+                      - button "Arrow pointing right icon" [ref=e1740] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1741]
+                  - generic [ref=e1744]:
+                    - link "player image Konnor Griffin" [ref=e1746] [cursor=pointer]:
+                      - /url: /players/baseball/konnor-griffin-odds-806144
+                      - img "player image" [ref=e1748]
+                      - paragraph [ref=e1749]: Konnor Griffin
+                    - generic [ref=e1751]:
+                      - img [ref=e1753]
+                      - generic [ref=e1757]:
+                        - button "1+ +780" [ref=e1758] [cursor=pointer]:
+                          - generic [ref=e1759]: 1+
+                          - generic [ref=e1760]: "+780"
+                        - button "2+" [ref=e1761] [cursor=pointer]:
+                          - generic [ref=e1762]: 2+
+                      - button "Arrow pointing right icon" [ref=e1763] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1764]
+                  - generic [ref=e1767]:
+                    - link "player image Brandon Lockridge" [ref=e1769] [cursor=pointer]:
+                      - /url: /players/baseball/brandon-lockridge-odds-476312
+                      - img "player image" [ref=e1771]
+                      - paragraph [ref=e1772]: Brandon Lockridge
+                    - generic [ref=e1774]:
+                      - img [ref=e1776]
+                      - generic [ref=e1780]:
+                        - button "1+ +1220" [ref=e1781] [cursor=pointer]:
+                          - generic [ref=e1782]: 1+
+                          - generic [ref=e1783]: "+1220"
+                        - button "2+" [ref=e1784] [cursor=pointer]:
+                          - generic [ref=e1785]: 2+
+                      - button "Arrow pointing right icon" [ref=e1786] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1787]
+                  - generic [ref=e1790]:
+                    - generic [ref=e1792]:
+                      - link "player image Brice Turang" [ref=e1793] [cursor=pointer]:
+                        - /url: /players/baseball/brice-turang-odds-110972
+                        - img "player image" [ref=e1795]
+                        - paragraph [ref=e1796]: Brice Turang
+                      - generic [ref=e1797]:
+                        - generic [ref=e1798]: "HR:"
+                        - generic [ref=e1800]:
+                          - generic [ref=e1801]: "0"
+                          - generic [ref=e1802]: "1"
+                          - generic [ref=e1803]: "2"
+                          - generic [ref=e1804]: "3"
+                          - generic [ref=e1805]: "4"
+                          - generic [ref=e1806]: "5"
+                          - generic [ref=e1807]: "6"
+                          - generic [ref=e1808]: "7"
+                          - generic [ref=e1809]: "8"
+                          - generic [ref=e1810]: "9"
+                    - generic [ref=e1812]:
+                      - img [ref=e1814]
+                      - generic [ref=e1818]:
+                        - button "1+ +780" [ref=e1819] [cursor=pointer]:
+                          - generic [ref=e1820]: 1+
+                          - generic [ref=e1821]: "+780"
+                        - button "2+" [ref=e1822] [cursor=pointer]:
+                          - generic [ref=e1823]: 2+
+                      - button "Arrow pointing right icon" [ref=e1824] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1825]
+                  - generic [ref=e1828]:
+                    - link "player image David Hamilton" [ref=e1830] [cursor=pointer]:
+                      - /url: /players/baseball/david-hamilton-odds-478711
+                      - img "player image" [ref=e1832]
+                      - paragraph [ref=e1833]: David Hamilton
+                    - generic [ref=e1835]:
+                      - img [ref=e1837]
+                      - generic [ref=e1841]:
+                        - button "1+ +1080" [ref=e1842] [cursor=pointer]:
+                          - generic [ref=e1843]: 1+
+                          - generic [ref=e1844]: "+1080"
+                        - button "2+" [ref=e1845] [cursor=pointer]:
+                          - generic [ref=e1846]: 2+
+                      - button "Arrow pointing right icon" [ref=e1847] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1848]
+                  - generic [ref=e1851]:
+                    - generic [ref=e1853]:
+                      - link "player image Garrett Mitchell" [ref=e1854] [cursor=pointer]:
+                        - /url: /players/baseball/garrett-mitchell-odds-494665
+                        - img "player image" [ref=e1856]
+                        - paragraph [ref=e1857]: Garrett Mitchell
+                      - generic [ref=e1858]:
+                        - generic [ref=e1859]: "HR:"
+                        - generic [ref=e1861]:
+                          - generic [ref=e1862]: "0"
+                          - generic [ref=e1863]: "1"
+                          - generic [ref=e1864]: "2"
+                          - generic [ref=e1865]: "3"
+                          - generic [ref=e1866]: "4"
+                          - generic [ref=e1867]: "5"
+                          - generic [ref=e1868]: "6"
+                          - generic [ref=e1869]: "7"
+                          - generic [ref=e1870]: "8"
+                          - generic [ref=e1871]: "9"
+                    - generic [ref=e1873]:
+                      - img [ref=e1875]
+                      - generic [ref=e1879]:
+                        - button "1+ +780" [ref=e1880] [cursor=pointer]:
+                          - generic [ref=e1881]: 1+
+                          - generic [ref=e1882]: "+780"
+                        - button "2+" [ref=e1883] [cursor=pointer]:
+                          - generic [ref=e1884]: 2+
+                      - button "Arrow pointing right icon" [ref=e1885] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1886]
+                  - generic [ref=e1889]:
+                    - link "player image Nick Gonzales" [ref=e1891] [cursor=pointer]:
+                      - /url: /players/baseball/nick-gonzales-odds-494684
+                      - img "player image" [ref=e1893]
+                      - paragraph [ref=e1894]: Nick Gonzales
+                    - generic [ref=e1896]:
+                      - img [ref=e1898]
+                      - generic [ref=e1902]:
+                        - button "1+ +830" [ref=e1903] [cursor=pointer]:
+                          - generic [ref=e1904]: 1+
+                          - generic [ref=e1905]: "+830"
+                        - button "2+" [ref=e1906] [cursor=pointer]:
+                          - generic [ref=e1907]: 2+
+                      - button "Arrow pointing right icon" [ref=e1908] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1909]
+                  - generic [ref=e1912]:
+                    - generic [ref=e1914]:
+                      - link "player image Spencer Horwitz" [ref=e1915] [cursor=pointer]:
+                        - /url: /players/baseball/spencer-horwitz-odds-614107
+                        - img "player image" [ref=e1917]
+                        - paragraph [ref=e1918]: Spencer Horwitz
+                      - generic [ref=e1919]:
+                        - generic [ref=e1920]: "HR:"
+                        - generic [ref=e1922]:
+                          - generic [ref=e1923]: "0"
+                          - generic [ref=e1924]: "1"
+                          - generic [ref=e1925]: "2"
+                          - generic [ref=e1926]: "3"
+                          - generic [ref=e1927]: "4"
+                          - generic [ref=e1928]: "5"
+                          - generic [ref=e1929]: "6"
+                          - generic [ref=e1930]: "7"
+                          - generic [ref=e1931]: "8"
+                          - generic [ref=e1932]: "9"
+                    - generic [ref=e1934]:
+                      - img [ref=e1936]
+                      - generic [ref=e1940]:
+                        - button "1+ +890" [ref=e1941] [cursor=pointer]:
+                          - generic [ref=e1942]: 1+
+                          - generic [ref=e1943]: "+890"
+                        - button "2+" [ref=e1944] [cursor=pointer]:
+                          - generic [ref=e1945]: 2+
+                      - button "Arrow pointing right icon" [ref=e1946] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1947]
+                  - generic [ref=e1950]:
+                    - generic [ref=e1952]:
+                      - link "player image Sal Frelick" [ref=e1953] [cursor=pointer]:
+                        - /url: /players/baseball/sal-frelick-odds-587686
+                        - img "player image" [ref=e1955]
+                        - paragraph [ref=e1956]: Sal Frelick
+                      - generic [ref=e1957]:
+                        - generic [ref=e1958]: "HR:"
+                        - generic [ref=e1960]:
+                          - generic [ref=e1961]: "0"
+                          - generic [ref=e1962]: "1"
+                          - generic [ref=e1963]: "2"
+                          - generic [ref=e1964]: "3"
+                          - generic [ref=e1965]: "4"
+                          - generic [ref=e1966]: "5"
+                          - generic [ref=e1967]: "6"
+                          - generic [ref=e1968]: "7"
+                          - generic [ref=e1969]: "8"
+                          - generic [ref=e1970]: "9"
+                    - generic [ref=e1972]:
+                      - img [ref=e1974]
+                      - button "1+ +1240" [ref=e1979] [cursor=pointer]:
+                        - generic [ref=e1980]: 1+
+                        - generic [ref=e1981]: "+1240"
+                      - img [ref=e1983]
+                  - generic [ref=e1987]:
+                    - link "player image Joey Ortiz" [ref=e1989] [cursor=pointer]:
+                      - /url: /players/baseball/joey-ortiz-odds-478565
+                      - img "player image" [ref=e1991]
+                      - paragraph [ref=e1992]: Joey Ortiz
+                    - generic [ref=e1994]:
+                      - img [ref=e1996]
+                      - button "1+ +1420" [ref=e2001] [cursor=pointer]:
+                        - generic [ref=e2002]: 1+
+                        - generic [ref=e2003]: "+1420"
+                      - img [ref=e2005]
+              - generic [ref=e2010]:
+                - button "Hits" [ref=e2012]:
+                  - generic [ref=e2013]:
+                    - heading "Hits" [level=2] [ref=e2014] [cursor=pointer]
+                    - generic "Open game in SGP mode" [ref=e2015]:
+                      - img [ref=e2016]
+                  - img [ref=e2022]
+                - generic [ref=e2030]:
+                  - generic [ref=e2032]:
+                    - generic [ref=e2034]:
+                      - link "player image William Contreras" [ref=e2035] [cursor=pointer]:
+                        - /url: /players/baseball/william-contreras-odds-111559
+                        - img "player image" [ref=e2037]
+                        - paragraph [ref=e2038]: William Contreras
+                      - generic [ref=e2039]:
+                        - generic [ref=e2040]: "H:"
+                        - generic [ref=e2041]:
+                          - generic [ref=e2042]:
+                            - generic [ref=e2043]: "0"
+                            - generic [ref=e2044]: "1"
+                            - generic [ref=e2045]: "2"
+                            - generic [ref=e2046]: "3"
+                            - generic [ref=e2047]: "4"
+                            - generic [ref=e2048]: "5"
+                            - generic [ref=e2049]: "6"
+                            - generic [ref=e2050]: "7"
+                            - generic [ref=e2051]: "8"
+                            - generic [ref=e2052]: "9"
+                          - generic [ref=e2053]:
+                            - generic [ref=e2054]: "0"
+                            - generic [ref=e2055]: "1"
+                            - generic [ref=e2056]: "2"
+                            - generic [ref=e2057]: "3"
+                            - generic [ref=e2058]: "4"
+                            - generic [ref=e2059]: "5"
+                            - generic [ref=e2060]: "6"
+                            - generic [ref=e2061]: "7"
+                            - generic [ref=e2062]: "8"
+                            - generic [ref=e2063]: "9"
+                    - generic [ref=e2065]:
+                      - img [ref=e2067]
+                      - generic [ref=e2071]:
+                        - button "1+ −205" [ref=e2072] [cursor=pointer]:
+                          - generic [ref=e2073]: 1+
+                          - generic [ref=e2074]: −205
+                        - button "2+" [ref=e2075] [cursor=pointer]:
+                          - generic [ref=e2076]: 2+
+                        - button "3+" [ref=e2077] [cursor=pointer]:
+                          - generic [ref=e2078]: 3+
+                      - button "Arrow pointing right icon" [ref=e2079] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2080]
+                  - generic [ref=e2083]:
+                    - generic [ref=e2085]:
+                      - link "player image Oneil Cruz" [ref=e2086] [cursor=pointer]:
+                        - /url: /players/baseball/oneil-cruz-odds-112214
+                        - img "player image" [ref=e2088]
+                        - paragraph [ref=e2089]: Oneil Cruz
+                      - generic [ref=e2090]:
+                        - generic [ref=e2091]: "H:"
+                        - generic [ref=e2092]:
+                          - generic [ref=e2093]:
+                            - generic [ref=e2094]: "0"
+                            - generic [ref=e2095]: "1"
+                            - generic [ref=e2096]: "2"
+                            - generic [ref=e2097]: "3"
+                            - generic [ref=e2098]: "4"
+                            - generic [ref=e2099]: "5"
+                            - generic [ref=e2100]: "6"
+                            - generic [ref=e2101]: "7"
+                            - generic [ref=e2102]: "8"
+                            - generic [ref=e2103]: "9"
+                          - generic [ref=e2104]:
+                            - generic [ref=e2105]: "0"
+                            - generic [ref=e2106]: "1"
+                            - generic [ref=e2107]: "2"
+                            - generic [ref=e2108]: "3"
+                            - generic [ref=e2109]: "4"
+                            - generic [ref=e2110]: "5"
+                            - generic [ref=e2111]: "6"
+                            - generic [ref=e2112]: "7"
+                            - generic [ref=e2113]: "8"
+                            - generic [ref=e2114]: "9"
+                    - generic [ref=e2116]:
+                      - img [ref=e2118]
+                      - generic [ref=e2122]:
+                        - button "1+ −200" [ref=e2123] [cursor=pointer]:
+                          - generic [ref=e2124]: 1+
+                          - generic [ref=e2125]: −200
+                        - button "2+" [ref=e2126] [cursor=pointer]:
+                          - generic [ref=e2127]: 2+
+                        - button "3+" [ref=e2128] [cursor=pointer]:
+                          - generic [ref=e2129]: 3+
+                      - button "Arrow pointing right icon" [ref=e2130] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2131]
+                  - generic [ref=e2134]:
+                    - generic [ref=e2136]:
+                      - link "player image Nick Gonzales" [ref=e2137] [cursor=pointer]:
+                        - /url: /players/baseball/nick-gonzales-odds-494684
+                        - img "player image" [ref=e2139]
+                        - paragraph [ref=e2140]: Nick Gonzales
+                      - generic [ref=e2141]:
+                        - generic [ref=e2142]: "H:"
+                        - generic [ref=e2143]:
+                          - generic [ref=e2144]:
+                            - generic [ref=e2145]: "0"
+                            - generic [ref=e2146]: "1"
+                            - generic [ref=e2147]: "2"
+                            - generic [ref=e2148]: "3"
+                            - generic [ref=e2149]: "4"
+                            - generic [ref=e2150]: "5"
+                            - generic [ref=e2151]: "6"
+                            - generic [ref=e2152]: "7"
+                            - generic [ref=e2153]: "8"
+                            - generic [ref=e2154]: "9"
+                          - generic [ref=e2155]:
+                            - generic [ref=e2156]: "0"
+                            - generic [ref=e2157]: "1"
+                            - generic [ref=e2158]: "2"
+                            - generic [ref=e2159]: "3"
+                            - generic [ref=e2160]: "4"
+                            - generic [ref=e2161]: "5"
+                            - generic [ref=e2162]: "6"
+                            - generic [ref=e2163]: "7"
+                            - generic [ref=e2164]: "8"
+                            - generic [ref=e2165]: "9"
+                    - generic [ref=e2167]:
+                      - img [ref=e2169]
+                      - generic [ref=e2173]:
+                        - button "1+ −189" [ref=e2174] [cursor=pointer]:
+                          - generic [ref=e2175]: 1+
+                          - generic [ref=e2176]: −189
+                        - button "2+" [ref=e2177] [cursor=pointer]:
+                          - generic [ref=e2178]: 2+
+                        - button "3+" [ref=e2179] [cursor=pointer]:
+                          - generic [ref=e2180]: 3+
+                      - button "Arrow pointing right icon" [ref=e2181] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2182]
+                  - generic [ref=e2185]:
+                    - generic [ref=e2187]:
+                      - link "player image Ryan O'Hearn" [ref=e2188] [cursor=pointer]:
+                        - /url: /players/baseball/ryan-o'hearn-odds-32101
+                        - img "player image" [ref=e2190]
+                        - paragraph [ref=e2191]: Ryan O'Hearn
+                      - generic [ref=e2192]:
+                        - generic [ref=e2193]: "H:"
+                        - generic [ref=e2194]:
+                          - generic [ref=e2195]:
+                            - generic [ref=e2196]: "0"
+                            - generic [ref=e2197]: "1"
+                            - generic [ref=e2198]: "2"
+                            - generic [ref=e2199]: "3"
+                            - generic [ref=e2200]: "4"
+                            - generic [ref=e2201]: "5"
+                            - generic [ref=e2202]: "6"
+                            - generic [ref=e2203]: "7"
+                            - generic [ref=e2204]: "8"
+                            - generic [ref=e2205]: "9"
+                          - generic [ref=e2206]:
+                            - generic [ref=e2207]: "0"
+                            - generic [ref=e2208]: "1"
+                            - generic [ref=e2209]: "2"
+                            - generic [ref=e2210]: "3"
+                            - generic [ref=e2211]: "4"
+                            - generic [ref=e2212]: "5"
+                            - generic [ref=e2213]: "6"
+                            - generic [ref=e2214]: "7"
+                            - generic [ref=e2215]: "8"
+                            - generic [ref=e2216]: "9"
+                    - generic [ref=e2218]:
+                      - img [ref=e2220]
+                      - generic [ref=e2224]:
+                        - button "1+ −175" [ref=e2225] [cursor=pointer]:
+                          - generic [ref=e2226]: 1+
+                          - generic [ref=e2227]: −175
+                        - button "2+" [ref=e2228] [cursor=pointer]:
+                          - generic [ref=e2229]: 2+
+                        - button "3+" [ref=e2230] [cursor=pointer]:
+                          - generic [ref=e2231]: 3+
+                      - button "Arrow pointing right icon" [ref=e2232] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2233]
+                  - generic [ref=e2236]:
+                    - generic [ref=e2238]:
+                      - link "player image Brandon Lowe" [ref=e2239] [cursor=pointer]:
+                        - /url: /players/baseball/brandon-lowe-odds-31753
+                        - img "player image" [ref=e2241]
+                        - paragraph [ref=e2242]: Brandon Lowe
+                      - generic [ref=e2243]:
+                        - generic [ref=e2244]: "H:"
+                        - generic [ref=e2245]:
+                          - generic [ref=e2246]:
+                            - generic [ref=e2247]: "0"
+                            - generic [ref=e2248]: "1"
+                            - generic [ref=e2249]: "2"
+                            - generic [ref=e2250]: "3"
+                            - generic [ref=e2251]: "4"
+                            - generic [ref=e2252]: "5"
+                            - generic [ref=e2253]: "6"
+                            - generic [ref=e2254]: "7"
+                            - generic [ref=e2255]: "8"
+                            - generic [ref=e2256]: "9"
+                          - generic [ref=e2257]:
+                            - generic [ref=e2258]: "0"
+                            - generic [ref=e2259]: "1"
+                            - generic [ref=e2260]: "2"
+                            - generic [ref=e2261]: "3"
+                            - generic [ref=e2262]: "4"
+                            - generic [ref=e2263]: "5"
+                            - generic [ref=e2264]: "6"
+                            - generic [ref=e2265]: "7"
+                            - generic [ref=e2266]: "8"
+                            - generic [ref=e2267]: "9"
+                    - generic [ref=e2269]:
+                      - img [ref=e2271]
+                      - generic [ref=e2275]:
+                        - button "1+ −170" [ref=e2276] [cursor=pointer]:
+                          - generic [ref=e2277]: 1+
+                          - generic [ref=e2278]: −170
+                        - button "2+" [ref=e2279] [cursor=pointer]:
+                          - generic [ref=e2280]: 2+
+                        - button "3+" [ref=e2281] [cursor=pointer]:
+                          - generic [ref=e2282]: 3+
+                      - button "Arrow pointing right icon" [ref=e2283] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2284]
+                  - generic [ref=e2287]:
+                    - generic [ref=e2289]:
+                      - link "player image Bryan Reynolds" [ref=e2290] [cursor=pointer]:
+                        - /url: /players/baseball/bryan-reynolds-odds-32238
+                        - img "player image" [ref=e2292]
+                        - paragraph [ref=e2293]: Bryan Reynolds
+                      - generic [ref=e2294]:
+                        - generic [ref=e2295]: "H:"
+                        - generic [ref=e2296]:
+                          - generic [ref=e2297]:
+                            - generic [ref=e2298]: "0"
+                            - generic [ref=e2299]: "1"
+                            - generic [ref=e2300]: "2"
+                            - generic [ref=e2301]: "3"
+                            - generic [ref=e2302]: "4"
+                            - generic [ref=e2303]: "5"
+                            - generic [ref=e2304]: "6"
+                            - generic [ref=e2305]: "7"
+                            - generic [ref=e2306]: "8"
+                            - generic [ref=e2307]: "9"
+                          - generic [ref=e2308]:
+                            - generic [ref=e2309]: "0"
+                            - generic [ref=e2310]: "1"
+                            - generic [ref=e2311]: "2"
+                            - generic [ref=e2312]: "3"
+                            - generic [ref=e2313]: "4"
+                            - generic [ref=e2314]: "5"
+                            - generic [ref=e2315]: "6"
+                            - generic [ref=e2316]: "7"
+                            - generic [ref=e2317]: "8"
+                            - generic [ref=e2318]: "9"
+                    - generic [ref=e2320]:
+                      - img [ref=e2322]
+                      - generic [ref=e2326]:
+                        - button "1+ −158" [ref=e2327] [cursor=pointer]:
+                          - generic [ref=e2328]: 1+
+                          - generic [ref=e2329]: −158
+                        - button "2+" [ref=e2330] [cursor=pointer]:
+                          - generic [ref=e2331]: 2+
+                        - button "3+" [ref=e2332] [cursor=pointer]:
+                          - generic [ref=e2333]: 3+
+                      - button "Arrow pointing right icon" [ref=e2334] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2335]
+                  - generic [ref=e2338]:
+                    - generic [ref=e2340]:
+                      - link "player image Marcell Ozuna" [ref=e2341] [cursor=pointer]:
+                        - /url: /players/baseball/marcell-ozuna-odds-32350
+                        - img "player image" [ref=e2343]
+                        - paragraph [ref=e2344]: Marcell Ozuna
+                      - generic [ref=e2345]:
+                        - generic [ref=e2346]: "H:"
+                        - generic [ref=e2347]:
+                          - generic [ref=e2348]:
+                            - generic [ref=e2349]: "0"
+                            - generic [ref=e2350]: "1"
+                            - generic [ref=e2351]: "2"
+                            - generic [ref=e2352]: "3"
+                            - generic [ref=e2353]: "4"
+                            - generic [ref=e2354]: "5"
+                            - generic [ref=e2355]: "6"
+                            - generic [ref=e2356]: "7"
+                            - generic [ref=e2357]: "8"
+                            - generic [ref=e2358]: "9"
+                          - generic [ref=e2359]:
+                            - generic [ref=e2360]: "0"
+                            - generic [ref=e2361]: "1"
+                            - generic [ref=e2362]: "2"
+                            - generic [ref=e2363]: "3"
+                            - generic [ref=e2364]: "4"
+                            - generic [ref=e2365]: "5"
+                            - generic [ref=e2366]: "6"
+                            - generic [ref=e2367]: "7"
+                            - generic [ref=e2368]: "8"
+                            - generic [ref=e2369]: "9"
+                    - generic [ref=e2371]:
+                      - img [ref=e2373]
+                      - generic [ref=e2377]:
+                        - button "1+ −160" [ref=e2378] [cursor=pointer]:
+                          - generic [ref=e2379]: 1+
+                          - generic [ref=e2380]: −160
+                        - button "2+" [ref=e2381] [cursor=pointer]:
+                          - generic [ref=e2382]: 2+
+                        - button "3+" [ref=e2383] [cursor=pointer]:
+                          - generic [ref=e2384]: 3+
+                      - button "Arrow pointing right icon" [ref=e2385] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2386]
+                  - generic [ref=e2389]:
+                    - generic [ref=e2391]:
+                      - link "player image Brice Turang" [ref=e2392] [cursor=pointer]:
+                        - /url: /players/baseball/brice-turang-odds-110972
+                        - img "player image" [ref=e2394]
+                        - paragraph [ref=e2395]: Brice Turang
+                      - generic [ref=e2396]:
+                        - generic [ref=e2397]: "H:"
+                        - generic [ref=e2398]:
+                          - generic [ref=e2399]:
+                            - generic [ref=e2400]: "0"
+                            - generic [ref=e2401]: "1"
+                            - generic [ref=e2402]: "2"
+                            - generic [ref=e2403]: "3"
+                            - generic [ref=e2404]: "4"
+                            - generic [ref=e2405]: "5"
+                            - generic [ref=e2406]: "6"
+                            - generic [ref=e2407]: "7"
+                            - generic [ref=e2408]: "8"
+                            - generic [ref=e2409]: "9"
+                          - generic [ref=e2410]:
+                            - generic [ref=e2411]: "0"
+                            - generic [ref=e2412]: "1"
+                            - generic [ref=e2413]: "2"
+                            - generic [ref=e2414]: "3"
+                            - generic [ref=e2415]: "4"
+                            - generic [ref=e2416]: "5"
+                            - generic [ref=e2417]: "6"
+                            - generic [ref=e2418]: "7"
+                            - generic [ref=e2419]: "8"
+                            - generic [ref=e2420]: "9"
+                    - generic [ref=e2422]:
+                      - img [ref=e2424]
+                      - generic [ref=e2428]:
+                        - button "1+ −154" [ref=e2429] [cursor=pointer]:
+                          - generic [ref=e2430]: 1+
+                          - generic [ref=e2431]: −154
+                        - button "2+" [ref=e2432] [cursor=pointer]:
+                          - generic [ref=e2433]: 2+
+                        - button "3+" [ref=e2434] [cursor=pointer]:
+                          - generic [ref=e2435]: 3+
+                      - button "Arrow pointing right icon" [ref=e2436] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2437]
+                  - generic [ref=e2440]:
+                    - generic [ref=e2442]:
+                      - link "player image Konnor Griffin" [ref=e2443] [cursor=pointer]:
+                        - /url: /players/baseball/konnor-griffin-odds-806144
+                        - img "player image" [ref=e2445]
+                        - paragraph [ref=e2446]: Konnor Griffin
+                      - generic [ref=e2447]:
+                        - generic [ref=e2448]: "H:"
+                        - generic [ref=e2449]:
+                          - generic [ref=e2450]:
+                            - generic [ref=e2451]: "0"
+                            - generic [ref=e2452]: "1"
+                            - generic [ref=e2453]: "2"
+                            - generic [ref=e2454]: "3"
+                            - generic [ref=e2455]: "4"
+                            - generic [ref=e2456]: "5"
+                            - generic [ref=e2457]: "6"
+                            - generic [ref=e2458]: "7"
+                            - generic [ref=e2459]: "8"
+                            - generic [ref=e2460]: "9"
+                          - generic [ref=e2461]:
+                            - generic [ref=e2462]: "0"
+                            - generic [ref=e2463]: "1"
+                            - generic [ref=e2464]: "2"
+                            - generic [ref=e2465]: "3"
+                            - generic [ref=e2466]: "4"
+                            - generic [ref=e2467]: "5"
+                            - generic [ref=e2468]: "6"
+                            - generic [ref=e2469]: "7"
+                            - generic [ref=e2470]: "8"
+                            - generic [ref=e2471]: "9"
+                    - generic [ref=e2473]:
+                      - img [ref=e2475]
+                      - generic [ref=e2479]:
+                        - button "1+ −136" [ref=e2480] [cursor=pointer]:
+                          - generic [ref=e2481]: 1+
+                          - generic [ref=e2482]: −136
+                        - button "2+" [ref=e2483] [cursor=pointer]:
+                          - generic [ref=e2484]: 2+
+                        - button "3+" [ref=e2485] [cursor=pointer]:
+                          - generic [ref=e2486]: 3+
+                      - button "Arrow pointing right icon" [ref=e2487] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2488]
+                  - generic [ref=e2491]:
+                    - generic [ref=e2493]:
+                      - link "player image Sal Frelick" [ref=e2494] [cursor=pointer]:
+                        - /url: /players/baseball/sal-frelick-odds-587686
+                        - img "player image" [ref=e2496]
+                        - paragraph [ref=e2497]: Sal Frelick
+                      - generic [ref=e2498]:
+                        - generic [ref=e2499]: "H:"
+                        - generic [ref=e2500]:
+                          - generic [ref=e2501]:
+                            - generic [ref=e2502]: "0"
+                            - generic [ref=e2503]: "1"
+                            - generic [ref=e2504]: "2"
+                            - generic [ref=e2505]: "3"
+                            - generic [ref=e2506]: "4"
+                            - generic [ref=e2507]: "5"
+                            - generic [ref=e2508]: "6"
+                            - generic [ref=e2509]: "7"
+                            - generic [ref=e2510]: "8"
+                            - generic [ref=e2511]: "9"
+                          - generic [ref=e2512]:
+                            - generic [ref=e2513]: "0"
+                            - generic [ref=e2514]: "1"
+                            - generic [ref=e2515]: "2"
+                            - generic [ref=e2516]: "3"
+                            - generic [ref=e2517]: "4"
+                            - generic [ref=e2518]: "5"
+                            - generic [ref=e2519]: "6"
+                            - generic [ref=e2520]: "7"
+                            - generic [ref=e2521]: "8"
+                            - generic [ref=e2522]: "9"
+                    - generic [ref=e2524]:
+                      - img [ref=e2526]
+                      - generic [ref=e2530]:
+                        - button "1+ −145" [ref=e2531] [cursor=pointer]:
+                          - generic [ref=e2532]: 1+
+                          - generic [ref=e2533]: −145
+                        - button "2+" [ref=e2534] [cursor=pointer]:
+                          - generic [ref=e2535]: 2+
+                        - button "3+" [ref=e2536] [cursor=pointer]:
+                          - generic [ref=e2537]: 3+
+                      - button "Arrow pointing right icon" [ref=e2538] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2539]
+                  - generic [ref=e2542]:
+                    - generic [ref=e2544]:
+                      - link "player image Brandon Lockridge" [ref=e2545] [cursor=pointer]:
+                        - /url: /players/baseball/brandon-lockridge-odds-476312
+                        - img "player image" [ref=e2547]
+                        - paragraph [ref=e2548]: Brandon Lockridge
+                      - generic [ref=e2549]:
+                        - generic [ref=e2550]: "H:"
+                        - generic [ref=e2551]:
+                          - generic [ref=e2552]:
+                            - generic [ref=e2553]: "0"
+                            - generic [ref=e2554]: "1"
+                            - generic [ref=e2555]: "2"
+                            - generic [ref=e2556]: "3"
+                            - generic [ref=e2557]: "4"
+                            - generic [ref=e2558]: "5"
+                            - generic [ref=e2559]: "6"
+                            - generic [ref=e2560]: "7"
+                            - generic [ref=e2561]: "8"
+                            - generic [ref=e2562]: "9"
+                          - generic [ref=e2563]:
+                            - generic [ref=e2564]: "0"
+                            - generic [ref=e2565]: "1"
+                            - generic [ref=e2566]: "2"
+                            - generic [ref=e2567]: "3"
+                            - generic [ref=e2568]: "4"
+                            - generic [ref=e2569]: "5"
+                            - generic [ref=e2570]: "6"
+                            - generic [ref=e2571]: "7"
+                            - generic [ref=e2572]: "8"
+                            - generic [ref=e2573]: "9"
+                    - generic [ref=e2575]:
+                      - img [ref=e2577]
+                      - generic [ref=e2581]:
+                        - button "1+ −135" [ref=e2582] [cursor=pointer]:
+                          - generic [ref=e2583]: 1+
+                          - generic [ref=e2584]: −135
+                        - button "2+" [ref=e2585] [cursor=pointer]:
+                          - generic [ref=e2586]: 2+
+                        - button "3+" [ref=e2587] [cursor=pointer]:
+                          - generic [ref=e2588]: 3+
+                      - button "Arrow pointing right icon" [ref=e2589] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2590]
+                  - generic [ref=e2593]:
+                    - generic [ref=e2595]:
+                      - link "player image Spencer Horwitz" [ref=e2596] [cursor=pointer]:
+                        - /url: /players/baseball/spencer-horwitz-odds-614107
+                        - img "player image" [ref=e2598]
+                        - paragraph [ref=e2599]: Spencer Horwitz
+                      - generic [ref=e2600]:
+                        - generic [ref=e2601]: "H:"
+                        - generic [ref=e2602]:
+                          - generic [ref=e2603]:
+                            - generic [ref=e2604]: "0"
+                            - generic [ref=e2605]: "1"
+                            - generic [ref=e2606]: "2"
+                            - generic [ref=e2607]: "3"
+                            - generic [ref=e2608]: "4"
+                            - generic [ref=e2609]: "5"
+                            - generic [ref=e2610]: "6"
+                            - generic [ref=e2611]: "7"
+                            - generic [ref=e2612]: "8"
+                            - generic [ref=e2613]: "9"
+                          - generic [ref=e2614]:
+                            - generic [ref=e2615]: "0"
+                            - generic [ref=e2616]: "1"
+                            - generic [ref=e2617]: "2"
+                            - generic [ref=e2618]: "3"
+                            - generic [ref=e2619]: "4"
+                            - generic [ref=e2620]: "5"
+                            - generic [ref=e2621]: "6"
+                            - generic [ref=e2622]: "7"
+                            - generic [ref=e2623]: "8"
+                            - generic [ref=e2624]: "9"
+                    - generic [ref=e2626]:
+                      - img [ref=e2628]
+                      - generic [ref=e2632]:
+                        - button "1+ −124" [ref=e2633] [cursor=pointer]:
+                          - generic [ref=e2634]: 1+
+                          - generic [ref=e2635]: −124
+                        - button "2+" [ref=e2636] [cursor=pointer]:
+                          - generic [ref=e2637]: 2+
+                        - button "3+" [ref=e2638] [cursor=pointer]:
+                          - generic [ref=e2639]: 3+
+                      - button "Arrow pointing right icon" [ref=e2640] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2641]
+                  - generic [ref=e2644]:
+                    - generic [ref=e2646]:
+                      - link "player image Gary Sanchez" [ref=e2647] [cursor=pointer]:
+                        - /url: /players/baseball/gary-sanchez-odds-32479
+                        - img "player image" [ref=e2649]
+                        - paragraph [ref=e2650]: Gary Sanchez
+                      - generic [ref=e2651]:
+                        - generic [ref=e2652]: "H:"
+                        - generic [ref=e2653]:
+                          - generic [ref=e2654]:
+                            - generic [ref=e2655]: "0"
+                            - generic [ref=e2656]: "1"
+                            - generic [ref=e2657]: "2"
+                            - generic [ref=e2658]: "3"
+                            - generic [ref=e2659]: "4"
+                            - generic [ref=e2660]: "5"
+                            - generic [ref=e2661]: "6"
+                            - generic [ref=e2662]: "7"
+                            - generic [ref=e2663]: "8"
+                            - generic [ref=e2664]: "9"
+                          - generic [ref=e2665]:
+                            - generic [ref=e2666]: "0"
+                            - generic [ref=e2667]: "1"
+                            - generic [ref=e2668]: "2"
+                            - generic [ref=e2669]: "3"
+                            - generic [ref=e2670]: "4"
+                            - generic [ref=e2671]: "5"
+                            - generic [ref=e2672]: "6"
+                            - generic [ref=e2673]: "7"
+                            - generic [ref=e2674]: "8"
+                            - generic [ref=e2675]: "9"
+                    - generic [ref=e2677]:
+                      - img [ref=e2679]
+                      - generic [ref=e2683]:
+                        - button "1+ −116" [ref=e2684] [cursor=pointer]:
+                          - generic [ref=e2685]: 1+
+                          - generic [ref=e2686]: −116
+                        - button "2+" [ref=e2687] [cursor=pointer]:
+                          - generic [ref=e2688]: 2+
+                        - button "3+" [ref=e2689] [cursor=pointer]:
+                          - generic [ref=e2690]: 3+
+                      - button "Arrow pointing right icon" [ref=e2691] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2692]
+                  - generic [ref=e2695]:
+                    - generic [ref=e2697]:
+                      - link "player image Jake Bauers" [ref=e2698] [cursor=pointer]:
+                        - /url: /players/baseball/jake-bauers-odds-31771
+                        - img "player image" [ref=e2700]
+                        - paragraph [ref=e2701]: Jake Bauers
+                      - generic [ref=e2702]:
+                        - generic [ref=e2703]: "H:"
+                        - generic [ref=e2704]:
+                          - generic [ref=e2705]:
+                            - generic [ref=e2706]: "0"
+                            - generic [ref=e2707]: "1"
+                            - generic [ref=e2708]: "2"
+                            - generic [ref=e2709]: "3"
+                            - generic [ref=e2710]: "4"
+                            - generic [ref=e2711]: "5"
+                            - generic [ref=e2712]: "6"
+                            - generic [ref=e2713]: "7"
+                            - generic [ref=e2714]: "8"
+                            - generic [ref=e2715]: "9"
+                          - generic [ref=e2716]:
+                            - generic [ref=e2717]: "0"
+                            - generic [ref=e2718]: "1"
+                            - generic [ref=e2719]: "2"
+                            - generic [ref=e2720]: "3"
+                            - generic [ref=e2721]: "4"
+                            - generic [ref=e2722]: "5"
+                            - generic [ref=e2723]: "6"
+                            - generic [ref=e2724]: "7"
+                            - generic [ref=e2725]: "8"
+                            - generic [ref=e2726]: "9"
+                    - generic [ref=e2728]:
+                      - img [ref=e2730]
+                      - generic [ref=e2734]:
+                        - button "1+ −120" [ref=e2735] [cursor=pointer]:
+                          - generic [ref=e2736]: 1+
+                          - generic [ref=e2737]: −120
+                        - button "2+" [ref=e2738] [cursor=pointer]:
+                          - generic [ref=e2739]: 2+
+                        - button "3+" [ref=e2740] [cursor=pointer]:
+                          - generic [ref=e2741]: 3+
+                      - button "Arrow pointing right icon" [ref=e2742] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2743]
+                  - generic [ref=e2746]:
+                    - generic [ref=e2748]:
+                      - link "player image Joey Ortiz" [ref=e2749] [cursor=pointer]:
+                        - /url: /players/baseball/joey-ortiz-odds-478565
+                        - img "player image" [ref=e2751]
+                        - paragraph [ref=e2752]: Joey Ortiz
+                      - generic [ref=e2753]:
+                        - generic [ref=e2754]: "H:"
+                        - generic [ref=e2755]:
+                          - generic [ref=e2756]:
+                            - generic [ref=e2757]: "0"
+                            - generic [ref=e2758]: "1"
+                            - generic [ref=e2759]: "2"
+                            - generic [ref=e2760]: "3"
+                            - generic [ref=e2761]: "4"
+                            - generic [ref=e2762]: "5"
+                            - generic [ref=e2763]: "6"
+                            - generic [ref=e2764]: "7"
+                            - generic [ref=e2765]: "8"
+                            - generic [ref=e2766]: "9"
+                          - generic [ref=e2767]:
+                            - generic [ref=e2768]: "0"
+                            - generic [ref=e2769]: "1"
+                            - generic [ref=e2770]: "2"
+                            - generic [ref=e2771]: "3"
+                            - generic [ref=e2772]: "4"
+                            - generic [ref=e2773]: "5"
+                            - generic [ref=e2774]: "6"
+                            - generic [ref=e2775]: "7"
+                            - generic [ref=e2776]: "8"
+                            - generic [ref=e2777]: "9"
+                    - generic [ref=e2779]:
+                      - img [ref=e2781]
+                      - generic [ref=e2785]:
+                        - button "1+ −124" [ref=e2786] [cursor=pointer]:
+                          - generic [ref=e2787]: 1+
+                          - generic [ref=e2788]: −124
+                        - button "2+" [ref=e2789] [cursor=pointer]:
+                          - generic [ref=e2790]: 2+
+                        - button "3+" [ref=e2791] [cursor=pointer]:
+                          - generic [ref=e2792]: 3+
+                      - button "Arrow pointing right icon" [ref=e2793] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2794]
+                  - generic [ref=e2797]:
+                    - generic [ref=e2799]:
+                      - link "player image David Hamilton" [ref=e2800] [cursor=pointer]:
+                        - /url: /players/baseball/david-hamilton-odds-478711
+                        - img "player image" [ref=e2802]
+                        - paragraph [ref=e2803]: David Hamilton
+                      - generic [ref=e2804]:
+                        - generic [ref=e2805]: "H:"
+                        - generic [ref=e2806]:
+                          - generic [ref=e2807]:
+                            - generic [ref=e2808]: "0"
+                            - generic [ref=e2809]: "1"
+                            - generic [ref=e2810]: "2"
+                            - generic [ref=e2811]: "3"
+                            - generic [ref=e2812]: "4"
+                            - generic [ref=e2813]: "5"
+                            - generic [ref=e2814]: "6"
+                            - generic [ref=e2815]: "7"
+                            - generic [ref=e2816]: "8"
+                            - generic [ref=e2817]: "9"
+                          - generic [ref=e2818]:
+                            - generic [ref=e2819]: "0"
+                            - generic [ref=e2820]: "1"
+                            - generic [ref=e2821]: "2"
+                            - generic [ref=e2822]: "3"
+                            - generic [ref=e2823]: "4"
+                            - generic [ref=e2824]: "5"
+                            - generic [ref=e2825]: "6"
+                            - generic [ref=e2826]: "7"
+                            - generic [ref=e2827]: "8"
+                            - generic [ref=e2828]: "9"
+                    - generic [ref=e2830]:
+                      - img [ref=e2832]
+                      - generic [ref=e2836]:
+                        - button "1+ −106" [ref=e2837] [cursor=pointer]:
+                          - generic [ref=e2838]: 1+
+                          - generic [ref=e2839]: −106
+                        - button "2+" [ref=e2840] [cursor=pointer]:
+                          - generic [ref=e2841]: 2+
+                        - button "3+" [ref=e2842] [cursor=pointer]:
+                          - generic [ref=e2843]: 3+
+                      - button "Arrow pointing right icon" [ref=e2844] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2845]
+                  - generic [ref=e2848]:
+                    - generic [ref=e2850]:
+                      - link "player image Garrett Mitchell" [ref=e2851] [cursor=pointer]:
+                        - /url: /players/baseball/garrett-mitchell-odds-494665
+                        - img "player image" [ref=e2853]
+                        - paragraph [ref=e2854]: Garrett Mitchell
+                      - generic [ref=e2855]:
+                        - generic [ref=e2856]: "H:"
+                        - generic [ref=e2857]:
+                          - generic [ref=e2858]:
+                            - generic [ref=e2859]: "0"
+                            - generic [ref=e2860]: "1"
+                            - generic [ref=e2861]: "2"
+                            - generic [ref=e2862]: "3"
+                            - generic [ref=e2863]: "4"
+                            - generic [ref=e2864]: "5"
+                            - generic [ref=e2865]: "6"
+                            - generic [ref=e2866]: "7"
+                            - generic [ref=e2867]: "8"
+                            - generic [ref=e2868]: "9"
+                          - generic [ref=e2869]:
+                            - generic [ref=e2870]: "0"
+                            - generic [ref=e2871]: "1"
+                            - generic [ref=e2872]: "2"
+                            - generic [ref=e2873]: "3"
+                            - generic [ref=e2874]: "4"
+                            - generic [ref=e2875]: "5"
+                            - generic [ref=e2876]: "6"
+                            - generic [ref=e2877]: "7"
+                            - generic [ref=e2878]: "8"
+                            - generic [ref=e2879]: "9"
+                    - generic [ref=e2881]:
+                      - img [ref=e2883]
+                      - generic [ref=e2887]:
+                        - button "1+ −110" [ref=e2888] [cursor=pointer]:
+                          - generic [ref=e2889]: 1+
+                          - generic [ref=e2890]: −110
+                        - button "2+" [ref=e2891] [cursor=pointer]:
+                          - generic [ref=e2892]: 2+
+                        - button "3+" [ref=e2893] [cursor=pointer]:
+                          - generic [ref=e2894]: 3+
+                      - button "Arrow pointing right icon" [ref=e2895] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2896]
+                  - generic [ref=e2899]:
+                    - generic [ref=e2901]:
+                      - link "player image Henry Davis" [ref=e2902] [cursor=pointer]:
+                        - /url: /players/baseball/henry-davis-odds-587691
+                        - img "player image" [ref=e2904]
+                        - paragraph [ref=e2905]: Henry Davis
+                      - generic [ref=e2906]:
+                        - generic [ref=e2907]: "H:"
+                        - generic [ref=e2909]:
+                          - generic [ref=e2910]: "0"
+                          - generic [ref=e2911]: "1"
+                          - generic [ref=e2912]: "2"
+                          - generic [ref=e2913]: "3"
+                          - generic [ref=e2914]: "4"
+                          - generic [ref=e2915]: "5"
+                          - generic [ref=e2916]: "6"
+                          - generic [ref=e2917]: "7"
+                          - generic [ref=e2918]: "8"
+                          - generic [ref=e2919]: "9"
+                    - generic [ref=e2921]:
+                      - img [ref=e2923]
+                      - generic [ref=e2927]:
+                        - button "1+ −107" [ref=e2928] [cursor=pointer]:
+                          - generic [ref=e2929]: 1+
+                          - generic [ref=e2930]: −107
+                        - button "2+" [ref=e2931] [cursor=pointer]:
+                          - generic [ref=e2932]: 2+
+                        - button "3+" [ref=e2933] [cursor=pointer]:
+                          - generic [ref=e2934]: 3+
+                      - button "Arrow pointing right icon" [ref=e2935] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2936]
+              - button "Hits + Runs + RBIs" [ref=e2942]:
+                - generic [ref=e2943]:
+                  - heading "Hits + Runs + RBIs" [level=2] [ref=e2944] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e2945]:
+                    - img [ref=e2946]
+                - img [ref=e2952]
+              - button "Total Bases" [ref=e2956]:
+                - generic [ref=e2957]:
+                  - heading "Total Bases" [level=2] [ref=e2958] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e2959]:
+                    - img [ref=e2960]
+                - img [ref=e2966]
+              - button "Strikeouts" [ref=e2970]:
+                - generic [ref=e2971]:
+                  - heading "Strikeouts" [level=2] [ref=e2972] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e2973]:
+                    - img [ref=e2974]
+                - img [ref=e2980]
+              - button "1st Inning Runs" [ref=e2984]:
+                - generic [ref=e2985]:
+                  - heading "1st Inning Runs" [level=2] [ref=e2986] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e2987]:
+                    - img [ref=e2988]
+                - img [ref=e2994]
+              - button "1st Home Run Type" [ref=e2998]:
+                - heading "1st Home Run Type" [level=2] [ref=e3000] [cursor=pointer]
+                - img [ref=e3003]
+              - button "RBIs" [ref=e3007]:
+                - generic [ref=e3008]:
+                  - heading "RBIs" [level=2] [ref=e3009] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3010]:
+                    - img [ref=e3011]
+                - img [ref=e3017]
+              - button "Alternate Total Runs" [ref=e3021]:
+                - generic [ref=e3022]:
+                  - heading "Alternate Total Runs" [level=2] [ref=e3023] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3024]:
+                    - img [ref=e3025]
+                - img [ref=e3031]
+              - button "Alternate Run Line" [ref=e3035]:
+                - generic [ref=e3036]:
+                  - heading "Alternate Run Line" [level=2] [ref=e3037] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3038]:
+                    - img [ref=e3039]
+                - img [ref=e3045]
+              - button "Total Home Runs" [ref=e3049]:
+                - generic [ref=e3050]:
+                  - heading "Total Home Runs" [level=2] [ref=e3051] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3052]:
+                    - img [ref=e3053]
+                - img [ref=e3059]
+              - button "Either Player Home Run" [ref=e3063]:
+                - generic [ref=e3064]:
+                  - heading "Either Player Home Run" [level=2] [ref=e3065] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3066]:
+                    - img [ref=e3067]
+                - img [ref=e3073]
+              - button "1st 5 Innings" [ref=e3077]:
+                - generic [ref=e3078]:
+                  - heading "1st 5 Innings" [level=2] [ref=e3079] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3080]:
+                    - img [ref=e3081]
+                - img [ref=e3087]
+              - button "Team Total Runs" [ref=e3091]:
+                - generic [ref=e3092]:
+                  - heading "Team Total Runs" [level=2] [ref=e3093] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3094]:
+                    - img [ref=e3095]
+                - img [ref=e3101]
+              - button "Alternate Team Total Runs" [ref=e3105]:
+                - generic [ref=e3106]:
+                  - heading "Alternate Team Total Runs" [level=2] [ref=e3107] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3108]:
+                    - img [ref=e3109]
+                - img [ref=e3115]
+              - button "Plate Appearance (Exact)" [ref=e3119]:
+                - heading "Plate Appearance (Exact)" [level=2] [ref=e3121] [cursor=pointer]
+                - img [ref=e3124]
+              - button "Stolen Bases" [ref=e3128]:
+                - generic [ref=e3129]:
+                  - heading "Stolen Bases" [level=2] [ref=e3130] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3131]:
+                    - img [ref=e3132]
+                - img [ref=e3138]
+              - button "1st Inning Result" [ref=e3142]:
+                - generic [ref=e3143]:
+                  - heading "1st Inning Result" [level=2] [ref=e3144] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3145]:
+                    - img [ref=e3146]
+                - img [ref=e3152]
+              - button "Hits + Walks + Stolen Bases" [ref=e3156]:
+                - generic [ref=e3157]:
+                  - heading "Hits + Walks + Stolen Bases" [level=2] [ref=e3158] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3159]:
+                    - img [ref=e3160]
+                - img [ref=e3166]
+              - button "1st 3 Innings" [ref=e3170]:
+                - generic [ref=e3171]:
+                  - heading "1st 3 Innings" [level=2] [ref=e3172] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3173]:
+                    - img [ref=e3174]
+                - img [ref=e3180]
+              - button "Combined Home Runs" [ref=e3184]:
+                - generic [ref=e3185]:
+                  - heading "Combined Home Runs" [level=2] [ref=e3186] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3187]:
+                    - img [ref=e3188]
+                - img [ref=e3194]
+              - button "Game Correct Score" [ref=e3198]:
+                - heading "Game Correct Score" [level=2] [ref=e3200] [cursor=pointer]
+                - img [ref=e3203]
+              - button "Combined Hits" [ref=e3207]:
+                - generic [ref=e3208]:
+                  - heading "Combined Hits" [level=2] [ref=e3209] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3210]:
+                    - img [ref=e3211]
+                - img [ref=e3217]
+              - button "Hits + Runs + Stolen Bases" [ref=e3221]:
+                - generic [ref=e3222]:
+                  - heading "Hits + Runs + Stolen Bases" [level=2] [ref=e3223] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3224]:
+                    - img [ref=e3225]
+                - img [ref=e3231]
+              - button "To Bat in Bottom of 9th" [ref=e3235]:
+                - generic [ref=e3236]:
+                  - heading "To Bat in Bottom of 9th" [level=2] [ref=e3237] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3238]:
+                    - img [ref=e3239]
+                - img [ref=e3245]
+              - button "Total Strikeouts" [ref=e3249]:
+                - generic [ref=e3250]:
+                  - heading "Total Strikeouts" [level=2] [ref=e3251] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3252]:
+                    - img [ref=e3253]
+                - img [ref=e3259]
+              - button "1st 7 Innings" [ref=e3263]:
+                - generic [ref=e3264]:
+                  - heading "1st 7 Innings" [level=2] [ref=e3265] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3266]:
+                    - img [ref=e3267]
+                - img [ref=e3273]
+              - button "Winning Margin" [ref=e3277]:
+                - generic [ref=e3278]:
+                  - heading "Winning Margin" [level=2] [ref=e3279] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3280]:
+                    - img [ref=e3281]
+                - img [ref=e3287]
+              - button "Extra Base Hits" [ref=e3291]:
+                - generic [ref=e3292]:
+                  - heading "Extra Base Hits" [level=2] [ref=e3293] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3294]:
+                    - img [ref=e3295]
+                - img [ref=e3301]
+              - button "Combined Total Bases" [ref=e3305]:
+                - generic [ref=e3306]:
+                  - heading "Combined Total Bases" [level=2] [ref=e3307] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3308]:
+                    - img [ref=e3309]
+                - img [ref=e3315]
+              - button "Race to X Runs" [ref=e3319]:
+                - generic [ref=e3320]:
+                  - heading "Race to X Runs" [level=2] [ref=e3321] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3322]:
+                    - img [ref=e3323]
+                - img [ref=e3329]
+              - button "1st Inning Run Line" [ref=e3333]:
+                - generic [ref=e3334]:
+                  - heading "1st Inning Run Line" [level=2] [ref=e3335] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3336]:
+                    - img [ref=e3337]
+                - img [ref=e3343]
+              - button "Either Player Hits" [ref=e3347]:
+                - generic [ref=e3348]:
+                  - heading "Either Player Hits" [level=2] [ref=e3349] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3350]:
+                    - img [ref=e3351]
+                - img [ref=e3357]
+              - button "Earned Runs Allowed" [ref=e3361]:
+                - generic [ref=e3362]:
+                  - heading "Earned Runs Allowed" [level=2] [ref=e3363] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3364]:
+                    - img [ref=e3365]
+                - img [ref=e3371]
+              - button "Hits Allowed" [ref=e3375]:
+                - generic [ref=e3376]:
+                  - heading "Hits Allowed" [level=2] [ref=e3377] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3378]:
+                    - img [ref=e3379]
+                - img [ref=e3385]
+              - button "Walks Allowed" [ref=e3389]:
+                - generic [ref=e3390]:
+                  - heading "Walks Allowed" [level=2] [ref=e3391] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3392]:
+                    - img [ref=e3393]
+                - img [ref=e3399]
+              - button "Either Player Total Bases" [ref=e3403]:
+                - generic [ref=e3404]:
+                  - heading "Either Player Total Bases" [level=2] [ref=e3405] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3406]:
+                    - img [ref=e3407]
+                - img [ref=e3413]
+              - button "Team Total Runs Odd/Even" [ref=e3417]:
+                - generic [ref=e3418]:
+                  - heading "Team Total Runs Odd/Even" [level=2] [ref=e3419] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3420]:
+                    - img [ref=e3421]
+                - img [ref=e3427]
+              - button "Highest Scoring Inning" [ref=e3431]:
+                - heading "Highest Scoring Inning" [level=2] [ref=e3433] [cursor=pointer]
+                - img [ref=e3436]
+        - generic [ref=e3439]:
+          - heading "Betting News" [level=4] [ref=e3440]
+          - generic [ref=e3441]:
+            - generic [ref=e3442]:
+              - link "Pittsburgh Pirates at Milwaukee Brewers prediction, pick for Friday 4/24/26" [ref=e3444] [cursor=pointer]:
+                - /url: https://dknetwork.draftkings.com/2026/04/24/pittsburgh-pirates-at-milwaukee-brewers-prediction-pick-for-friday-4-24-26/
+                - img "Pittsburgh Pirates at Milwaukee Brewers prediction, pick for Friday 4/24/26" [ref=e3445]
+              - generic [ref=e3446]:
+                - generic [ref=e3447]: 1:06 PM · Apr 24, 2026
+                - link "Pittsburgh Pirates at Milwaukee Brewers prediction, pick for Friday 4/24/26" [ref=e3449] [cursor=pointer]:
+                  - /url: https://dknetwork.draftkings.com/2026/04/24/pittsburgh-pirates-at-milwaukee-brewers-prediction-pick-for-friday-4-24-26/
+                - generic [ref=e3451]: A great individual player can swing a team's fortunes in many sports, but baseball might be the ultimate team game. There may be no better examples of that than 2024 and 2025 Paul Skenes, when he was historically dominant but the Pittsburgh Pirates finished at the bottom of the NL Central. Now, though, the Pirates...
+                - generic [ref=e3452]:
+                  - link "View Full Article>" [ref=e3453] [cursor=pointer]:
+                    - /url: https://dknetwork.draftkings.com/2026/04/24/pittsburgh-pirates-at-milwaukee-brewers-prediction-pick-for-friday-4-24-26/
+                  - generic [ref=e3454]: "Author(s): Griffin Wong."
+            - generic [ref=e3455]:
+              - link "Milwaukee Brewers vs. Detroit Tigers prediction, pick for Thursday 4/23/26" [ref=e3457] [cursor=pointer]:
+                - /url: https://dknetwork.draftkings.com/2026/04/22/milwaukee-brewers-vs-detroit-tigers-prediction-pick-for-thursday-4-23-26/
+                - img "Milwaukee Brewers vs. Detroit Tigers prediction, pick for Thursday 4/23/26" [ref=e3458]
+              - generic [ref=e3459]:
+                - generic [ref=e3460]: 11:56 PM · Apr 22, 2026
+                - link "Milwaukee Brewers vs. Detroit Tigers prediction, pick for Thursday 4/23/26" [ref=e3462] [cursor=pointer]:
+                  - /url: https://dknetwork.draftkings.com/2026/04/22/milwaukee-brewers-vs-detroit-tigers-prediction-pick-for-thursday-4-23-26/
+                - generic [ref=e3464]: Cooper Albers previews Thursday's MLB game between the Milwaukee Brewers and the Detroit Tigers at Comerica Park. The post Milwaukee Brewers vs. Detroit Tigers prediction, pick for Thursday 4/23/26 appeared first on DraftKings Network.
+                - generic [ref=e3465]:
+                  - link "View Full Article>" [ref=e3466] [cursor=pointer]:
+                    - /url: https://dknetwork.draftkings.com/2026/04/22/milwaukee-brewers-vs-detroit-tigers-prediction-pick-for-thursday-4-23-26/
+                  - generic [ref=e3467]: "Author(s): Cooper Albers."
+            - generic [ref=e3468]:
+              - link "Milwaukee Brewers at Detroit Tigers prediction, pick for Wednesday 4/22/26" [ref=e3470] [cursor=pointer]:
+                - /url: https://dknetwork.draftkings.com/2026/04/22/milwaukee-brewers-at-detroit-tigers-prediction-pick-for-wednesday-4-22-26/
+                - img "Milwaukee Brewers at Detroit Tigers prediction, pick for Wednesday 4/22/26" [ref=e3471]
+              - generic [ref=e3472]:
+                - generic [ref=e3473]: 1:19 PM · Apr 22, 2026
+                - link "Milwaukee Brewers at Detroit Tigers prediction, pick for Wednesday 4/22/26" [ref=e3475] [cursor=pointer]:
+                  - /url: https://dknetwork.draftkings.com/2026/04/22/milwaukee-brewers-at-detroit-tigers-prediction-pick-for-wednesday-4-22-26/
+                - generic [ref=e3477]: It appears that the Brewers are back on track. After a six-game losing streak earlier this month, Milwaukee has rebounded to take five of its past six contests, including a lopsided 12-4 victory on Tuesday evening against the Tigers. Brice Turang continued his torrid start to the season in the win, picking up a team-high...
+                - generic [ref=e3478]:
+                  - link "View Full Article>" [ref=e3479] [cursor=pointer]:
+                    - /url: https://dknetwork.draftkings.com/2026/04/22/milwaukee-brewers-at-detroit-tigers-prediction-pick-for-wednesday-4-22-26/
+                  - generic [ref=e3480]: "Author(s): Garion Thorne."
+            - generic [ref=e3481]:
+              - link "Tampa Bay Rays vs. Pittsburgh Pirates prediction, pick for Friday 4/17/26" [ref=e3483] [cursor=pointer]:
+                - /url: https://dknetwork.draftkings.com/2026/04/17/tampa-bay-rays-vs-pittsburgh-pirates-prediction-pick-for-friday-4-17-26/
+                - img "Tampa Bay Rays vs. Pittsburgh Pirates prediction, pick for Friday 4/17/26" [ref=e3484]
+              - generic [ref=e3485]:
+                - generic [ref=e3486]: 12:17 PM · Apr 17, 2026
+                - link "Tampa Bay Rays vs. Pittsburgh Pirates prediction, pick for Friday 4/17/26" [ref=e3488] [cursor=pointer]:
+                  - /url: https://dknetwork.draftkings.com/2026/04/17/tampa-bay-rays-vs-pittsburgh-pirates-prediction-pick-for-friday-4-17-26/
+                - generic [ref=e3490]: Bryan Armetta offers up a preview, prediction and pick for Friday's MLB game between the Tampa Bay Rays and Pittsburgh Pirates. The post Tampa Bay Rays vs. Pittsburgh Pirates prediction, pick for Friday 4/17/26 appeared first on DraftKings Network.
+                - generic [ref=e3491]:
+                  - link "View Full Article>" [ref=e3492] [cursor=pointer]:
+                    - /url: https://dknetwork.draftkings.com/2026/04/17/tampa-bay-rays-vs-pittsburgh-pirates-prediction-pick-for-friday-4-17-26/
+                  - generic [ref=e3493]: "Author(s): Bryan Armetta."
+            - generic [ref=e3494]:
+              - link "Toronto Blue Jays at Milwaukee Brewers prediction, pick for Thursday 4/16/26" [ref=e3496] [cursor=pointer]:
+                - /url: https://dknetwork.draftkings.com/2026/04/16/toronto-blue-jays-at-milwaukee-brewers-prediction-pick-for-thursday-4-16-26/
+                - img "Toronto Blue Jays at Milwaukee Brewers prediction, pick for Thursday 4/16/26" [ref=e3497]
+              - generic [ref=e3498]:
+                - generic [ref=e3499]: 10:41 AM · Apr 16, 2026
+                - link "Toronto Blue Jays at Milwaukee Brewers prediction, pick for Thursday 4/16/26" [ref=e3501] [cursor=pointer]:
+                  - /url: https://dknetwork.draftkings.com/2026/04/16/toronto-blue-jays-at-milwaukee-brewers-prediction-pick-for-thursday-4-16-26/
+                - generic [ref=e3503]: Would it surprise you to know that the Blue Jays haven't won a series since the opening weekend of the season? It's true. Toronto swept the Athletics and set a whole bunch of strikeout records in the process. Since then? The Jays are 4-10. It looked like the team might start a little winning streak...
+                - generic [ref=e3504]:
+                  - link "View Full Article>" [ref=e3505] [cursor=pointer]:
+                    - /url: https://dknetwork.draftkings.com/2026/04/16/toronto-blue-jays-at-milwaukee-brewers-prediction-pick-for-thursday-4-16-26/
+                  - generic [ref=e3506]: "Author(s): Garion Thorne."
+            - generic [ref=e3507]:
+              - link "Washington Nationals vs. Pittsburgh Pirates prediction, pick for Thursday 4/16/26" [ref=e3509] [cursor=pointer]:
+                - /url: https://dknetwork.draftkings.com/2026/04/15/washington-nationals-vs-pittsburgh-pirates-prediction-pick-for-thursday-4-16-26/
+                - img "Washington Nationals vs. Pittsburgh Pirates prediction, pick for Thursday 4/16/26" [ref=e3510]
+              - generic [ref=e3511]:
+                - generic [ref=e3512]: 11:15 PM · Apr 15, 2026
+                - link "Washington Nationals vs. Pittsburgh Pirates prediction, pick for Thursday 4/16/26" [ref=e3514] [cursor=pointer]:
+                  - /url: https://dknetwork.draftkings.com/2026/04/15/washington-nationals-vs-pittsburgh-pirates-prediction-pick-for-thursday-4-16-26/
+                - generic [ref=e3516]: Charlie Cummings previews Thursday's MLB matchup between the Washington Nationals and the Pittsburgh Pirates and provides his best pick. The post Washington Nationals vs. Pittsburgh Pirates prediction, pick for Thursday 4/16/26 appeared first on DraftKings Network.
+                - generic [ref=e3517]:
+                  - link "View Full Article>" [ref=e3518] [cursor=pointer]:
+                    - /url: https://dknetwork.draftkings.com/2026/04/15/washington-nationals-vs-pittsburgh-pirates-prediction-pick-for-thursday-4-16-26/
+                  - generic [ref=e3519]: "Author(s): Charlie Cummings."
+      - generic [ref=e3520]:
+        - generic [ref=e3522]:
+          - generic:
+            - generic:
+              - generic:
+                - generic [ref=e3524]:
+                  - button "Betslip Accordion Header" [expanded] [ref=e3525]:
+                    - generic [ref=e3526]:
+                      - generic [ref=e3527]:
+                        - generic [ref=e3528]:
+                          - generic [ref=e3529]: "0"
+                          - generic [ref=e3530]: BET SLIP
+                        - img "Information" [ref=e3533] [cursor=pointer]
+                      - generic [ref=e3538]:
+                        - generic [ref=e3540] [cursor=pointer]: Cancel
+                        - generic [ref=e3542] [cursor=pointer]: Clear All
+                  - generic [ref=e3546]:
+                    - generic [ref=e3547]: Your picks will show up here.
+                    - generic [ref=e3548]: Select picks to then see the different types of bets available, including Singles, Parlays, Teasers, Round Robins and more.
+                - generic [ref=e3549]:
+                  - generic [ref=e3550]:
+                    - img "Left" [ref=e3552] [cursor=pointer]
+                    - heading "BET SLIP SETTINGS" [level=6] [ref=e3554]
+                  - generic [ref=e3555]:
+                    - generic [ref=e3556]: ODDS
+                    - generic [ref=e3557]:
+                      - generic [ref=e3558]:
+                        - generic [ref=e3559] [cursor=pointer]:
+                          - generic [ref=e3560]: Odds Change Behavior
+                          - generic [ref=e3561]: Always Ask
+                        - generic [ref=e3562]: For the fastest live betting experience select "Accept all Odds Changes"
+                      - generic [ref=e3564] [cursor=pointer]:
+                        - generic [ref=e3565]: Odds Type Preference
+                        - generic [ref=e3566]: American
+        - iframe [ref=e3568]:
+          
+        - generic [ref=e3571]:
+          - img [ref=e3572]
+          - generic [ref=e3573]: You must be logged in to view this content
+          - button "Log In" [ref=e3575]:
+            - generic [ref=e3576]: Log In
+    - generic [ref=e3578]:
+      - generic [ref=e3579]:
+        - generic [ref=e3580]:
+          - generic [ref=e3581]: DraftKings Inc.
+          - generic [ref=e3582]: Boston, MA
+          - list [ref=e3584]:
+            - listitem [ref=e3585]:
+              - link "DraftKings Facebook" [ref=e3586] [cursor=pointer]:
+                - /url: https://www.facebook.com/DraftKings
+            - listitem [ref=e3587]:
+              - link "DraftKings X" [ref=e3588] [cursor=pointer]:
+                - /url: https://x.com/DraftKings
+            - listitem [ref=e3589]:
+              - link "DraftKings Instagram" [ref=e3590] [cursor=pointer]:
+                - /url: https://instagram.com/draftkings
+            - listitem [ref=e3591]:
+              - link "DraftKings YouTube" [ref=e3592] [cursor=pointer]:
+                - /url: https://www.youtube.com/draftkings
+        - generic [ref=e3593]:
+          - generic [ref=e3594]: COMPANY
+          - list [ref=e3596]:
+            - listitem [ref=e3597]:
+              - link "About DraftKings" [ref=e3598] [cursor=pointer]:
+                - /url: https://draftkings.com/about
+            - listitem [ref=e3599]:
+              - link "Careers" [ref=e3600] [cursor=pointer]:
+                - /url: https://careers.draftkings.com
+            - listitem [ref=e3601]:
+              - link "Mobile Apps" [ref=e3602] [cursor=pointer]:
+                - /url: https://www.draftkings.com/mobileapps
+            - listitem [ref=e3603]:
+              - link "Affiliates" [ref=e3604] [cursor=pointer]:
+                - /url: https://www.draftkings.com/affiliates
+            - listitem [ref=e3605]:
+              - link "Refer a Friend" [ref=e3606] [cursor=pointer]:
+                - /url: https://sportsbook.draftkings.com/refer
+            - listitem [ref=e3607]:
+              - link "Get Help" [ref=e3608] [cursor=pointer]:
+                - /url: https://help.draftkings.com/hc/en-us
+            - listitem [ref=e3609]:
+              - link "Terms Of Use" [ref=e3610] [cursor=pointer]:
+                - /url: https://sportsbook.draftkings.com/legal/nj-terms-of-use
+            - listitem [ref=e3611]:
+              - link "Privacy Policy" [ref=e3612] [cursor=pointer]:
+                - /url: https://sportsbook.draftkings.com/legal/privacy-notice
+            - listitem [ref=e3613]:
+              - link "Responsible Gaming" [ref=e3614] [cursor=pointer]:
+                - /url: https://rg.draftkings.com?intendedSiteExp=US-SB
+            - listitem [ref=e3615]:
+              - link "Retail Sportsbook Locations" [ref=e3616] [cursor=pointer]:
+                - /url: https://sportsbook.draftkings.com/retailsportsbook
+            - listitem [ref=e3617]:
+              - link "Casino Partners" [ref=e3618] [cursor=pointer]:
+                - /url: https://sportsbook.draftkings.com/casino-partners-sb
+            - listitem [ref=e3619]:
+              - link "Accessibility" [ref=e3620] [cursor=pointer]:
+                - /url: https://www.draftkings.com/about/accessibility
+            - listitem [ref=e3621]:
+              - link "Online Casino" [ref=e3622] [cursor=pointer]:
+                - /url: https://casino.draftkings.com
+            - listitem [ref=e3623]:
+              - link "Daily Fantasy Sports" [ref=e3624] [cursor=pointer]:
+                - /url: https://www.draftkings.com
+            - listitem [ref=e3625]:
+              - link "DKNetwork Sports News" [ref=e3626] [cursor=pointer]:
+                - /url: https://dknetwork.draftkings.com
+            - listitem
+            - listitem [ref=e3627]:
+              - complementary [ref=e3628]:
+                - link "Do Not Sell or Share My Personal Information" [ref=e3629] [cursor=pointer]
+        - generic [ref=e3630]:
+          - generic [ref=e3631]:
+            - generic [ref=e3632]: SPORTSBOOK ODDS
+            - list [ref=e3633]:
+              - listitem [ref=e3634]:
+                - link "NFL Odds" [ref=e3635] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/football/nfl
+              - listitem [ref=e3636]:
+                - link "NBA Odds" [ref=e3637] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/basketball/nba
+              - listitem [ref=e3638]:
+                - link "MLB Odds" [ref=e3639] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/baseball/mlb
+              - listitem [ref=e3640]:
+                - link "UFC Odds" [ref=e3641] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/mma/ufc
+              - listitem [ref=e3642]:
+                - link "NHL Odds" [ref=e3643] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/hockey/nhl
+              - listitem [ref=e3644]:
+                - link "PGA Odds" [ref=e3645] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/golf/the-open-championship
+              - listitem [ref=e3646]:
+                - link "Soccer Odds" [ref=e3647] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/sports/soccer
+              - listitem [ref=e3648]:
+                - link "Tennis Odds" [ref=e3649] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/sports/tennis
+              - listitem [ref=e3650]:
+                - link "College Basketball Odds" [ref=e3651] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/basketball/ncaab
+              - listitem [ref=e3652]:
+                - link "College Football Odds" [ref=e3653] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/football/ncaaf
+              - listitem [ref=e3654]:
+                - link "Live Odds" [ref=e3655] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/live
+              - listitem [ref=e3656]:
+                - link "Super Bowl Odds" [ref=e3657] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/super-bowl--odds
+              - listitem [ref=e3658]:
+                - link "NFL Playoffs Odds" [ref=e3659] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/playoffs/nfl--odds
+          - generic [ref=e3660]:
+            - generic [ref=e3661]: BETTING GUIDES
+            - list [ref=e3662]:
+              - listitem [ref=e3663]:
+                - link "How To Bet" [ref=e3664] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet
+              - listitem [ref=e3665]:
+                - link "How to Bet on Football" [ref=e3666] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/football-betting-guide
+              - listitem [ref=e3667]:
+                - link "How to Bet on Basketball" [ref=e3668] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/basketball-betting-guide
+              - listitem [ref=e3669]:
+                - link "How to Bet on UFC" [ref=e3670] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/mma-betting-guide
+              - listitem [ref=e3671]:
+                - link "How to Bet on Baseball" [ref=e3672] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/baseball-betting-guide
+              - listitem [ref=e3673]:
+                - link "How to Bet on Hockey" [ref=e3674] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/hockey-betting-guide
+              - listitem [ref=e3675]:
+                - link "How to Bet on Golf" [ref=e3676] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/golf-betting-guide
+              - listitem [ref=e3677]:
+                - link "How to Bet on Soccer" [ref=e3678] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/soccer-betting-guide
+              - listitem [ref=e3679]:
+                - link "How to Bet on Tennis" [ref=e3680] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/tennis-betting-guide
+              - listitem [ref=e3681]:
+                - link "How to Bet on NASCAR" [ref=e3682] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/nascar-betting-guide
+        - generic [ref=e3683]:
+          - generic [ref=e3684]: LOCATIONS
+          - list [ref=e3685]:
+            - listitem [ref=e3686]:
+              - generic [ref=e3687]: US Office
+              - generic [ref=e3688]:
+                - paragraph [ref=e3689]: 222 Berkeley Street
+                - paragraph [ref=e3690]: Boston, MA
+                - paragraph [ref=e3691]: "02116"
+            - listitem [ref=e3692]:
+              - generic [ref=e3693]: New Jersey Office
+              - generic [ref=e3694]:
+                - paragraph [ref=e3695]: PO Box 399
+                - paragraph [ref=e3696]: Hoboken, NJ
+                - paragraph [ref=e3697]: "07030"
+            - listitem [ref=e3698]:
+              - generic [ref=e3699]: UK Office
+              - generic [ref=e3700]:
+                - paragraph [ref=e3701]: 15 Ingestre Place
+                - paragraph [ref=e3702]: Suite 265
+                - paragraph [ref=e3703]: Soho, London
+                - paragraph [ref=e3704]: W1F OJH
+        - paragraph [ref=e3706]:
+          - text: We are regulated by the New Jersey Division of Gaming Enforcement as an Internet gaming operator in accordance with the Casino Control Act N.J.S.A. 5:12-1 and its implementing regulations. Our games are tested by the New Jersey Division of Gaming Enforcement to provide games that are fair and operate correctly. Only customers 21 and over are permitted to play our games. If you or someone you know has a gambling problem and wants help, call
+          - link "1-800-GAMBLER" [ref=e3707] [cursor=pointer]:
+            - /url: tel:1-800-GAMBLER
+          - text: . Subject to regulatory licensing requirements.
+      - generic [ref=e3708]:
+        - generic [ref=e3711]: © 2012-2026 DraftKings All Rights Reserved.
+        - generic [ref=e3713]:
+          - generic "Twenty One Plus Icon" [ref=e3714]:
+            - img "Twenty One Plus Icon" [ref=e3715]
+          - generic "Responsible Gaming Icon" [ref=e3716]:
+            - link "Responsible Gaming Icon" [ref=e3717] [cursor=pointer]:
+              - /url: https://rg.draftkings.com?intendedSiteExp=US-SB
+              - img "Responsible Gaming Icon" [ref=e3718]
+          - generic "DGE Icon" [ref=e3719]:
+            - link "DGE Icon" [ref=e3720] [cursor=pointer]:
+              - /url: https://www.njoag.gov/about/divisions-and-offices/division-of-gaming-enforcement-home/
+              - img "DGE Icon" [ref=e3721]
+    - generic [ref=e3724]: "Server Time: 04/24/2026 4:35:24 PM"

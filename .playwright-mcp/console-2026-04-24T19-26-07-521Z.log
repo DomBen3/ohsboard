@@ -1,0 +1,69 @@
+[     825ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/../../node_modules/.pnpm/next@15.5.15_react-dom@19.2.5_react@19.2.5__react@19.2.5/node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:25630
+[     943ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/favicon.ico:0
+[  107605ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/../../node_modules/.pnpm/next@15.5.15_react-dom@19.2.5_react@19.2.5__react@19.2.5/node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:25630
+[  107779ms] Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <div className="flex min-h...">
+      <header>
+      <section className="flex-1 px-...">
+        <div>
+        <div>
+        <div className="mt-4">
+          <Scoreboard games={[...]}>
+            <section className="border bor...">
+              <ScoreboardHeader>
+              <div role="rowgroup">
+                <ScoreboardRow>
+                <ScoreboardRow>
+                <ScoreboardRow>
+                <ScoreboardRow>
+                <ScoreboardRow>
+                <ScoreboardRow>
+                <ScoreboardRow>
+                <ScoreboardRow game={{id:"8f4c43...", ...}} index={7}>
+                  <div ref={{current:null}} className="row-rise r..." style={{...}}>
+                    <button type="button" onClick={function onClick} aria-expanded={false} aria-label="Toggle det..." ...>
+                      <div>
+                      <div>
+                      <PriceCell>
+                      <PriceCell>
+                      <MoneylineStack>
+                      <div className="justify-se...">
+                        <SyncIndicator capturedAt="2026-04-24...">
+                          <div className="flex items...">
+                            <span>
+                            <div className="flex items...">
+                              <span>
+                              <span className="font-seg t...">
++                               3m ago
+-                               2m ago
+                      ...
+                    ...
+                ...
+              ...
+
+    at throwOnHydrationMismatch (webpack-internal:///(app-pages-browser)/../../node_modules/.pnpm/next@15.5.15_react-dom@19.2.5_react@19.2.5__react@19.2.5/node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:4506:11)
+    at completeWork (webpack-internal:///(app-pages-browser)/../../node_modules/.pnpm/next@15.5.15_react-dom@19.2.5_react@19.2.5__react@19.2.5/node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:11825:26)
+    at runWithFiberInDEV (webpack-internal:///(app-pages-browser)/../../node_modules/.pnpm/next@15.5.15_react-dom@19.2.5_react@19.2.5__react@19.2.5/node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:872:30)
+    at completeUnitOfWork (webpack-internal:///(app-pages-browser)/../../node_modules/.pnpm/next@15.5.15_react-dom@19.2.5_react@19.2.5__react@19.2.5/node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:15863:19)
+    at performUnitOfWork (webpack-internal:///(app-pages-browser)/../../node_modules/.pnpm/next@15.5.15_react-dom@19.2.5_react@19.2.5__react@19.2.5/node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:15744:11)
+    at workLoopConcurrentByScheduler (webpack-internal:///(app-pages-browser)/../../node_modules/.pnpm/next@15.5.15_react-dom@19.2.5_react@19.2.5__react@19.2.5/node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:15721:9)
+    at renderRootConcurrent (webpack-internal:///(app-pages-browser)/../../node_modules/.pnpm/next@15.5.15_react-dom@19.2.5_react@19.2.5__react@19.2.5/node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:15696:15)
+    at performWorkOnRoot (webpack-internal:///(app-pages-browser)/../../node_modules/.pnpm/next@15.5.15_react-dom@19.2.5_react@19.2.5__react@19.2.5/node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:14990:13)
+    at performWorkOnRootViaSchedulerTask (webpack-internal:///(app-pages-browser)/../../node_modules/.pnpm/next@15.5.15_react-dom@19.2.5_react@19.2.5__react@19.2.5/node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:16816:7)
+    at MessagePort.performWorkUntilDeadline (webpack-internal:///(app-pages-browser)/../../node_modules/.pnpm/next@15.5.15_react-dom@19.2.5_react@19.2.5__react@19.2.5/node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:45:48)
+[  344297ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/.pnpm/next@15.5.15_react-dom@19.2.5_react@19.2.5__react@19.2.5/node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[  345104ms] [LOG] [Fast Refresh] done in 808ms @ webpack-internal:///(app-pages-browser)/../../node_modules/.pnpm/next@15.5.15_react-dom@19.2.5_react@19.2.5__react@19.2.5/node_modules/next/dist/client/dev/report-hmr-latency.js:13
+[  350889ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/.pnpm/next@15.5.15_react-dom@19.2.5_react@19.2.5__react@19.2.5/node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[  351170ms] [LOG] [Fast Refresh] done in 282ms @ webpack-internal:///(app-pages-browser)/../../node_modules/.pnpm/next@15.5.15_react-dom@19.2.5_react@19.2.5__react@19.2.5/node_modules/next/dist/client/dev/report-hmr-latency.js:13

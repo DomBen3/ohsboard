@@ -1,0 +1,1485 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "DraftKings Sportsbook home" [ref=e8] [cursor=pointer]:
+        - /url: https://sportsbook.draftkings.com
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - navigation "platform navigation" [ref=e13]:
+            - list [ref=e14]:
+              - listitem [ref=e15]:
+                - link "Daily Fantasy" [ref=e16] [cursor=pointer]:
+                  - /url: https://www.draftkings.com/dfs
+              - listitem [ref=e17]:
+                - link "Sportsbook" [ref=e18] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com
+              - listitem [ref=e19]:
+                - link "Casino" [ref=e20] [cursor=pointer]:
+                  - /url: https://casino.draftkings.com/
+              - listitem [ref=e21]:
+                - link "Pick6" [ref=e22] [cursor=pointer]:
+                  - /url: https://pick6.draftkings.com
+              - listitem [ref=e23]:
+                - link "Lottery" [ref=e24] [cursor=pointer]:
+                  - /url: https://lottery.jackpocket.com?intendedSiteExp=US-SB
+              - listitem [ref=e25]:
+                - button "More" [ref=e26] [cursor=pointer]:
+                  - generic [ref=e27]:
+                    - text: More
+                    - img [ref=e28]
+          - generic [ref=e30]:
+            - link "Visit Responsible Gaming page" [ref=e31] [cursor=pointer]:
+              - /url: https://rg.draftkings.com/?intendedSiteExp=US-SB&flowType=rge-header
+              - generic [ref=e33]: Responsible Gaming
+            - generic [ref=e36] [cursor=pointer]: 
+        - generic [ref=e37]:
+          - navigation [ref=e38]:
+            - list [ref=e39]:
+              - listitem [ref=e40]:
+                - link "Home" [ref=e41] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/
+              - listitem [ref=e42]:
+                - link "My Bets" [ref=e43] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/mybets
+              - listitem [ref=e44]:
+                - link "Live In-Game" [ref=e45] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/live
+              - listitem [ref=e46]:
+                - link "Rewards" [ref=e47] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/promos
+              - listitem [ref=e48]:
+                - button "More" [ref=e49] [cursor=pointer]:
+                  - generic [ref=e50]:
+                    - generic [ref=e51]: More
+                    - img [ref=e52]
+          - generic [ref=e55]:
+            - generic [ref=e56]: Want to start placing bets?
+            - link "Log In" [ref=e57] [cursor=pointer]:
+              - /url: /login?returnUrlPath=/leagues/baseball/mlb
+  - generic [ref=e60]:
+    - generic [ref=e61]:
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - generic "Expandable container POPULAR" [ref=e64]:
+            - heading "POPULAR" [level=2] [ref=e67] [cursor=pointer]
+          - list [ref=e69]:
+            - listitem [ref=e70] [cursor=pointer]:
+              - link "MLB" [ref=e71]:
+                - /url: /leagues/baseball/mlb
+                - generic [ref=e72]: MLB
+            - listitem [ref=e73] [cursor=pointer]:
+              - link "NBA" [ref=e74]:
+                - /url: /leagues/basketball/nba
+                - generic [ref=e75]: NBA
+            - listitem [ref=e76] [cursor=pointer]:
+              - link "NHL" [ref=e77]:
+                - /url: /leagues/hockey/nhl
+                - generic [ref=e78]: NHL
+            - listitem [ref=e79] [cursor=pointer]:
+              - link "ATP - Madrid" [ref=e80]:
+                - /url: /leagues/tennis/atp-madrid
+                - generic [ref=e81]: ATP - Madrid
+            - listitem [ref=e82] [cursor=pointer]:
+              - link "English Premier League" [ref=e83]:
+                - /url: /leagues/soccer/england---premier-league
+                - generic [ref=e84]: English Premier League
+            - listitem [ref=e85] [cursor=pointer]:
+              - link "NFL" [ref=e86]:
+                - /url: /leagues/football/nfl
+                - generic [ref=e87]: NFL
+            - listitem [ref=e88] [cursor=pointer]:
+              - link "UFC" [ref=e89]:
+                - /url: /leagues/mma/ufc
+                - generic [ref=e90]: UFC
+            - listitem [ref=e91] [cursor=pointer]:
+              - link "Germany - Bundesliga" [ref=e92]:
+                - /url: /leagues/soccer/germany---1.bundesliga
+                - generic [ref=e93]: Germany - Bundesliga
+            - listitem [ref=e94] [cursor=pointer]:
+              - link "Zurich Classic" [ref=e95]:
+                - /url: /leagues/golf/zurich-classic-of-new-orleans
+                - generic [ref=e96]: Zurich Classic
+            - listitem [ref=e97] [cursor=pointer]:
+              - link "Italy - Serie A" [ref=e98]:
+                - /url: /leagues/soccer/italy---serie-a
+                - generic [ref=e99]: Italy - Serie A
+            - listitem [ref=e100] [cursor=pointer]:
+              - link "France - Ligue 1" [ref=e101]:
+                - /url: /leagues/soccer/france---ligue-1
+                - generic [ref=e102]: France - Ligue 1
+            - listitem [ref=e103] [cursor=pointer]:
+              - link "College Baseball" [ref=e104]:
+                - /url: /leagues/baseball/ncaa-baseball
+                - generic [ref=e105]: College Baseball
+            - listitem [ref=e106] [cursor=pointer]:
+              - link "WTA - Madrid" [ref=e107]:
+                - /url: /leagues/tennis/wta-madrid
+                - generic [ref=e108]: WTA - Madrid
+            - listitem [ref=e109] [cursor=pointer]:
+              - link "Spain - La Liga" [ref=e110]:
+                - /url: /leagues/soccer/spain---la-liga
+                - generic [ref=e111]: Spain - La Liga
+            - listitem [ref=e112] [cursor=pointer]:
+              - link "EuroLeague" [ref=e113]:
+                - /url: /leagues/basketball/euroleague
+                - generic [ref=e114]: EuroLeague
+            - listitem [ref=e115] [cursor=pointer]:
+              - link "Netherlands - Eerste Divisie" [ref=e116]:
+                - /url: /leagues/soccer/netherlands---eerste-divisie
+                - generic [ref=e117]: Netherlands - Eerste Divisie
+        - list [ref=e118]:
+          - listitem [ref=e119] [cursor=pointer]:
+            - link "SPORT TEAMS" [ref=e120]:
+              - /url: /teams
+        - generic [ref=e121]:
+          - generic "Expandable container A-Z SPORTS" [ref=e122]:
+            - heading "A-Z SPORTS" [level=2] [ref=e125] [cursor=pointer]
+          - generic [ref=e126]:
+            - generic "Expandable container AUSSIE RULES" [ref=e128]:
+              - heading "AUSSIE RULES" [level=2] [ref=e131] [cursor=pointer]
+            - generic [ref=e132]:
+              - generic "Expandable container BASEBALL" [ref=e133]:
+                - heading "BASEBALL" [level=2] [ref=e136] [cursor=pointer]
+              - list [ref=e138]:
+                - listitem [ref=e139] [cursor=pointer]:
+                  - link "MLB" [ref=e140]:
+                    - /url: /leagues/baseball/mlb
+                    - generic [ref=e141]: MLB
+                - listitem [ref=e142] [cursor=pointer]:
+                  - link "College Baseball" [ref=e143]:
+                    - /url: /leagues/baseball/ncaa-baseball
+                    - generic [ref=e144]: College Baseball
+                - listitem [ref=e145] [cursor=pointer]:
+                  - link "Japan NPB" [ref=e146]:
+                    - /url: /leagues/baseball/japan-npb
+                    - generic [ref=e147]: Japan NPB
+                - listitem [ref=e148] [cursor=pointer]:
+                  - link "South Korean KBO" [ref=e149]:
+                    - /url: /leagues/baseball/south-korean-kbo
+                    - generic [ref=e150]: South Korean KBO
+            - generic "Expandable container BASKETBALL" [ref=e152]:
+              - heading "BASKETBALL" [level=2] [ref=e155] [cursor=pointer]
+            - generic "Expandable container BOXING" [ref=e157]:
+              - heading "BOXING" [level=2] [ref=e160] [cursor=pointer]
+            - generic "Expandable container CRICKET" [ref=e162]:
+              - heading "CRICKET" [level=2] [ref=e165] [cursor=pointer]
+            - generic "Expandable container CYCLING" [ref=e167]:
+              - heading "CYCLING" [level=2] [ref=e170] [cursor=pointer]
+            - generic "Expandable container DARTS" [ref=e172]:
+              - heading "DARTS" [level=2] [ref=e175] [cursor=pointer]
+            - generic "Expandable container E-SPORTS" [ref=e177]:
+              - heading "E-SPORTS" [level=2] [ref=e180] [cursor=pointer]
+            - generic "Expandable container FOOTBALL" [ref=e182]:
+              - heading "FOOTBALL" [level=2] [ref=e185] [cursor=pointer]
+            - generic "Expandable container GOLF" [ref=e187]:
+              - heading "GOLF" [level=2] [ref=e190] [cursor=pointer]
+            - generic "Expandable container HANDBALL" [ref=e192]:
+              - heading "HANDBALL" [level=2] [ref=e195] [cursor=pointer]
+            - generic "Expandable container HOCKEY" [ref=e197]:
+              - heading "HOCKEY" [level=2] [ref=e200] [cursor=pointer]
+            - generic "Expandable container JAI ALAI" [ref=e202]:
+              - heading "JAI ALAI" [level=2] [ref=e205] [cursor=pointer]
+            - generic "Expandable container LACROSSE" [ref=e207]:
+              - heading "LACROSSE" [level=2] [ref=e210] [cursor=pointer]
+            - generic "Expandable container MMA" [ref=e212]:
+              - heading "MMA" [level=2] [ref=e215] [cursor=pointer]
+            - generic "Expandable container MOTORSPORTS" [ref=e217]:
+              - heading "MOTORSPORTS" [level=2] [ref=e220] [cursor=pointer]
+            - generic "Expandable container RODEO" [ref=e222]:
+              - heading "RODEO" [level=2] [ref=e225] [cursor=pointer]
+            - generic "Expandable container RUGBY LEAGUE" [ref=e227]:
+              - heading "RUGBY LEAGUE" [level=2] [ref=e230] [cursor=pointer]
+            - generic "Expandable container RUGBY UNION" [ref=e232]:
+              - heading "RUGBY UNION" [level=2] [ref=e235] [cursor=pointer]
+            - generic "Expandable container SAILING" [ref=e237]:
+              - heading "SAILING" [level=2] [ref=e240] [cursor=pointer]
+            - generic "Expandable container SNOOKER" [ref=e242]:
+              - heading "SNOOKER" [level=2] [ref=e245] [cursor=pointer]
+            - generic "Expandable container SOCCER" [ref=e247]:
+              - heading "SOCCER" [level=2] [ref=e250] [cursor=pointer]
+            - generic "Expandable container TABLE TENNIS" [ref=e252]:
+              - heading "TABLE TENNIS" [level=2] [ref=e255] [cursor=pointer]
+            - generic "Expandable container TENNIS" [ref=e257]:
+              - heading "TENNIS" [level=2] [ref=e260] [cursor=pointer]
+        - generic "Expandable container NFL WEEKLY ODDS" [ref=e262]:
+          - heading "NFL WEEKLY ODDS" [level=2] [ref=e265] [cursor=pointer]
+        - generic "Expandable container PRIMETIME GAMES" [ref=e267]:
+          - heading "PRIMETIME GAMES" [level=2] [ref=e270] [cursor=pointer]
+        - generic "Expandable container FUTURES" [ref=e272]:
+          - heading "FUTURES" [level=2] [ref=e275] [cursor=pointer]
+        - generic "Expandable container PROP BETS" [ref=e277]:
+          - heading "PROP BETS" [level=2] [ref=e280] [cursor=pointer]
+        - generic [ref=e281]:
+          - generic "Expandable container PLAYOFF PAGES" [ref=e282]:
+            - heading "PLAYOFF PAGES" [level=2] [ref=e285] [cursor=pointer]
+          - generic [ref=e286]:
+            - link "College Football Playoffs" [ref=e288] [cursor=pointer]:
+              - /url: /college-football-playoffs--odds
+            - link "NBA Playoffs" [ref=e290] [cursor=pointer]:
+              - /url: /page/nba-playoffs-odds
+            - link "NFL Playoffs" [ref=e292] [cursor=pointer]:
+              - /url: /playoffs/nfl--odds
+        - generic [ref=e293]:
+          - generic "Expandable container CHAMPIONSHIP PAGES" [ref=e294]:
+            - heading "CHAMPIONSHIP PAGES" [level=2] [ref=e297] [cursor=pointer]
+          - generic [ref=e298]:
+            - link "Daytona 500" [ref=e300] [cursor=pointer]:
+              - /url: /daytona-500--odds
+            - link "NBA Finals" [ref=e302] [cursor=pointer]:
+              - /url: /page/nba-finals-odds
+            - link "Ryder Cup" [ref=e304] [cursor=pointer]:
+              - /url: /ryder-cup--odds
+            - link "Stanley Cup" [ref=e306] [cursor=pointer]:
+              - /url: /page/stanley-cup-odds
+            - link "Super Bowl" [ref=e308] [cursor=pointer]:
+              - /url: /super-bowl--odds
+            - link "World Series" [ref=e310] [cursor=pointer]:
+              - /url: /page/world-series-odds
+      - generic [ref=e311]:
+        - navigation "breadcrumb" [ref=e313]:
+          - list [ref=e314]:
+            - listitem [ref=e315]:
+              - link "Sportsbook" [ref=e316] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e317]:
+              - text: /
+              - link "Baseball Odds" [ref=e318] [cursor=pointer]:
+                - /url: /sports/baseball
+            - listitem [ref=e319]:
+              - text: /
+              - heading "MLB Odds" [level=1] [ref=e320]
+        - generic [ref=e323]:
+          - button "Play FREE MLB Big League Draw for Prizes" [ref=e326]:
+            - generic [ref=e329]: Play FREE MLB Big League Draw for Prizes
+          - generic [ref=e332]:
+            - generic [ref=e337]:
+              - generic [ref=e339]:
+                - button "View details for Get a 25% Profit Boost to use on any MLB bet today!" [ref=e341]:
+                  - generic [ref=e342]:
+                    - img "GiftFilled" [ref=e343]
+                    - generic [ref=e345]: Get a 25% Profit Boost to use on any MLB bet today!
+                - button "Opt In" [ref=e346]:
+                  - generic [ref=e347]: Opt In
+              - generic [ref=e349]:
+                - button "View details for Get a Stepped Up token to use on any MLB Hits bets today!" [ref=e351]:
+                  - generic [ref=e352]:
+                    - img "ArrowFatLinesUpFilled" [ref=e353]
+                    - generic [ref=e355]: Get a Stepped Up token to use on any MLB Hits bets today!
+                - button "Opt In" [ref=e356]:
+                  - generic [ref=e357]: Opt In
+              - generic [ref=e359]:
+                - button "View details for Join the MLB Dugout, a new curated DraftKings Betting Group!" [ref=e361]:
+                  - generic [ref=e362]:
+                    - img "BaseballFilled" [ref=e363]
+                    - generic [ref=e365]: Join the MLB Dugout, a new curated DraftKings Betting Group!
+                - button "Join Now" [ref=e366]:
+                  - generic [ref=e367]: Join Now
+            - button "Go to previous slide" [disabled] [ref=e370]:
+              - img "Left" [ref=e372]
+            - button "Go to next slide" [ref=e376]:
+              - img "Right" [ref=e378]
+          - generic [ref=e381]:
+            - generic [ref=e384]: Games
+            - generic [ref=e387] [cursor=pointer]: Futures
+            - generic [ref=e390] [cursor=pointer]: Specials
+            - generic [ref=e393] [cursor=pointer]: Quick SGP
+          - generic [ref=e396]:
+            - generic [ref=e399]:
+              - generic [ref=e400]:
+                - link "Game" [ref=e402] [cursor=pointer]:
+                  - /url: /leagues/baseball/mlb?category=games&subcategory=game
+                - link "Batter Props" [ref=e404] [cursor=pointer]:
+                  - /url: /leagues/baseball/mlb?category=games&subcategory=batter-props
+                - link "Pitcher Props" [ref=e406] [cursor=pointer]:
+                  - /url: /leagues/baseball/mlb?category=games&subcategory=pitcher-props
+                - link "Quick Hits" [ref=e408] [cursor=pointer]:
+                  - /url: /leagues/baseball/mlb?category=games&subcategory=quick-hits
+                - link "Specials" [ref=e410] [cursor=pointer]:
+                  - /url: /leagues/baseball/mlb?category=games&subcategory=specials
+              - separator [ref=e412]
+            - generic [ref=e414]:
+              - generic [ref=e417]:
+                - generic [ref=e419]:
+                  - generic [ref=e421]: Today
+                  - paragraph [ref=e423]: Run Line
+                  - paragraph [ref=e425]: Total
+                  - paragraph [ref=e427]: Moneyline
+                - generic [ref=e428]:
+                  - generic [ref=e431]:
+                    - generic [ref=e432]:
+                      - link "DET Tigers-logo DET Tigers Framber Valdez" [ref=e435] [cursor=pointer]:
+                        - /url: /event/det-tigers-%2540-cin-reds/34039545
+                        - generic [ref=e437]:
+                          - img "DET Tigers-logo" [ref=e439]
+                          - generic [ref=e440]:
+                            - generic [ref=e441]: DET Tigers
+                            - generic [ref=e442]: Framber Valdez
+                      - generic [ref=e443]: at
+                      - link "CIN Reds-logo CIN Reds Andrew Abbott" [ref=e446] [cursor=pointer]:
+                        - /url: /event/det-tigers-%2540-cin-reds/34039545
+                        - generic [ref=e448]:
+                          - img "CIN Reds-logo" [ref=e450]
+                          - generic [ref=e451]:
+                            - generic [ref=e452]: CIN Reds
+                            - generic [ref=e453]: Andrew Abbott
+                    - generic [ref=e454]:
+                      - button "-1.5 +139" [ref=e455] [cursor=pointer]:
+                        - generic [ref=e457]: "-1.5"
+                        - generic [ref=e458]: "+139"
+                      - button "O 9 −115" [ref=e459] [cursor=pointer]:
+                        - generic [ref=e460]:
+                          - generic [ref=e461]: O
+                          - generic [ref=e462]: "9"
+                        - generic [ref=e463]: −115
+                      - button "−118" [ref=e464] [cursor=pointer]:
+                        - generic [ref=e465]: −118
+                      - button "+1.5 −168" [ref=e466] [cursor=pointer]:
+                        - generic [ref=e468]: "+1.5"
+                        - generic [ref=e469]: −168
+                      - button "U 9 −105" [ref=e470] [cursor=pointer]:
+                        - generic [ref=e471]:
+                          - generic [ref=e472]: U
+                          - generic [ref=e473]: "9"
+                        - generic [ref=e474]: −105
+                      - button "−102" [ref=e475] [cursor=pointer]:
+                        - generic [ref=e476]: −102
+                  - generic [ref=e480]:
+                    - generic [ref=e481]:
+                      - generic "Open game in SGP mode" [ref=e482]:
+                        - link [ref=e483] [cursor=pointer]:
+                          - /url: /event/det-tigers-%2540-cin-reds/34039545?sgpmode=true
+                          - img [ref=e484]
+                      - generic [ref=e488]: Today 6:40 PM
+                    - link "More Bets Arrow pointing right icon" [ref=e489] [cursor=pointer]:
+                      - /url: /event/det-tigers-%2540-cin-reds/34039545
+                      - generic [ref=e490]:
+                        - generic [ref=e491]: More Bets
+                        - img "Arrow pointing right icon" [ref=e492]
+                  - generic [ref=e500]:
+                    - generic [ref=e501]:
+                      - link "BOS Red Sox-logo BOS Red Sox Brayan Bello" [ref=e504] [cursor=pointer]:
+                        - /url: /event/bos-red-sox-%2540-bal-orioles/34039549
+                        - generic [ref=e506]:
+                          - img "BOS Red Sox-logo" [ref=e508]
+                          - generic [ref=e509]:
+                            - generic [ref=e510]: BOS Red Sox
+                            - generic [ref=e511]: Brayan Bello
+                      - generic [ref=e512]: at
+                      - link "BAL Orioles-logo BAL Orioles Brandon Young" [ref=e515] [cursor=pointer]:
+                        - /url: /event/bos-red-sox-%2540-bal-orioles/34039549
+                        - generic [ref=e517]:
+                          - img "BAL Orioles-logo" [ref=e519]
+                          - generic [ref=e520]:
+                            - generic [ref=e521]: BAL Orioles
+                            - generic [ref=e522]: Brandon Young
+                    - generic [ref=e523]:
+                      - button "-1.5 +154" [ref=e524] [cursor=pointer]:
+                        - generic [ref=e526]: "-1.5"
+                        - generic [ref=e527]: "+154"
+                      - button "O 8.5 −118" [ref=e528] [cursor=pointer]:
+                        - generic [ref=e529]:
+                          - generic [ref=e530]: O
+                          - generic [ref=e531]: "8.5"
+                        - generic [ref=e532]: −118
+                      - button "+102" [ref=e533] [cursor=pointer]:
+                        - generic [ref=e534]: "+102"
+                      - button "+1.5 −187" [ref=e535] [cursor=pointer]:
+                        - generic [ref=e537]: "+1.5"
+                        - generic [ref=e538]: −187
+                      - button "U 8.5 −102" [ref=e539] [cursor=pointer]:
+                        - generic [ref=e540]:
+                          - generic [ref=e541]: U
+                          - generic [ref=e542]: "8.5"
+                        - generic [ref=e543]: −102
+                      - button "−122" [ref=e544] [cursor=pointer]:
+                        - generic [ref=e545]: −122
+                  - generic [ref=e549]:
+                    - generic [ref=e550]:
+                      - generic "Open game in SGP mode" [ref=e551]:
+                        - link [ref=e552] [cursor=pointer]:
+                          - /url: /event/bos-red-sox-%2540-bal-orioles/34039549?sgpmode=true
+                          - img [ref=e553]
+                      - generic [ref=e557]: Today 7:05 PM
+                    - link "More Bets Arrow pointing right icon" [ref=e558] [cursor=pointer]:
+                      - /url: /event/bos-red-sox-%2540-bal-orioles/34039549
+                      - generic [ref=e559]:
+                        - generic [ref=e560]: More Bets
+                        - img "Arrow pointing right icon" [ref=e561]
+                  - generic [ref=e569]:
+                    - generic [ref=e570]:
+                      - link "CLE Guardians-logo CLE Guardians Gavin Williams" [ref=e573] [cursor=pointer]:
+                        - /url: /event/cle-guardians-%2540-tor-blue-jays/34039550
+                        - generic [ref=e575]:
+                          - img "CLE Guardians-logo" [ref=e577]
+                          - generic [ref=e578]:
+                            - generic [ref=e579]: CLE Guardians
+                            - generic [ref=e580]: Gavin Williams
+                      - generic [ref=e581]: at
+                      - link "TOR Blue Jays-logo TOR Blue Jays Max Scherzer" [ref=e584] [cursor=pointer]:
+                        - /url: /event/cle-guardians-%2540-tor-blue-jays/34039550
+                        - generic [ref=e586]:
+                          - img "TOR Blue Jays-logo" [ref=e588]
+                          - generic [ref=e589]:
+                            - generic [ref=e590]: TOR Blue Jays
+                            - generic [ref=e591]: Max Scherzer
+                    - generic [ref=e592]:
+                      - button "-1.5 +139" [ref=e593] [cursor=pointer]:
+                        - generic [ref=e595]: "-1.5"
+                        - generic [ref=e596]: "+139"
+                      - button "O 8 −118" [ref=e597] [cursor=pointer]:
+                        - generic [ref=e598]:
+                          - generic [ref=e599]: O
+                          - generic [ref=e600]: "8"
+                        - generic [ref=e601]: −118
+                      - button "−121" [ref=e602] [cursor=pointer]:
+                        - generic [ref=e603]: −121
+                      - button "+1.5 −169" [ref=e604] [cursor=pointer]:
+                        - generic [ref=e606]: "+1.5"
+                        - generic [ref=e607]: −169
+                      - button "U 8 −102" [ref=e608] [cursor=pointer]:
+                        - generic [ref=e609]:
+                          - generic [ref=e610]: U
+                          - generic [ref=e611]: "8"
+                        - generic [ref=e612]: −102
+                      - button "+100" [ref=e613] [cursor=pointer]:
+                        - generic [ref=e614]: "+100"
+                  - generic [ref=e618]:
+                    - generic [ref=e619]:
+                      - generic "Open game in SGP mode" [ref=e620]:
+                        - link [ref=e621] [cursor=pointer]:
+                          - /url: /event/cle-guardians-%2540-tor-blue-jays/34039550?sgpmode=true
+                          - img [ref=e622]
+                      - generic [ref=e626]: Today 7:07 PM
+                    - link "More Bets Arrow pointing right icon" [ref=e627] [cursor=pointer]:
+                      - /url: /event/cle-guardians-%2540-tor-blue-jays/34039550
+                      - generic [ref=e628]:
+                        - generic [ref=e629]: More Bets
+                        - img "Arrow pointing right icon" [ref=e630]
+                  - generic [ref=e638]:
+                    - generic [ref=e639]:
+                      - link "COL Rockies-logo COL Rockies Michael Lorenzen" [ref=e642] [cursor=pointer]:
+                        - /url: /event/col-rockies-%2540-ny-mets/34039671
+                        - generic [ref=e644]:
+                          - img "COL Rockies-logo" [ref=e646]
+                          - generic [ref=e647]:
+                            - generic [ref=e648]: COL Rockies
+                            - generic [ref=e649]: Michael Lorenzen
+                      - generic [ref=e650]: at
+                      - link "NY Mets-logo NY Mets Freddy Peralta" [ref=e653] [cursor=pointer]:
+                        - /url: /event/col-rockies-%2540-ny-mets/34039671
+                        - generic [ref=e655]:
+                          - img "NY Mets-logo" [ref=e657]
+                          - generic [ref=e658]:
+                            - generic [ref=e659]: NY Mets
+                            - generic [ref=e660]: Freddy Peralta
+                    - generic [ref=e661]:
+                      - button "+1.5 −126" [ref=e662] [cursor=pointer]:
+                        - generic [ref=e664]: "+1.5"
+                        - generic [ref=e665]: −126
+                      - button "O 7.5 −102" [ref=e666] [cursor=pointer]:
+                        - generic [ref=e667]:
+                          - generic [ref=e668]: O
+                          - generic [ref=e669]: "7.5"
+                        - generic [ref=e670]: −102
+                      - button "+169" [ref=e671] [cursor=pointer]:
+                        - generic [ref=e672]: "+169"
+                      - button "-1.5 +104" [ref=e673] [cursor=pointer]:
+                        - generic [ref=e675]: "-1.5"
+                        - generic [ref=e676]: "+104"
+                      - button "U 7.5 −118" [ref=e677] [cursor=pointer]:
+                        - generic [ref=e678]:
+                          - generic [ref=e679]: U
+                          - generic [ref=e680]: "7.5"
+                        - generic [ref=e681]: −118
+                      - button "−207" [ref=e682] [cursor=pointer]:
+                        - generic [ref=e683]: −207
+                  - generic [ref=e687]:
+                    - generic [ref=e688]:
+                      - generic "Open game in SGP mode" [ref=e689]:
+                        - link [ref=e690] [cursor=pointer]:
+                          - /url: /event/col-rockies-%2540-ny-mets/34039671?sgpmode=true
+                          - img [ref=e691]
+                      - generic [ref=e695]: Today 7:10 PM
+                    - link "More Bets Arrow pointing right icon" [ref=e696] [cursor=pointer]:
+                      - /url: /event/col-rockies-%2540-ny-mets/34039671
+                      - generic [ref=e697]:
+                        - generic [ref=e698]: More Bets
+                        - img "Arrow pointing right icon" [ref=e699]
+                  - generic [ref=e707]:
+                    - generic [ref=e708]:
+                      - link "MIN Twins-logo MIN Twins Taj Bradley" [ref=e711] [cursor=pointer]:
+                        - /url: /event/min-twins-%2540-tb-rays/34039672
+                        - generic [ref=e713]:
+                          - img "MIN Twins-logo" [ref=e715]
+                          - generic [ref=e716]:
+                            - generic [ref=e717]: MIN Twins
+                            - generic [ref=e718]: Taj Bradley
+                      - generic [ref=e719]: at
+                      - link "TB Rays-logo TB Rays Drew Rasmussen" [ref=e722] [cursor=pointer]:
+                        - /url: /event/min-twins-%2540-tb-rays/34039672
+                        - generic [ref=e724]:
+                          - img "TB Rays-logo" [ref=e726]
+                          - generic [ref=e727]:
+                            - generic [ref=e728]: TB Rays
+                            - generic [ref=e729]: Drew Rasmussen
+                    - generic [ref=e730]:
+                      - button "+1.5 −194" [ref=e731] [cursor=pointer]:
+                        - generic [ref=e733]: "+1.5"
+                        - generic [ref=e734]: −194
+                      - button "O 7.5 +102" [ref=e735] [cursor=pointer]:
+                        - generic [ref=e736]:
+                          - generic [ref=e737]: O
+                          - generic [ref=e738]: "7.5"
+                        - generic [ref=e739]: "+102"
+                      - button "+113" [ref=e740] [cursor=pointer]:
+                        - generic [ref=e741]: "+113"
+                      - button "-1.5 +159" [ref=e742] [cursor=pointer]:
+                        - generic [ref=e744]: "-1.5"
+                        - generic [ref=e745]: "+159"
+                      - button "U 7.5 −122" [ref=e746] [cursor=pointer]:
+                        - generic [ref=e747]:
+                          - generic [ref=e748]: U
+                          - generic [ref=e749]: "7.5"
+                        - generic [ref=e750]: −122
+                      - button "−136" [ref=e751] [cursor=pointer]:
+                        - generic [ref=e752]: −136
+                  - generic [ref=e756]:
+                    - generic [ref=e757]:
+                      - generic "Open game in SGP mode" [ref=e758]:
+                        - link [ref=e759] [cursor=pointer]:
+                          - /url: /event/min-twins-%2540-tb-rays/34039672?sgpmode=true
+                          - img [ref=e760]
+                      - generic [ref=e764]: Today 7:10 PM
+                    - link "More Bets Arrow pointing right icon" [ref=e765] [cursor=pointer]:
+                      - /url: /event/min-twins-%2540-tb-rays/34039672
+                      - generic [ref=e766]:
+                        - generic [ref=e767]: More Bets
+                        - img "Arrow pointing right icon" [ref=e768]
+                  - generic [ref=e776]:
+                    - generic [ref=e777]:
+                      - link "PHI Phillies-logo PHI Phillies Andrew Painter" [ref=e780] [cursor=pointer]:
+                        - /url: /event/phi-phillies-%2540-atl-braves/34039674
+                        - generic [ref=e782]:
+                          - img "PHI Phillies-logo" [ref=e784]
+                          - generic [ref=e785]:
+                            - generic [ref=e786]: PHI Phillies
+                            - generic [ref=e787]: Andrew Painter
+                      - generic [ref=e788]: at
+                      - link "ATL Braves-logo ATL Braves Grant Holmes" [ref=e791] [cursor=pointer]:
+                        - /url: /event/phi-phillies-%2540-atl-braves/34039674
+                        - generic [ref=e793]:
+                          - img "ATL Braves-logo" [ref=e795]
+                          - generic [ref=e796]:
+                            - generic [ref=e797]: ATL Braves
+                            - generic [ref=e798]: Grant Holmes
+                    - generic [ref=e799]:
+                      - button "+1.5 −168" [ref=e800] [cursor=pointer]:
+                        - generic [ref=e802]: "+1.5"
+                        - generic [ref=e803]: −168
+                      - button "O 9 −110" [ref=e804] [cursor=pointer]:
+                        - generic [ref=e805]:
+                          - generic [ref=e806]: O
+                          - generic [ref=e807]: "9"
+                        - generic [ref=e808]: −110
+                      - button "+123" [ref=e809] [cursor=pointer]:
+                        - generic [ref=e810]: "+123"
+                      - button "-1.5 +139" [ref=e811] [cursor=pointer]:
+                        - generic [ref=e813]: "-1.5"
+                        - generic [ref=e814]: "+139"
+                      - button "U 9 −110" [ref=e815] [cursor=pointer]:
+                        - generic [ref=e816]:
+                          - generic [ref=e817]: U
+                          - generic [ref=e818]: "9"
+                        - generic [ref=e819]: −110
+                      - button "−149" [ref=e820] [cursor=pointer]:
+                        - generic [ref=e821]: −149
+                  - generic [ref=e825]:
+                    - generic [ref=e826]:
+                      - generic "Open game in SGP mode" [ref=e827]:
+                        - link [ref=e828] [cursor=pointer]:
+                          - /url: /event/phi-phillies-%2540-atl-braves/34039674?sgpmode=true
+                          - img [ref=e829]
+                      - generic [ref=e833]: Today 7:15 PM
+                    - link "More Bets Arrow pointing right icon" [ref=e834] [cursor=pointer]:
+                      - /url: /event/phi-phillies-%2540-atl-braves/34039674
+                      - generic [ref=e835]:
+                        - generic [ref=e836]: More Bets
+                        - img "Arrow pointing right icon" [ref=e837]
+                  - generic [ref=e845]:
+                    - generic [ref=e846]:
+                      - link "PIT Pirates-logo PIT Pirates Paul Skenes" [ref=e849] [cursor=pointer]:
+                        - /url: /event/pit-pirates-%2540-mil-brewers/34039677
+                        - generic [ref=e851]:
+                          - img "PIT Pirates-logo" [ref=e853]
+                          - generic [ref=e854]:
+                            - generic [ref=e855]: PIT Pirates
+                            - generic [ref=e856]: Paul Skenes
+                      - generic [ref=e857]: at
+                      - link "MIL Brewers-logo MIL Brewers Brandon Woodruff" [ref=e860] [cursor=pointer]:
+                        - /url: /event/pit-pirates-%2540-mil-brewers/34039677
+                        - generic [ref=e862]:
+                          - img "MIL Brewers-logo" [ref=e864]
+                          - generic [ref=e865]:
+                            - generic [ref=e866]: MIL Brewers
+                            - generic [ref=e867]: Brandon Woodruff
+                    - generic [ref=e868]:
+                      - button "-1.5 +141" [ref=e869] [cursor=pointer]:
+                        - generic [ref=e871]: "-1.5"
+                        - generic [ref=e872]: "+141"
+                      - button "O 7 −110" [ref=e873] [cursor=pointer]:
+                        - generic [ref=e874]:
+                          - generic [ref=e875]: O
+                          - generic [ref=e876]: "7"
+                        - generic [ref=e877]: −110
+                      - button "−126" [ref=e878] [cursor=pointer]:
+                        - generic [ref=e879]: −126
+                      - button "+1.5 −171" [ref=e880] [cursor=pointer]:
+                        - generic [ref=e882]: "+1.5"
+                        - generic [ref=e883]: −171
+                      - button "U 7 −110" [ref=e884] [cursor=pointer]:
+                        - generic [ref=e885]:
+                          - generic [ref=e886]: U
+                          - generic [ref=e887]: "7"
+                        - generic [ref=e888]: −110
+                      - button "+104" [ref=e889] [cursor=pointer]:
+                        - generic [ref=e890]: "+104"
+                  - generic [ref=e894]:
+                    - generic [ref=e895]:
+                      - generic "Open game in SGP mode" [ref=e896]:
+                        - link [ref=e897] [cursor=pointer]:
+                          - /url: /event/pit-pirates-%2540-mil-brewers/34039677?sgpmode=true
+                          - img [ref=e898]
+                      - generic [ref=e902]: Today 7:40 PM
+                    - link "More Bets Arrow pointing right icon" [ref=e903] [cursor=pointer]:
+                      - /url: /event/pit-pirates-%2540-mil-brewers/34039677
+                      - generic [ref=e904]:
+                        - generic [ref=e905]: More Bets
+                        - img "Arrow pointing right icon" [ref=e906]
+                  - generic [ref=e914]:
+                    - generic [ref=e915]:
+                      - link "WAS Nationals-logo WAS Nationals PJ Poulin" [ref=e918] [cursor=pointer]:
+                        - /url: /event/was-nationals-%2540-chi-white-sox/34039675
+                        - generic [ref=e920]:
+                          - img "WAS Nationals-logo" [ref=e922]
+                          - generic [ref=e923]:
+                            - generic [ref=e924]: WAS Nationals
+                            - generic [ref=e925]: PJ Poulin
+                      - generic [ref=e926]: at
+                      - link "CHI White Sox-logo CHI White Sox Bryan Hudson" [ref=e929] [cursor=pointer]:
+                        - /url: /event/was-nationals-%2540-chi-white-sox/34039675
+                        - generic [ref=e931]:
+                          - img "CHI White Sox-logo" [ref=e933]
+                          - generic [ref=e934]:
+                            - generic [ref=e935]: CHI White Sox
+                            - generic [ref=e936]: Bryan Hudson
+                    - generic [ref=e937]:
+                      - button "+1.5 −188" [ref=e938] [cursor=pointer]:
+                        - generic [ref=e940]: "+1.5"
+                        - generic [ref=e941]: −188
+                      - button "O 9.5 +100" [ref=e942] [cursor=pointer]:
+                        - generic [ref=e943]:
+                          - generic [ref=e944]: O
+                          - generic [ref=e945]: "9.5"
+                        - generic [ref=e946]: "+100"
+                      - button "+109" [ref=e947] [cursor=pointer]:
+                        - generic [ref=e948]: "+109"
+                      - button "-1.5 +155" [ref=e949] [cursor=pointer]:
+                        - generic [ref=e951]: "-1.5"
+                        - generic [ref=e952]: "+155"
+                      - button "U 9.5 −120" [ref=e953] [cursor=pointer]:
+                        - generic [ref=e954]:
+                          - generic [ref=e955]: U
+                          - generic [ref=e956]: "9.5"
+                        - generic [ref=e957]: −120
+                      - button "−132" [ref=e958] [cursor=pointer]:
+                        - generic [ref=e959]: −132
+                  - generic [ref=e963]:
+                    - generic [ref=e964]:
+                      - generic "Open game in SGP mode" [ref=e965]:
+                        - link [ref=e966] [cursor=pointer]:
+                          - /url: /event/was-nationals-%2540-chi-white-sox/34039675?sgpmode=true
+                          - img [ref=e967]
+                      - generic [ref=e971]: Today 7:40 PM
+                    - link "More Bets Arrow pointing right icon" [ref=e972] [cursor=pointer]:
+                      - /url: /event/was-nationals-%2540-chi-white-sox/34039675
+                      - generic [ref=e973]:
+                        - generic [ref=e974]: More Bets
+                        - img "Arrow pointing right icon" [ref=e975]
+                  - generic [ref=e983]:
+                    - generic [ref=e984]:
+                      - link "LA Angels-logo LA Angels Yusei Kikuchi" [ref=e987] [cursor=pointer]:
+                        - /url: /event/la-angels-%2540-kc-royals/34039676
+                        - generic [ref=e989]:
+                          - img "LA Angels-logo" [ref=e991]
+                          - generic [ref=e992]:
+                            - generic [ref=e993]: LA Angels
+                            - generic [ref=e994]: Yusei Kikuchi
+                      - generic [ref=e995]: at
+                      - link "KC Royals-logo KC Royals Noah Cameron" [ref=e998] [cursor=pointer]:
+                        - /url: /event/la-angels-%2540-kc-royals/34039676
+                        - generic [ref=e1000]:
+                          - img "KC Royals-logo" [ref=e1002]
+                          - generic [ref=e1003]:
+                            - generic [ref=e1004]: KC Royals
+                            - generic [ref=e1005]: Noah Cameron
+                    - generic [ref=e1006]:
+                      - button "-1.5 +153" [ref=e1007] [cursor=pointer]:
+                        - generic [ref=e1009]: "-1.5"
+                        - generic [ref=e1010]: "+153"
+                      - button "O 8.5 −105" [ref=e1011] [cursor=pointer]:
+                        - generic [ref=e1012]:
+                          - generic [ref=e1013]: O
+                          - generic [ref=e1014]: "8.5"
+                        - generic [ref=e1015]: −105
+                      - button "−110" [ref=e1016] [cursor=pointer]:
+                        - generic [ref=e1017]: −110
+                      - button "+1.5 −186" [ref=e1018] [cursor=pointer]:
+                        - generic [ref=e1020]: "+1.5"
+                        - generic [ref=e1021]: −186
+                      - button "U 8.5 −115" [ref=e1022] [cursor=pointer]:
+                        - generic [ref=e1023]:
+                          - generic [ref=e1024]: U
+                          - generic [ref=e1025]: "8.5"
+                        - generic [ref=e1026]: −115
+                      - button "−110" [ref=e1027] [cursor=pointer]:
+                        - generic [ref=e1028]: −110
+                  - generic [ref=e1032]:
+                    - generic [ref=e1033]:
+                      - generic "Open game in SGP mode" [ref=e1034]:
+                        - link [ref=e1035] [cursor=pointer]:
+                          - /url: /event/la-angels-%2540-kc-royals/34039676?sgpmode=true
+                          - img [ref=e1036]
+                      - generic [ref=e1040]: Today 7:40 PM
+                    - link "More Bets Arrow pointing right icon" [ref=e1041] [cursor=pointer]:
+                      - /url: /event/la-angels-%2540-kc-royals/34039676
+                      - generic [ref=e1042]:
+                        - generic [ref=e1043]: More Bets
+                        - img "Arrow pointing right icon" [ref=e1044]
+                  - generic [ref=e1052]:
+                    - generic [ref=e1053]:
+                      - link "Athletics-logo Athletics Luis Severino" [ref=e1056] [cursor=pointer]:
+                        - /url: /event/athletics-%2540-tex-rangers/34039678
+                        - generic [ref=e1058]:
+                          - img "Athletics-logo" [ref=e1060]
+                          - generic [ref=e1061]:
+                            - generic [ref=e1062]: Athletics
+                            - generic [ref=e1063]: Luis Severino
+                      - generic [ref=e1064]: at
+                      - link "TEX Rangers-logo TEX Rangers Nathan Eovaldi" [ref=e1067] [cursor=pointer]:
+                        - /url: /event/athletics-%2540-tex-rangers/34039678
+                        - generic [ref=e1069]:
+                          - img "TEX Rangers-logo" [ref=e1071]
+                          - generic [ref=e1072]:
+                            - generic [ref=e1073]: TEX Rangers
+                            - generic [ref=e1074]: Nathan Eovaldi
+                    - generic [ref=e1075]:
+                      - button "+1.5 −171" [ref=e1076] [cursor=pointer]:
+                        - generic [ref=e1078]: "+1.5"
+                        - generic [ref=e1079]: −171
+                      - button "O 8.5 −102" [ref=e1080] [cursor=pointer]:
+                        - generic [ref=e1081]:
+                          - generic [ref=e1082]: O
+                          - generic [ref=e1083]: "8.5"
+                        - generic [ref=e1084]: −102
+                      - button "+119" [ref=e1085] [cursor=pointer]:
+                        - generic [ref=e1086]: "+119"
+                      - button "-1.5 +141" [ref=e1087] [cursor=pointer]:
+                        - generic [ref=e1089]: "-1.5"
+                        - generic [ref=e1090]: "+141"
+                      - button "U 8.5 −118" [ref=e1091] [cursor=pointer]:
+                        - generic [ref=e1092]:
+                          - generic [ref=e1093]: U
+                          - generic [ref=e1094]: "8.5"
+                        - generic [ref=e1095]: −118
+                      - button "−143" [ref=e1096] [cursor=pointer]:
+                        - generic [ref=e1097]: −143
+                  - generic [ref=e1101]:
+                    - generic [ref=e1102]:
+                      - generic "Open game in SGP mode" [ref=e1103]:
+                        - link [ref=e1104] [cursor=pointer]:
+                          - /url: /event/athletics-%2540-tex-rangers/34039678?sgpmode=true
+                          - img [ref=e1105]
+                      - generic [ref=e1109]: Today 8:05 PM
+                    - link "More Bets Arrow pointing right icon" [ref=e1110] [cursor=pointer]:
+                      - /url: /event/athletics-%2540-tex-rangers/34039678
+                      - generic [ref=e1111]:
+                        - generic [ref=e1112]: More Bets
+                        - img "Arrow pointing right icon" [ref=e1113]
+                  - generic [ref=e1121]:
+                    - generic [ref=e1122]:
+                      - link "NY Yankees-logo NY Yankees Will Warren" [ref=e1125] [cursor=pointer]:
+                        - /url: /event/ny-yankees-%2540-hou-astros/34039679
+                        - generic [ref=e1127]:
+                          - img "NY Yankees-logo" [ref=e1129]
+                          - generic [ref=e1130]:
+                            - generic [ref=e1131]: NY Yankees
+                            - generic [ref=e1132]: Will Warren
+                      - generic [ref=e1133]: at
+                      - link "HOU Astros-logo HOU Astros Lance McCullers Jr." [ref=e1136] [cursor=pointer]:
+                        - /url: /event/ny-yankees-%2540-hou-astros/34039679
+                        - generic [ref=e1138]:
+                          - img "HOU Astros-logo" [ref=e1140]
+                          - generic [ref=e1141]:
+                            - generic [ref=e1142]: HOU Astros
+                            - generic [ref=e1143]: Lance McCullers Jr.
+                    - generic [ref=e1144]:
+                      - button "-1.5 +104" [ref=e1145] [cursor=pointer]:
+                        - generic [ref=e1147]: "-1.5"
+                        - generic [ref=e1148]: "+104"
+                      - button "O 9 −120" [ref=e1149] [cursor=pointer]:
+                        - generic [ref=e1150]:
+                          - generic [ref=e1151]: O
+                          - generic [ref=e1152]: "9"
+                        - generic [ref=e1153]: −120
+                      - button "−156" [ref=e1154] [cursor=pointer]:
+                        - generic [ref=e1155]: −156
+                      - button "+1.5 −126" [ref=e1156] [cursor=pointer]:
+                        - generic [ref=e1158]: "+1.5"
+                        - generic [ref=e1159]: −126
+                      - button "U 9 +100" [ref=e1160] [cursor=pointer]:
+                        - generic [ref=e1161]:
+                          - generic [ref=e1162]: U
+                          - generic [ref=e1163]: "9"
+                        - generic [ref=e1164]: "+100"
+                      - button "+129" [ref=e1165] [cursor=pointer]:
+                        - generic [ref=e1166]: "+129"
+                  - generic [ref=e1170]:
+                    - generic [ref=e1171]:
+                      - generic "Open game in SGP mode" [ref=e1172]:
+                        - link [ref=e1173] [cursor=pointer]:
+                          - /url: /event/ny-yankees-%2540-hou-astros/34039679?sgpmode=true
+                          - img [ref=e1174]
+                      - generic [ref=e1178]: Today 8:10 PM
+                    - link "More Bets Arrow pointing right icon" [ref=e1179] [cursor=pointer]:
+                      - /url: /event/ny-yankees-%2540-hou-astros/34039679
+                      - generic [ref=e1180]:
+                        - generic [ref=e1181]: More Bets
+                        - img "Arrow pointing right icon" [ref=e1182]
+                  - generic [ref=e1190]:
+                    - generic [ref=e1191]:
+                      - link "SEA Mariners-logo SEA Mariners George Kirby" [ref=e1194] [cursor=pointer]:
+                        - /url: /event/sea-mariners-%2540-stl-cardinals/34039680
+                        - generic [ref=e1196]:
+                          - img "SEA Mariners-logo" [ref=e1198]
+                          - generic [ref=e1199]:
+                            - generic [ref=e1200]: SEA Mariners
+                            - generic [ref=e1201]: George Kirby
+                      - generic [ref=e1202]: at
+                      - link "STL Cardinals-logo STL Cardinals Andre Pallante" [ref=e1205] [cursor=pointer]:
+                        - /url: /event/sea-mariners-%2540-stl-cardinals/34039680
+                        - generic [ref=e1207]:
+                          - img "STL Cardinals-logo" [ref=e1209]
+                          - generic [ref=e1210]:
+                            - generic [ref=e1211]: STL Cardinals
+                            - generic [ref=e1212]: Andre Pallante
+                    - generic [ref=e1213]:
+                      - button "-1.5 +113" [ref=e1214] [cursor=pointer]:
+                        - generic [ref=e1216]: "-1.5"
+                        - generic [ref=e1217]: "+113"
+                      - button "O 8 −112" [ref=e1218] [cursor=pointer]:
+                        - generic [ref=e1219]:
+                          - generic [ref=e1220]: O
+                          - generic [ref=e1221]: "8"
+                        - generic [ref=e1222]: −112
+                      - button "−149" [ref=e1223] [cursor=pointer]:
+                        - generic [ref=e1224]: −149
+                      - button "+1.5 −136" [ref=e1225] [cursor=pointer]:
+                        - generic [ref=e1227]: "+1.5"
+                        - generic [ref=e1228]: −136
+                      - button "U 8 −108" [ref=e1229] [cursor=pointer]:
+                        - generic [ref=e1230]:
+                          - generic [ref=e1231]: U
+                          - generic [ref=e1232]: "8"
+                        - generic [ref=e1233]: −108
+                      - button "+123" [ref=e1234] [cursor=pointer]:
+                        - generic [ref=e1235]: "+123"
+                  - generic [ref=e1239]:
+                    - generic [ref=e1240]:
+                      - generic "Open game in SGP mode" [ref=e1241]:
+                        - link [ref=e1242] [cursor=pointer]:
+                          - /url: /event/sea-mariners-%2540-stl-cardinals/34039680?sgpmode=true
+                          - img [ref=e1243]
+                      - generic [ref=e1247]: Today 8:15 PM
+                    - link "More Bets Arrow pointing right icon" [ref=e1248] [cursor=pointer]:
+                      - /url: /event/sea-mariners-%2540-stl-cardinals/34039680
+                      - generic [ref=e1249]:
+                        - generic [ref=e1250]: More Bets
+                        - img "Arrow pointing right icon" [ref=e1251]
+                  - generic [ref=e1259]:
+                    - generic [ref=e1260]:
+                      - link "CHI Cubs-logo CHI Cubs Jameson Taillon" [ref=e1263] [cursor=pointer]:
+                        - /url: /event/chi-cubs-%2540-la-dodgers/34039681
+                        - generic [ref=e1265]:
+                          - img "CHI Cubs-logo" [ref=e1267]
+                          - generic [ref=e1268]:
+                            - generic [ref=e1269]: CHI Cubs
+                            - generic [ref=e1270]: Jameson Taillon
+                      - generic [ref=e1271]: at
+                      - link "LA Dodgers-logo LA Dodgers Emmet Sheehan" [ref=e1274] [cursor=pointer]:
+                        - /url: /event/chi-cubs-%2540-la-dodgers/34039681
+                        - generic [ref=e1276]:
+                          - img "LA Dodgers-logo" [ref=e1278]
+                          - generic [ref=e1279]:
+                            - generic [ref=e1280]: LA Dodgers
+                            - generic [ref=e1281]: Emmet Sheehan
+                    - generic [ref=e1282]:
+                      - button "+1.5 −149" [ref=e1283] [cursor=pointer]:
+                        - generic [ref=e1285]: "+1.5"
+                        - generic [ref=e1286]: −149
+                      - button "O 9 −108" [ref=e1287] [cursor=pointer]:
+                        - generic [ref=e1288]:
+                          - generic [ref=e1289]: O
+                          - generic [ref=e1290]: "9"
+                        - generic [ref=e1291]: −108
+                      - button "+135" [ref=e1292] [cursor=pointer]:
+                        - generic [ref=e1293]: "+135"
+                      - button "-1.5 +123" [ref=e1294] [cursor=pointer]:
+                        - generic [ref=e1296]: "-1.5"
+                        - generic [ref=e1297]: "+123"
+                      - button "U 9 −112" [ref=e1298] [cursor=pointer]:
+                        - generic [ref=e1299]:
+                          - generic [ref=e1300]: U
+                          - generic [ref=e1301]: "9"
+                        - generic [ref=e1302]: −112
+                      - button "−163" [ref=e1303] [cursor=pointer]:
+                        - generic [ref=e1304]: −163
+                  - generic [ref=e1308]:
+                    - generic [ref=e1309]:
+                      - generic "Open game in SGP mode" [ref=e1310]:
+                        - link [ref=e1311] [cursor=pointer]:
+                          - /url: /event/chi-cubs-%2540-la-dodgers/34039681?sgpmode=true
+                          - img [ref=e1312]
+                      - generic [ref=e1316]: Today 10:15 PM
+                    - link "More Bets Arrow pointing right icon" [ref=e1317] [cursor=pointer]:
+                      - /url: /event/chi-cubs-%2540-la-dodgers/34039681
+                      - generic [ref=e1318]:
+                        - generic [ref=e1319]: More Bets
+                        - img "Arrow pointing right icon" [ref=e1320]
+                  - generic [ref=e1328]:
+                    - generic [ref=e1329]:
+                      - link "MIA Marlins-logo MIA Marlins Sandy Alcantara" [ref=e1332] [cursor=pointer]:
+                        - /url: /event/mia-marlins-%2540-sf-giants/34039682
+                        - generic [ref=e1334]:
+                          - img "MIA Marlins-logo" [ref=e1336]
+                          - generic [ref=e1337]:
+                            - generic [ref=e1338]: MIA Marlins
+                            - generic [ref=e1339]: Sandy Alcantara
+                      - generic [ref=e1340]: at
+                      - link "SF Giants-logo SF Giants Adrian Houser" [ref=e1343] [cursor=pointer]:
+                        - /url: /event/mia-marlins-%2540-sf-giants/34039682
+                        - generic [ref=e1345]:
+                          - img "SF Giants-logo" [ref=e1347]
+                          - generic [ref=e1348]:
+                            - generic [ref=e1349]: SF Giants
+                            - generic [ref=e1350]: Adrian Houser
+                    - generic [ref=e1351]:
+                      - button "-1.5 +153" [ref=e1352] [cursor=pointer]:
+                        - generic [ref=e1354]: "-1.5"
+                        - generic [ref=e1355]: "+153"
+                      - button "O 7.5 −112" [ref=e1356] [cursor=pointer]:
+                        - generic [ref=e1357]:
+                          - generic [ref=e1358]: O
+                          - generic [ref=e1359]: "7.5"
+                        - generic [ref=e1360]: −112
+                      - button "−112" [ref=e1361] [cursor=pointer]:
+                        - generic [ref=e1362]: −112
+                      - button "+1.5 −186" [ref=e1363] [cursor=pointer]:
+                        - generic [ref=e1365]: "+1.5"
+                        - generic [ref=e1366]: −186
+                      - button "U 7.5 −108" [ref=e1367] [cursor=pointer]:
+                        - generic [ref=e1368]:
+                          - generic [ref=e1369]: U
+                          - generic [ref=e1370]: "7.5"
+                        - generic [ref=e1371]: −108
+                      - button "−108" [ref=e1372] [cursor=pointer]:
+                        - generic [ref=e1373]: −108
+                  - generic [ref=e1377]:
+                    - generic [ref=e1378]:
+                      - generic "Open game in SGP mode" [ref=e1379]:
+                        - link [ref=e1380] [cursor=pointer]:
+                          - /url: /event/mia-marlins-%2540-sf-giants/34039682?sgpmode=true
+                          - img [ref=e1381]
+                      - generic [ref=e1385]: Today 10:15 PM
+                    - link "More Bets Arrow pointing right icon" [ref=e1386] [cursor=pointer]:
+                      - /url: /event/mia-marlins-%2540-sf-giants/34039682
+                      - generic [ref=e1387]:
+                        - generic [ref=e1388]: More Bets
+                        - img "Arrow pointing right icon" [ref=e1389]
+              - generic [ref=e1397]:
+                - generic [ref=e1399]:
+                  - generic [ref=e1401]: Tomorrow
+                  - generic [ref=e1402]:
+                    - paragraph
+                  - paragraph [ref=e1404]: Total
+                  - paragraph [ref=e1406]: Moneyline
+                - generic [ref=e1407]:
+                  - generic [ref=e1410]:
+                    - generic [ref=e1411]:
+                      - link "SD Padres-logo SD Padres German Marquez" [ref=e1414] [cursor=pointer]:
+                        - /url: /event/sd-padres-%2540-ari-diamondbacks/34044032
+                        - generic [ref=e1416]:
+                          - img "SD Padres-logo" [ref=e1418]
+                          - generic [ref=e1419]:
+                            - generic [ref=e1420]: SD Padres
+                            - generic [ref=e1421]: German Marquez
+                      - generic [ref=e1422]: at
+                      - link "ARI Diamondbacks-logo ARI Diamondbacks Zac Gallen" [ref=e1425] [cursor=pointer]:
+                        - /url: /event/sd-padres-%2540-ari-diamondbacks/34044032
+                        - generic [ref=e1427]:
+                          - img "ARI Diamondbacks-logo" [ref=e1429]
+                          - generic [ref=e1430]:
+                            - generic [ref=e1431]: ARI Diamondbacks
+                            - generic [ref=e1432]: Zac Gallen
+                    - generic [ref=e1433]:
+                      - img [ref=e1435]
+                      - button "O 15.5 −106" [ref=e1438] [cursor=pointer]:
+                        - generic [ref=e1439]:
+                          - generic [ref=e1440]: O
+                          - generic [ref=e1441]: "15.5"
+                        - generic [ref=e1442]: −106
+                      - button "−102" [ref=e1443] [cursor=pointer]:
+                        - generic [ref=e1444]: −102
+                      - img [ref=e1446]
+                      - button "U 15.5 −114" [ref=e1449] [cursor=pointer]:
+                        - generic [ref=e1450]:
+                          - generic [ref=e1451]: U
+                          - generic [ref=e1452]: "15.5"
+                        - generic [ref=e1453]: −114
+                      - button "−118" [ref=e1454] [cursor=pointer]:
+                        - generic [ref=e1455]: −118
+                  - generic [ref=e1459]:
+                    - generic [ref=e1460]:
+                      - generic "Open game in SGP mode" [ref=e1461]:
+                        - link [ref=e1462] [cursor=pointer]:
+                          - /url: /event/sd-padres-%2540-ari-diamondbacks/34044032?sgpmode=true
+                          - img [ref=e1463]
+                      - generic [ref=e1467]: Tomorrow 6:05 PM
+                    - link "More Bets Arrow pointing right icon" [ref=e1468] [cursor=pointer]:
+                      - /url: /event/sd-padres-%2540-ari-diamondbacks/34044032
+                      - generic [ref=e1469]:
+                        - generic [ref=e1470]: More Bets
+                        - img "Arrow pointing right icon" [ref=e1471]
+        - generic [ref=e1477]:
+          - generic [ref=e1478]:
+            - heading "MLB Betting News" [level=4] [ref=e1479]
+            - generic [ref=e1480]:
+              - generic [ref=e1481]:
+                - link "Philadelphia Phillies vs. Atlanta Braves prediction, pick for Friday 4/24/26" [ref=e1483] [cursor=pointer]:
+                  - /url: https://dknetwork.draftkings.com/2026/04/24/philadelphia-phillies-vs-atlanta-braves-prediction-pick-for-friday-4-24-26/
+                  - img "Philadelphia Phillies vs. Atlanta Braves prediction, pick for Friday 4/24/26" [ref=e1484]
+                - generic [ref=e1485]:
+                  - generic [ref=e1486]: 1:55 PM · Apr 24, 2026
+                  - link "Philadelphia Phillies vs. Atlanta Braves prediction, pick for Friday 4/24/26" [ref=e1488] [cursor=pointer]:
+                    - /url: https://dknetwork.draftkings.com/2026/04/24/philadelphia-phillies-vs-atlanta-braves-prediction-pick-for-friday-4-24-26/
+                  - generic [ref=e1490]: Cooper Albers previews Friday's MLB game between the Philadelphia Phillies and the Atlanta Braves at Truist Park. The post Philadelphia Phillies vs. Atlanta Braves prediction, pick for Friday 4/24/26 appeared first on DraftKings Network.
+                  - generic [ref=e1491]:
+                    - link "View Full Article>" [ref=e1492] [cursor=pointer]:
+                      - /url: https://dknetwork.draftkings.com/2026/04/24/philadelphia-phillies-vs-atlanta-braves-prediction-pick-for-friday-4-24-26/
+                    - generic [ref=e1493]: "Author(s): Cooper Albers."
+              - generic [ref=e1494]:
+                - 'link "MLB Best Bets: Top NRFI props for Friday 4/24/26" [ref=e1496] [cursor=pointer]':
+                  - /url: https://dknetwork.draftkings.com/2026/04/24/mlb-best-bets-top-nrfi-props-for-friday-4-24-26/
+                  - 'img "MLB Best Bets: Top NRFI props for Friday 4/24/26" [ref=e1497]'
+                - generic [ref=e1498]:
+                  - generic [ref=e1499]: 10:21 AM · Apr 24, 2026
+                  - 'link "MLB Best Bets: Top NRFI props for Friday 4/24/26" [ref=e1501] [cursor=pointer]':
+                    - /url: https://dknetwork.draftkings.com/2026/04/24/mlb-best-bets-top-nrfi-props-for-friday-4-24-26/
+                  - generic [ref=e1503]: "Bryan Armetta shares his three favorite MLB NRFI prop bets on DraftKings Sportsbook for Friday's 15-game slate. The post MLB Best Bets: Top NRFI props for Friday 4/24/26 appeared first on DraftKings Network."
+                  - generic [ref=e1504]:
+                    - link "View Full Article>" [ref=e1505] [cursor=pointer]:
+                      - /url: https://dknetwork.draftkings.com/2026/04/24/mlb-best-bets-top-nrfi-props-for-friday-4-24-26/
+                    - generic [ref=e1506]: "Author(s): Bryan Armetta."
+              - generic [ref=e1507]:
+                - 'link "MLB Best Bets: Top NRFI props for Thursday 4/23/26" [ref=e1509] [cursor=pointer]':
+                  - /url: https://dknetwork.draftkings.com/2026/04/23/mlb-best-bets-top-nrfi-props-for-thursday-4-23-26/
+                  - 'img "MLB Best Bets: Top NRFI props for Thursday 4/23/26" [ref=e1510]'
+                - generic [ref=e1511]:
+                  - generic [ref=e1512]: 9:58 AM · Apr 23, 2026
+                  - 'link "MLB Best Bets: Top NRFI props for Thursday 4/23/26" [ref=e1514] [cursor=pointer]':
+                    - /url: https://dknetwork.draftkings.com/2026/04/23/mlb-best-bets-top-nrfi-props-for-thursday-4-23-26/
+                  - generic [ref=e1516]: "Bryan Armetta shares his two favorite MLB NRFI prop bets on DraftKings Sportsbook for Thursday's nine-game slate. The post MLB Best Bets: Top NRFI props for Thursday 4/23/26 appeared first on DraftKings Network."
+                  - generic [ref=e1517]:
+                    - link "View Full Article>" [ref=e1518] [cursor=pointer]:
+                      - /url: https://dknetwork.draftkings.com/2026/04/23/mlb-best-bets-top-nrfi-props-for-thursday-4-23-26/
+                    - generic [ref=e1519]: "Author(s): Bryan Armetta."
+              - generic [ref=e1520]:
+                - link "Los Angeles Dodgers vs. San Francisco Giants prediction, pick for Wednesday 4/22/26" [ref=e1522] [cursor=pointer]:
+                  - /url: https://dknetwork.draftkings.com/2026/04/22/los-angeles-dodgers-vs-san-francisco-giants-prediction-pick-for-wednesday-4-22-26/
+                  - img "Los Angeles Dodgers vs. San Francisco Giants prediction, pick for Wednesday 4/22/26" [ref=e1523]
+                - generic [ref=e1524]:
+                  - generic [ref=e1525]: 6:34 PM · Apr 22, 2026
+                  - link "Los Angeles Dodgers vs. San Francisco Giants prediction, pick for Wednesday 4/22/26" [ref=e1527] [cursor=pointer]:
+                    - /url: https://dknetwork.draftkings.com/2026/04/22/los-angeles-dodgers-vs-san-francisco-giants-prediction-pick-for-wednesday-4-22-26/
+                  - generic [ref=e1529]: Cooper Albers previews Wednesday's MLB game between the Los Angeles Dodgers and the San Francisco Giants at Oracle Park. The post Los Angeles Dodgers vs. San Francisco Giants prediction, pick for Wednesday 4/22/26 appeared first on DraftKings Network.
+                  - generic [ref=e1530]:
+                    - link "View Full Article>" [ref=e1531] [cursor=pointer]:
+                      - /url: https://dknetwork.draftkings.com/2026/04/22/los-angeles-dodgers-vs-san-francisco-giants-prediction-pick-for-wednesday-4-22-26/
+                    - generic [ref=e1532]: "Author(s): Cooper Albers."
+              - generic [ref=e1533]:
+                - link "Boston Red Sox vs. New York Yankees prediction, pick for MLB on Wednesday 4/22/26" [ref=e1535] [cursor=pointer]:
+                  - /url: https://dknetwork.draftkings.com/2026/04/22/boston-red-sox-vs-new-york-yankees-prediction-pick-for-mlb-on-wednesday-4-22-26/
+                  - img "Boston Red Sox vs. New York Yankees prediction, pick for MLB on Wednesday 4/22/26" [ref=e1536]
+                - generic [ref=e1537]:
+                  - generic [ref=e1538]: 1:24 PM · Apr 22, 2026
+                  - link "Boston Red Sox vs. New York Yankees prediction, pick for MLB on Wednesday 4/22/26" [ref=e1540] [cursor=pointer]:
+                    - /url: https://dknetwork.draftkings.com/2026/04/22/boston-red-sox-vs-new-york-yankees-prediction-pick-for-mlb-on-wednesday-4-22-26/
+                  - generic [ref=e1542]: New York walks into Fenway at 14-9 with control of the division and a clean 4-0 win already pocketed in this series, while Boston sits 9-14 and still searching for traction. This isn't a warm, chaotic Fenway night where the ball jumps and turns everything into a track meet. Mid-40s air, a 7.5 total, and... The post Boston Red Sox vs.
+                  - generic [ref=e1543]:
+                    - link "View Full Article>" [ref=e1544] [cursor=pointer]:
+                      - /url: https://dknetwork.draftkings.com/2026/04/22/boston-red-sox-vs-new-york-yankees-prediction-pick-for-mlb-on-wednesday-4-22-26/
+                    - generic [ref=e1545]: "Author(s): Dan Johnson."
+              - generic [ref=e1546]:
+                - link "Seattle Mariners vs. Athletics prediction, pick for MLB on Wednesday 4/22/26" [ref=e1548] [cursor=pointer]:
+                  - /url: https://dknetwork.draftkings.com/2026/04/22/seattle-mariners-vs-athletics-prediction-pick-for-mlb-on-wednesday-4-22-26/
+                  - img "Seattle Mariners vs. Athletics prediction, pick for MLB on Wednesday 4/22/26" [ref=e1549]
+                - generic [ref=e1550]:
+                  - generic [ref=e1551]: 12:57 PM · Apr 22, 2026
+                  - link "Seattle Mariners vs. Athletics prediction, pick for MLB on Wednesday 4/22/26" [ref=e1553] [cursor=pointer]:
+                    - /url: https://dknetwork.draftkings.com/2026/04/22/seattle-mariners-vs-athletics-prediction-pick-for-mlb-on-wednesday-4-22-26/
+                  - generic [ref=e1555]: Oakland enters at 13-11, sitting atop the AL West and riding a seven-game road winning streak, while Seattle comes in 10-15, trying to stabilize after dropping the first two games of this series. T-Mobile Park keeps the environment tight most nights, and with a total sitting at 7.5, this projects as a controlled, pitching-driven game... The post Seattle Mariners vs.
+                  - generic [ref=e1556]:
+                    - link "View Full Article>" [ref=e1557] [cursor=pointer]:
+                      - /url: https://dknetwork.draftkings.com/2026/04/22/seattle-mariners-vs-athletics-prediction-pick-for-mlb-on-wednesday-4-22-26/
+                    - generic [ref=e1558]: "Author(s): Dan Johnson."
+          - generic [ref=e1559]:
+            - heading "MLB Odds and Betting" [level=4] [ref=e1560]
+            - generic [ref=e1562]:
+              - heading "MLB History" [level=3] [ref=e1563]
+              - paragraph [ref=e1564]: "No other American sport has the rich history of the country’s national pastime: baseball dates all the way back to the mid-19th century, and has lived through a Civil War, two World Wars, and a new millennium. There’s a reason it has been able to withstand the test of time—relatively easy to understand, baseball is fun to play, fun to watch, has a unique pace, and involves a great deal of strategy. With over a century of rich history and rivalries, there’s no better sport to bet on than Major League Baseball. So grab some peanuts and Cracker Jacks, and let’s talk more about MLB betting."
+              - heading "Biggest Rivalries and Betting Events" [level=3] [ref=e1565]
+              - heading "World Series" [level=4] [ref=e1566]
+              - paragraph [ref=e1567]: There are no games bigger in baseball than the World Series. The annual, best-of-seven series crowns the greatest team in the Major League, and games are tense, action-packed, and filled with emotion. Make the biggest event in the sport even more exciting with a wager.
+              - heading "MLB Playoffs" [level=4] [ref=e1568]
+              - paragraph [ref=e1569]: To get to the World Series, MLB teams need to get through multiple rounds of playoffs. With rivalries and elimination on the line, these multi-game series are some of the best games baseball has to offer.
+              - heading "New York Yankees vs. Boston Red Sox" [level=4] [ref=e1570]
+              - paragraph [ref=e1571]: The rivalry between the Yankees and Red Sox is one of the most famous in all of sports. As two of the largest markets and most popular teams nationwide, both of these teams attract huge stars and are often American League and World Series contenders. The legend of this rivalry was strengthened after the Red Sox traded Babe Ruth to the Yankees, known as the “Curse of the Bambino,” after which Boston didn’t win another World Series for 86 years.
+              - heading "Los Angeles Dodgers vs. San Francisco Giants" [level=4] [ref=e1572]
+              - paragraph [ref=e1573]: Known as the “Battle of the Bay,” the rivalry between the Giants and the Dodgers dates back to the late 19th century, when both teams were located in New York City and were known as the New York Giants and Brooklyn Dodgers. Since moving to the west coast in the 1950s, the rivalry has been fueled by success and proximity. The series has been marked by a number of notable events, perhaps the most famous being the “Shot Heard Round the World,” when Bobby Thomson hit a walk-off home run for the Giants in 1951 to win the National League pennant.
+              - heading "Types of MLB Bets" [level=3] [ref=e1574]
+              - paragraph [ref=e1575]: With several ways to bet on baseball and add excitement to the game, it’s no wonder MLB betting is so popular among sports fans. You can bet on everything from the outcome of the game and overall season results to the performance of a single player. Learn more about the types of baseball bets that suit you, and have fun.
+              - heading "Spreads or run lines" [level=4] [ref=e1576]
+              - paragraph [ref=e1577]: If you think your favorite team is going to win big on a given day, bet on them to beat the spread! A point spread, also known as a runline in baseball, is the amount by which a team is favored to win. Runlines are commonly set at 1.5. However, some sites, such as DraftKings, allow alternative lines that are based on the matchup.
+              - paragraph [ref=e1578]: If a team is listed as +1.5, it means they are the underdog. For example, if the Toronto Blue Jays are playing the New York Mets, and the Blue Jays are listed at -1.5, they need to win by two or more runs to cover the spread. If the Mets are listed at +1.5, they need to either lose by just one run or win the game to cover the spread.
+              - heading "Moneylines" [level=4] [ref=e1579]
+              - paragraph [ref=e1580]: For most American sports, spreads are the most popular bets. The moneyline is a straight up bet on which team will win the game outright. The score doesn’t matter, only who comes out ahead. A bet's payout depends on the odds. Heavier favorites are more likely to win but don't pay as much; underdogs are a more risky bet but pay more.
+              - heading "Three-way moneylines" [level=4] [ref=e1581]
+              - paragraph [ref=e1582]: "A three-way moneyline gives three possible outcomes: Team A wins, Team B wins, or the two teams tie. Three-way moneylines are bets on nine innings, since a baseball game can’t end in a tie. If the two teams are tied after nine innings, it’s considered a tie for the three-way moneyline bet, and the winner in extra innings doesn’t matter."
+              - heading "Over/under" [level=4] [ref=e1583]
+              - paragraph [ref=e1584]: Also known as Totals, over/unders are one of the more common bets in baseball.. For example, if the over/under of the Mets vs. Blue Jays game is set at 8.5, that means the teams would have to score a combined nine runs or more to be considered over. Eight or less and the under bettors are winners.
+              - heading "Player props" [level=4] [ref=e1585]
+              - paragraph [ref=e1586]: If you enjoy following individual players, player props are for you. Prop bets are wagers on a specific aspect of a game. A player prop focuses on a single player’s performance, like if he hits a home run in any given game.
+              - heading "Parlay Bets" [level=4] [ref=e1587]
+              - paragraph [ref=e1588]: In a parlay, two or more bets are combined into a single wager. Parlays pay higher than if each bet was placed separately, but they also come with more risk since all bets have to win for the parlay to be a winner. The more bets in a parlay, the greater the difficulty, but bigger the payout.
+              - paragraph [ref=e1589]:
+                - text: Parlays can include all kinds of bets, such as runlines, moneylines, or over/unders. Check out our
+                - link "How to Bet 101" [ref=e1590] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet
+                - text: guide for an example of a parlay bet.
+              - heading "Futures" [level=4] [ref=e1591]
+              - paragraph [ref=e1592]: Futures are wagers on the entire season, or remainder of the season if it's in progress. The most popular baseball futures bet is who will win the World Series. Futures typically pay well because it’s tough to select a winner months in advance. A lot can change in a season, from trades to injuries. The beauty of futures is they add excitement to the overall season instead of a single game, so you can remain invested all season long.
+              - paragraph
+          - generic [ref=e1593]:
+            - heading "MLB Teams" [level=4] [ref=e1594]
+            - generic [ref=e1596]:
+              - generic [ref=e1598]:
+                - button "Accordion" [expanded] [ref=e1599] [cursor=pointer]:
+                  - generic [ref=e1600]: American League
+                  - img "Arrow pointing up icon" [ref=e1602]
+                - generic [ref=e1604]:
+                  - generic [ref=e1606]:
+                    - button "Accordion" [expanded] [ref=e1607] [cursor=pointer]:
+                      - generic [ref=e1608]: East
+                      - img "Arrow pointing up icon" [ref=e1610]
+                    - generic [ref=e1613]:
+                      - link "Baltimore Orioles" [ref=e1615] [cursor=pointer]:
+                        - /url: /teams/baseball/mlb/baltimore-orioles
+                      - link "Boston Red Sox" [ref=e1617] [cursor=pointer]:
+                        - /url: /teams/baseball/mlb/boston-red-sox
+                      - link "New York Yankees" [ref=e1619] [cursor=pointer]:
+                        - /url: /teams/baseball/mlb/new-york-yankees
+                      - link "Tampa Bay Rays" [ref=e1621] [cursor=pointer]:
+                        - /url: /teams/baseball/mlb/tampa-bay-rays
+                      - link "Toronto Blue Jays" [ref=e1623] [cursor=pointer]:
+                        - /url: /teams/baseball/mlb/toronto-blue-jays
+                  - generic [ref=e1625]:
+                    - button "Accordion" [expanded] [ref=e1626] [cursor=pointer]:
+                      - generic [ref=e1627]: Central
+                      - img "Arrow pointing up icon" [ref=e1629]
+                    - generic [ref=e1632]:
+                      - link "Chicago White Sox" [ref=e1634] [cursor=pointer]:
+                        - /url: /teams/baseball/mlb/chicago-white-sox
+                      - link "Cleveland Guardians" [ref=e1636] [cursor=pointer]:
+                        - /url: /teams/baseball/mlb/cleveland-guardians
+                      - link "Detroit Tigers" [ref=e1638] [cursor=pointer]:
+                        - /url: /teams/baseball/mlb/detroit-tigers
+                      - link "Kansas City Royals" [ref=e1640] [cursor=pointer]:
+                        - /url: /teams/baseball/mlb/kansas-city-royals
+                      - link "Minnesota Twins" [ref=e1642] [cursor=pointer]:
+                        - /url: /teams/baseball/mlb/minnesota-twins
+                  - button "Accordion" [ref=e1645] [cursor=pointer]:
+                    - generic [ref=e1646]: West
+                    - img "Arrow pointing up icon" [ref=e1648]
+              - generic [ref=e1651]:
+                - button "Accordion" [expanded] [ref=e1652] [cursor=pointer]:
+                  - generic [ref=e1653]: National League
+                  - img "Arrow pointing up icon" [ref=e1655]
+                - generic [ref=e1657]:
+                  - generic [ref=e1659]:
+                    - button "Accordion" [expanded] [ref=e1660] [cursor=pointer]:
+                      - generic [ref=e1661]: East
+                      - img "Arrow pointing up icon" [ref=e1663]
+                    - generic [ref=e1666]:
+                      - link "Atlanta Braves" [ref=e1668] [cursor=pointer]:
+                        - /url: /teams/baseball/mlb/atlanta-braves
+                      - link "Miami Marlins" [ref=e1670] [cursor=pointer]:
+                        - /url: /teams/baseball/mlb/miami-marlins
+                      - link "New York Mets" [ref=e1672] [cursor=pointer]:
+                        - /url: /teams/baseball/mlb/new-york-mets
+                      - link "Philadelphia Phillies" [ref=e1674] [cursor=pointer]:
+                        - /url: /teams/baseball/mlb/philadelphia-phillies
+                      - link "Washington Nationals" [ref=e1676] [cursor=pointer]:
+                        - /url: /teams/baseball/mlb/washington-nationals
+                  - generic [ref=e1678]:
+                    - button "Accordion" [expanded] [ref=e1679] [cursor=pointer]:
+                      - generic [ref=e1680]: Central
+                      - img "Arrow pointing up icon" [ref=e1682]
+                    - generic [ref=e1685]:
+                      - link "Chicago Cubs" [ref=e1687] [cursor=pointer]:
+                        - /url: /teams/baseball/mlb/chicago-cubs
+                      - link "Cincinnati Reds" [ref=e1689] [cursor=pointer]:
+                        - /url: /teams/baseball/mlb/cincinnati-reds
+                      - link "Milwaukee Brewers" [ref=e1691] [cursor=pointer]:
+                        - /url: /teams/baseball/mlb/milwaukee-brewers
+                      - link "Pittsburgh Pirates" [ref=e1693] [cursor=pointer]:
+                        - /url: /teams/baseball/mlb/pittsburgh-pirates
+                      - link "St. Louis Cardinals" [ref=e1695] [cursor=pointer]:
+                        - /url: /teams/baseball/mlb/st-louis-cardinals
+                  - button "Accordion" [ref=e1698] [cursor=pointer]:
+                    - generic [ref=e1699]: West
+                    - img "Arrow pointing up icon" [ref=e1701]
+      - generic [ref=e1703]:
+        - generic [ref=e1705]:
+          - generic:
+            - generic:
+              - generic:
+                - generic [ref=e1707]:
+                  - button "Betslip Accordion Header" [expanded] [ref=e1708]:
+                    - generic [ref=e1709]:
+                      - generic [ref=e1710]:
+                        - generic [ref=e1711]:
+                          - generic [ref=e1712]: "0"
+                          - generic [ref=e1713]: BET SLIP
+                        - img "Information" [ref=e1716] [cursor=pointer]
+                      - generic [ref=e1721]:
+                        - generic [ref=e1723] [cursor=pointer]: Cancel
+                        - generic [ref=e1725] [cursor=pointer]: Clear All
+                  - generic [ref=e1729]:
+                    - generic [ref=e1730]: Your picks will show up here.
+                    - generic [ref=e1731]: Select picks to then see the different types of bets available, including Singles, Parlays, Teasers, Round Robins and more.
+                - generic [ref=e1732]:
+                  - generic [ref=e1733]:
+                    - img "Left" [ref=e1735] [cursor=pointer]
+                    - heading "BET SLIP SETTINGS" [level=6] [ref=e1737]
+                  - generic [ref=e1738]:
+                    - generic [ref=e1739]: ODDS
+                    - generic [ref=e1740]:
+                      - generic [ref=e1741]:
+                        - generic [ref=e1742] [cursor=pointer]:
+                          - generic [ref=e1743]: Odds Change Behavior
+                          - generic [ref=e1744]: Always Ask
+                        - generic [ref=e1745]: For the fastest live betting experience select "Accept all Odds Changes"
+                      - generic [ref=e1747] [cursor=pointer]:
+                        - generic [ref=e1748]: Odds Type Preference
+                        - generic [ref=e1749]: American
+        - generic [ref=e1752]:
+          - img [ref=e1753]
+          - generic [ref=e1754]: You must be logged in to view this content
+          - button "Log In" [ref=e1756]:
+            - generic [ref=e1757]: Log In
+    - generic [ref=e1759]:
+      - generic [ref=e1760]:
+        - generic [ref=e1761]:
+          - generic [ref=e1762]: DraftKings Inc.
+          - generic [ref=e1763]: Boston, MA
+          - list [ref=e1765]:
+            - listitem [ref=e1766]:
+              - link "DraftKings Facebook" [ref=e1767] [cursor=pointer]:
+                - /url: https://www.facebook.com/DraftKings
+            - listitem [ref=e1768]:
+              - link "DraftKings X" [ref=e1769] [cursor=pointer]:
+                - /url: https://x.com/DraftKings
+            - listitem [ref=e1770]:
+              - link "DraftKings Instagram" [ref=e1771] [cursor=pointer]:
+                - /url: https://instagram.com/draftkings
+            - listitem [ref=e1772]:
+              - link "DraftKings YouTube" [ref=e1773] [cursor=pointer]:
+                - /url: https://www.youtube.com/draftkings
+        - generic [ref=e1774]:
+          - generic [ref=e1775]: COMPANY
+          - list [ref=e1777]:
+            - listitem [ref=e1778]:
+              - link "About DraftKings" [ref=e1779] [cursor=pointer]:
+                - /url: https://draftkings.com/about
+            - listitem [ref=e1780]:
+              - link "Careers" [ref=e1781] [cursor=pointer]:
+                - /url: https://careers.draftkings.com
+            - listitem [ref=e1782]:
+              - link "Mobile Apps" [ref=e1783] [cursor=pointer]:
+                - /url: https://www.draftkings.com/mobileapps
+            - listitem [ref=e1784]:
+              - link "Affiliates" [ref=e1785] [cursor=pointer]:
+                - /url: https://www.draftkings.com/affiliates
+            - listitem [ref=e1786]:
+              - link "Refer a Friend" [ref=e1787] [cursor=pointer]:
+                - /url: https://sportsbook.draftkings.com/refer
+            - listitem [ref=e1788]:
+              - link "Get Help" [ref=e1789] [cursor=pointer]:
+                - /url: https://help.draftkings.com/hc/en-us
+            - listitem [ref=e1790]:
+              - link "Terms Of Use" [ref=e1791] [cursor=pointer]:
+                - /url: https://sportsbook.draftkings.com/legal/nj-terms-of-use
+            - listitem [ref=e1792]:
+              - link "Privacy Policy" [ref=e1793] [cursor=pointer]:
+                - /url: https://sportsbook.draftkings.com/legal/privacy-notice
+            - listitem [ref=e1794]:
+              - link "Responsible Gaming" [ref=e1795] [cursor=pointer]:
+                - /url: https://rg.draftkings.com?intendedSiteExp=US-SB
+            - listitem [ref=e1796]:
+              - link "Retail Sportsbook Locations" [ref=e1797] [cursor=pointer]:
+                - /url: https://sportsbook.draftkings.com/retailsportsbook
+            - listitem [ref=e1798]:
+              - link "Casino Partners" [ref=e1799] [cursor=pointer]:
+                - /url: https://sportsbook.draftkings.com/casino-partners-sb
+            - listitem [ref=e1800]:
+              - link "Accessibility" [ref=e1801] [cursor=pointer]:
+                - /url: https://www.draftkings.com/about/accessibility
+            - listitem [ref=e1802]:
+              - link "Online Casino" [ref=e1803] [cursor=pointer]:
+                - /url: https://casino.draftkings.com
+            - listitem [ref=e1804]:
+              - link "Daily Fantasy Sports" [ref=e1805] [cursor=pointer]:
+                - /url: https://www.draftkings.com
+            - listitem [ref=e1806]:
+              - link "DKNetwork Sports News" [ref=e1807] [cursor=pointer]:
+                - /url: https://dknetwork.draftkings.com
+            - listitem
+            - listitem [ref=e1808]:
+              - complementary [ref=e1809]:
+                - link "Do Not Sell or Share My Personal Information" [ref=e1810] [cursor=pointer]
+        - generic [ref=e1811]:
+          - generic [ref=e1812]:
+            - generic [ref=e1813]: SPORTSBOOK ODDS
+            - list [ref=e1814]:
+              - listitem [ref=e1815]:
+                - link "NFL Odds" [ref=e1816] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/football/nfl
+              - listitem [ref=e1817]:
+                - link "NBA Odds" [ref=e1818] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/basketball/nba
+              - listitem [ref=e1819]:
+                - link "MLB Odds" [ref=e1820] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/baseball/mlb
+              - listitem [ref=e1821]:
+                - link "UFC Odds" [ref=e1822] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/mma/ufc
+              - listitem [ref=e1823]:
+                - link "NHL Odds" [ref=e1824] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/hockey/nhl
+              - listitem [ref=e1825]:
+                - link "PGA Odds" [ref=e1826] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/golf/the-open-championship
+              - listitem [ref=e1827]:
+                - link "Soccer Odds" [ref=e1828] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/sports/soccer
+              - listitem [ref=e1829]:
+                - link "Tennis Odds" [ref=e1830] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/sports/tennis
+              - listitem [ref=e1831]:
+                - link "College Basketball Odds" [ref=e1832] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/basketball/ncaab
+              - listitem [ref=e1833]:
+                - link "College Football Odds" [ref=e1834] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/football/ncaaf
+              - listitem [ref=e1835]:
+                - link "Live Odds" [ref=e1836] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/live
+              - listitem [ref=e1837]:
+                - link "Super Bowl Odds" [ref=e1838] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/super-bowl--odds
+              - listitem [ref=e1839]:
+                - link "NFL Playoffs Odds" [ref=e1840] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/playoffs/nfl--odds
+          - generic [ref=e1841]:
+            - generic [ref=e1842]: BETTING GUIDES
+            - list [ref=e1843]:
+              - listitem [ref=e1844]:
+                - link "How To Bet" [ref=e1845] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet
+              - listitem [ref=e1846]:
+                - link "How to Bet on Football" [ref=e1847] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/football-betting-guide
+              - listitem [ref=e1848]:
+                - link "How to Bet on Basketball" [ref=e1849] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/basketball-betting-guide
+              - listitem [ref=e1850]:
+                - link "How to Bet on UFC" [ref=e1851] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/mma-betting-guide
+              - listitem [ref=e1852]:
+                - link "How to Bet on Baseball" [ref=e1853] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/baseball-betting-guide
+              - listitem [ref=e1854]:
+                - link "How to Bet on Hockey" [ref=e1855] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/hockey-betting-guide
+              - listitem [ref=e1856]:
+                - link "How to Bet on Golf" [ref=e1857] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/golf-betting-guide
+              - listitem [ref=e1858]:
+                - link "How to Bet on Soccer" [ref=e1859] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/soccer-betting-guide
+              - listitem [ref=e1860]:
+                - link "How to Bet on Tennis" [ref=e1861] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/tennis-betting-guide
+              - listitem [ref=e1862]:
+                - link "How to Bet on NASCAR" [ref=e1863] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/nascar-betting-guide
+        - generic [ref=e1864]:
+          - generic [ref=e1865]: LOCATIONS
+          - list [ref=e1866]:
+            - listitem [ref=e1867]:
+              - generic [ref=e1868]: US Office
+              - generic [ref=e1869]:
+                - paragraph [ref=e1870]: 222 Berkeley Street
+                - paragraph [ref=e1871]: Boston, MA
+                - paragraph [ref=e1872]: "02116"
+            - listitem [ref=e1873]:
+              - generic [ref=e1874]: New Jersey Office
+              - generic [ref=e1875]:
+                - paragraph [ref=e1876]: PO Box 399
+                - paragraph [ref=e1877]: Hoboken, NJ
+                - paragraph [ref=e1878]: "07030"
+            - listitem [ref=e1879]:
+              - generic [ref=e1880]: UK Office
+              - generic [ref=e1881]:
+                - paragraph [ref=e1882]: 15 Ingestre Place
+                - paragraph [ref=e1883]: Suite 265
+                - paragraph [ref=e1884]: Soho, London
+                - paragraph [ref=e1885]: W1F OJH
+        - paragraph [ref=e1887]:
+          - text: We are regulated by the New Jersey Division of Gaming Enforcement as an Internet gaming operator in accordance with the Casino Control Act N.J.S.A. 5:12-1 and its implementing regulations. Our games are tested by the New Jersey Division of Gaming Enforcement to provide games that are fair and operate correctly. Only customers 21 and over are permitted to play our games. If you or someone you know has a gambling problem and wants help, call
+          - link "1-800-GAMBLER" [ref=e1888] [cursor=pointer]:
+            - /url: tel:1-800-GAMBLER
+          - text: . Subject to regulatory licensing requirements.
+      - generic [ref=e1889]:
+        - generic [ref=e1892]: © 2012-2026 DraftKings All Rights Reserved.
+        - generic [ref=e1894]:
+          - generic "Twenty One Plus Icon" [ref=e1895]:
+            - img "Twenty One Plus Icon" [ref=e1896]
+          - generic "Responsible Gaming Icon" [ref=e1897]:
+            - link "Responsible Gaming Icon" [ref=e1898] [cursor=pointer]:
+              - /url: https://rg.draftkings.com?intendedSiteExp=US-SB
+              - img "Responsible Gaming Icon" [ref=e1899]
+          - generic "DGE Icon" [ref=e1900]:
+            - link "DGE Icon" [ref=e1901] [cursor=pointer]:
+              - /url: https://www.njoag.gov/about/divisions-and-offices/division-of-gaming-enforcement-home/
+              - img "DGE Icon" [ref=e1902]
+    - generic [ref=e1905]: "Server Time: 04/24/2026 4:33:42 PM"
