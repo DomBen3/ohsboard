@@ -1,18 +1,26 @@
 import clsx from "clsx";
+import {
+  SPORTS,
+  type SportNavItem,
+  type SportStatus,
+} from "@/lib/active-sport";
 
-interface SportNavItem {
-  slug: string;
+// All "soon" entries that aren't part of the SportSlug union live here so
+// the sidebar still shows them as placeholders.
+interface NflPlaceholder {
+  slug: "nfl";
   name: string;
-  active: boolean;
+  status: "soon";
 }
 
-const sports: SportNavItem[] = [
-  { slug: "mlb", name: "MLB", active: true },
-  { slug: "nba", name: "NBA", active: false },
-  { slug: "nfl", name: "NFL", active: false },
+const PLACEHOLDERS: readonly NflPlaceholder[] = [
+  { slug: "nfl", name: "NFL", status: "soon" },
 ];
 
+type AnyNavItem = SportNavItem | NflPlaceholder;
+
 export function Sidebar() {
+  const items: AnyNavItem[] = [...SPORTS, ...PLACEHOLDERS];
   return (
     <aside className="w-52 shrink-0 border-r border-[var(--color-rule)] bg-[var(--color-ink-soft)] flex flex-col">
       <div className="px-5 pt-6 pb-8">
@@ -34,7 +42,7 @@ export function Sidebar() {
         League
       </div>
       <nav className="flex flex-col gap-px px-2">
-        {sports.map((sport) => (
+        {items.map((sport) => (
           <SportLink key={sport.slug} sport={sport} />
         ))}
       </nav>
@@ -62,10 +70,15 @@ export function Sidebar() {
   );
 }
 
-function SportLink({ sport }: { sport: SportNavItem }) {
+function SportLink({
+  sport,
+}: {
+  sport: { slug: string; name: string; status: SportStatus };
+}) {
   const base =
     "group relative flex items-center gap-3 px-3 py-2.5 font-display text-sm uppercase tracking-[0.14em] transition-colors";
-  if (!sport.active) {
+
+  if (sport.status === "soon") {
     return (
       <div
         className={clsx(
@@ -82,6 +95,25 @@ function SportLink({ sport }: { sport: SportNavItem }) {
       </div>
     );
   }
+
+  if (sport.status === "paused") {
+    return (
+      <div
+        className={clsx(
+          base,
+          "cursor-not-allowed text-[var(--color-chalk-dim)]",
+        )}
+        title="Paused — code retained, scrape off"
+      >
+        <span className="h-1.5 w-1.5 rounded-full border border-[var(--color-chalk-dim)] bg-[var(--color-ink-soft)]" />
+        <span className="flex-1">{sport.name}</span>
+        <span className="font-seg text-[9px] uppercase tracking-[0.2em] text-[var(--color-brass,var(--color-chalk-dim))]">
+          Paused
+        </span>
+      </div>
+    );
+  }
+
   return (
     <a
       href={`/${sport.slug}`}

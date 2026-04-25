@@ -1,0 +1,2928 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "DraftKings Sportsbook home" [ref=e8] [cursor=pointer]:
+        - /url: https://sportsbook.draftkings.com
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - navigation "platform navigation" [ref=e13]:
+            - list [ref=e14]:
+              - listitem [ref=e15]:
+                - link "Daily Fantasy" [ref=e16] [cursor=pointer]:
+                  - /url: https://www.draftkings.com/dfs
+              - listitem [ref=e17]:
+                - link "Sportsbook" [ref=e18] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com
+              - listitem [ref=e19]:
+                - link "Casino" [ref=e20] [cursor=pointer]:
+                  - /url: https://casino.draftkings.com/
+              - listitem [ref=e21]:
+                - link "Pick6" [ref=e22] [cursor=pointer]:
+                  - /url: https://pick6.draftkings.com
+              - listitem [ref=e23]:
+                - link "Lottery" [ref=e24] [cursor=pointer]:
+                  - /url: https://lottery.jackpocket.com?intendedSiteExp=US-PA-SB
+              - listitem [ref=e25]:
+                - button "More" [ref=e26] [cursor=pointer]:
+                  - generic [ref=e27]:
+                    - text: More
+                    - img [ref=e28]
+          - generic [ref=e30]:
+            - link "Visit Responsible Gaming page" [ref=e31] [cursor=pointer]:
+              - /url: https://rg.draftkings.com/?intendedSiteExp=US-PA-SB&flowType=rge-header
+              - generic [ref=e33]: Responsible Gaming
+            - generic [ref=e36] [cursor=pointer]: 
+        - generic [ref=e37]:
+          - navigation [ref=e38]:
+            - list [ref=e39]:
+              - listitem [ref=e40]:
+                - link "Home" [ref=e41] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/
+              - listitem [ref=e42]:
+                - link "My Bets" [ref=e43] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/mybets
+              - listitem [ref=e44]:
+                - link "Live In-Game" [ref=e45] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/live
+              - listitem [ref=e46]:
+                - link "Rewards" [ref=e47] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/promos
+              - listitem [ref=e48]:
+                - button "More" [ref=e49] [cursor=pointer]:
+                  - generic [ref=e50]:
+                    - generic [ref=e51]: More
+                    - img [ref=e52]
+          - generic [ref=e55]:
+            - generic [ref=e56]: Want to start placing bets?
+            - link "Log In" [ref=e57] [cursor=pointer]:
+              - /url: /login?returnUrlPath=/event/sa-spurs-%40-por-trail-blazers/34032169
+  - generic [ref=e60]:
+    - generic [ref=e61]:
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - generic "Expandable container POPULAR" [ref=e64]:
+            - heading "POPULAR" [level=2] [ref=e67] [cursor=pointer]
+          - list [ref=e69]:
+            - listitem [ref=e70] [cursor=pointer]:
+              - link "MLB" [ref=e71]:
+                - /url: /leagues/baseball/mlb
+                - generic [ref=e72]: MLB
+            - listitem [ref=e73] [cursor=pointer]:
+              - link "NBA" [ref=e74]:
+                - /url: /leagues/basketball/nba
+                - generic [ref=e75]: NBA
+            - listitem [ref=e76] [cursor=pointer]:
+              - link "NHL" [ref=e77]:
+                - /url: /leagues/hockey/nhl
+                - generic [ref=e78]: NHL
+            - listitem [ref=e79] [cursor=pointer]:
+              - link "UFC" [ref=e80]:
+                - /url: /leagues/mma/ufc
+                - generic [ref=e81]: UFC
+            - listitem [ref=e82] [cursor=pointer]:
+              - link "Zurich Classic" [ref=e83]:
+                - /url: /leagues/golf/zurich-classic-of-new-orleans
+                - generic [ref=e84]: Zurich Classic
+            - listitem [ref=e85] [cursor=pointer]:
+              - link "English Premier League" [ref=e86]:
+                - /url: /leagues/soccer/england---premier-league
+                - generic [ref=e87]: English Premier League
+            - listitem [ref=e88] [cursor=pointer]:
+              - link "ATP - Madrid" [ref=e89]:
+                - /url: /leagues/tennis/atp-madrid
+                - generic [ref=e90]: ATP - Madrid
+            - listitem [ref=e91] [cursor=pointer]:
+              - link "College Baseball" [ref=e92]:
+                - /url: /leagues/baseball/ncaa-baseball
+                - generic [ref=e93]: College Baseball
+            - listitem [ref=e94] [cursor=pointer]:
+              - link "WTA - Madrid" [ref=e95]:
+                - /url: /leagues/tennis/wta-madrid
+                - generic [ref=e96]: WTA - Madrid
+            - listitem [ref=e97] [cursor=pointer]:
+              - link "Spain - La Liga" [ref=e98]:
+                - /url: /leagues/soccer/spain---la-liga
+                - generic [ref=e99]: Spain - La Liga
+            - listitem [ref=e100] [cursor=pointer]:
+              - link "Boxing" [ref=e101]:
+                - /url: /leagues/boxing/boxing
+                - generic [ref=e102]: Boxing
+            - listitem [ref=e103] [cursor=pointer]:
+              - link "NASCAR Cup Series" [ref=e104]:
+                - /url: /leagues/motorsports/nascar-cup-series
+                - generic [ref=e105]: NASCAR Cup Series
+            - listitem [ref=e106] [cursor=pointer]:
+              - link "Germany - Bundesliga" [ref=e107]:
+                - /url: /leagues/soccer/germany---1.bundesliga
+                - generic [ref=e108]: Germany - Bundesliga
+            - listitem [ref=e109] [cursor=pointer]:
+              - link "France - Ligue 1" [ref=e110]:
+                - /url: /leagues/soccer/france---ligue-1
+                - generic [ref=e111]: France - Ligue 1
+            - listitem [ref=e112] [cursor=pointer]:
+              - link "MLS" [ref=e113]:
+                - /url: /leagues/soccer/usa---mls
+                - generic [ref=e114]: MLS
+            - listitem [ref=e115] [cursor=pointer]:
+              - link "UFL" [ref=e116]:
+                - /url: /leagues/football/ufl
+                - generic [ref=e117]: UFL
+        - list [ref=e118]:
+          - listitem [ref=e119] [cursor=pointer]:
+            - link "SPORT TEAMS" [ref=e120]:
+              - /url: /teams
+        - generic [ref=e121]:
+          - generic "Expandable container A-Z SPORTS" [ref=e122]:
+            - heading "A-Z SPORTS" [level=2] [ref=e125] [cursor=pointer]
+          - generic [ref=e126]:
+            - generic "Expandable container AUSSIE RULES" [ref=e128]:
+              - heading "AUSSIE RULES" [level=2] [ref=e131] [cursor=pointer]
+            - generic "Expandable container BASEBALL" [ref=e133]:
+              - heading "BASEBALL" [level=2] [ref=e136] [cursor=pointer]
+            - generic "Expandable container BASKETBALL" [ref=e138]:
+              - heading "BASKETBALL" [level=2] [ref=e141] [cursor=pointer]
+            - generic "Expandable container BOXING" [ref=e143]:
+              - heading "BOXING" [level=2] [ref=e146] [cursor=pointer]
+            - generic "Expandable container CRICKET" [ref=e148]:
+              - heading "CRICKET" [level=2] [ref=e151] [cursor=pointer]
+            - generic "Expandable container CYCLING" [ref=e153]:
+              - heading "CYCLING" [level=2] [ref=e156] [cursor=pointer]
+            - generic "Expandable container DARTS" [ref=e158]:
+              - heading "DARTS" [level=2] [ref=e161] [cursor=pointer]
+            - generic "Expandable container FOOTBALL" [ref=e163]:
+              - heading "FOOTBALL" [level=2] [ref=e166] [cursor=pointer]
+            - generic "Expandable container GOLF" [ref=e168]:
+              - heading "GOLF" [level=2] [ref=e171] [cursor=pointer]
+            - generic "Expandable container HANDBALL" [ref=e173]:
+              - heading "HANDBALL" [level=2] [ref=e176] [cursor=pointer]
+            - generic "Expandable container HOCKEY" [ref=e178]:
+              - heading "HOCKEY" [level=2] [ref=e181] [cursor=pointer]
+            - generic "Expandable container JAI ALAI" [ref=e183]:
+              - heading "JAI ALAI" [level=2] [ref=e186] [cursor=pointer]
+            - generic "Expandable container LACROSSE" [ref=e188]:
+              - heading "LACROSSE" [level=2] [ref=e191] [cursor=pointer]
+            - generic "Expandable container MMA" [ref=e193]:
+              - heading "MMA" [level=2] [ref=e196] [cursor=pointer]
+            - generic "Expandable container MOTORSPORTS" [ref=e198]:
+              - heading "MOTORSPORTS" [level=2] [ref=e201] [cursor=pointer]
+            - generic "Expandable container RUGBY LEAGUE" [ref=e203]:
+              - heading "RUGBY LEAGUE" [level=2] [ref=e206] [cursor=pointer]
+            - generic "Expandable container RUGBY UNION" [ref=e208]:
+              - heading "RUGBY UNION" [level=2] [ref=e211] [cursor=pointer]
+            - generic "Expandable container SAILING" [ref=e213]:
+              - heading "SAILING" [level=2] [ref=e216] [cursor=pointer]
+            - generic "Expandable container SNOOKER" [ref=e218]:
+              - heading "SNOOKER" [level=2] [ref=e221] [cursor=pointer]
+            - generic "Expandable container SOCCER" [ref=e223]:
+              - heading "SOCCER" [level=2] [ref=e226] [cursor=pointer]
+            - generic "Expandable container SURFING" [ref=e228]:
+              - heading "SURFING" [level=2] [ref=e231] [cursor=pointer]
+            - generic "Expandable container TABLE TENNIS" [ref=e233]:
+              - heading "TABLE TENNIS" [level=2] [ref=e236] [cursor=pointer]
+            - generic "Expandable container TENNIS" [ref=e238]:
+              - heading "TENNIS" [level=2] [ref=e241] [cursor=pointer]
+            - generic "Expandable container VOLLEYBALL" [ref=e243]:
+              - heading "VOLLEYBALL" [level=2] [ref=e246] [cursor=pointer]
+        - generic "Expandable container NFL WEEKLY ODDS" [ref=e248]:
+          - heading "NFL WEEKLY ODDS" [level=2] [ref=e251] [cursor=pointer]
+        - generic "Expandable container PRIMETIME GAMES" [ref=e253]:
+          - heading "PRIMETIME GAMES" [level=2] [ref=e256] [cursor=pointer]
+        - generic "Expandable container FUTURES" [ref=e258]:
+          - heading "FUTURES" [level=2] [ref=e261] [cursor=pointer]
+        - generic "Expandable container PROP BETS" [ref=e263]:
+          - heading "PROP BETS" [level=2] [ref=e266] [cursor=pointer]
+        - generic [ref=e267]:
+          - generic "Expandable container PLAYOFF PAGES" [ref=e268]:
+            - heading "PLAYOFF PAGES" [level=2] [ref=e271] [cursor=pointer]
+          - generic [ref=e272]:
+            - link "College Football Playoffs" [ref=e274] [cursor=pointer]:
+              - /url: /college-football-playoffs--odds
+            - link "NBA Playoffs" [ref=e276] [cursor=pointer]:
+              - /url: /page/nba-playoffs-odds
+            - link "NFL Playoffs" [ref=e278] [cursor=pointer]:
+              - /url: /playoffs/nfl--odds
+        - generic [ref=e279]:
+          - generic "Expandable container CHAMPIONSHIP PAGES" [ref=e280]:
+            - heading "CHAMPIONSHIP PAGES" [level=2] [ref=e283] [cursor=pointer]
+          - generic [ref=e284]:
+            - link "Daytona 500" [ref=e286] [cursor=pointer]:
+              - /url: /daytona-500--odds
+            - link "NBA Finals" [ref=e288] [cursor=pointer]:
+              - /url: /page/nba-finals-odds
+            - link "Ryder Cup" [ref=e290] [cursor=pointer]:
+              - /url: /ryder-cup--odds
+            - link "Stanley Cup" [ref=e292] [cursor=pointer]:
+              - /url: /page/stanley-cup-odds
+            - link "Super Bowl" [ref=e294] [cursor=pointer]:
+              - /url: /super-bowl--odds
+            - link "World Series" [ref=e296] [cursor=pointer]:
+              - /url: /page/world-series-odds
+      - generic [ref=e297]:
+        - navigation "breadcrumb" [ref=e299]:
+          - list [ref=e300]:
+            - listitem [ref=e301]:
+              - link "Sportsbook" [ref=e302] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e303]:
+              - text: /
+              - link "Basketball Odds" [ref=e304] [cursor=pointer]:
+                - /url: /sports/basketball
+            - listitem [ref=e305]:
+              - text: /
+              - link "NBA Odds" [ref=e306] [cursor=pointer]:
+                - /url: /leagues/basketball/nba
+            - listitem [ref=e307]:
+              - text: /
+              - heading "SA Spurs @ POR Trail Blazers Odds" [level=1] [ref=e308]
+        - list [ref=e313]:
+          - listitem [ref=e314]:
+            - link "4th Quarter 0:50 LA Lakers logo LA Lakers 95 HOU Rockets logo HOU Rockets 99" [ref=e315] [cursor=pointer]:
+              - /url: /event/la-lakers-%40-hou-rockets/34032164
+              - generic [ref=e316]:
+                - generic [ref=e318]:
+                  - generic [ref=e319]: 4th Quarter
+                  - generic [ref=e320]: 0:50
+                - img [ref=e322]
+              - generic [ref=e326]:
+                - generic [ref=e327]:
+                  - generic [ref=e328]:
+                    - img "LA Lakers logo" [ref=e329]
+                    - generic [ref=e330]: LA Lakers
+                  - generic [ref=e331]: "95"
+                - generic [ref=e332]:
+                  - generic [ref=e333]:
+                    - img "HOU Rockets logo" [ref=e334]
+                    - generic [ref=e335]: HOU Rockets
+                  - generic [ref=e336]: "99"
+          - listitem [ref=e337]:
+            - link "Tomorrow 1:10 PM DET Pistons logo DET Pistons ORL Magic logo ORL Magic" [ref=e338] [cursor=pointer]:
+              - /url: /event/det-pistons-%40-orl-magic/34035437
+              - generic [ref=e339]:
+                - generic [ref=e340]: Tomorrow 1:10 PM
+                - img [ref=e342]
+              - generic [ref=e346]:
+                - generic [ref=e348]:
+                  - img "DET Pistons logo" [ref=e349]
+                  - generic [ref=e350]: DET Pistons
+                - generic [ref=e352]:
+                  - img "ORL Magic logo" [ref=e353]
+                  - generic [ref=e354]: ORL Magic
+          - listitem [ref=e355]:
+            - link "Tomorrow 3:40 PM OKC Thunder logo OKC Thunder PHO Suns logo PHO Suns" [ref=e356] [cursor=pointer]:
+              - /url: /event/okc-thunder-%40-pho-suns/34035438
+              - generic [ref=e357]:
+                - generic [ref=e358]: Tomorrow 3:40 PM
+                - img [ref=e360]
+              - generic [ref=e364]:
+                - generic [ref=e366]:
+                  - img "OKC Thunder logo" [ref=e367]
+                  - generic [ref=e368]: OKC Thunder
+                - generic [ref=e370]:
+                  - img "PHO Suns logo" [ref=e371]
+                  - generic [ref=e372]: PHO Suns
+          - listitem [ref=e373]:
+            - link "Tomorrow 6:10 PM NY Knicks logo NY Knicks ATL Hawks logo ATL Hawks" [ref=e374] [cursor=pointer]:
+              - /url: /event/ny-knicks-%40-atl-hawks/34041275
+              - generic [ref=e375]:
+                - generic [ref=e376]: Tomorrow 6:10 PM
+                - img [ref=e378]
+              - generic [ref=e382]:
+                - generic [ref=e384]:
+                  - img "NY Knicks logo" [ref=e385]
+                  - generic [ref=e386]: NY Knicks
+                - generic [ref=e388]:
+                  - img "ATL Hawks logo" [ref=e389]
+                  - generic [ref=e390]: ATL Hawks
+          - listitem [ref=e391]:
+            - link "Tomorrow 8:40 PM DEN Nuggets MIN Timberwolves" [ref=e392] [cursor=pointer]:
+              - /url: /event/den-nuggets-%40-min-timberwolves/34041296
+              - generic [ref=e393]:
+                - generic [ref=e394]: Tomorrow 8:40 PM
+                - img [ref=e396]
+              - generic [ref=e400]:
+                - generic [ref=e403]: DEN Nuggets
+                - generic [ref=e406]: MIN Timberwolves
+          - listitem [ref=e407]:
+            - link "Sun Apr 26th 1:10 PM CLE Cavaliers TOR Raptors" [ref=e408] [cursor=pointer]:
+              - /url: /event/cle-cavaliers-%40-tor-raptors/34043734
+              - generic [ref=e409]:
+                - generic [ref=e410]: Sun Apr 26th 1:10 PM
+                - img [ref=e412]
+              - generic [ref=e416]:
+                - generic [ref=e419]: CLE Cavaliers
+                - generic [ref=e422]: TOR Raptors
+          - listitem [ref=e423]:
+            - link "Sun Apr 26th 7:10 PM BOS Celtics PHI 76ers" [ref=e424] [cursor=pointer]:
+              - /url: /event/bos-celtics-%40-phi-76ers/34046518
+              - generic [ref=e425]:
+                - generic [ref=e426]: Sun Apr 26th 7:10 PM
+                - img [ref=e428]
+              - generic [ref=e432]:
+                - generic [ref=e435]: BOS Celtics
+                - generic [ref=e438]: PHI 76ers
+        - generic [ref=e441]:
+          - generic [ref=e446]:
+            - generic [ref=e447]:
+              - img "SA Spurs-logo" [ref=e449]
+              - generic [ref=e451]: SA Spurs
+            - generic [ref=e452]:
+              - paragraph [ref=e453]:
+                - text: "Starts In:"
+                - generic [ref=e454]: 11:26
+              - paragraph [ref=e455]: Today 10:40 PM
+            - generic [ref=e456]:
+              - img "POR Trail Blazers-logo" [ref=e458]
+              - generic [ref=e460]: POR Trail Blazers
+          - generic [ref=e462]:
+            - generic [ref=e466] [cursor=pointer]:
+              - generic [ref=e468]: All Odds
+              - generic [ref=e470]:
+                - generic [ref=e471]: SGP
+                - text: Builder
+            - generic [ref=e474] [cursor=pointer]: GameScript
+            - generic [ref=e477] [cursor=pointer]: Stats
+            - generic [ref=e480] [cursor=pointer]: Quick SGP
+          - generic [ref=e483]:
+            - button "View details for Get a 30% Profit Boost to use on a 3+ leg SA Spurs @ POR Trail Blazers SGP bet today!" [ref=e485]:
+              - generic [ref=e486]:
+                - img "GiftFilled" [ref=e487]
+                - generic [ref=e489]: Get a 30% Profit Boost to use on a 3+ leg SA Spurs @ POR Trail Blazers SGP bet today!
+            - button "Opt In" [ref=e490]:
+              - generic [ref=e491]: Opt In
+          - generic [ref=e494]:
+            - generic [ref=e496]:
+              - button [ref=e497] [cursor=pointer]:
+                - img [ref=e498]
+              - generic [ref=e500]:
+                - generic [ref=e501]:
+                  - link "Popular" [ref=e503] [cursor=pointer]:
+                    - /url: /event/sa-spurs-%2540-por-trail-blazers/34032169?category=all-odds&subcategory=popular
+                  - link "Game Lines" [ref=e505] [cursor=pointer]:
+                    - /url: /event/sa-spurs-%2540-por-trail-blazers/34032169?category=all-odds&subcategory=game-lines
+                  - link "Quick Hits" [ref=e507] [cursor=pointer]:
+                    - /url: /event/sa-spurs-%2540-por-trail-blazers/34032169?category=all-odds&subcategory=quick-hits
+                  - link "Points" [ref=e509] [cursor=pointer]:
+                    - /url: /event/sa-spurs-%2540-por-trail-blazers/34032169?category=all-odds&subcategory=points
+                  - link "Threes" [ref=e511] [cursor=pointer]:
+                    - /url: /event/sa-spurs-%2540-por-trail-blazers/34032169?category=all-odds&subcategory=threes
+                  - link "Rebounds" [ref=e513] [cursor=pointer]:
+                    - /url: /event/sa-spurs-%2540-por-trail-blazers/34032169?category=all-odds&subcategory=rebounds
+                  - link "Assists" [ref=e515] [cursor=pointer]:
+                    - /url: /event/sa-spurs-%2540-por-trail-blazers/34032169?category=all-odds&subcategory=assists
+                  - link "Combos" [ref=e517] [cursor=pointer]:
+                    - /url: /event/sa-spurs-%2540-por-trail-blazers/34032169?category=all-odds&subcategory=combos
+                  - link "Defense" [ref=e519] [cursor=pointer]:
+                    - /url: /event/sa-spurs-%2540-por-trail-blazers/34032169?category=all-odds&subcategory=defense
+                  - link "Combined Players" [ref=e521] [cursor=pointer]:
+                    - /url: /event/sa-spurs-%2540-por-trail-blazers/34032169?category=all-odds&subcategory=combined-players
+                  - link "Either Player" [ref=e523] [cursor=pointer]:
+                    - /url: /event/sa-spurs-%2540-por-trail-blazers/34032169?category=all-odds&subcategory=either-player
+                  - link "H2H Player" [ref=e525] [cursor=pointer]:
+                    - /url: /event/sa-spurs-%2540-por-trail-blazers/34032169?category=all-odds&subcategory=h2h-player
+                  - link "Player Specials" [ref=e527] [cursor=pointer]:
+                    - /url: /event/sa-spurs-%2540-por-trail-blazers/34032169?category=all-odds&subcategory=player-specials
+                  - link "Game Leaders" [ref=e529] [cursor=pointer]:
+                    - /url: /event/sa-spurs-%2540-por-trail-blazers/34032169?category=all-odds&subcategory=game-leaders
+                  - link "Halves" [ref=e531] [cursor=pointer]:
+                    - /url: /event/sa-spurs-%2540-por-trail-blazers/34032169?category=all-odds&subcategory=halves
+                  - link "Quarters" [ref=e533] [cursor=pointer]:
+                    - /url: /event/sa-spurs-%2540-por-trail-blazers/34032169?category=all-odds&subcategory=quarters
+                  - link "Game Props" [ref=e535] [cursor=pointer]:
+                    - /url: /event/sa-spurs-%2540-por-trail-blazers/34032169?category=all-odds&subcategory=game-props
+                  - link "Team Props" [ref=e537] [cursor=pointer]:
+                    - /url: /event/sa-spurs-%2540-por-trail-blazers/34032169?category=all-odds&subcategory=team-props
+                - separator [ref=e539]
+            - generic [ref=e540]:
+              - generic [ref=e541]:
+                - button "Points" [ref=e543]:
+                  - generic [ref=e544]:
+                    - heading "Points" [level=2] [ref=e545] [cursor=pointer]
+                    - generic "Open game in SGP mode" [ref=e546]:
+                      - img [ref=e547]
+                  - img [ref=e553]
+                - generic [ref=e561]:
+                  - generic [ref=e563]:
+                    - generic [ref=e565]:
+                      - link "player image Deni Avdija" [ref=e566] [cursor=pointer]:
+                        - /url: /players/basketball/deni-avdija-odds-527254
+                        - img "player image" [ref=e568]
+                        - paragraph [ref=e569]: Deni Avdija
+                      - generic [ref=e570]:
+                        - generic [ref=e571]: "PPG:"
+                        - generic [ref=e572]:
+                          - generic [ref=e573]:
+                            - generic [ref=e574]: "0"
+                            - generic [ref=e575]: "1"
+                            - generic [ref=e576]: "2"
+                            - generic [ref=e577]: "3"
+                            - generic [ref=e578]: "4"
+                            - generic [ref=e579]: "5"
+                            - generic [ref=e580]: "6"
+                            - generic [ref=e581]: "7"
+                            - generic [ref=e582]: "8"
+                            - generic [ref=e583]: "9"
+                          - generic [ref=e584]:
+                            - generic [ref=e585]: "0"
+                            - generic [ref=e586]: "1"
+                            - generic [ref=e587]: "2"
+                            - generic [ref=e588]: "3"
+                            - generic [ref=e589]: "4"
+                            - generic [ref=e590]: "5"
+                            - generic [ref=e591]: "6"
+                            - generic [ref=e592]: "7"
+                            - generic [ref=e593]: "8"
+                            - generic [ref=e594]: "9"
+                          - generic [ref=e595]: .
+                          - generic [ref=e596]:
+                            - generic [ref=e597]: "0"
+                            - generic [ref=e598]: "1"
+                            - generic [ref=e599]: "2"
+                            - generic [ref=e600]: "3"
+                            - generic [ref=e601]: "4"
+                            - generic [ref=e602]: "5"
+                            - generic [ref=e603]: "6"
+                            - generic [ref=e604]: "7"
+                            - generic [ref=e605]: "8"
+                            - generic [ref=e606]: "9"
+                    - generic [ref=e608]:
+                      - button "Arrow pointing left icon" [ref=e609] [cursor=pointer]:
+                        - img "Arrow pointing left icon" [ref=e610]
+                      - generic [ref=e613]:
+                        - button "15+" [ref=e614] [cursor=pointer]:
+                          - generic [ref=e615]: 15+
+                        - button "18+" [ref=e616] [cursor=pointer]:
+                          - generic [ref=e617]: 18+
+                        - button "20+" [ref=e618] [cursor=pointer]:
+                          - generic [ref=e619]: 20+
+                        - button "25+ −122" [ref=e620] [cursor=pointer]:
+                          - generic [ref=e621]: 25+
+                          - generic [ref=e622]: −122
+                        - button "30+" [ref=e623] [cursor=pointer]:
+                          - generic [ref=e624]: 30+
+                        - button "35+" [ref=e625] [cursor=pointer]:
+                          - generic [ref=e626]: 35+
+                        - button "40+" [ref=e627] [cursor=pointer]:
+                          - generic [ref=e628]: 40+
+                        - button "45+" [ref=e629] [cursor=pointer]:
+                          - generic [ref=e630]: 45+
+                      - button "Arrow pointing right icon" [ref=e631] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e632]
+                  - generic [ref=e635]:
+                    - generic [ref=e637]:
+                      - link "player image De'Aaron Fox" [ref=e638] [cursor=pointer]:
+                        - /url: /players/basketball/de'aaron-fox-odds-33343
+                        - img "player image" [ref=e640]
+                        - paragraph [ref=e641]: De'Aaron Fox
+                      - generic [ref=e642]:
+                        - generic [ref=e643]: "PPG:"
+                        - generic [ref=e644]:
+                          - generic [ref=e645]:
+                            - generic [ref=e646]: "0"
+                            - generic [ref=e647]: "1"
+                            - generic [ref=e648]: "2"
+                            - generic [ref=e649]: "3"
+                            - generic [ref=e650]: "4"
+                            - generic [ref=e651]: "5"
+                            - generic [ref=e652]: "6"
+                            - generic [ref=e653]: "7"
+                            - generic [ref=e654]: "8"
+                            - generic [ref=e655]: "9"
+                          - generic [ref=e656]:
+                            - generic [ref=e657]: "0"
+                            - generic [ref=e658]: "1"
+                            - generic [ref=e659]: "2"
+                            - generic [ref=e660]: "3"
+                            - generic [ref=e661]: "4"
+                            - generic [ref=e662]: "5"
+                            - generic [ref=e663]: "6"
+                            - generic [ref=e664]: "7"
+                            - generic [ref=e665]: "8"
+                            - generic [ref=e666]: "9"
+                          - generic [ref=e667]: .
+                          - generic [ref=e668]:
+                            - generic [ref=e669]: "0"
+                            - generic [ref=e670]: "1"
+                            - generic [ref=e671]: "2"
+                            - generic [ref=e672]: "3"
+                            - generic [ref=e673]: "4"
+                            - generic [ref=e674]: "5"
+                            - generic [ref=e675]: "6"
+                            - generic [ref=e676]: "7"
+                            - generic [ref=e677]: "8"
+                            - generic [ref=e678]: "9"
+                    - generic [ref=e680]:
+                      - button "Arrow pointing left icon" [ref=e681] [cursor=pointer]:
+                        - img "Arrow pointing left icon" [ref=e682]
+                      - generic [ref=e685]:
+                        - button "10+" [ref=e686] [cursor=pointer]:
+                          - generic [ref=e687]: 10+
+                        - button "12+" [ref=e688] [cursor=pointer]:
+                          - generic [ref=e689]: 12+
+                        - button "15+" [ref=e690] [cursor=pointer]:
+                          - generic [ref=e691]: 15+
+                        - button "18+" [ref=e692] [cursor=pointer]:
+                          - generic [ref=e693]: 18+
+                        - button "20+" [ref=e694] [cursor=pointer]:
+                          - generic [ref=e695]: 20+
+                        - button "21+ −119" [ref=e696] [cursor=pointer]:
+                          - generic [ref=e697]: 21+
+                          - generic [ref=e698]: −119
+                        - button "25+" [ref=e699] [cursor=pointer]:
+                          - generic [ref=e700]: 25+
+                        - button "30+" [ref=e701] [cursor=pointer]:
+                          - generic [ref=e702]: 30+
+                        - button "35+" [ref=e703] [cursor=pointer]:
+                          - generic [ref=e704]: 35+
+                        - button "40+" [ref=e705] [cursor=pointer]:
+                          - generic [ref=e706]: 40+
+                      - button "Arrow pointing right icon" [ref=e707] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e708]
+                  - generic [ref=e711]:
+                    - generic [ref=e713]:
+                      - link "player image Stephon Castle" [ref=e714] [cursor=pointer]:
+                        - /url: /players/basketball/stephon-castle-odds-800351
+                        - img "player image" [ref=e716]
+                        - paragraph [ref=e717]: Stephon Castle
+                      - generic [ref=e718]:
+                        - generic [ref=e719]: "PPG:"
+                        - generic [ref=e720]:
+                          - generic [ref=e721]:
+                            - generic [ref=e722]: "0"
+                            - generic [ref=e723]: "1"
+                            - generic [ref=e724]: "2"
+                            - generic [ref=e725]: "3"
+                            - generic [ref=e726]: "4"
+                            - generic [ref=e727]: "5"
+                            - generic [ref=e728]: "6"
+                            - generic [ref=e729]: "7"
+                            - generic [ref=e730]: "8"
+                            - generic [ref=e731]: "9"
+                          - generic [ref=e732]:
+                            - generic [ref=e733]: "0"
+                            - generic [ref=e734]: "1"
+                            - generic [ref=e735]: "2"
+                            - generic [ref=e736]: "3"
+                            - generic [ref=e737]: "4"
+                            - generic [ref=e738]: "5"
+                            - generic [ref=e739]: "6"
+                            - generic [ref=e740]: "7"
+                            - generic [ref=e741]: "8"
+                            - generic [ref=e742]: "9"
+                          - generic [ref=e743]: .
+                          - generic [ref=e744]:
+                            - generic [ref=e745]: "0"
+                            - generic [ref=e746]: "1"
+                            - generic [ref=e747]: "2"
+                            - generic [ref=e748]: "3"
+                            - generic [ref=e749]: "4"
+                            - generic [ref=e750]: "5"
+                            - generic [ref=e751]: "6"
+                            - generic [ref=e752]: "7"
+                            - generic [ref=e753]: "8"
+                            - generic [ref=e754]: "9"
+                    - generic [ref=e756]:
+                      - button "Arrow pointing left icon" [ref=e757] [cursor=pointer]:
+                        - img "Arrow pointing left icon" [ref=e758]
+                      - generic [ref=e761]:
+                        - button "10+" [ref=e762] [cursor=pointer]:
+                          - generic [ref=e763]: 10+
+                        - button "12+" [ref=e764] [cursor=pointer]:
+                          - generic [ref=e765]: 12+
+                        - button "15+" [ref=e766] [cursor=pointer]:
+                          - generic [ref=e767]: 15+
+                        - button "18+" [ref=e768] [cursor=pointer]:
+                          - generic [ref=e769]: 18+
+                        - button "20+ −105" [ref=e770] [cursor=pointer]:
+                          - generic [ref=e771]: 20+
+                          - generic [ref=e772]: −105
+                        - button "25+" [ref=e773] [cursor=pointer]:
+                          - generic [ref=e774]: 25+
+                        - button "30+" [ref=e775] [cursor=pointer]:
+                          - generic [ref=e776]: 30+
+                        - button "35+" [ref=e777] [cursor=pointer]:
+                          - generic [ref=e778]: 35+
+                      - button "Arrow pointing right icon" [ref=e779] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e780]
+                  - generic [ref=e783]:
+                    - generic [ref=e785]:
+                      - link "player image Jrue Holiday" [ref=e786] [cursor=pointer]:
+                        - /url: /players/basketball/jrue-holiday-odds-33210
+                        - img "player image" [ref=e788]
+                        - paragraph [ref=e789]: Jrue Holiday
+                      - generic [ref=e790]:
+                        - generic [ref=e791]: "PPG:"
+                        - generic [ref=e792]:
+                          - generic [ref=e793]:
+                            - generic [ref=e794]: "0"
+                            - generic [ref=e795]: "1"
+                            - generic [ref=e796]: "2"
+                            - generic [ref=e797]: "3"
+                            - generic [ref=e798]: "4"
+                            - generic [ref=e799]: "5"
+                            - generic [ref=e800]: "6"
+                            - generic [ref=e801]: "7"
+                            - generic [ref=e802]: "8"
+                            - generic [ref=e803]: "9"
+                          - generic [ref=e804]:
+                            - generic [ref=e805]: "0"
+                            - generic [ref=e806]: "1"
+                            - generic [ref=e807]: "2"
+                            - generic [ref=e808]: "3"
+                            - generic [ref=e809]: "4"
+                            - generic [ref=e810]: "5"
+                            - generic [ref=e811]: "6"
+                            - generic [ref=e812]: "7"
+                            - generic [ref=e813]: "8"
+                            - generic [ref=e814]: "9"
+                          - generic [ref=e815]: .
+                          - generic [ref=e816]:
+                            - generic [ref=e817]: "0"
+                            - generic [ref=e818]: "1"
+                            - generic [ref=e819]: "2"
+                            - generic [ref=e820]: "3"
+                            - generic [ref=e821]: "4"
+                            - generic [ref=e822]: "5"
+                            - generic [ref=e823]: "6"
+                            - generic [ref=e824]: "7"
+                            - generic [ref=e825]: "8"
+                            - generic [ref=e826]: "9"
+                    - generic [ref=e828]:
+                      - button "Arrow pointing left icon" [ref=e829] [cursor=pointer]:
+                        - img "Arrow pointing left icon" [ref=e830]
+                      - generic [ref=e833]:
+                        - button "8+" [ref=e834] [cursor=pointer]:
+                          - generic [ref=e835]: 8+
+                        - button "10+" [ref=e836] [cursor=pointer]:
+                          - generic [ref=e837]: 10+
+                        - button "12+" [ref=e838] [cursor=pointer]:
+                          - generic [ref=e839]: 12+
+                        - button "15+" [ref=e840] [cursor=pointer]:
+                          - generic [ref=e841]: 15+
+                        - button "17+ −108" [ref=e842] [cursor=pointer]:
+                          - generic [ref=e843]: 17+
+                          - generic [ref=e844]: −108
+                        - button "18+" [ref=e845] [cursor=pointer]:
+                          - generic [ref=e846]: 18+
+                        - button "20+" [ref=e847] [cursor=pointer]:
+                          - generic [ref=e848]: 20+
+                        - button "25+" [ref=e849] [cursor=pointer]:
+                          - generic [ref=e850]: 25+
+                        - button "30+" [ref=e851] [cursor=pointer]:
+                          - generic [ref=e852]: 30+
+                        - button "35+" [ref=e853] [cursor=pointer]:
+                          - generic [ref=e854]: 35+
+                      - button "Arrow pointing right icon" [ref=e855] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e856]
+                  - generic [ref=e859]:
+                    - generic [ref=e861]:
+                      - link "player image Devin Vassell" [ref=e862] [cursor=pointer]:
+                        - /url: /players/basketball/devin-vassell-odds-527223
+                        - img "player image" [ref=e864]
+                        - paragraph [ref=e865]: Devin Vassell
+                      - generic [ref=e866]:
+                        - generic [ref=e867]: "PPG:"
+                        - generic [ref=e868]:
+                          - generic [ref=e869]:
+                            - generic [ref=e870]: "0"
+                            - generic [ref=e871]: "1"
+                            - generic [ref=e872]: "2"
+                            - generic [ref=e873]: "3"
+                            - generic [ref=e874]: "4"
+                            - generic [ref=e875]: "5"
+                            - generic [ref=e876]: "6"
+                            - generic [ref=e877]: "7"
+                            - generic [ref=e878]: "8"
+                            - generic [ref=e879]: "9"
+                          - generic [ref=e880]:
+                            - generic [ref=e881]: "0"
+                            - generic [ref=e882]: "1"
+                            - generic [ref=e883]: "2"
+                            - generic [ref=e884]: "3"
+                            - generic [ref=e885]: "4"
+                            - generic [ref=e886]: "5"
+                            - generic [ref=e887]: "6"
+                            - generic [ref=e888]: "7"
+                            - generic [ref=e889]: "8"
+                            - generic [ref=e890]: "9"
+                          - generic [ref=e891]: .
+                          - generic [ref=e892]:
+                            - generic [ref=e893]: "0"
+                            - generic [ref=e894]: "1"
+                            - generic [ref=e895]: "2"
+                            - generic [ref=e896]: "3"
+                            - generic [ref=e897]: "4"
+                            - generic [ref=e898]: "5"
+                            - generic [ref=e899]: "6"
+                            - generic [ref=e900]: "7"
+                            - generic [ref=e901]: "8"
+                            - generic [ref=e902]: "9"
+                    - generic [ref=e904]:
+                      - button "Arrow pointing left icon" [ref=e905] [cursor=pointer]:
+                        - img "Arrow pointing left icon" [ref=e906]
+                      - generic [ref=e909]:
+                        - button "8+" [ref=e910] [cursor=pointer]:
+                          - generic [ref=e911]: 8+
+                        - button "10+" [ref=e912] [cursor=pointer]:
+                          - generic [ref=e913]: 10+
+                        - button "12+" [ref=e914] [cursor=pointer]:
+                          - generic [ref=e915]: 12+
+                        - button "15+" [ref=e916] [cursor=pointer]:
+                          - generic [ref=e917]: 15+
+                        - button "16+ −125" [ref=e918] [cursor=pointer]:
+                          - generic [ref=e919]: 16+
+                          - generic [ref=e920]: −125
+                        - button "18+" [ref=e921] [cursor=pointer]:
+                          - generic [ref=e922]: 18+
+                        - button "20+" [ref=e923] [cursor=pointer]:
+                          - generic [ref=e924]: 20+
+                        - button "25+" [ref=e925] [cursor=pointer]:
+                          - generic [ref=e926]: 25+
+                        - button "30+" [ref=e927] [cursor=pointer]:
+                          - generic [ref=e928]: 30+
+                      - button "Arrow pointing right icon" [ref=e929] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e930]
+                  - generic [ref=e933]:
+                    - generic [ref=e935]:
+                      - link "player image Scoot Henderson" [ref=e936] [cursor=pointer]:
+                        - /url: /players/basketball/scoot-henderson-odds-713756
+                        - img "player image" [ref=e938]
+                        - paragraph [ref=e939]: Scoot Henderson
+                      - generic [ref=e940]:
+                        - generic [ref=e941]: "PPG:"
+                        - generic [ref=e942]:
+                          - generic [ref=e943]:
+                            - generic [ref=e944]: "0"
+                            - generic [ref=e945]: "1"
+                            - generic [ref=e946]: "2"
+                            - generic [ref=e947]: "3"
+                            - generic [ref=e948]: "4"
+                            - generic [ref=e949]: "5"
+                            - generic [ref=e950]: "6"
+                            - generic [ref=e951]: "7"
+                            - generic [ref=e952]: "8"
+                            - generic [ref=e953]: "9"
+                          - generic [ref=e954]:
+                            - generic [ref=e955]: "0"
+                            - generic [ref=e956]: "1"
+                            - generic [ref=e957]: "2"
+                            - generic [ref=e958]: "3"
+                            - generic [ref=e959]: "4"
+                            - generic [ref=e960]: "5"
+                            - generic [ref=e961]: "6"
+                            - generic [ref=e962]: "7"
+                            - generic [ref=e963]: "8"
+                            - generic [ref=e964]: "9"
+                          - generic [ref=e965]: .
+                          - generic [ref=e966]:
+                            - generic [ref=e967]: "0"
+                            - generic [ref=e968]: "1"
+                            - generic [ref=e969]: "2"
+                            - generic [ref=e970]: "3"
+                            - generic [ref=e971]: "4"
+                            - generic [ref=e972]: "5"
+                            - generic [ref=e973]: "6"
+                            - generic [ref=e974]: "7"
+                            - generic [ref=e975]: "8"
+                            - generic [ref=e976]: "9"
+                    - generic [ref=e978]:
+                      - button "Arrow pointing left icon" [ref=e979] [cursor=pointer]:
+                        - img "Arrow pointing left icon" [ref=e980]
+                      - generic [ref=e983]:
+                        - button "6+" [ref=e984] [cursor=pointer]:
+                          - generic [ref=e985]: 6+
+                        - button "8+" [ref=e986] [cursor=pointer]:
+                          - generic [ref=e987]: 8+
+                        - button "10+" [ref=e988] [cursor=pointer]:
+                          - generic [ref=e989]: 10+
+                        - button "12+" [ref=e990] [cursor=pointer]:
+                          - generic [ref=e991]: 12+
+                        - button "14+" [ref=e992] [cursor=pointer]:
+                          - generic [ref=e993]: 14+
+                        - button "15+ +111" [ref=e994] [cursor=pointer]:
+                          - generic [ref=e995]: 15+
+                          - generic [ref=e996]: "+111"
+                        - button "18+" [ref=e997] [cursor=pointer]:
+                          - generic [ref=e998]: 18+
+                        - button "20+" [ref=e999] [cursor=pointer]:
+                          - generic [ref=e1000]: 20+
+                        - button "25+" [ref=e1001] [cursor=pointer]:
+                          - generic [ref=e1002]: 25+
+                        - button "30+" [ref=e1003] [cursor=pointer]:
+                          - generic [ref=e1004]: 30+
+                      - button "Arrow pointing right icon" [ref=e1005] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1006]
+                  - generic [ref=e1009]:
+                    - generic [ref=e1011]:
+                      - link "player image Shaedon Sharpe" [ref=e1012] [cursor=pointer]:
+                        - /url: /players/basketball/shaedon-sharpe-odds-649550
+                        - img "player image" [ref=e1014]
+                        - paragraph [ref=e1015]: Shaedon Sharpe
+                      - generic [ref=e1016]:
+                        - generic [ref=e1017]: "PPG:"
+                        - generic [ref=e1018]:
+                          - generic [ref=e1019]:
+                            - generic [ref=e1020]: "0"
+                            - generic [ref=e1021]: "1"
+                            - generic [ref=e1022]: "2"
+                            - generic [ref=e1023]: "3"
+                            - generic [ref=e1024]: "4"
+                            - generic [ref=e1025]: "5"
+                            - generic [ref=e1026]: "6"
+                            - generic [ref=e1027]: "7"
+                            - generic [ref=e1028]: "8"
+                            - generic [ref=e1029]: "9"
+                          - generic [ref=e1030]:
+                            - generic [ref=e1031]: "0"
+                            - generic [ref=e1032]: "1"
+                            - generic [ref=e1033]: "2"
+                            - generic [ref=e1034]: "3"
+                            - generic [ref=e1035]: "4"
+                            - generic [ref=e1036]: "5"
+                            - generic [ref=e1037]: "6"
+                            - generic [ref=e1038]: "7"
+                            - generic [ref=e1039]: "8"
+                            - generic [ref=e1040]: "9"
+                          - generic [ref=e1041]: .
+                          - generic [ref=e1042]:
+                            - generic [ref=e1043]: "0"
+                            - generic [ref=e1044]: "1"
+                            - generic [ref=e1045]: "2"
+                            - generic [ref=e1046]: "3"
+                            - generic [ref=e1047]: "4"
+                            - generic [ref=e1048]: "5"
+                            - generic [ref=e1049]: "6"
+                            - generic [ref=e1050]: "7"
+                            - generic [ref=e1051]: "8"
+                            - generic [ref=e1052]: "9"
+                    - generic [ref=e1054]:
+                      - button "Arrow pointing left icon" [ref=e1055] [cursor=pointer]:
+                        - img "Arrow pointing left icon" [ref=e1056]
+                      - generic [ref=e1059]:
+                        - button "6+" [ref=e1060] [cursor=pointer]:
+                          - generic [ref=e1061]: 6+
+                        - button "8+" [ref=e1062] [cursor=pointer]:
+                          - generic [ref=e1063]: 8+
+                        - button "10+" [ref=e1064] [cursor=pointer]:
+                          - generic [ref=e1065]: 10+
+                        - button "11+" [ref=e1066] [cursor=pointer]:
+                          - generic [ref=e1067]: 11+
+                        - button "12+ +100" [ref=e1068] [cursor=pointer]:
+                          - generic [ref=e1069]: 12+
+                          - generic [ref=e1070]: "+100"
+                        - button "15+" [ref=e1071] [cursor=pointer]:
+                          - generic [ref=e1072]: 15+
+                        - button "18+" [ref=e1073] [cursor=pointer]:
+                          - generic [ref=e1074]: 18+
+                        - button "20+" [ref=e1075] [cursor=pointer]:
+                          - generic [ref=e1076]: 20+
+                        - button "25+" [ref=e1077] [cursor=pointer]:
+                          - generic [ref=e1078]: 25+
+                        - button "30+" [ref=e1079] [cursor=pointer]:
+                          - generic [ref=e1080]: 30+
+                      - button "Arrow pointing right icon" [ref=e1081] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1082]
+                  - generic [ref=e1085]:
+                    - generic [ref=e1087]:
+                      - link "player image Keldon Johnson" [ref=e1088] [cursor=pointer]:
+                        - /url: /players/basketball/keldon-johnson-odds-33369
+                        - img "player image" [ref=e1090]
+                        - paragraph [ref=e1091]: Keldon Johnson
+                      - generic [ref=e1092]:
+                        - generic [ref=e1093]: "PPG:"
+                        - generic [ref=e1094]:
+                          - generic [ref=e1095]:
+                            - generic [ref=e1096]: "0"
+                            - generic [ref=e1097]: "1"
+                            - generic [ref=e1098]: "2"
+                            - generic [ref=e1099]: "3"
+                            - generic [ref=e1100]: "4"
+                            - generic [ref=e1101]: "5"
+                            - generic [ref=e1102]: "6"
+                            - generic [ref=e1103]: "7"
+                            - generic [ref=e1104]: "8"
+                            - generic [ref=e1105]: "9"
+                          - generic [ref=e1106]:
+                            - generic [ref=e1107]: "0"
+                            - generic [ref=e1108]: "1"
+                            - generic [ref=e1109]: "2"
+                            - generic [ref=e1110]: "3"
+                            - generic [ref=e1111]: "4"
+                            - generic [ref=e1112]: "5"
+                            - generic [ref=e1113]: "6"
+                            - generic [ref=e1114]: "7"
+                            - generic [ref=e1115]: "8"
+                            - generic [ref=e1116]: "9"
+                          - generic [ref=e1117]: .
+                          - generic [ref=e1118]:
+                            - generic [ref=e1119]: "0"
+                            - generic [ref=e1120]: "1"
+                            - generic [ref=e1121]: "2"
+                            - generic [ref=e1122]: "3"
+                            - generic [ref=e1123]: "4"
+                            - generic [ref=e1124]: "5"
+                            - generic [ref=e1125]: "6"
+                            - generic [ref=e1126]: "7"
+                            - generic [ref=e1127]: "8"
+                            - generic [ref=e1128]: "9"
+                    - generic [ref=e1130]:
+                      - button "Arrow pointing left icon" [ref=e1131] [cursor=pointer]:
+                        - img "Arrow pointing left icon" [ref=e1132]
+                      - generic [ref=e1135]:
+                        - button "6+" [ref=e1136] [cursor=pointer]:
+                          - generic [ref=e1137]: 6+
+                        - button "8+" [ref=e1138] [cursor=pointer]:
+                          - generic [ref=e1139]: 8+
+                        - button "10+" [ref=e1140] [cursor=pointer]:
+                          - generic [ref=e1141]: 10+
+                        - button "12+ −102" [ref=e1142] [cursor=pointer]:
+                          - generic [ref=e1143]: 12+
+                          - generic [ref=e1144]: −102
+                        - button "15+" [ref=e1145] [cursor=pointer]:
+                          - generic [ref=e1146]: 15+
+                        - button "18+" [ref=e1147] [cursor=pointer]:
+                          - generic [ref=e1148]: 18+
+                        - button "20+" [ref=e1149] [cursor=pointer]:
+                          - generic [ref=e1150]: 20+
+                        - button "25+" [ref=e1151] [cursor=pointer]:
+                          - generic [ref=e1152]: 25+
+                      - button "Arrow pointing right icon" [ref=e1153] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1154]
+                  - generic [ref=e1157]:
+                    - generic [ref=e1159]:
+                      - link "player image Jerami Grant" [ref=e1160] [cursor=pointer]:
+                        - /url: /players/basketball/jerami-grant-odds-33017
+                        - img "player image" [ref=e1162]
+                        - paragraph [ref=e1163]: Jerami Grant
+                      - generic [ref=e1164]:
+                        - generic [ref=e1165]: "PPG:"
+                        - generic [ref=e1166]:
+                          - generic [ref=e1167]:
+                            - generic [ref=e1168]: "0"
+                            - generic [ref=e1169]: "1"
+                            - generic [ref=e1170]: "2"
+                            - generic [ref=e1171]: "3"
+                            - generic [ref=e1172]: "4"
+                            - generic [ref=e1173]: "5"
+                            - generic [ref=e1174]: "6"
+                            - generic [ref=e1175]: "7"
+                            - generic [ref=e1176]: "8"
+                            - generic [ref=e1177]: "9"
+                          - generic [ref=e1178]:
+                            - generic [ref=e1179]: "0"
+                            - generic [ref=e1180]: "1"
+                            - generic [ref=e1181]: "2"
+                            - generic [ref=e1182]: "3"
+                            - generic [ref=e1183]: "4"
+                            - generic [ref=e1184]: "5"
+                            - generic [ref=e1185]: "6"
+                            - generic [ref=e1186]: "7"
+                            - generic [ref=e1187]: "8"
+                            - generic [ref=e1188]: "9"
+                          - generic [ref=e1189]: .
+                          - generic [ref=e1190]:
+                            - generic [ref=e1191]: "0"
+                            - generic [ref=e1192]: "1"
+                            - generic [ref=e1193]: "2"
+                            - generic [ref=e1194]: "3"
+                            - generic [ref=e1195]: "4"
+                            - generic [ref=e1196]: "5"
+                            - generic [ref=e1197]: "6"
+                            - generic [ref=e1198]: "7"
+                            - generic [ref=e1199]: "8"
+                            - generic [ref=e1200]: "9"
+                    - generic [ref=e1202]:
+                      - button "Arrow pointing left icon" [ref=e1203] [cursor=pointer]:
+                        - img "Arrow pointing left icon" [ref=e1204]
+                      - generic [ref=e1207]:
+                        - button "6+" [ref=e1208] [cursor=pointer]:
+                          - generic [ref=e1209]: 6+
+                        - button "8+" [ref=e1210] [cursor=pointer]:
+                          - generic [ref=e1211]: 8+
+                        - button "10+ −126" [ref=e1212] [cursor=pointer]:
+                          - generic [ref=e1213]: 10+
+                          - generic [ref=e1214]: −126
+                        - button "12+" [ref=e1215] [cursor=pointer]:
+                          - generic [ref=e1216]: 12+
+                        - button "15+" [ref=e1217] [cursor=pointer]:
+                          - generic [ref=e1218]: 15+
+                        - button "18+" [ref=e1219] [cursor=pointer]:
+                          - generic [ref=e1220]: 18+
+                        - button "20+" [ref=e1221] [cursor=pointer]:
+                          - generic [ref=e1222]: 20+
+                        - button "25+" [ref=e1223] [cursor=pointer]:
+                          - generic [ref=e1224]: 25+
+                      - button "Arrow pointing right icon" [ref=e1225] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1226]
+                  - generic [ref=e1229]:
+                    - generic [ref=e1231]:
+                      - link "player image Toumani Camara" [ref=e1232] [cursor=pointer]:
+                        - /url: /players/basketball/toumani-camara-odds-713804
+                        - img "player image" [ref=e1234]
+                        - paragraph [ref=e1235]: Toumani Camara
+                      - generic [ref=e1236]:
+                        - generic [ref=e1237]: "PPG:"
+                        - generic [ref=e1238]:
+                          - generic [ref=e1239]:
+                            - generic [ref=e1240]: "0"
+                            - generic [ref=e1241]: "1"
+                            - generic [ref=e1242]: "2"
+                            - generic [ref=e1243]: "3"
+                            - generic [ref=e1244]: "4"
+                            - generic [ref=e1245]: "5"
+                            - generic [ref=e1246]: "6"
+                            - generic [ref=e1247]: "7"
+                            - generic [ref=e1248]: "8"
+                            - generic [ref=e1249]: "9"
+                          - generic [ref=e1250]:
+                            - generic [ref=e1251]: "0"
+                            - generic [ref=e1252]: "1"
+                            - generic [ref=e1253]: "2"
+                            - generic [ref=e1254]: "3"
+                            - generic [ref=e1255]: "4"
+                            - generic [ref=e1256]: "5"
+                            - generic [ref=e1257]: "6"
+                            - generic [ref=e1258]: "7"
+                            - generic [ref=e1259]: "8"
+                            - generic [ref=e1260]: "9"
+                          - generic [ref=e1261]: .
+                          - generic [ref=e1262]:
+                            - generic [ref=e1263]: "0"
+                            - generic [ref=e1264]: "1"
+                            - generic [ref=e1265]: "2"
+                            - generic [ref=e1266]: "3"
+                            - generic [ref=e1267]: "4"
+                            - generic [ref=e1268]: "5"
+                            - generic [ref=e1269]: "6"
+                            - generic [ref=e1270]: "7"
+                            - generic [ref=e1271]: "8"
+                            - generic [ref=e1272]: "9"
+                    - generic [ref=e1274]:
+                      - button "Arrow pointing left icon" [ref=e1275] [cursor=pointer]:
+                        - img "Arrow pointing left icon" [ref=e1276]
+                      - generic [ref=e1279]:
+                        - button "6+" [ref=e1280] [cursor=pointer]:
+                          - generic [ref=e1281]: 6+
+                        - button "8+" [ref=e1282] [cursor=pointer]:
+                          - generic [ref=e1283]: 8+
+                        - button "10+" [ref=e1284] [cursor=pointer]:
+                          - generic [ref=e1285]: 10+
+                        - button "12+ −107" [ref=e1286] [cursor=pointer]:
+                          - generic [ref=e1287]: 12+
+                          - generic [ref=e1288]: −107
+                        - button "15+" [ref=e1289] [cursor=pointer]:
+                          - generic [ref=e1290]: 15+
+                        - button "18+" [ref=e1291] [cursor=pointer]:
+                          - generic [ref=e1292]: 18+
+                        - button "20+" [ref=e1293] [cursor=pointer]:
+                          - generic [ref=e1294]: 20+
+                        - button "25+" [ref=e1295] [cursor=pointer]:
+                          - generic [ref=e1296]: 25+
+                      - button "Arrow pointing right icon" [ref=e1297] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1298]
+                  - generic [ref=e1301]:
+                    - generic [ref=e1303]:
+                      - link "player image Donovan Clingan" [ref=e1304] [cursor=pointer]:
+                        - /url: /players/basketball/donovan-clingan-odds-800354
+                        - img "player image" [ref=e1306]
+                        - paragraph [ref=e1307]: Donovan Clingan
+                      - generic [ref=e1308]:
+                        - generic [ref=e1309]: "PPG:"
+                        - generic [ref=e1310]:
+                          - generic [ref=e1311]:
+                            - generic [ref=e1312]: "0"
+                            - generic [ref=e1313]: "1"
+                            - generic [ref=e1314]: "2"
+                            - generic [ref=e1315]: "3"
+                            - generic [ref=e1316]: "4"
+                            - generic [ref=e1317]: "5"
+                            - generic [ref=e1318]: "6"
+                            - generic [ref=e1319]: "7"
+                            - generic [ref=e1320]: "8"
+                            - generic [ref=e1321]: "9"
+                          - generic [ref=e1322]:
+                            - generic [ref=e1323]: "0"
+                            - generic [ref=e1324]: "1"
+                            - generic [ref=e1325]: "2"
+                            - generic [ref=e1326]: "3"
+                            - generic [ref=e1327]: "4"
+                            - generic [ref=e1328]: "5"
+                            - generic [ref=e1329]: "6"
+                            - generic [ref=e1330]: "7"
+                            - generic [ref=e1331]: "8"
+                            - generic [ref=e1332]: "9"
+                          - generic [ref=e1333]: .
+                          - generic [ref=e1334]:
+                            - generic [ref=e1335]: "0"
+                            - generic [ref=e1336]: "1"
+                            - generic [ref=e1337]: "2"
+                            - generic [ref=e1338]: "3"
+                            - generic [ref=e1339]: "4"
+                            - generic [ref=e1340]: "5"
+                            - generic [ref=e1341]: "6"
+                            - generic [ref=e1342]: "7"
+                            - generic [ref=e1343]: "8"
+                            - generic [ref=e1344]: "9"
+                    - generic [ref=e1346]:
+                      - button "Arrow pointing left icon" [ref=e1347] [cursor=pointer]:
+                        - img "Arrow pointing left icon" [ref=e1348]
+                      - generic [ref=e1351]:
+                        - button "6+" [ref=e1352] [cursor=pointer]:
+                          - generic [ref=e1353]: 6+
+                        - button "8+" [ref=e1354] [cursor=pointer]:
+                          - generic [ref=e1355]: 8+
+                        - button "10+" [ref=e1356] [cursor=pointer]:
+                          - generic [ref=e1357]: 10+
+                        - button "11+ −109" [ref=e1358] [cursor=pointer]:
+                          - generic [ref=e1359]: 11+
+                          - generic [ref=e1360]: −109
+                        - button "12+" [ref=e1361] [cursor=pointer]:
+                          - generic [ref=e1362]: 12+
+                        - button "15+" [ref=e1363] [cursor=pointer]:
+                          - generic [ref=e1364]: 15+
+                        - button "18+" [ref=e1365] [cursor=pointer]:
+                          - generic [ref=e1366]: 18+
+                        - button "20+" [ref=e1367] [cursor=pointer]:
+                          - generic [ref=e1368]: 20+
+                        - button "25+" [ref=e1369] [cursor=pointer]:
+                          - generic [ref=e1370]: 25+
+                      - button "Arrow pointing right icon" [ref=e1371] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1372]
+                  - generic [ref=e1375]:
+                    - generic [ref=e1377]:
+                      - link "player image Dylan Harper" [ref=e1378] [cursor=pointer]:
+                        - /url: /players/basketball/dylan-harper-odds-905517
+                        - img "player image" [ref=e1380]
+                        - paragraph [ref=e1381]: Dylan Harper
+                      - generic [ref=e1382]:
+                        - generic [ref=e1383]: "PPG:"
+                        - generic [ref=e1384]:
+                          - generic [ref=e1385]:
+                            - generic [ref=e1386]: "0"
+                            - generic [ref=e1387]: "1"
+                            - generic [ref=e1388]: "2"
+                            - generic [ref=e1389]: "3"
+                            - generic [ref=e1390]: "4"
+                            - generic [ref=e1391]: "5"
+                            - generic [ref=e1392]: "6"
+                            - generic [ref=e1393]: "7"
+                            - generic [ref=e1394]: "8"
+                            - generic [ref=e1395]: "9"
+                          - generic [ref=e1396]:
+                            - generic [ref=e1397]: "0"
+                            - generic [ref=e1398]: "1"
+                            - generic [ref=e1399]: "2"
+                            - generic [ref=e1400]: "3"
+                            - generic [ref=e1401]: "4"
+                            - generic [ref=e1402]: "5"
+                            - generic [ref=e1403]: "6"
+                            - generic [ref=e1404]: "7"
+                            - generic [ref=e1405]: "8"
+                            - generic [ref=e1406]: "9"
+                          - generic [ref=e1407]: .
+                          - generic [ref=e1408]:
+                            - generic [ref=e1409]: "0"
+                            - generic [ref=e1410]: "1"
+                            - generic [ref=e1411]: "2"
+                            - generic [ref=e1412]: "3"
+                            - generic [ref=e1413]: "4"
+                            - generic [ref=e1414]: "5"
+                            - generic [ref=e1415]: "6"
+                            - generic [ref=e1416]: "7"
+                            - generic [ref=e1417]: "8"
+                            - generic [ref=e1418]: "9"
+                    - generic [ref=e1420]:
+                      - button "Arrow pointing left icon" [ref=e1421] [cursor=pointer]:
+                        - img "Arrow pointing left icon" [ref=e1422]
+                      - generic [ref=e1425]:
+                        - button "6+" [ref=e1426] [cursor=pointer]:
+                          - generic [ref=e1427]: 6+
+                        - button "8+" [ref=e1428] [cursor=pointer]:
+                          - generic [ref=e1429]: 8+
+                        - button "10+" [ref=e1430] [cursor=pointer]:
+                          - generic [ref=e1431]: 10+
+                        - button "11+" [ref=e1432] [cursor=pointer]:
+                          - generic [ref=e1433]: 11+
+                        - button "12+ +105" [ref=e1434] [cursor=pointer]:
+                          - generic [ref=e1435]: 12+
+                          - generic [ref=e1436]: "+105"
+                        - button "15+" [ref=e1437] [cursor=pointer]:
+                          - generic [ref=e1438]: 15+
+                        - button "18+" [ref=e1439] [cursor=pointer]:
+                          - generic [ref=e1440]: 18+
+                        - button "20+" [ref=e1441] [cursor=pointer]:
+                          - generic [ref=e1442]: 20+
+                        - button "25+" [ref=e1443] [cursor=pointer]:
+                          - generic [ref=e1444]: 25+
+                      - button "Arrow pointing right icon" [ref=e1445] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1446]
+                  - generic [ref=e1449]:
+                    - generic [ref=e1451]:
+                      - link "player image Julian Champagnie" [ref=e1452] [cursor=pointer]:
+                        - /url: /players/basketball/julian-champagnie-odds-650222
+                        - img "player image" [ref=e1454]
+                        - paragraph [ref=e1455]: Julian Champagnie
+                      - generic [ref=e1456]:
+                        - generic [ref=e1457]: "PPG:"
+                        - generic [ref=e1458]:
+                          - generic [ref=e1459]:
+                            - generic [ref=e1460]: "0"
+                            - generic [ref=e1461]: "1"
+                            - generic [ref=e1462]: "2"
+                            - generic [ref=e1463]: "3"
+                            - generic [ref=e1464]: "4"
+                            - generic [ref=e1465]: "5"
+                            - generic [ref=e1466]: "6"
+                            - generic [ref=e1467]: "7"
+                            - generic [ref=e1468]: "8"
+                            - generic [ref=e1469]: "9"
+                          - generic [ref=e1470]:
+                            - generic [ref=e1471]: "0"
+                            - generic [ref=e1472]: "1"
+                            - generic [ref=e1473]: "2"
+                            - generic [ref=e1474]: "3"
+                            - generic [ref=e1475]: "4"
+                            - generic [ref=e1476]: "5"
+                            - generic [ref=e1477]: "6"
+                            - generic [ref=e1478]: "7"
+                            - generic [ref=e1479]: "8"
+                            - generic [ref=e1480]: "9"
+                          - generic [ref=e1481]: .
+                          - generic [ref=e1482]:
+                            - generic [ref=e1483]: "0"
+                            - generic [ref=e1484]: "1"
+                            - generic [ref=e1485]: "2"
+                            - generic [ref=e1486]: "3"
+                            - generic [ref=e1487]: "4"
+                            - generic [ref=e1488]: "5"
+                            - generic [ref=e1489]: "6"
+                            - generic [ref=e1490]: "7"
+                            - generic [ref=e1491]: "8"
+                            - generic [ref=e1492]: "9"
+                    - generic [ref=e1494]:
+                      - button "Arrow pointing left icon" [ref=e1495] [cursor=pointer]:
+                        - img "Arrow pointing left icon" [ref=e1496]
+                      - generic [ref=e1499]:
+                        - button "6+" [ref=e1500] [cursor=pointer]:
+                          - generic [ref=e1501]: 6+
+                        - button "8+" [ref=e1502] [cursor=pointer]:
+                          - generic [ref=e1503]: 8+
+                        - button "10+ −121" [ref=e1504] [cursor=pointer]:
+                          - generic [ref=e1505]: 10+
+                          - generic [ref=e1506]: −121
+                        - button "12+" [ref=e1507] [cursor=pointer]:
+                          - generic [ref=e1508]: 12+
+                        - button "15+" [ref=e1509] [cursor=pointer]:
+                          - generic [ref=e1510]: 15+
+                        - button "18+" [ref=e1511] [cursor=pointer]:
+                          - generic [ref=e1512]: 18+
+                        - button "20+" [ref=e1513] [cursor=pointer]:
+                          - generic [ref=e1514]: 20+
+                        - button "25+" [ref=e1515] [cursor=pointer]:
+                          - generic [ref=e1516]: 25+
+                      - button "Arrow pointing right icon" [ref=e1517] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1518]
+                  - generic [ref=e1521]:
+                    - generic [ref=e1523]:
+                      - link "player image Luke Kornet" [ref=e1524] [cursor=pointer]:
+                        - /url: /players/basketball/luke-kornet-odds-32971
+                        - img "player image" [ref=e1526]
+                        - paragraph [ref=e1527]: Luke Kornet
+                      - generic [ref=e1528]:
+                        - generic [ref=e1529]: "PPG:"
+                        - generic [ref=e1530]:
+                          - generic [ref=e1531]:
+                            - generic [ref=e1532]: "0"
+                            - generic [ref=e1533]: "1"
+                            - generic [ref=e1534]: "2"
+                            - generic [ref=e1535]: "3"
+                            - generic [ref=e1536]: "4"
+                            - generic [ref=e1537]: "5"
+                            - generic [ref=e1538]: "6"
+                            - generic [ref=e1539]: "7"
+                            - generic [ref=e1540]: "8"
+                            - generic [ref=e1541]: "9"
+                          - generic [ref=e1542]: .
+                          - generic [ref=e1543]:
+                            - generic [ref=e1544]: "0"
+                            - generic [ref=e1545]: "1"
+                            - generic [ref=e1546]: "2"
+                            - generic [ref=e1547]: "3"
+                            - generic [ref=e1548]: "4"
+                            - generic [ref=e1549]: "5"
+                            - generic [ref=e1550]: "6"
+                            - generic [ref=e1551]: "7"
+                            - generic [ref=e1552]: "8"
+                            - generic [ref=e1553]: "9"
+                    - generic [ref=e1555]:
+                      - button "Arrow pointing left icon" [ref=e1556] [cursor=pointer]:
+                        - img "Arrow pointing left icon" [ref=e1557]
+                      - generic [ref=e1560]:
+                        - button "6+" [ref=e1561] [cursor=pointer]:
+                          - generic [ref=e1562]: 6+
+                        - button "8+ −118" [ref=e1563] [cursor=pointer]:
+                          - generic [ref=e1564]: 8+
+                          - generic [ref=e1565]: −118
+                        - button "10+" [ref=e1566] [cursor=pointer]:
+                          - generic [ref=e1567]: 10+
+                        - button "12+" [ref=e1568] [cursor=pointer]:
+                          - generic [ref=e1569]: 12+
+                        - button "15+" [ref=e1570] [cursor=pointer]:
+                          - generic [ref=e1571]: 15+
+                        - button "18+" [ref=e1572] [cursor=pointer]:
+                          - generic [ref=e1573]: 18+
+                        - button "20+" [ref=e1574] [cursor=pointer]:
+                          - generic [ref=e1575]: 20+
+                      - button "Arrow pointing right icon" [ref=e1576] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1577]
+                  - generic [ref=e1580]:
+                    - generic [ref=e1582]:
+                      - link "player image Robert Williams" [ref=e1583] [cursor=pointer]:
+                        - /url: /players/basketball/robert-williams-odds-32882
+                        - img "player image" [ref=e1585]
+                        - paragraph [ref=e1586]: Robert Williams
+                      - generic [ref=e1587]:
+                        - generic [ref=e1588]: "PPG:"
+                        - generic [ref=e1589]:
+                          - generic [ref=e1590]:
+                            - generic [ref=e1591]: "0"
+                            - generic [ref=e1592]: "1"
+                            - generic [ref=e1593]: "2"
+                            - generic [ref=e1594]: "3"
+                            - generic [ref=e1595]: "4"
+                            - generic [ref=e1596]: "5"
+                            - generic [ref=e1597]: "6"
+                            - generic [ref=e1598]: "7"
+                            - generic [ref=e1599]: "8"
+                            - generic [ref=e1600]: "9"
+                          - generic [ref=e1601]: .
+                          - generic [ref=e1602]:
+                            - generic [ref=e1603]: "0"
+                            - generic [ref=e1604]: "1"
+                            - generic [ref=e1605]: "2"
+                            - generic [ref=e1606]: "3"
+                            - generic [ref=e1607]: "4"
+                            - generic [ref=e1608]: "5"
+                            - generic [ref=e1609]: "6"
+                            - generic [ref=e1610]: "7"
+                            - generic [ref=e1611]: "8"
+                            - generic [ref=e1612]: "9"
+                    - generic [ref=e1614]:
+                      - button "Arrow pointing left icon" [ref=e1615] [cursor=pointer]:
+                        - img "Arrow pointing left icon" [ref=e1616]
+                      - generic [ref=e1619]:
+                        - button "6+" [ref=e1620] [cursor=pointer]:
+                          - generic [ref=e1621]: 6+
+                        - button "7+" [ref=e1622] [cursor=pointer]:
+                          - generic [ref=e1623]: 7+
+                        - button "8+ +105" [ref=e1624] [cursor=pointer]:
+                          - generic [ref=e1625]: 8+
+                          - generic [ref=e1626]: "+105"
+                        - button "10+" [ref=e1627] [cursor=pointer]:
+                          - generic [ref=e1628]: 10+
+                        - button "12+" [ref=e1629] [cursor=pointer]:
+                          - generic [ref=e1630]: 12+
+                        - button "15+" [ref=e1631] [cursor=pointer]:
+                          - generic [ref=e1632]: 15+
+                        - button "18+" [ref=e1633] [cursor=pointer]:
+                          - generic [ref=e1634]: 18+
+                        - button "20+" [ref=e1635] [cursor=pointer]:
+                          - generic [ref=e1636]: 20+
+                      - button "Arrow pointing right icon" [ref=e1637] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1638]
+                  - generic [ref=e1641]:
+                    - generic [ref=e1643]:
+                      - link "player image Harrison Barnes" [ref=e1644] [cursor=pointer]:
+                        - /url: /players/basketball/harrison-barnes-odds-33337
+                        - img "player image" [ref=e1646]
+                        - paragraph [ref=e1647]: Harrison Barnes
+                      - generic [ref=e1648]:
+                        - generic [ref=e1649]: "PPG:"
+                        - generic [ref=e1650]:
+                          - generic [ref=e1651]:
+                            - generic [ref=e1652]: "0"
+                            - generic [ref=e1653]: "1"
+                            - generic [ref=e1654]: "2"
+                            - generic [ref=e1655]: "3"
+                            - generic [ref=e1656]: "4"
+                            - generic [ref=e1657]: "5"
+                            - generic [ref=e1658]: "6"
+                            - generic [ref=e1659]: "7"
+                            - generic [ref=e1660]: "8"
+                            - generic [ref=e1661]: "9"
+                          - generic [ref=e1662]: .
+                          - generic [ref=e1663]:
+                            - generic [ref=e1664]: "0"
+                            - generic [ref=e1665]: "1"
+                            - generic [ref=e1666]: "2"
+                            - generic [ref=e1667]: "3"
+                            - generic [ref=e1668]: "4"
+                            - generic [ref=e1669]: "5"
+                            - generic [ref=e1670]: "6"
+                            - generic [ref=e1671]: "7"
+                            - generic [ref=e1672]: "8"
+                            - generic [ref=e1673]: "9"
+                    - generic [ref=e1675]:
+                      - button "Arrow pointing left icon" [ref=e1676] [cursor=pointer]:
+                        - img "Arrow pointing left icon" [ref=e1677]
+                      - generic [ref=e1680]:
+                        - button "6+" [ref=e1681] [cursor=pointer]:
+                          - generic [ref=e1682]: 6+
+                        - button "7+ +104" [ref=e1683] [cursor=pointer]:
+                          - generic [ref=e1684]: 7+
+                          - generic [ref=e1685]: "+104"
+                        - button "8+" [ref=e1686] [cursor=pointer]:
+                          - generic [ref=e1687]: 8+
+                        - button "10+" [ref=e1688] [cursor=pointer]:
+                          - generic [ref=e1689]: 10+
+                        - button "12+" [ref=e1690] [cursor=pointer]:
+                          - generic [ref=e1691]: 12+
+                        - button "15+" [ref=e1692] [cursor=pointer]:
+                          - generic [ref=e1693]: 15+
+                        - button "18+" [ref=e1694] [cursor=pointer]:
+                          - generic [ref=e1695]: 18+
+                        - button "20+" [ref=e1696] [cursor=pointer]:
+                          - generic [ref=e1697]: 20+
+                      - button "Arrow pointing right icon" [ref=e1698] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1699]
+                  - generic [ref=e1702]:
+                    - generic [ref=e1704]:
+                      - link "player image Carter Bryant" [ref=e1705] [cursor=pointer]:
+                        - /url: /players/basketball/carter-bryant-odds-905560
+                        - img "player image" [ref=e1707]
+                        - paragraph [ref=e1708]: Carter Bryant
+                      - generic [ref=e1709]:
+                        - generic [ref=e1710]: "PPG:"
+                        - generic [ref=e1711]:
+                          - generic [ref=e1712]:
+                            - generic [ref=e1713]: "0"
+                            - generic [ref=e1714]: "1"
+                            - generic [ref=e1715]: "2"
+                            - generic [ref=e1716]: "3"
+                            - generic [ref=e1717]: "4"
+                            - generic [ref=e1718]: "5"
+                            - generic [ref=e1719]: "6"
+                            - generic [ref=e1720]: "7"
+                            - generic [ref=e1721]: "8"
+                            - generic [ref=e1722]: "9"
+                          - generic [ref=e1723]: .
+                          - generic [ref=e1724]:
+                            - generic [ref=e1725]: "0"
+                            - generic [ref=e1726]: "1"
+                            - generic [ref=e1727]: "2"
+                            - generic [ref=e1728]: "3"
+                            - generic [ref=e1729]: "4"
+                            - generic [ref=e1730]: "5"
+                            - generic [ref=e1731]: "6"
+                            - generic [ref=e1732]: "7"
+                            - generic [ref=e1733]: "8"
+                            - generic [ref=e1734]: "9"
+                    - generic [ref=e1736]:
+                      - img [ref=e1738]
+                      - generic [ref=e1742]:
+                        - button "5+ −115" [ref=e1743] [cursor=pointer]:
+                          - generic [ref=e1744]: 5+
+                          - generic [ref=e1745]: −115
+                        - button "6+" [ref=e1746] [cursor=pointer]:
+                          - generic [ref=e1747]: 6+
+                        - button "8+" [ref=e1748] [cursor=pointer]:
+                          - generic [ref=e1749]: 8+
+                        - button "10+" [ref=e1750] [cursor=pointer]:
+                          - generic [ref=e1751]: 10+
+                        - button "12+" [ref=e1752] [cursor=pointer]:
+                          - generic [ref=e1753]: 12+
+                        - button "15+" [ref=e1754] [cursor=pointer]:
+                          - generic [ref=e1755]: 15+
+                      - button "Arrow pointing right icon" [ref=e1756] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e1757]
+              - generic [ref=e1761]:
+                - button "Points O/U" [ref=e1763]:
+                  - generic [ref=e1764]:
+                    - heading "Points O/U" [level=2] [ref=e1765] [cursor=pointer]
+                    - generic "Open game in SGP mode" [ref=e1766]:
+                      - img [ref=e1767]
+                  - img [ref=e1773]
+                - generic [ref=e1781]:
+                  - generic [ref=e1783]:
+                    - paragraph [ref=e1784]: Player
+                    - paragraph [ref=e1786]: Over
+                    - paragraph [ref=e1788]: Under
+                    - generic [ref=e1790]:
+                      - link "player image Deni Avdija" [ref=e1791] [cursor=pointer]:
+                        - /url: /players/basketball/deni-avdija-odds-527254
+                        - img "player image" [ref=e1793]
+                        - paragraph [ref=e1794]: Deni Avdija
+                      - generic [ref=e1795]:
+                        - generic [ref=e1796]: "PPG:"
+                        - generic [ref=e1797]:
+                          - generic [ref=e1798]:
+                            - generic [ref=e1799]: "0"
+                            - generic [ref=e1800]: "1"
+                            - generic [ref=e1801]: "2"
+                            - generic [ref=e1802]: "3"
+                            - generic [ref=e1803]: "4"
+                            - generic [ref=e1804]: "5"
+                            - generic [ref=e1805]: "6"
+                            - generic [ref=e1806]: "7"
+                            - generic [ref=e1807]: "8"
+                            - generic [ref=e1808]: "9"
+                          - generic [ref=e1809]:
+                            - generic [ref=e1810]: "0"
+                            - generic [ref=e1811]: "1"
+                            - generic [ref=e1812]: "2"
+                            - generic [ref=e1813]: "3"
+                            - generic [ref=e1814]: "4"
+                            - generic [ref=e1815]: "5"
+                            - generic [ref=e1816]: "6"
+                            - generic [ref=e1817]: "7"
+                            - generic [ref=e1818]: "8"
+                            - generic [ref=e1819]: "9"
+                          - generic [ref=e1820]: .
+                          - generic [ref=e1821]:
+                            - generic [ref=e1822]: "0"
+                            - generic [ref=e1823]: "1"
+                            - generic [ref=e1824]: "2"
+                            - generic [ref=e1825]: "3"
+                            - generic [ref=e1826]: "4"
+                            - generic [ref=e1827]: "5"
+                            - generic [ref=e1828]: "6"
+                            - generic [ref=e1829]: "7"
+                            - generic [ref=e1830]: "8"
+                            - generic [ref=e1831]: "9"
+                    - button "O 24.5 −122" [ref=e1832] [cursor=pointer]:
+                      - generic [ref=e1833]:
+                        - generic [ref=e1834]: O
+                        - generic [ref=e1835]: "24.5"
+                      - generic [ref=e1836]: −122
+                    - button "U 24.5 −104" [ref=e1837] [cursor=pointer]:
+                      - generic [ref=e1838]:
+                        - generic [ref=e1839]: U
+                        - generic [ref=e1840]: "24.5"
+                      - generic [ref=e1841]: −104
+                  - generic [ref=e1843]:
+                    - generic [ref=e1845]:
+                      - link "player image De'Aaron Fox" [ref=e1846] [cursor=pointer]:
+                        - /url: /players/basketball/de'aaron-fox-odds-33343
+                        - img "player image" [ref=e1848]
+                        - paragraph [ref=e1849]: De'Aaron Fox
+                      - generic [ref=e1850]:
+                        - generic [ref=e1851]: "PPG:"
+                        - generic [ref=e1852]:
+                          - generic [ref=e1853]:
+                            - generic [ref=e1854]: "0"
+                            - generic [ref=e1855]: "1"
+                            - generic [ref=e1856]: "2"
+                            - generic [ref=e1857]: "3"
+                            - generic [ref=e1858]: "4"
+                            - generic [ref=e1859]: "5"
+                            - generic [ref=e1860]: "6"
+                            - generic [ref=e1861]: "7"
+                            - generic [ref=e1862]: "8"
+                            - generic [ref=e1863]: "9"
+                          - generic [ref=e1864]:
+                            - generic [ref=e1865]: "0"
+                            - generic [ref=e1866]: "1"
+                            - generic [ref=e1867]: "2"
+                            - generic [ref=e1868]: "3"
+                            - generic [ref=e1869]: "4"
+                            - generic [ref=e1870]: "5"
+                            - generic [ref=e1871]: "6"
+                            - generic [ref=e1872]: "7"
+                            - generic [ref=e1873]: "8"
+                            - generic [ref=e1874]: "9"
+                          - generic [ref=e1875]: .
+                          - generic [ref=e1876]:
+                            - generic [ref=e1877]: "0"
+                            - generic [ref=e1878]: "1"
+                            - generic [ref=e1879]: "2"
+                            - generic [ref=e1880]: "3"
+                            - generic [ref=e1881]: "4"
+                            - generic [ref=e1882]: "5"
+                            - generic [ref=e1883]: "6"
+                            - generic [ref=e1884]: "7"
+                            - generic [ref=e1885]: "8"
+                            - generic [ref=e1886]: "9"
+                    - button "O 20.5 −119" [ref=e1887] [cursor=pointer]:
+                      - generic [ref=e1888]:
+                        - generic [ref=e1889]: O
+                        - generic [ref=e1890]: "20.5"
+                      - generic [ref=e1891]: −119
+                    - button "U 20.5 −107" [ref=e1892] [cursor=pointer]:
+                      - generic [ref=e1893]:
+                        - generic [ref=e1894]: U
+                        - generic [ref=e1895]: "20.5"
+                      - generic [ref=e1896]: −107
+                  - generic [ref=e1898]:
+                    - generic [ref=e1900]:
+                      - link "player image Stephon Castle" [ref=e1901] [cursor=pointer]:
+                        - /url: /players/basketball/stephon-castle-odds-800351
+                        - img "player image" [ref=e1903]
+                        - paragraph [ref=e1904]: Stephon Castle
+                      - generic [ref=e1905]:
+                        - generic [ref=e1906]: "PPG:"
+                        - generic [ref=e1907]:
+                          - generic [ref=e1908]:
+                            - generic [ref=e1909]: "0"
+                            - generic [ref=e1910]: "1"
+                            - generic [ref=e1911]: "2"
+                            - generic [ref=e1912]: "3"
+                            - generic [ref=e1913]: "4"
+                            - generic [ref=e1914]: "5"
+                            - generic [ref=e1915]: "6"
+                            - generic [ref=e1916]: "7"
+                            - generic [ref=e1917]: "8"
+                            - generic [ref=e1918]: "9"
+                          - generic [ref=e1919]:
+                            - generic [ref=e1920]: "0"
+                            - generic [ref=e1921]: "1"
+                            - generic [ref=e1922]: "2"
+                            - generic [ref=e1923]: "3"
+                            - generic [ref=e1924]: "4"
+                            - generic [ref=e1925]: "5"
+                            - generic [ref=e1926]: "6"
+                            - generic [ref=e1927]: "7"
+                            - generic [ref=e1928]: "8"
+                            - generic [ref=e1929]: "9"
+                          - generic [ref=e1930]: .
+                          - generic [ref=e1931]:
+                            - generic [ref=e1932]: "0"
+                            - generic [ref=e1933]: "1"
+                            - generic [ref=e1934]: "2"
+                            - generic [ref=e1935]: "3"
+                            - generic [ref=e1936]: "4"
+                            - generic [ref=e1937]: "5"
+                            - generic [ref=e1938]: "6"
+                            - generic [ref=e1939]: "7"
+                            - generic [ref=e1940]: "8"
+                            - generic [ref=e1941]: "9"
+                    - button "O 19.5 −102" [ref=e1942] [cursor=pointer]:
+                      - generic [ref=e1943]:
+                        - generic [ref=e1944]: O
+                        - generic [ref=e1945]: "19.5"
+                      - generic [ref=e1946]: −102
+                    - button "U 19.5 −125" [ref=e1947] [cursor=pointer]:
+                      - generic [ref=e1948]:
+                        - generic [ref=e1949]: U
+                        - generic [ref=e1950]: "19.5"
+                      - generic [ref=e1951]: −125
+                  - generic [ref=e1953]:
+                    - generic [ref=e1955]:
+                      - link "player image Jrue Holiday" [ref=e1956] [cursor=pointer]:
+                        - /url: /players/basketball/jrue-holiday-odds-33210
+                        - img "player image" [ref=e1958]
+                        - paragraph [ref=e1959]: Jrue Holiday
+                      - generic [ref=e1960]:
+                        - generic [ref=e1961]: "PPG:"
+                        - generic [ref=e1962]:
+                          - generic [ref=e1963]:
+                            - generic [ref=e1964]: "0"
+                            - generic [ref=e1965]: "1"
+                            - generic [ref=e1966]: "2"
+                            - generic [ref=e1967]: "3"
+                            - generic [ref=e1968]: "4"
+                            - generic [ref=e1969]: "5"
+                            - generic [ref=e1970]: "6"
+                            - generic [ref=e1971]: "7"
+                            - generic [ref=e1972]: "8"
+                            - generic [ref=e1973]: "9"
+                          - generic [ref=e1974]:
+                            - generic [ref=e1975]: "0"
+                            - generic [ref=e1976]: "1"
+                            - generic [ref=e1977]: "2"
+                            - generic [ref=e1978]: "3"
+                            - generic [ref=e1979]: "4"
+                            - generic [ref=e1980]: "5"
+                            - generic [ref=e1981]: "6"
+                            - generic [ref=e1982]: "7"
+                            - generic [ref=e1983]: "8"
+                            - generic [ref=e1984]: "9"
+                          - generic [ref=e1985]: .
+                          - generic [ref=e1986]:
+                            - generic [ref=e1987]: "0"
+                            - generic [ref=e1988]: "1"
+                            - generic [ref=e1989]: "2"
+                            - generic [ref=e1990]: "3"
+                            - generic [ref=e1991]: "4"
+                            - generic [ref=e1992]: "5"
+                            - generic [ref=e1993]: "6"
+                            - generic [ref=e1994]: "7"
+                            - generic [ref=e1995]: "8"
+                            - generic [ref=e1996]: "9"
+                    - button "O 16.5 −105" [ref=e1997] [cursor=pointer]:
+                      - generic [ref=e1998]:
+                        - generic [ref=e1999]: O
+                        - generic [ref=e2000]: "16.5"
+                      - generic [ref=e2001]: −105
+                    - button "U 16.5 −121" [ref=e2002] [cursor=pointer]:
+                      - generic [ref=e2003]:
+                        - generic [ref=e2004]: U
+                        - generic [ref=e2005]: "16.5"
+                      - generic [ref=e2006]: −121
+                  - generic [ref=e2008]:
+                    - generic [ref=e2010]:
+                      - link "player image Devin Vassell" [ref=e2011] [cursor=pointer]:
+                        - /url: /players/basketball/devin-vassell-odds-527223
+                        - img "player image" [ref=e2013]
+                        - paragraph [ref=e2014]: Devin Vassell
+                      - generic [ref=e2015]:
+                        - generic [ref=e2016]: "PPG:"
+                        - generic [ref=e2017]:
+                          - generic [ref=e2018]:
+                            - generic [ref=e2019]: "0"
+                            - generic [ref=e2020]: "1"
+                            - generic [ref=e2021]: "2"
+                            - generic [ref=e2022]: "3"
+                            - generic [ref=e2023]: "4"
+                            - generic [ref=e2024]: "5"
+                            - generic [ref=e2025]: "6"
+                            - generic [ref=e2026]: "7"
+                            - generic [ref=e2027]: "8"
+                            - generic [ref=e2028]: "9"
+                          - generic [ref=e2029]:
+                            - generic [ref=e2030]: "0"
+                            - generic [ref=e2031]: "1"
+                            - generic [ref=e2032]: "2"
+                            - generic [ref=e2033]: "3"
+                            - generic [ref=e2034]: "4"
+                            - generic [ref=e2035]: "5"
+                            - generic [ref=e2036]: "6"
+                            - generic [ref=e2037]: "7"
+                            - generic [ref=e2038]: "8"
+                            - generic [ref=e2039]: "9"
+                          - generic [ref=e2040]: .
+                          - generic [ref=e2041]:
+                            - generic [ref=e2042]: "0"
+                            - generic [ref=e2043]: "1"
+                            - generic [ref=e2044]: "2"
+                            - generic [ref=e2045]: "3"
+                            - generic [ref=e2046]: "4"
+                            - generic [ref=e2047]: "5"
+                            - generic [ref=e2048]: "6"
+                            - generic [ref=e2049]: "7"
+                            - generic [ref=e2050]: "8"
+                            - generic [ref=e2051]: "9"
+                    - button "O 15.5 −123" [ref=e2052] [cursor=pointer]:
+                      - generic [ref=e2053]:
+                        - generic [ref=e2054]: O
+                        - generic [ref=e2055]: "15.5"
+                      - generic [ref=e2056]: −123
+                    - button "U 15.5 −104" [ref=e2057] [cursor=pointer]:
+                      - generic [ref=e2058]:
+                        - generic [ref=e2059]: U
+                        - generic [ref=e2060]: "15.5"
+                      - generic [ref=e2061]: −104
+                  - generic [ref=e2063]:
+                    - generic [ref=e2065]:
+                      - link "player image Scoot Henderson" [ref=e2066] [cursor=pointer]:
+                        - /url: /players/basketball/scoot-henderson-odds-713756
+                        - img "player image" [ref=e2068]
+                        - paragraph [ref=e2069]: Scoot Henderson
+                      - generic [ref=e2070]:
+                        - generic [ref=e2071]: "PPG:"
+                        - generic [ref=e2072]:
+                          - generic [ref=e2073]:
+                            - generic [ref=e2074]: "0"
+                            - generic [ref=e2075]: "1"
+                            - generic [ref=e2076]: "2"
+                            - generic [ref=e2077]: "3"
+                            - generic [ref=e2078]: "4"
+                            - generic [ref=e2079]: "5"
+                            - generic [ref=e2080]: "6"
+                            - generic [ref=e2081]: "7"
+                            - generic [ref=e2082]: "8"
+                            - generic [ref=e2083]: "9"
+                          - generic [ref=e2084]:
+                            - generic [ref=e2085]: "0"
+                            - generic [ref=e2086]: "1"
+                            - generic [ref=e2087]: "2"
+                            - generic [ref=e2088]: "3"
+                            - generic [ref=e2089]: "4"
+                            - generic [ref=e2090]: "5"
+                            - generic [ref=e2091]: "6"
+                            - generic [ref=e2092]: "7"
+                            - generic [ref=e2093]: "8"
+                            - generic [ref=e2094]: "9"
+                          - generic [ref=e2095]: .
+                          - generic [ref=e2096]:
+                            - generic [ref=e2097]: "0"
+                            - generic [ref=e2098]: "1"
+                            - generic [ref=e2099]: "2"
+                            - generic [ref=e2100]: "3"
+                            - generic [ref=e2101]: "4"
+                            - generic [ref=e2102]: "5"
+                            - generic [ref=e2103]: "6"
+                            - generic [ref=e2104]: "7"
+                            - generic [ref=e2105]: "8"
+                            - generic [ref=e2106]: "9"
+                    - button "O 13.5 −114" [ref=e2107] [cursor=pointer]:
+                      - generic [ref=e2108]:
+                        - generic [ref=e2109]: O
+                        - generic [ref=e2110]: "13.5"
+                      - generic [ref=e2111]: −114
+                    - button "U 13.5 −112" [ref=e2112] [cursor=pointer]:
+                      - generic [ref=e2113]:
+                        - generic [ref=e2114]: U
+                        - generic [ref=e2115]: "13.5"
+                      - generic [ref=e2116]: −112
+                  - generic [ref=e2118]:
+                    - generic [ref=e2120]:
+                      - link "player image Toumani Camara" [ref=e2121] [cursor=pointer]:
+                        - /url: /players/basketball/toumani-camara-odds-713804
+                        - img "player image" [ref=e2123]
+                        - paragraph [ref=e2124]: Toumani Camara
+                      - generic [ref=e2125]:
+                        - generic [ref=e2126]: "PPG:"
+                        - generic [ref=e2127]:
+                          - generic [ref=e2128]:
+                            - generic [ref=e2129]: "0"
+                            - generic [ref=e2130]: "1"
+                            - generic [ref=e2131]: "2"
+                            - generic [ref=e2132]: "3"
+                            - generic [ref=e2133]: "4"
+                            - generic [ref=e2134]: "5"
+                            - generic [ref=e2135]: "6"
+                            - generic [ref=e2136]: "7"
+                            - generic [ref=e2137]: "8"
+                            - generic [ref=e2138]: "9"
+                          - generic [ref=e2139]:
+                            - generic [ref=e2140]: "0"
+                            - generic [ref=e2141]: "1"
+                            - generic [ref=e2142]: "2"
+                            - generic [ref=e2143]: "3"
+                            - generic [ref=e2144]: "4"
+                            - generic [ref=e2145]: "5"
+                            - generic [ref=e2146]: "6"
+                            - generic [ref=e2147]: "7"
+                            - generic [ref=e2148]: "8"
+                            - generic [ref=e2149]: "9"
+                          - generic [ref=e2150]: .
+                          - generic [ref=e2151]:
+                            - generic [ref=e2152]: "0"
+                            - generic [ref=e2153]: "1"
+                            - generic [ref=e2154]: "2"
+                            - generic [ref=e2155]: "3"
+                            - generic [ref=e2156]: "4"
+                            - generic [ref=e2157]: "5"
+                            - generic [ref=e2158]: "6"
+                            - generic [ref=e2159]: "7"
+                            - generic [ref=e2160]: "8"
+                            - generic [ref=e2161]: "9"
+                    - button "O 11.5 −107" [ref=e2162] [cursor=pointer]:
+                      - generic [ref=e2163]:
+                        - generic [ref=e2164]: O
+                        - generic [ref=e2165]: "11.5"
+                      - generic [ref=e2166]: −107
+                    - button "U 11.5 −119" [ref=e2167] [cursor=pointer]:
+                      - generic [ref=e2168]:
+                        - generic [ref=e2169]: U
+                        - generic [ref=e2170]: "11.5"
+                      - generic [ref=e2171]: −119
+                  - generic [ref=e2173]:
+                    - generic [ref=e2175]:
+                      - link "player image Keldon Johnson" [ref=e2176] [cursor=pointer]:
+                        - /url: /players/basketball/keldon-johnson-odds-33369
+                        - img "player image" [ref=e2178]
+                        - paragraph [ref=e2179]: Keldon Johnson
+                      - generic [ref=e2180]:
+                        - generic [ref=e2181]: "PPG:"
+                        - generic [ref=e2182]:
+                          - generic [ref=e2183]:
+                            - generic [ref=e2184]: "0"
+                            - generic [ref=e2185]: "1"
+                            - generic [ref=e2186]: "2"
+                            - generic [ref=e2187]: "3"
+                            - generic [ref=e2188]: "4"
+                            - generic [ref=e2189]: "5"
+                            - generic [ref=e2190]: "6"
+                            - generic [ref=e2191]: "7"
+                            - generic [ref=e2192]: "8"
+                            - generic [ref=e2193]: "9"
+                          - generic [ref=e2194]:
+                            - generic [ref=e2195]: "0"
+                            - generic [ref=e2196]: "1"
+                            - generic [ref=e2197]: "2"
+                            - generic [ref=e2198]: "3"
+                            - generic [ref=e2199]: "4"
+                            - generic [ref=e2200]: "5"
+                            - generic [ref=e2201]: "6"
+                            - generic [ref=e2202]: "7"
+                            - generic [ref=e2203]: "8"
+                            - generic [ref=e2204]: "9"
+                          - generic [ref=e2205]: .
+                          - generic [ref=e2206]:
+                            - generic [ref=e2207]: "0"
+                            - generic [ref=e2208]: "1"
+                            - generic [ref=e2209]: "2"
+                            - generic [ref=e2210]: "3"
+                            - generic [ref=e2211]: "4"
+                            - generic [ref=e2212]: "5"
+                            - generic [ref=e2213]: "6"
+                            - generic [ref=e2214]: "7"
+                            - generic [ref=e2215]: "8"
+                            - generic [ref=e2216]: "9"
+                    - button "O 11.5 −101" [ref=e2217] [cursor=pointer]:
+                      - generic [ref=e2218]:
+                        - generic [ref=e2219]: O
+                        - generic [ref=e2220]: "11.5"
+                      - generic [ref=e2221]: −101
+                    - button "U 11.5 −126" [ref=e2222] [cursor=pointer]:
+                      - generic [ref=e2223]:
+                        - generic [ref=e2224]: U
+                        - generic [ref=e2225]: "11.5"
+                      - generic [ref=e2226]: −126
+                  - generic [ref=e2228]:
+                    - generic [ref=e2230]:
+                      - link "player image Dylan Harper" [ref=e2231] [cursor=pointer]:
+                        - /url: /players/basketball/dylan-harper-odds-905517
+                        - img "player image" [ref=e2233]
+                        - paragraph [ref=e2234]: Dylan Harper
+                      - generic [ref=e2235]:
+                        - generic [ref=e2236]: "PPG:"
+                        - generic [ref=e2237]:
+                          - generic [ref=e2238]:
+                            - generic [ref=e2239]: "0"
+                            - generic [ref=e2240]: "1"
+                            - generic [ref=e2241]: "2"
+                            - generic [ref=e2242]: "3"
+                            - generic [ref=e2243]: "4"
+                            - generic [ref=e2244]: "5"
+                            - generic [ref=e2245]: "6"
+                            - generic [ref=e2246]: "7"
+                            - generic [ref=e2247]: "8"
+                            - generic [ref=e2248]: "9"
+                          - generic [ref=e2249]:
+                            - generic [ref=e2250]: "0"
+                            - generic [ref=e2251]: "1"
+                            - generic [ref=e2252]: "2"
+                            - generic [ref=e2253]: "3"
+                            - generic [ref=e2254]: "4"
+                            - generic [ref=e2255]: "5"
+                            - generic [ref=e2256]: "6"
+                            - generic [ref=e2257]: "7"
+                            - generic [ref=e2258]: "8"
+                            - generic [ref=e2259]: "9"
+                          - generic [ref=e2260]: .
+                          - generic [ref=e2261]:
+                            - generic [ref=e2262]: "0"
+                            - generic [ref=e2263]: "1"
+                            - generic [ref=e2264]: "2"
+                            - generic [ref=e2265]: "3"
+                            - generic [ref=e2266]: "4"
+                            - generic [ref=e2267]: "5"
+                            - generic [ref=e2268]: "6"
+                            - generic [ref=e2269]: "7"
+                            - generic [ref=e2270]: "8"
+                            - generic [ref=e2271]: "9"
+                    - button "O 10.5 −126" [ref=e2272] [cursor=pointer]:
+                      - generic [ref=e2273]:
+                        - generic [ref=e2274]: O
+                        - generic [ref=e2275]: "10.5"
+                      - generic [ref=e2276]: −126
+                    - button "U 10.5 −101" [ref=e2277] [cursor=pointer]:
+                      - generic [ref=e2278]:
+                        - generic [ref=e2279]: U
+                        - generic [ref=e2280]: "10.5"
+                      - generic [ref=e2281]: −101
+                  - generic [ref=e2283]:
+                    - generic [ref=e2285]:
+                      - link "player image Shaedon Sharpe" [ref=e2286] [cursor=pointer]:
+                        - /url: /players/basketball/shaedon-sharpe-odds-649550
+                        - img "player image" [ref=e2288]
+                        - paragraph [ref=e2289]: Shaedon Sharpe
+                      - generic [ref=e2290]:
+                        - generic [ref=e2291]: "PPG:"
+                        - generic [ref=e2292]:
+                          - generic [ref=e2293]:
+                            - generic [ref=e2294]: "0"
+                            - generic [ref=e2295]: "1"
+                            - generic [ref=e2296]: "2"
+                            - generic [ref=e2297]: "3"
+                            - generic [ref=e2298]: "4"
+                            - generic [ref=e2299]: "5"
+                            - generic [ref=e2300]: "6"
+                            - generic [ref=e2301]: "7"
+                            - generic [ref=e2302]: "8"
+                            - generic [ref=e2303]: "9"
+                          - generic [ref=e2304]:
+                            - generic [ref=e2305]: "0"
+                            - generic [ref=e2306]: "1"
+                            - generic [ref=e2307]: "2"
+                            - generic [ref=e2308]: "3"
+                            - generic [ref=e2309]: "4"
+                            - generic [ref=e2310]: "5"
+                            - generic [ref=e2311]: "6"
+                            - generic [ref=e2312]: "7"
+                            - generic [ref=e2313]: "8"
+                            - generic [ref=e2314]: "9"
+                          - generic [ref=e2315]: .
+                          - generic [ref=e2316]:
+                            - generic [ref=e2317]: "0"
+                            - generic [ref=e2318]: "1"
+                            - generic [ref=e2319]: "2"
+                            - generic [ref=e2320]: "3"
+                            - generic [ref=e2321]: "4"
+                            - generic [ref=e2322]: "5"
+                            - generic [ref=e2323]: "6"
+                            - generic [ref=e2324]: "7"
+                            - generic [ref=e2325]: "8"
+                            - generic [ref=e2326]: "9"
+                    - button "O 10.5 −125" [ref=e2327] [cursor=pointer]:
+                      - generic [ref=e2328]:
+                        - generic [ref=e2329]: O
+                        - generic [ref=e2330]: "10.5"
+                      - generic [ref=e2331]: −125
+                    - button "U 10.5 −102" [ref=e2332] [cursor=pointer]:
+                      - generic [ref=e2333]:
+                        - generic [ref=e2334]: U
+                        - generic [ref=e2335]: "10.5"
+                      - generic [ref=e2336]: −102
+                  - generic [ref=e2338]:
+                    - generic [ref=e2340]:
+                      - link "player image Donovan Clingan" [ref=e2341] [cursor=pointer]:
+                        - /url: /players/basketball/donovan-clingan-odds-800354
+                        - img "player image" [ref=e2343]
+                        - paragraph [ref=e2344]: Donovan Clingan
+                      - generic [ref=e2345]:
+                        - generic [ref=e2346]: "PPG:"
+                        - generic [ref=e2347]:
+                          - generic [ref=e2348]:
+                            - generic [ref=e2349]: "0"
+                            - generic [ref=e2350]: "1"
+                            - generic [ref=e2351]: "2"
+                            - generic [ref=e2352]: "3"
+                            - generic [ref=e2353]: "4"
+                            - generic [ref=e2354]: "5"
+                            - generic [ref=e2355]: "6"
+                            - generic [ref=e2356]: "7"
+                            - generic [ref=e2357]: "8"
+                            - generic [ref=e2358]: "9"
+                          - generic [ref=e2359]:
+                            - generic [ref=e2360]: "0"
+                            - generic [ref=e2361]: "1"
+                            - generic [ref=e2362]: "2"
+                            - generic [ref=e2363]: "3"
+                            - generic [ref=e2364]: "4"
+                            - generic [ref=e2365]: "5"
+                            - generic [ref=e2366]: "6"
+                            - generic [ref=e2367]: "7"
+                            - generic [ref=e2368]: "8"
+                            - generic [ref=e2369]: "9"
+                          - generic [ref=e2370]: .
+                          - generic [ref=e2371]:
+                            - generic [ref=e2372]: "0"
+                            - generic [ref=e2373]: "1"
+                            - generic [ref=e2374]: "2"
+                            - generic [ref=e2375]: "3"
+                            - generic [ref=e2376]: "4"
+                            - generic [ref=e2377]: "5"
+                            - generic [ref=e2378]: "6"
+                            - generic [ref=e2379]: "7"
+                            - generic [ref=e2380]: "8"
+                            - generic [ref=e2381]: "9"
+                    - button "O 10.5 −109" [ref=e2382] [cursor=pointer]:
+                      - generic [ref=e2383]:
+                        - generic [ref=e2384]: O
+                        - generic [ref=e2385]: "10.5"
+                      - generic [ref=e2386]: −109
+                    - button "U 10.5 −117" [ref=e2387] [cursor=pointer]:
+                      - generic [ref=e2388]:
+                        - generic [ref=e2389]: U
+                        - generic [ref=e2390]: "10.5"
+                      - generic [ref=e2391]: −117
+                  - generic [ref=e2393]:
+                    - generic [ref=e2395]:
+                      - link "player image Jerami Grant" [ref=e2396] [cursor=pointer]:
+                        - /url: /players/basketball/jerami-grant-odds-33017
+                        - img "player image" [ref=e2398]
+                        - paragraph [ref=e2399]: Jerami Grant
+                      - generic [ref=e2400]:
+                        - generic [ref=e2401]: "PPG:"
+                        - generic [ref=e2402]:
+                          - generic [ref=e2403]:
+                            - generic [ref=e2404]: "0"
+                            - generic [ref=e2405]: "1"
+                            - generic [ref=e2406]: "2"
+                            - generic [ref=e2407]: "3"
+                            - generic [ref=e2408]: "4"
+                            - generic [ref=e2409]: "5"
+                            - generic [ref=e2410]: "6"
+                            - generic [ref=e2411]: "7"
+                            - generic [ref=e2412]: "8"
+                            - generic [ref=e2413]: "9"
+                          - generic [ref=e2414]:
+                            - generic [ref=e2415]: "0"
+                            - generic [ref=e2416]: "1"
+                            - generic [ref=e2417]: "2"
+                            - generic [ref=e2418]: "3"
+                            - generic [ref=e2419]: "4"
+                            - generic [ref=e2420]: "5"
+                            - generic [ref=e2421]: "6"
+                            - generic [ref=e2422]: "7"
+                            - generic [ref=e2423]: "8"
+                            - generic [ref=e2424]: "9"
+                          - generic [ref=e2425]: .
+                          - generic [ref=e2426]:
+                            - generic [ref=e2427]: "0"
+                            - generic [ref=e2428]: "1"
+                            - generic [ref=e2429]: "2"
+                            - generic [ref=e2430]: "3"
+                            - generic [ref=e2431]: "4"
+                            - generic [ref=e2432]: "5"
+                            - generic [ref=e2433]: "6"
+                            - generic [ref=e2434]: "7"
+                            - generic [ref=e2435]: "8"
+                            - generic [ref=e2436]: "9"
+                    - button "O 9.5 −125" [ref=e2437] [cursor=pointer]:
+                      - generic [ref=e2438]:
+                        - generic [ref=e2439]: O
+                        - generic [ref=e2440]: "9.5"
+                      - generic [ref=e2441]: −125
+                    - button "U 9.5 −102" [ref=e2442] [cursor=pointer]:
+                      - generic [ref=e2443]:
+                        - generic [ref=e2444]: U
+                        - generic [ref=e2445]: "9.5"
+                      - generic [ref=e2446]: −102
+                  - generic [ref=e2448]:
+                    - generic [ref=e2450]:
+                      - link "player image Julian Champagnie" [ref=e2451] [cursor=pointer]:
+                        - /url: /players/basketball/julian-champagnie-odds-650222
+                        - img "player image" [ref=e2453]
+                        - paragraph [ref=e2454]: Julian Champagnie
+                      - generic [ref=e2455]:
+                        - generic [ref=e2456]: "PPG:"
+                        - generic [ref=e2457]:
+                          - generic [ref=e2458]:
+                            - generic [ref=e2459]: "0"
+                            - generic [ref=e2460]: "1"
+                            - generic [ref=e2461]: "2"
+                            - generic [ref=e2462]: "3"
+                            - generic [ref=e2463]: "4"
+                            - generic [ref=e2464]: "5"
+                            - generic [ref=e2465]: "6"
+                            - generic [ref=e2466]: "7"
+                            - generic [ref=e2467]: "8"
+                            - generic [ref=e2468]: "9"
+                          - generic [ref=e2469]:
+                            - generic [ref=e2470]: "0"
+                            - generic [ref=e2471]: "1"
+                            - generic [ref=e2472]: "2"
+                            - generic [ref=e2473]: "3"
+                            - generic [ref=e2474]: "4"
+                            - generic [ref=e2475]: "5"
+                            - generic [ref=e2476]: "6"
+                            - generic [ref=e2477]: "7"
+                            - generic [ref=e2478]: "8"
+                            - generic [ref=e2479]: "9"
+                          - generic [ref=e2480]: .
+                          - generic [ref=e2481]:
+                            - generic [ref=e2482]: "0"
+                            - generic [ref=e2483]: "1"
+                            - generic [ref=e2484]: "2"
+                            - generic [ref=e2485]: "3"
+                            - generic [ref=e2486]: "4"
+                            - generic [ref=e2487]: "5"
+                            - generic [ref=e2488]: "6"
+                            - generic [ref=e2489]: "7"
+                            - generic [ref=e2490]: "8"
+                            - generic [ref=e2491]: "9"
+                    - button "O 9.5 −120" [ref=e2492] [cursor=pointer]:
+                      - generic [ref=e2493]:
+                        - generic [ref=e2494]: O
+                        - generic [ref=e2495]: "9.5"
+                      - generic [ref=e2496]: −120
+                    - button "U 9.5 −106" [ref=e2497] [cursor=pointer]:
+                      - generic [ref=e2498]:
+                        - generic [ref=e2499]: U
+                        - generic [ref=e2500]: "9.5"
+                      - generic [ref=e2501]: −106
+                  - generic [ref=e2503]:
+                    - generic [ref=e2505]:
+                      - link "player image Luke Kornet" [ref=e2506] [cursor=pointer]:
+                        - /url: /players/basketball/luke-kornet-odds-32971
+                        - img "player image" [ref=e2508]
+                        - paragraph [ref=e2509]: Luke Kornet
+                      - generic [ref=e2510]:
+                        - generic [ref=e2511]: "PPG:"
+                        - generic [ref=e2512]:
+                          - generic [ref=e2513]:
+                            - generic [ref=e2514]: "0"
+                            - generic [ref=e2515]: "1"
+                            - generic [ref=e2516]: "2"
+                            - generic [ref=e2517]: "3"
+                            - generic [ref=e2518]: "4"
+                            - generic [ref=e2519]: "5"
+                            - generic [ref=e2520]: "6"
+                            - generic [ref=e2521]: "7"
+                            - generic [ref=e2522]: "8"
+                            - generic [ref=e2523]: "9"
+                          - generic [ref=e2524]: .
+                          - generic [ref=e2525]:
+                            - generic [ref=e2526]: "0"
+                            - generic [ref=e2527]: "1"
+                            - generic [ref=e2528]: "2"
+                            - generic [ref=e2529]: "3"
+                            - generic [ref=e2530]: "4"
+                            - generic [ref=e2531]: "5"
+                            - generic [ref=e2532]: "6"
+                            - generic [ref=e2533]: "7"
+                            - generic [ref=e2534]: "8"
+                            - generic [ref=e2535]: "9"
+                    - button "O 7.5 −118" [ref=e2536] [cursor=pointer]:
+                      - generic [ref=e2537]:
+                        - generic [ref=e2538]: O
+                        - generic [ref=e2539]: "7.5"
+                      - generic [ref=e2540]: −118
+                    - button "U 7.5 −108" [ref=e2541] [cursor=pointer]:
+                      - generic [ref=e2542]:
+                        - generic [ref=e2543]: U
+                        - generic [ref=e2544]: "7.5"
+                      - generic [ref=e2545]: −108
+                  - generic [ref=e2547]:
+                    - generic [ref=e2549]:
+                      - link "player image Robert Williams" [ref=e2550] [cursor=pointer]:
+                        - /url: /players/basketball/robert-williams-odds-32882
+                        - img "player image" [ref=e2552]
+                        - paragraph [ref=e2553]: Robert Williams
+                      - generic [ref=e2554]:
+                        - generic [ref=e2555]: "PPG:"
+                        - generic [ref=e2556]:
+                          - generic [ref=e2557]:
+                            - generic [ref=e2558]: "0"
+                            - generic [ref=e2559]: "1"
+                            - generic [ref=e2560]: "2"
+                            - generic [ref=e2561]: "3"
+                            - generic [ref=e2562]: "4"
+                            - generic [ref=e2563]: "5"
+                            - generic [ref=e2564]: "6"
+                            - generic [ref=e2565]: "7"
+                            - generic [ref=e2566]: "8"
+                            - generic [ref=e2567]: "9"
+                          - generic [ref=e2568]: .
+                          - generic [ref=e2569]:
+                            - generic [ref=e2570]: "0"
+                            - generic [ref=e2571]: "1"
+                            - generic [ref=e2572]: "2"
+                            - generic [ref=e2573]: "3"
+                            - generic [ref=e2574]: "4"
+                            - generic [ref=e2575]: "5"
+                            - generic [ref=e2576]: "6"
+                            - generic [ref=e2577]: "7"
+                            - generic [ref=e2578]: "8"
+                            - generic [ref=e2579]: "9"
+                    - button "O 6.5 −124" [ref=e2580] [cursor=pointer]:
+                      - generic [ref=e2581]:
+                        - generic [ref=e2582]: O
+                        - generic [ref=e2583]: "6.5"
+                      - generic [ref=e2584]: −124
+                    - button "U 6.5 −103" [ref=e2585] [cursor=pointer]:
+                      - generic [ref=e2586]:
+                        - generic [ref=e2587]: U
+                        - generic [ref=e2588]: "6.5"
+                      - generic [ref=e2589]: −103
+                  - generic [ref=e2591]:
+                    - generic [ref=e2593]:
+                      - link "player image Harrison Barnes" [ref=e2594] [cursor=pointer]:
+                        - /url: /players/basketball/harrison-barnes-odds-33337
+                        - img "player image" [ref=e2596]
+                        - paragraph [ref=e2597]: Harrison Barnes
+                      - generic [ref=e2598]:
+                        - generic [ref=e2599]: "PPG:"
+                        - generic [ref=e2600]:
+                          - generic [ref=e2601]:
+                            - generic [ref=e2602]: "0"
+                            - generic [ref=e2603]: "1"
+                            - generic [ref=e2604]: "2"
+                            - generic [ref=e2605]: "3"
+                            - generic [ref=e2606]: "4"
+                            - generic [ref=e2607]: "5"
+                            - generic [ref=e2608]: "6"
+                            - generic [ref=e2609]: "7"
+                            - generic [ref=e2610]: "8"
+                            - generic [ref=e2611]: "9"
+                          - generic [ref=e2612]: .
+                          - generic [ref=e2613]:
+                            - generic [ref=e2614]: "0"
+                            - generic [ref=e2615]: "1"
+                            - generic [ref=e2616]: "2"
+                            - generic [ref=e2617]: "3"
+                            - generic [ref=e2618]: "4"
+                            - generic [ref=e2619]: "5"
+                            - generic [ref=e2620]: "6"
+                            - generic [ref=e2621]: "7"
+                            - generic [ref=e2622]: "8"
+                            - generic [ref=e2623]: "9"
+                    - button "O 6.5 +102" [ref=e2624] [cursor=pointer]:
+                      - generic [ref=e2625]:
+                        - generic [ref=e2626]: O
+                        - generic [ref=e2627]: "6.5"
+                      - generic [ref=e2628]: "+102"
+                    - button "U 6.5 −130" [ref=e2629] [cursor=pointer]:
+                      - generic [ref=e2630]:
+                        - generic [ref=e2631]: U
+                        - generic [ref=e2632]: "6.5"
+                      - generic [ref=e2633]: −130
+                  - generic [ref=e2635]:
+                    - generic [ref=e2637]:
+                      - link "player image Carter Bryant" [ref=e2638] [cursor=pointer]:
+                        - /url: /players/basketball/carter-bryant-odds-905560
+                        - img "player image" [ref=e2640]
+                        - paragraph [ref=e2641]: Carter Bryant
+                      - generic [ref=e2642]:
+                        - generic [ref=e2643]: "PPG:"
+                        - generic [ref=e2644]:
+                          - generic [ref=e2645]:
+                            - generic [ref=e2646]: "0"
+                            - generic [ref=e2647]: "1"
+                            - generic [ref=e2648]: "2"
+                            - generic [ref=e2649]: "3"
+                            - generic [ref=e2650]: "4"
+                            - generic [ref=e2651]: "5"
+                            - generic [ref=e2652]: "6"
+                            - generic [ref=e2653]: "7"
+                            - generic [ref=e2654]: "8"
+                            - generic [ref=e2655]: "9"
+                          - generic [ref=e2656]: .
+                          - generic [ref=e2657]:
+                            - generic [ref=e2658]: "0"
+                            - generic [ref=e2659]: "1"
+                            - generic [ref=e2660]: "2"
+                            - generic [ref=e2661]: "3"
+                            - generic [ref=e2662]: "4"
+                            - generic [ref=e2663]: "5"
+                            - generic [ref=e2664]: "6"
+                            - generic [ref=e2665]: "7"
+                            - generic [ref=e2666]: "8"
+                            - generic [ref=e2667]: "9"
+                    - button "O 4.5 −113" [ref=e2668] [cursor=pointer]:
+                      - generic [ref=e2669]:
+                        - generic [ref=e2670]: O
+                        - generic [ref=e2671]: "4.5"
+                      - generic [ref=e2672]: −113
+                    - button "U 4.5 −113" [ref=e2673] [cursor=pointer]:
+                      - generic [ref=e2674]:
+                        - generic [ref=e2675]: U
+                        - generic [ref=e2676]: "4.5"
+                      - generic [ref=e2677]: −113
+              - generic [ref=e2680]:
+                - button "Points 1st 3 Mins" [ref=e2682]:
+                  - generic [ref=e2683]:
+                    - heading "Points 1st 3 Mins" [level=2] [ref=e2684] [cursor=pointer]
+                    - generic "Open game in SGP mode" [ref=e2685]:
+                      - img [ref=e2686]
+                  - img [ref=e2692]
+                - generic [ref=e2700]:
+                  - generic [ref=e2702]:
+                    - link "player image De'Aaron Fox" [ref=e2704] [cursor=pointer]:
+                      - /url: /players/basketball/de'aaron-fox-odds-33343
+                      - img "player image" [ref=e2706]
+                      - paragraph [ref=e2707]: De'Aaron Fox
+                    - generic [ref=e2709]:
+                      - button "Arrow pointing left icon" [ref=e2710] [cursor=pointer]:
+                        - img "Arrow pointing left icon" [ref=e2711]
+                      - generic [ref=e2714]:
+                        - button "1+" [ref=e2715] [cursor=pointer]:
+                          - generic [ref=e2716]: 1+
+                        - button "2+ −136" [ref=e2717] [cursor=pointer]:
+                          - generic [ref=e2718]: 2+
+                          - generic [ref=e2719]: −136
+                        - button "3+" [ref=e2720] [cursor=pointer]:
+                          - generic [ref=e2721]: 3+
+                        - button "4+" [ref=e2722] [cursor=pointer]:
+                          - generic [ref=e2723]: 4+
+                        - button "5+" [ref=e2724] [cursor=pointer]:
+                          - generic [ref=e2725]: 5+
+                        - button "6+" [ref=e2726] [cursor=pointer]:
+                          - generic [ref=e2727]: 6+
+                      - button "Arrow pointing right icon" [ref=e2728] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2729]
+                  - generic [ref=e2732]:
+                    - link "player image Deni Avdija" [ref=e2734] [cursor=pointer]:
+                      - /url: /players/basketball/deni-avdija-odds-527254
+                      - img "player image" [ref=e2736]
+                      - paragraph [ref=e2737]: Deni Avdija
+                    - generic [ref=e2739]:
+                      - button "Arrow pointing left icon" [ref=e2740] [cursor=pointer]:
+                        - img "Arrow pointing left icon" [ref=e2741]
+                      - generic [ref=e2744]:
+                        - button "1+" [ref=e2745] [cursor=pointer]:
+                          - generic [ref=e2746]: 1+
+                        - button "2+ −176" [ref=e2747] [cursor=pointer]:
+                          - generic [ref=e2748]: 2+
+                          - generic [ref=e2749]: −176
+                        - button "3+" [ref=e2750] [cursor=pointer]:
+                          - generic [ref=e2751]: 3+
+                        - button "4+" [ref=e2752] [cursor=pointer]:
+                          - generic [ref=e2753]: 4+
+                        - button "5+" [ref=e2754] [cursor=pointer]:
+                          - generic [ref=e2755]: 5+
+                        - button "6+" [ref=e2756] [cursor=pointer]:
+                          - generic [ref=e2757]: 6+
+                      - button "Arrow pointing right icon" [ref=e2758] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2759]
+                  - generic [ref=e2762]:
+                    - link "player image Devin Vassell" [ref=e2764] [cursor=pointer]:
+                      - /url: /players/basketball/devin-vassell-odds-527223
+                      - img "player image" [ref=e2766]
+                      - paragraph [ref=e2767]: Devin Vassell
+                    - generic [ref=e2769]:
+                      - button "Arrow pointing left icon" [ref=e2770] [cursor=pointer]:
+                        - img "Arrow pointing left icon" [ref=e2771]
+                      - generic [ref=e2774]:
+                        - button "1+" [ref=e2775] [cursor=pointer]:
+                          - generic [ref=e2776]: 1+
+                        - button "2+ −104" [ref=e2777] [cursor=pointer]:
+                          - generic [ref=e2778]: 2+
+                          - generic [ref=e2779]: −104
+                        - button "3+" [ref=e2780] [cursor=pointer]:
+                          - generic [ref=e2781]: 3+
+                        - button "4+" [ref=e2782] [cursor=pointer]:
+                          - generic [ref=e2783]: 4+
+                        - button "5+" [ref=e2784] [cursor=pointer]:
+                          - generic [ref=e2785]: 5+
+                      - button "Arrow pointing right icon" [ref=e2786] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2787]
+                  - generic [ref=e2790]:
+                    - link "player image Scoot Henderson" [ref=e2792] [cursor=pointer]:
+                      - /url: /players/basketball/scoot-henderson-odds-713756
+                      - img "player image" [ref=e2794]
+                      - paragraph [ref=e2795]: Scoot Henderson
+                    - generic [ref=e2797]:
+                      - img [ref=e2799]
+                      - generic [ref=e2803]:
+                        - button "1+ +107" [ref=e2804] [cursor=pointer]:
+                          - generic [ref=e2805]: 1+
+                          - generic [ref=e2806]: "+107"
+                        - button "2+" [ref=e2807] [cursor=pointer]:
+                          - generic [ref=e2808]: 2+
+                        - button "3+" [ref=e2809] [cursor=pointer]:
+                          - generic [ref=e2810]: 3+
+                        - button "4+" [ref=e2811] [cursor=pointer]:
+                          - generic [ref=e2812]: 4+
+                        - button "5+" [ref=e2813] [cursor=pointer]:
+                          - generic [ref=e2814]: 5+
+                      - button "Arrow pointing right icon" [ref=e2815] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2816]
+                  - generic [ref=e2819]:
+                    - link "player image Stephon Castle" [ref=e2821] [cursor=pointer]:
+                      - /url: /players/basketball/stephon-castle-odds-800351
+                      - img "player image" [ref=e2823]
+                      - paragraph [ref=e2824]: Stephon Castle
+                    - generic [ref=e2826]:
+                      - button "Arrow pointing left icon" [ref=e2827] [cursor=pointer]:
+                        - img "Arrow pointing left icon" [ref=e2828]
+                      - generic [ref=e2831]:
+                        - button "1+" [ref=e2832] [cursor=pointer]:
+                          - generic [ref=e2833]: 1+
+                        - button "2+ −116" [ref=e2834] [cursor=pointer]:
+                          - generic [ref=e2835]: 2+
+                          - generic [ref=e2836]: −116
+                        - button "3+" [ref=e2837] [cursor=pointer]:
+                          - generic [ref=e2838]: 3+
+                        - button "4+" [ref=e2839] [cursor=pointer]:
+                          - generic [ref=e2840]: 4+
+                        - button "5+" [ref=e2841] [cursor=pointer]:
+                          - generic [ref=e2842]: 5+
+                      - button "Arrow pointing right icon" [ref=e2843] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2844]
+                  - generic [ref=e2847]:
+                    - link "player image Julian Champagnie" [ref=e2849] [cursor=pointer]:
+                      - /url: /players/basketball/julian-champagnie-odds-650222
+                      - img "player image" [ref=e2851]
+                      - paragraph [ref=e2852]: Julian Champagnie
+                    - generic [ref=e2854]:
+                      - img [ref=e2856]
+                      - generic [ref=e2860]:
+                        - button "1+ +136" [ref=e2861] [cursor=pointer]:
+                          - generic [ref=e2862]: 1+
+                          - generic [ref=e2863]: "+136"
+                        - button "2+" [ref=e2864] [cursor=pointer]:
+                          - generic [ref=e2865]: 2+
+                        - button "3+" [ref=e2866] [cursor=pointer]:
+                          - generic [ref=e2867]: 3+
+                        - button "4+" [ref=e2868] [cursor=pointer]:
+                          - generic [ref=e2869]: 4+
+                        - button "5+" [ref=e2870] [cursor=pointer]:
+                          - generic [ref=e2871]: 5+
+                      - button "Arrow pointing right icon" [ref=e2872] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2873]
+                  - generic [ref=e2876]:
+                    - link "player image Jrue Holiday" [ref=e2878] [cursor=pointer]:
+                      - /url: /players/basketball/jrue-holiday-odds-33210
+                      - img "player image" [ref=e2880]
+                      - paragraph [ref=e2881]: Jrue Holiday
+                    - generic [ref=e2883]:
+                      - img [ref=e2885]
+                      - generic [ref=e2889]:
+                        - button "1+ +116" [ref=e2890] [cursor=pointer]:
+                          - generic [ref=e2891]: 1+
+                          - generic [ref=e2892]: "+116"
+                        - button "2+" [ref=e2893] [cursor=pointer]:
+                          - generic [ref=e2894]: 2+
+                        - button "3+" [ref=e2895] [cursor=pointer]:
+                          - generic [ref=e2896]: 3+
+                        - button "4+" [ref=e2897] [cursor=pointer]:
+                          - generic [ref=e2898]: 4+
+                        - button "5+" [ref=e2899] [cursor=pointer]:
+                          - generic [ref=e2900]: 5+
+                      - button "Arrow pointing right icon" [ref=e2901] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2902]
+                  - generic [ref=e2905]:
+                    - link "player image Toumani Camara" [ref=e2907] [cursor=pointer]:
+                      - /url: /players/basketball/toumani-camara-odds-713804
+                      - img "player image" [ref=e2909]
+                      - paragraph [ref=e2910]: Toumani Camara
+                    - generic [ref=e2912]:
+                      - img [ref=e2914]
+                      - generic [ref=e2918]:
+                        - button "1+ +154" [ref=e2919] [cursor=pointer]:
+                          - generic [ref=e2920]: 1+
+                          - generic [ref=e2921]: "+154"
+                        - button "2+" [ref=e2922] [cursor=pointer]:
+                          - generic [ref=e2923]: 2+
+                        - button "3+" [ref=e2924] [cursor=pointer]:
+                          - generic [ref=e2925]: 3+
+                        - button "4+" [ref=e2926] [cursor=pointer]:
+                          - generic [ref=e2927]: 4+
+                        - button "5+" [ref=e2928] [cursor=pointer]:
+                          - generic [ref=e2929]: 5+
+                      - button "Arrow pointing right icon" [ref=e2930] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2931]
+                  - generic [ref=e2934]:
+                    - link "player image Donovan Clingan" [ref=e2936] [cursor=pointer]:
+                      - /url: /players/basketball/donovan-clingan-odds-800354
+                      - img "player image" [ref=e2938]
+                      - paragraph [ref=e2939]: Donovan Clingan
+                    - generic [ref=e2941]:
+                      - img [ref=e2943]
+                      - generic [ref=e2947]:
+                        - button "1+ +119" [ref=e2948] [cursor=pointer]:
+                          - generic [ref=e2949]: 1+
+                          - generic [ref=e2950]: "+119"
+                        - button "2+" [ref=e2951] [cursor=pointer]:
+                          - generic [ref=e2952]: 2+
+                        - button "3+" [ref=e2953] [cursor=pointer]:
+                          - generic [ref=e2954]: 3+
+                        - button "4+" [ref=e2955] [cursor=pointer]:
+                          - generic [ref=e2956]: 4+
+                      - button "Arrow pointing right icon" [ref=e2957] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2958]
+                  - generic [ref=e2961]:
+                    - link "player image Luke Kornet" [ref=e2963] [cursor=pointer]:
+                      - /url: /players/basketball/luke-kornet-odds-32971
+                      - img "player image" [ref=e2965]
+                      - paragraph [ref=e2966]: Luke Kornet
+                    - generic [ref=e2968]:
+                      - img [ref=e2970]
+                      - generic [ref=e2974]:
+                        - button "1+ +186" [ref=e2975] [cursor=pointer]:
+                          - generic [ref=e2976]: 1+
+                          - generic [ref=e2977]: "+186"
+                        - button "2+" [ref=e2978] [cursor=pointer]:
+                          - generic [ref=e2979]: 2+
+                        - button "3+" [ref=e2980] [cursor=pointer]:
+                          - generic [ref=e2981]: 3+
+                        - button "4+" [ref=e2982] [cursor=pointer]:
+                          - generic [ref=e2983]: 4+
+                      - button "Arrow pointing right icon" [ref=e2984] [cursor=pointer]:
+                        - img "Arrow pointing right icon" [ref=e2985]
+              - button "Points - 1st Quarter" [ref=e2991]:
+                - generic [ref=e2992]:
+                  - heading "Points - 1st Quarter" [level=2] [ref=e2993] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e2994]:
+                    - img [ref=e2995]
+                - img [ref=e3001]
+              - button "Race to X Points" [ref=e3005]:
+                - generic [ref=e3006]:
+                  - heading "Race to X Points" [level=2] [ref=e3007] [cursor=pointer]
+                  - generic "Open game in SGP mode" [ref=e3008]:
+                    - img [ref=e3009]
+                - img [ref=e3015]
+        - generic [ref=e3018]:
+          - heading "Betting News" [level=4] [ref=e3019]
+          - generic [ref=e3020]:
+            - generic [ref=e3021]:
+              - 'link "NBA Best Bets: Top Same Game Parlay Bet for Spurs at Trail Blazers Game 3 on Friday 4/24/26" [ref=e3023] [cursor=pointer]':
+                - /url: https://dknetwork.draftkings.com/2026/04/24/nba-best-bets-top-same-game-parlay-bet-for-spurs-at-trail-blazers-game-3-on-friday-4-24-26/
+                - 'img "NBA Best Bets: Top Same Game Parlay Bet for Spurs at Trail Blazers Game 3 on Friday 4/24/26" [ref=e3024]'
+              - generic [ref=e3025]:
+                - generic [ref=e3026]: 4:43 PM · Apr 24, 2026
+                - 'link "NBA Best Bets: Top Same Game Parlay Bet for Spurs at Trail Blazers Game 3 on Friday 4/24/26" [ref=e3028] [cursor=pointer]':
+                  - /url: https://dknetwork.draftkings.com/2026/04/24/nba-best-bets-top-same-game-parlay-bet-for-spurs-at-trail-blazers-game-3-on-friday-4-24-26/
+                - generic [ref=e3030]: "Griffin Wong offers his top Same Game Parlay on DraftKings Sportsbook for tonight's Game 3 between the San Antonio Spurs and the Portland Trail Blazers. The post NBA Best Bets: Top Same Game Parlay Bet for Spurs at Trail Blazers Game 3 on Friday 4/24/26 appeared first on DraftKings Network."
+                - generic [ref=e3031]:
+                  - link "View Full Article>" [ref=e3032] [cursor=pointer]:
+                    - /url: https://dknetwork.draftkings.com/2026/04/24/nba-best-bets-top-same-game-parlay-bet-for-spurs-at-trail-blazers-game-3-on-friday-4-24-26/
+                  - generic [ref=e3033]: "Author(s): Griffin Wong."
+            - generic [ref=e3034]:
+              - link "Portland Trail Blazers vs. San Antonio Spurs, pick prediction for NBA Playoffs Game 3" [ref=e3036] [cursor=pointer]:
+                - /url: https://dknetwork.draftkings.com/2026/04/24/portland-trail-blazers-vs-san-antonio-spurs-pick-prediction-for-nba-playoffs-game-3/
+                - img "Portland Trail Blazers vs. San Antonio Spurs, pick prediction for NBA Playoffs Game 3" [ref=e3037]
+              - generic [ref=e3038]:
+                - generic [ref=e3039]: 1:02 PM · Apr 24, 2026
+                - link "Portland Trail Blazers vs. San Antonio Spurs, pick prediction for NBA Playoffs Game 3" [ref=e3041] [cursor=pointer]:
+                  - /url: https://dknetwork.draftkings.com/2026/04/24/portland-trail-blazers-vs-san-antonio-spurs-pick-prediction-for-nba-playoffs-game-3/
+                - generic [ref=e3043]: Bill Yin breaks down his prediction and pick for tonight's NBA playoff game between the Portland Trail Blazers and San Antonio Spurs. The post Portland Trail Blazers vs. San Antonio Spurs, pick prediction for NBA Playoffs Game 3 appeared first on DraftKings Network.
+                - generic [ref=e3044]:
+                  - link "View Full Article>" [ref=e3045] [cursor=pointer]:
+                    - /url: https://dknetwork.draftkings.com/2026/04/24/portland-trail-blazers-vs-san-antonio-spurs-pick-prediction-for-nba-playoffs-game-3/
+                  - generic [ref=e3046]: "Author(s): Bill Yin."
+            - generic [ref=e3047]:
+              - 'link "NBA Best Bets Today: Top Expert Picks & Predictions for Tuesday 4/21/26" [ref=e3049] [cursor=pointer]':
+                - /url: https://dknetwork.draftkings.com/2026/04/21/nba-best-bets-today-top-expert-picks-predictions-for-tuesday-4-21-26-transcript/
+                - 'img "NBA Best Bets Today: Top Expert Picks & Predictions for Tuesday 4/21/26" [ref=e3050]'
+              - generic [ref=e3051]:
+                - generic [ref=e3052]: 2:23 PM · Apr 21, 2026
+                - 'link "NBA Best Bets Today: Top Expert Picks & Predictions for Tuesday 4/21/26" [ref=e3054] [cursor=pointer]':
+                  - /url: https://dknetwork.draftkings.com/2026/04/21/nba-best-bets-today-top-expert-picks-predictions-for-tuesday-4-21-26-transcript/
+                - generic [ref=e3056]: "Get the best NBA picks today, including top player props and expert predictions from DraftKings analysts for tonight's games. The post NBA Best Bets Today: Top Expert Picks & Predictions for Tuesday 4/21/26 appeared first on DraftKings Network."
+                - generic [ref=e3057]:
+                  - link "View Full Article>" [ref=e3058] [cursor=pointer]:
+                    - /url: https://dknetwork.draftkings.com/2026/04/21/nba-best-bets-today-top-expert-picks-predictions-for-tuesday-4-21-26-transcript/
+                  - generic [ref=e3059]: "Author(s): DK.Network.Editors."
+            - generic [ref=e3060]:
+              - link "Portland Trail Blazers at San Antonio Spurs Game 2 prediction, pick for Tuesday 4/21/26" [ref=e3062] [cursor=pointer]:
+                - /url: https://dknetwork.draftkings.com/2026/04/21/portland-trail-blazers-at-san-antonio-spurs-game-2-prediction-pick-for-tuesday-4-21-26/
+                - img "Portland Trail Blazers at San Antonio Spurs Game 2 prediction, pick for Tuesday 4/21/26" [ref=e3063]
+              - generic [ref=e3064]:
+                - generic [ref=e3065]: 1:17 PM · Apr 21, 2026
+                - link "Portland Trail Blazers at San Antonio Spurs Game 2 prediction, pick for Tuesday 4/21/26" [ref=e3067] [cursor=pointer]:
+                  - /url: https://dknetwork.draftkings.com/2026/04/21/portland-trail-blazers-at-san-antonio-spurs-game-2-prediction-pick-for-tuesday-4-21-26/
+                - generic [ref=e3069]: Of the Western Conference playoff field, five of the eight teams still standing were part of the bracket last season. In theory, there should be less volatility surrounding those teams' performances, as each should be prepared for the playoff spotlight. Two of the teams who weren't in the 2024-25 bracket are facing off against each...
+                - generic [ref=e3070]:
+                  - link "View Full Article>" [ref=e3071] [cursor=pointer]:
+                    - /url: https://dknetwork.draftkings.com/2026/04/21/portland-trail-blazers-at-san-antonio-spurs-game-2-prediction-pick-for-tuesday-4-21-26/
+                  - generic [ref=e3072]: "Author(s): Griffin Wong."
+            - generic [ref=e3073]:
+              - link "San Antonio Spurs vs. Portland Trail Blazers prediction, pick for Sunday 4/19/26" [ref=e3075] [cursor=pointer]:
+                - /url: https://dknetwork.draftkings.com/2026/04/19/san-antonio-spurs-vs-portland-trail-blazers-prediction-pick-for-sunday-4-19-26/
+                - img "San Antonio Spurs vs. Portland Trail Blazers prediction, pick for Sunday 4/19/26" [ref=e3076]
+              - generic [ref=e3077]:
+                - generic [ref=e3078]: 3:00 PM · Apr 19, 2026
+                - link "San Antonio Spurs vs. Portland Trail Blazers prediction, pick for Sunday 4/19/26" [ref=e3080] [cursor=pointer]:
+                  - /url: https://dknetwork.draftkings.com/2026/04/19/san-antonio-spurs-vs-portland-trail-blazers-prediction-pick-for-sunday-4-19-26/
+                - generic [ref=e3082]: Alex Hunter breaks down his preview, prediction and pick for Sunday's NBA matchup between the Spurs and the Trail Blazers. The post San Antonio Spurs vs. Portland Trail Blazers prediction, pick for Sunday 4/19/26 appeared first on DraftKings Network.
+                - generic [ref=e3083]:
+                  - link "View Full Article>" [ref=e3084] [cursor=pointer]:
+                    - /url: https://dknetwork.draftkings.com/2026/04/19/san-antonio-spurs-vs-portland-trail-blazers-prediction-pick-for-sunday-4-19-26/
+                  - generic [ref=e3085]: "Author(s): Alex Hunter."
+            - generic [ref=e3086]:
+              - 'link "2026 NBA Playoffs: Spurs vs. Trail Blazers series prediction, pick for the first round" [ref=e3088] [cursor=pointer]':
+                - /url: https://dknetwork.draftkings.com/2026/04/16/2026-nba-playoffs-spurs-vs-trail-blazers-series-prediction-pick-for-the-first-round/
+                - 'img "2026 NBA Playoffs: Spurs vs. Trail Blazers series prediction, pick for the first round" [ref=e3089]'
+              - generic [ref=e3090]:
+                - generic [ref=e3091]: 8:00 PM · Apr 16, 2026
+                - 'link "2026 NBA Playoffs: Spurs vs. Trail Blazers series prediction, pick for the first round" [ref=e3093] [cursor=pointer]':
+                  - /url: https://dknetwork.draftkings.com/2026/04/16/2026-nba-playoffs-spurs-vs-trail-blazers-series-prediction-pick-for-the-first-round/
+                - generic [ref=e3095]: "Sean Barnard breaks down the upcoming first-round NBA Playoffs series between the San Antonio Spurs and the Portland Trail Blazers. The post 2026 NBA Playoffs: Spurs vs. Trail Blazers series prediction, pick for the first round appeared first on DraftKings Network."
+                - generic [ref=e3096]:
+                  - link "View Full Article>" [ref=e3097] [cursor=pointer]:
+                    - /url: https://dknetwork.draftkings.com/2026/04/16/2026-nba-playoffs-spurs-vs-trail-blazers-series-prediction-pick-for-the-first-round/
+                  - generic [ref=e3098]: "Author(s): Sean Barnard."
+      - generic [ref=e3099]:
+        - generic [ref=e3101]:
+          - generic:
+            - generic:
+              - generic:
+                - generic [ref=e3103]:
+                  - button "Betslip Accordion Header" [expanded] [ref=e3104]:
+                    - generic [ref=e3105]:
+                      - generic [ref=e3106]:
+                        - generic [ref=e3107]:
+                          - generic [ref=e3108]: "0"
+                          - generic [ref=e3109]: BET SLIP
+                        - img "Information" [ref=e3112] [cursor=pointer]
+                      - generic [ref=e3117]:
+                        - generic [ref=e3119] [cursor=pointer]: Cancel
+                        - generic [ref=e3121] [cursor=pointer]: Clear All
+                  - generic [ref=e3125]:
+                    - generic [ref=e3126]: Your picks will show up here.
+                    - generic [ref=e3127]: Select picks to then see the different types of bets available, including Singles, Parlays, Teasers, Round Robins and more.
+                - generic [ref=e3128]:
+                  - generic [ref=e3129]:
+                    - img "Left" [ref=e3131] [cursor=pointer]
+                    - heading "BET SLIP SETTINGS" [level=6] [ref=e3133]
+                  - generic [ref=e3134]:
+                    - generic [ref=e3135]: ODDS
+                    - generic [ref=e3136]:
+                      - generic [ref=e3137]:
+                        - generic [ref=e3138] [cursor=pointer]:
+                          - generic [ref=e3139]: Odds Change Behavior
+                          - generic [ref=e3140]: Always Ask
+                        - generic [ref=e3141]: For the fastest live betting experience select "Accept all Odds Changes"
+                      - generic [ref=e3143] [cursor=pointer]:
+                        - generic [ref=e3144]: Odds Type Preference
+                        - generic [ref=e3145]: American
+        - iframe [ref=e3147]:
+          - generic [ref=f2e12]:
+            - tab [ref=f2e13] [cursor=pointer]:
+              - generic:
+                - img
+            - tab [ref=f2e14] [cursor=pointer]:
+              - generic:
+                - img
+            - tab [ref=f2e15] [cursor=pointer]:
+              - generic:
+                - img
+            - tab [ref=f2e16] [cursor=pointer]:
+              - generic:
+                - img
+        - generic [ref=e3150]:
+          - img [ref=e3151]
+          - generic [ref=e3152]: You must be logged in to view this content
+          - button "Log In" [ref=e3154]:
+            - generic [ref=e3155]: Log In
+    - generic [ref=e3157]:
+      - generic [ref=e3158]:
+        - generic [ref=e3159]:
+          - generic [ref=e3160]: DraftKings Inc.
+          - generic [ref=e3161]: Boston, MA
+          - list [ref=e3163]:
+            - listitem [ref=e3164]:
+              - link "DraftKings Facebook" [ref=e3165] [cursor=pointer]:
+                - /url: https://www.facebook.com/DraftKings
+            - listitem [ref=e3166]:
+              - link "DraftKings X" [ref=e3167] [cursor=pointer]:
+                - /url: https://x.com/DraftKings
+            - listitem [ref=e3168]:
+              - link "DraftKings Instagram" [ref=e3169] [cursor=pointer]:
+                - /url: https://instagram.com/draftkings
+            - listitem [ref=e3170]:
+              - link "DraftKings YouTube" [ref=e3171] [cursor=pointer]:
+                - /url: https://www.youtube.com/draftkings
+        - generic [ref=e3172]:
+          - generic [ref=e3173]: COMPANY
+          - list [ref=e3175]:
+            - listitem [ref=e3176]:
+              - link "About DraftKings" [ref=e3177] [cursor=pointer]:
+                - /url: https://draftkings.com/about
+            - listitem [ref=e3178]:
+              - link "Careers" [ref=e3179] [cursor=pointer]:
+                - /url: https://careers.draftkings.com
+            - listitem [ref=e3180]:
+              - link "Mobile Apps" [ref=e3181] [cursor=pointer]:
+                - /url: https://www.draftkings.com/mobileapps
+            - listitem [ref=e3182]:
+              - link "Affiliates" [ref=e3183] [cursor=pointer]:
+                - /url: https://www.draftkings.com/affiliates
+            - listitem [ref=e3184]:
+              - link "Refer a Friend" [ref=e3185] [cursor=pointer]:
+                - /url: https://sportsbook.draftkings.com/refer
+            - listitem [ref=e3186]:
+              - link "Get Help" [ref=e3187] [cursor=pointer]:
+                - /url: https://help.draftkings.com/hc/en-us
+            - listitem [ref=e3188]:
+              - link "Terms Of Use" [ref=e3189] [cursor=pointer]:
+                - /url: https://sportsbook.draftkings.com/legal/pa-terms-of-use
+            - listitem [ref=e3190]:
+              - link "Privacy Policy" [ref=e3191] [cursor=pointer]:
+                - /url: https://sportsbook.draftkings.com/legal/privacy-notice
+            - listitem [ref=e3192]:
+              - link "Responsible Gaming" [ref=e3193] [cursor=pointer]:
+                - /url: https://rg.draftkings.com?intendedSiteExp=US-PA-SB
+            - listitem [ref=e3194]:
+              - link "Retail Sportsbook Locations" [ref=e3195] [cursor=pointer]:
+                - /url: https://sportsbook.draftkings.com/retailsportsbook
+            - listitem [ref=e3196]:
+              - link "Casino Partners" [ref=e3197] [cursor=pointer]:
+                - /url: https://sportsbook.draftkings.com/casino-partners-sb
+            - listitem [ref=e3198]:
+              - link "Accessibility" [ref=e3199] [cursor=pointer]:
+                - /url: https://www.draftkings.com/about/accessibility
+            - listitem [ref=e3200]:
+              - link "Online Casino" [ref=e3201] [cursor=pointer]:
+                - /url: https://casino.draftkings.com
+            - listitem [ref=e3202]:
+              - link "Daily Fantasy Sports" [ref=e3203] [cursor=pointer]:
+                - /url: https://www.draftkings.com
+            - listitem [ref=e3204]:
+              - link "DKNetwork Sports News" [ref=e3205] [cursor=pointer]:
+                - /url: https://dknetwork.draftkings.com
+            - listitem
+            - listitem [ref=e3206]:
+              - complementary [ref=e3207]:
+                - link "Do Not Sell or Share My Personal Information" [ref=e3208] [cursor=pointer]
+        - generic [ref=e3209]:
+          - generic [ref=e3210]:
+            - generic [ref=e3211]: SPORTSBOOK ODDS
+            - list [ref=e3212]:
+              - listitem [ref=e3213]:
+                - link "NFL Odds" [ref=e3214] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/football/nfl
+              - listitem [ref=e3215]:
+                - link "NBA Odds" [ref=e3216] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/basketball/nba
+              - listitem [ref=e3217]:
+                - link "MLB Odds" [ref=e3218] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/baseball/mlb
+              - listitem [ref=e3219]:
+                - link "UFC Odds" [ref=e3220] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/mma/ufc
+              - listitem [ref=e3221]:
+                - link "NHL Odds" [ref=e3222] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/hockey/nhl
+              - listitem [ref=e3223]:
+                - link "PGA Odds" [ref=e3224] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/golf/the-open-championship
+              - listitem [ref=e3225]:
+                - link "Soccer Odds" [ref=e3226] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/sports/soccer
+              - listitem [ref=e3227]:
+                - link "Tennis Odds" [ref=e3228] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/sports/tennis
+              - listitem [ref=e3229]:
+                - link "College Basketball Odds" [ref=e3230] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/basketball/ncaab
+              - listitem [ref=e3231]:
+                - link "College Football Odds" [ref=e3232] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/leagues/football/ncaaf
+              - listitem [ref=e3233]:
+                - link "Live Odds" [ref=e3234] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/live
+              - listitem [ref=e3235]:
+                - link "Super Bowl Odds" [ref=e3236] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/super-bowl--odds
+              - listitem [ref=e3237]:
+                - link "NFL Playoffs Odds" [ref=e3238] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/playoffs/nfl--odds
+          - generic [ref=e3239]:
+            - generic [ref=e3240]: BETTING GUIDES
+            - list [ref=e3241]:
+              - listitem [ref=e3242]:
+                - link "How To Bet" [ref=e3243] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet
+              - listitem [ref=e3244]:
+                - link "How to Bet on Football" [ref=e3245] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/football-betting-guide
+              - listitem [ref=e3246]:
+                - link "How to Bet on Basketball" [ref=e3247] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/basketball-betting-guide
+              - listitem [ref=e3248]:
+                - link "How to Bet on UFC" [ref=e3249] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/mma-betting-guide
+              - listitem [ref=e3250]:
+                - link "How to Bet on Baseball" [ref=e3251] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/baseball-betting-guide
+              - listitem [ref=e3252]:
+                - link "How to Bet on Hockey" [ref=e3253] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/hockey-betting-guide
+              - listitem [ref=e3254]:
+                - link "How to Bet on Golf" [ref=e3255] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/golf-betting-guide
+              - listitem [ref=e3256]:
+                - link "How to Bet on Soccer" [ref=e3257] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/soccer-betting-guide
+              - listitem [ref=e3258]:
+                - link "How to Bet on Tennis" [ref=e3259] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/tennis-betting-guide
+              - listitem [ref=e3260]:
+                - link "How to Bet on NASCAR" [ref=e3261] [cursor=pointer]:
+                  - /url: https://sportsbook.draftkings.com/help/how-to-bet/nascar-betting-guide
+        - generic [ref=e3262]:
+          - generic [ref=e3263]: LOCATIONS
+          - list [ref=e3264]:
+            - listitem [ref=e3265]:
+              - generic [ref=e3266]: US Office
+              - generic [ref=e3267]:
+                - paragraph [ref=e3268]: 222 Berkeley Street
+                - paragraph [ref=e3269]: Boston, MA
+                - paragraph [ref=e3270]: "02116"
+            - listitem [ref=e3271]:
+              - generic [ref=e3272]: New Jersey Office
+              - generic [ref=e3273]:
+                - paragraph [ref=e3274]: PO Box 399
+                - paragraph [ref=e3275]: Hoboken, NJ
+                - paragraph [ref=e3276]: "07030"
+            - listitem [ref=e3277]:
+              - generic [ref=e3278]: UK Office
+              - generic [ref=e3279]:
+                - paragraph [ref=e3280]: 15 Ingestre Place
+                - paragraph [ref=e3281]: Suite 265
+                - paragraph [ref=e3282]: Soho, London
+                - paragraph [ref=e3283]: W1F OJH
+        - generic [ref=e3284]:
+          - generic [ref=e3285]:
+            - link "Hollywood Casino at The Meadows" [ref=e3287] [cursor=pointer]:
+              - /url: ""
+              - img "Hollywood Casino at The Meadows" [ref=e3288]
+            - link "DraftKings Sportsbook" [ref=e3291] [cursor=pointer]:
+              - /url: ""
+              - img "DraftKings Sportsbook" [ref=e3292]
+          - paragraph [ref=e3293]: "We are regulated by the Pennsylvania Gaming Control Board License #117645. The Meadows F-1316."
+          - paragraph [ref=e3294]:
+            - text: Only customers 21 and over who are physically present in Pennsylvania are permitted to play our games. If you or someone you know has a gambling problem and wants help, call
+            - link "1-800-GAMBLER" [ref=e3295] [cursor=pointer]:
+              - /url: tel:1-800-GAMBLER
+            - text: .
+      - generic [ref=e3296]:
+        - generic [ref=e3299]: © 2012-2026 DraftKings All Rights Reserved.
+        - generic [ref=e3301]:
+          - generic "Twenty One Plus Icon" [ref=e3302]:
+            - img "Twenty One Plus Icon" [ref=e3303]
+          - generic "Responsible Gaming Icon" [ref=e3304]:
+            - link "Responsible Gaming Icon" [ref=e3305] [cursor=pointer]:
+              - /url: https://rg.draftkings.com?intendedSiteExp=US-PA-SB
+              - img "Responsible Gaming Icon" [ref=e3306]
+          - generic "PGCB Icon" [ref=e3307]:
+            - link "PGCB Icon" [ref=e3308] [cursor=pointer]:
+              - /url: https://gamingcontrolboard.pa.gov/
+              - img "PGCB Icon" [ref=e3309]
+    - generic [ref=e3312]: "Server Time: 04/24/2026 10:28:33 PM"

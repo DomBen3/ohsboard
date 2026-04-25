@@ -25,8 +25,8 @@ const mono = Share_Tech_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "OhsBoard — MLB",
-  description: "Live MLB odds tracker",
+  title: "OhsBoard",
+  description: "Live odds tracker",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

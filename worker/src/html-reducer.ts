@@ -64,6 +64,31 @@ export async function captureRelevantHtml(
       clone
         .querySelectorAll("script, style, noscript, svg, iframe, link, meta")
         .forEach((n) => n.remove());
+
+      // PPG slot-widget filter (NBA player rows).
+      //
+      // DK's NBA player-prop rows contain a 30-cell PPG/last-N slot widget —
+      // every player carries 30 single-digit text nodes (0..9) used to render
+      // a tiny bar chart. If we leave these in the reduced HTML they explode
+      // the token count for zero structural value (the LLM never picks a
+      // selector against them). Heuristic: any element whose immediate-text
+      // children are at least 20 distinct single-digit nodes is a slot widget
+      // — drop the whole subtree.
+      clone.querySelectorAll<HTMLElement>("*").forEach((el) => {
+        let digitNodes = 0;
+        let otherTextNodes = 0;
+        for (const child of Array.from(el.childNodes)) {
+          if (child.nodeType !== 3 /* TEXT_NODE */) continue;
+          const t = (child.textContent ?? "").trim();
+          if (t.length === 0) continue;
+          if (/^[0-9]$/.test(t)) digitNodes++;
+          else otherTextNodes++;
+        }
+        if (digitNodes >= 20 && otherTextNodes === 0) {
+          el.remove();
+        }
+      });
+
       clone.querySelectorAll("*").forEach((el) => {
         const attrs = Array.from(el.attributes);
         for (const attr of attrs) {

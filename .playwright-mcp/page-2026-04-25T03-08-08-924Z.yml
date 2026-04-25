@@ -1,0 +1,39 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]: Ohs
+        - generic [ref=e7]: board
+      - generic [ref=e10]: Live · Book
+    - generic [ref=e11]: League
+    - navigation [ref=e12]:
+      - link "NBA" [ref=e13] [cursor=pointer]:
+        - /url: /nba
+        - generic [ref=e15]: NBA
+        - img [ref=e16]
+      - generic "Paused — code retained, scrape off" [ref=e18]:
+        - generic [ref=e20]: MLB
+        - generic [ref=e21]: Paused
+      - generic "Coming soon" [ref=e22]:
+        - generic [ref=e24]: NFL
+        - generic [ref=e25]: Soon
+    - generic [ref=e27]:
+      - generic [ref=e28]: Source
+      - generic [ref=e29]: DraftKings
+      - generic [ref=e30]: Agent
+      - generic [ref=e33]: Self-heal · GPT-5
+  - main [ref=e34]:
+    - generic [ref=e35]:
+      - generic [ref=e38]:
+        - heading "MLB" [level=1] [ref=e39]
+        - generic [ref=e41]: Paused
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - generic [ref=e45]: §00
+          - generic [ref=e47]: Pen
+        - heading "MLB on the bench" [level=2] [ref=e48]
+        - paragraph [ref=e49]:
+          - text: The MLB scraper is paused. All historical MLB odds are preserved in the database and the code paths are intact — the worker simply skips this sport on each cron tick because
+          - code [ref=e50]: sports.is_active=false
+          - text: . Flip a single row to re-enable.
+        - generic [ref=e53]: Code retained · Scrape off

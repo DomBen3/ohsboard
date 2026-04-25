@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import {
   CartesianGrid,
   Line,
@@ -10,16 +10,8 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+import { useGameHistory, type Snapshot } from "@/lib/use-game-history";
 import { useMarketFilter } from "./market-filter-context";
-
-interface Snapshot {
-  market: string;
-  field: string;
-  player: string | null;
-  line: number | null;
-  priceAmerican: number;
-  capturedAt: string;
-}
 
 interface HistoryChartsProps {
   gameId: string;
@@ -28,28 +20,8 @@ interface HistoryChartsProps {
 }
 
 export function HistoryCharts({ gameId, capturedAt }: HistoryChartsProps) {
-  const [snapshots, setSnapshots] = useState<Snapshot[] | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const { snapshots, error } = useGameHistory(gameId, capturedAt);
   const { isVisible, visible } = useMarketFilter();
-
-  useEffect(() => {
-    let cancelled = false;
-    setError(null);
-    fetch(`/api/games/${gameId}/history`, { cache: "no-store" })
-      .then((r) => {
-        if (!r.ok) throw new Error(`HTTP ${r.status}`);
-        return r.json();
-      })
-      .then((data: { snapshots: Snapshot[] }) => {
-        if (!cancelled) setSnapshots(data.snapshots);
-      })
-      .catch((e) => {
-        if (!cancelled) setError(e instanceof Error ? e.message : String(e));
-      });
-    return () => {
-      cancelled = true;
-    };
-  }, [gameId, capturedAt]);
 
   const grouped = useMemo(() => groupByMarket(snapshots ?? []), [snapshots]);
 
@@ -370,9 +342,9 @@ function PitcherPropCharts({
   );
 }
 
-type ChartPoint = { t: number; line?: number | null } & Record<string, number | null | undefined>;
+export type ChartPoint = { t: number; line?: number | null } & Record<string, number | null | undefined>;
 
-function buildTimeSeries(rows: Snapshot[], fields: string[]): ChartPoint[] {
+export function buildTimeSeries(rows: Snapshot[], fields: string[]): ChartPoint[] {
   // Bucket rows by truncated-to-second capturedAt. Over/under snapshots from
   // the same scrape run land in the same bucket and merge into one point.
   const buckets = new Map<number, ChartPoint>();
@@ -397,7 +369,7 @@ function ChartHeader({ title }: { title: string }) {
   );
 }
 
-function ChartCard({ label, children }: { label: string; children: React.ReactNode }) {
+export function ChartCard({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div className="border border-[var(--color-rule)] bg-[var(--color-ink)]/60 px-3 pb-3 pt-2">
       <div className="mb-1 font-display text-[9px] uppercase tracking-[0.28em] text-[var(--color-chalk-dimmer)]">
@@ -419,25 +391,25 @@ function EmptyChart({ title }: { title: string }) {
   );
 }
 
-const axisTick = {
+export const axisTick = {
   fill: "var(--color-chalk-dim)",
   fontFamily: "var(--font-mono)",
   fontSize: 10,
 };
 
-function fmtTime(t: number): string {
+export function fmtTime(t: number): string {
   return new Date(t).toLocaleTimeString(undefined, {
     hour: "numeric",
     minute: "2-digit",
   });
 }
 
-function fmtPrice(v: number): string {
+export function fmtPrice(v: number): string {
   if (!Number.isFinite(v)) return "";
   return v > 0 ? `+${Math.round(v)}` : `${Math.round(v)}`;
 }
 
-function StadiumTooltip({
+export function StadiumTooltip({
   active,
   payload,
   label,

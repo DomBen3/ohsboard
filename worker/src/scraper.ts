@@ -1,5 +1,12 @@
-import { scrapeRuns, selectors as selectorsTable, sports, type Db } from "@ohsboard/db";
-import { findMlbTeam } from "@ohsboard/types";
+import {
+  games,
+  scrapeRuns,
+  selectors as selectorsTable,
+  sports,
+  teams,
+  type Db,
+} from "@ohsboard/db";
+import { findMlbTeam, type NbaTeam } from "@ohsboard/types";
 import { and, eq } from "drizzle-orm";
 import { chromium, type Page } from "playwright";
 import {
@@ -8,20 +15,29 @@ import {
   extractMainMarkets,
   jitter,
   navigateToGame,
+  NBA_LEAGUE_URL,
+  nbaSubcategoryUrl,
   pitcherPropsUrl,
   type MarketSelectors,
+  type NbaPropMarket,
+  type NbaSubcategory,
   type PropMarket,
   type RawOdds,
 } from "./draftkings";
 import { env } from "./env";
 import { healMarketSelector, type Market } from "./healer";
+import { extractNbaPropOU } from "./nba-props";
 import { insertOddsSnapshots, upsertGame, type OddsRow } from "./persist";
 import { extractPitcherPropsBySection } from "./pitcher-props";
 import {
   fetchExpectedMlbGames,
-  matchExpectedGame,
+  fetchExpectedNbaGames,
+  matchExpectedMlbGame,
+  matchExpectedNbaGame,
   type ExpectedGame,
-} from "./statsapi";
+  type ExpectedNbaGame,
+} from "./schedule";
+import { validatePropRows } from "./validators";
 
 export interface ScrapeResult {
   gamesExpected: number;
@@ -33,22 +49,116 @@ export interface ScrapeResult {
   healLlmTokens: number;
 }
 
-// DB-selector + LLM-heal markets. Prop markets are handled by a deterministic
-// structural extractor (see pitcher-props.ts) — they don't need heal attempts.
-const MARKETS: Market[] = ["total", "run_line", "moneyline"];
-const PROP_MARKETS: PropMarket[] = [
+export interface SportScrapeOutcome extends ScrapeResult {
+  sportSlug: string;
+  runId: string;
+  status: "ok" | "degraded" | "failed";
+  errorMessage?: string;
+}
+
+// ---- Per-sport market constants -------------------------------------------
+//
+// MLB game lines go through DB-persisted CSS selectors and the LLM-healer when
+// a row count goes empty. MLB pitcher props and NBA player props use
+// deterministic structural extractors keyed on header text + DK's collapsible
+// testid landmarks; they don't consume heal budget.
+
+const MLB_MARKETS: Market[] = ["total", "run_line", "moneyline"];
+const MLB_PROP_MARKETS: PropMarket[] = [
   "prop_pitcher_strikeouts",
   "prop_pitcher_outs_recorded",
 ];
-// Cap heal attempts per run so a bad DOM day can't blow the OpenAI budget.
-// +2 allows retries after a first-attempt heal failure.
-const MAX_HEAL_ATTEMPTS_PER_RUN = MARKETS.length + 2;
+const NBA_PROP_MARKETS: NbaPropMarket[] = [
+  "prop_nba_points",
+  "prop_nba_threes",
+  "prop_nba_rebounds",
+  "prop_nba_assists",
+];
+const NBA_SUBCATEGORIES: Record<NbaPropMarket, NbaSubcategory> = {
+  prop_nba_points: "points",
+  prop_nba_threes: "threes",
+  prop_nba_rebounds: "rebounds",
+  prop_nba_assists: "assists",
+};
+
+/**
+ * Per-sport heal cap. Only MLB game-line markets are LLM-healed today, so the
+ * cap derives from `MLB_MARKETS.length` plus a small retry buffer. NBA's heal
+ * budget is 0 (see `scrapeNba` — its 4 markets are deterministic-only).
+ */
+function maxHealAttemptsPerRun(sportSlug: string): number {
+  if (sportSlug === "mlb") return MLB_MARKETS.length + 2;
+  // NBA + future sports: deterministic-only by default.
+  return 0;
+}
 
 const MARKET_KEY: Record<Market, keyof MarketSelectors> = {
   total: "totalRow",
   run_line: "runLineRow",
   moneyline: "moneylineRow",
 };
+
+// ---- Top-level dispatcher --------------------------------------------------
+
+/**
+ * Run all currently-active sports in series, each with its own `scrape_runs`
+ * row. Returns one outcome per sport. Returns an empty array when no sport is
+ * active (e.g. MLB paused + NBA paused).
+ *
+ * The caller is responsible for creating/marking each sport's `scrape_runs`
+ * row; this function takes a map from sportSlug → runId to use.
+ */
+export async function runActiveSports(
+  db: Db,
+  runIdsBySport: Record<string, string>,
+): Promise<SportScrapeOutcome[]> {
+  const active = await db
+    .select({ id: sports.id, slug: sports.slug, name: sports.name })
+    .from(sports)
+    .where(eq(sports.isActive, true));
+
+  const out: SportScrapeOutcome[] = [];
+  for (const s of active) {
+    const runId = runIdsBySport[s.slug];
+    if (!runId) {
+      console.warn(
+        `[scraper] no runId provided for active sport ${s.slug}; skipping`,
+      );
+      continue;
+    }
+    try {
+      let result: ScrapeResult;
+      if (s.slug === "mlb") {
+        result = await scrapeMlb(db, runId);
+      } else if (s.slug === "nba") {
+        result = await scrapeNba(db, runId);
+      } else {
+        console.warn(`[scraper] no implementation for sport ${s.slug}; skipping`);
+        continue;
+      }
+      out.push({ ...result, sportSlug: s.slug, runId, status: "ok" });
+    } catch (err) {
+      const message = err instanceof Error ? err.message : String(err);
+      console.error(`[scraper] ${s.slug} run ${runId} failed:`, message);
+      out.push({
+        sportSlug: s.slug,
+        runId,
+        status: "failed",
+        errorMessage: message,
+        gamesExpected: 0,
+        gamesScraped: 0,
+        rowsWritten: 0,
+        shapePassRate: 0,
+        healed: false,
+        healMarkets: [],
+        healLlmTokens: 0,
+      });
+    }
+  }
+  return out;
+}
+
+// ---- MLB ------------------------------------------------------------------
 
 export async function scrapeMlb(db: Db, runId: string): Promise<ScrapeResult> {
   console.log(`[scraper] run ${runId} — starting`);
@@ -104,6 +214,7 @@ export async function scrapeMlb(db: Db, runId: string): Promise<ScrapeResult> {
   let healAttempts = 0;
   let marketsProbed = 0;
   let marketsPopulated = 0;
+  const healCap = maxHealAttemptsPerRun("mlb");
 
   try {
     const context = await browser.newContext({
@@ -127,7 +238,13 @@ export async function scrapeMlb(db: Db, runId: string): Promise<ScrapeResult> {
     await discoveryPage.close();
     console.log(`[scraper] discovered ${urls.length} game URLs`);
 
-    const gamesExpected = expectedGames?.length ?? urls.length;
+    // Same rationale as NBA: align `gamesExpected` to actual planned scrape
+    // count so the front end's "Syncing N/M" indicator stays sane when the
+    // schedule API reports fewer games than DK has up.
+    const gamesExpected = Math.max(
+      urls.length,
+      expectedGames?.length ?? 0,
+    );
     await db
       .update(scrapeRuns)
       .set({ gamesExpected })
@@ -161,6 +278,7 @@ export async function scrapeMlb(db: Db, runId: string): Promise<ScrapeResult> {
             selectors = newSelectors;
           },
           selectors,
+          healCap,
         );
         healLlmTokens += mainHealResult.tokens;
         if (mainHealResult.healedAny) {
@@ -186,7 +304,7 @@ export async function scrapeMlb(db: Db, runId: string): Promise<ScrapeResult> {
           .catch(() => undefined);
         const propOdds: RawOdds[] = [];
         const propEmpty: PropMarket[] = [];
-        for (const pm of PROP_MARKETS) {
+        for (const pm of MLB_PROP_MARKETS) {
           const rows = await extractPitcherPropsBySection(gamePage, pm).catch(
             (err) => {
               const msg = err instanceof Error ? err.message : String(err);
@@ -202,7 +320,7 @@ export async function scrapeMlb(db: Db, runId: string): Promise<ScrapeResult> {
         const canonicalHome = findMlbTeam(mainExtract.home);
         const canonicalAway = findMlbTeam(mainExtract.away);
         const matched = expectedGames
-          ? matchExpectedGame(expectedGames, mainExtract.home, mainExtract.away)
+          ? matchExpectedMlbGame(expectedGames, mainExtract.home, mainExtract.away)
           : null;
         const startTime = matched?.gameDate ?? mainExtract.startTime;
 
@@ -231,7 +349,7 @@ export async function scrapeMlb(db: Db, runId: string): Promise<ScrapeResult> {
         gamesScraped += 1;
 
         const empty = [...mainExtract.emptyMarkets, ...propEmpty];
-        const totalPerGameMarkets = MARKETS.length + PROP_MARKETS.length;
+        const totalPerGameMarkets = MLB_MARKETS.length + MLB_PROP_MARKETS.length;
         marketsProbed += totalPerGameMarkets;
         marketsPopulated += totalPerGameMarkets - empty.length;
 
@@ -282,6 +400,251 @@ export async function scrapeMlb(db: Db, runId: string): Promise<ScrapeResult> {
   }
 }
 
+// ---- NBA ------------------------------------------------------------------
+
+/**
+ * NBA scrape. Mirrors `scrapeMlb` structurally but targets the four player-
+ * prop O/U markets (Points / Threes / Rebounds / Assists). Each game requires
+ * four sequential subcategory page loads — DK only renders one O/U section
+ * per `?subcategory=…`. Uses the deterministic extractor in `nba-props.ts`.
+ *
+ * Healer note: NBA O/U markets are deterministic-only and do NOT consume heal
+ * budget. The market-header alias list in `nba-props.ts` covers DK's known
+ * label variants; if DK renames a header outside that list the market records
+ * 0 rows and is logged. Re-evaluate adding an LLM-heal arm when we see actual
+ * label drift in the wild — adding one prematurely just burns OpenAI credits
+ * on a robust extractor.
+ */
+export async function scrapeNba(db: Db, runId: string): Promise<ScrapeResult> {
+  console.log(`[scraper:nba] run ${runId} — starting`);
+  const nba = await db.query.sports.findFirst({ where: eq(sports.slug, "nba") });
+  if (!nba) throw new Error("NBA sport row missing — run db:seed");
+
+  let expectedGames: ExpectedNbaGame[] | null = null;
+  try {
+    expectedGames = await fetchExpectedNbaGames();
+    console.log(
+      `[scraper:nba] ESPN: ${expectedGames.length} games scheduled today`,
+    );
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    console.warn(
+      `[scraper:nba] ESPN unavailable (${msg}); proceeding without cross-check`,
+    );
+  }
+
+  if (expectedGames && expectedGames.length === 0) {
+    console.log(`[scraper:nba] off-day — no games scheduled; finishing clean with 0 rows`);
+    await db
+      .update(scrapeRuns)
+      .set({ gamesExpected: 0, gamesScraped: 0, rowsWritten: 0 })
+      .where(eq(scrapeRuns.id, runId));
+    return {
+      gamesExpected: 0,
+      gamesScraped: 0,
+      rowsWritten: 0,
+      shapePassRate: 1,
+      healed: false,
+      healMarkets: [],
+      healLlmTokens: 0,
+    };
+  }
+
+  const browser = await chromium.launch({
+    headless: env.HEADLESS,
+    args: [
+      "--no-sandbox",
+      "--disable-dev-shm-usage",
+      "--disable-blink-features=AutomationControlled",
+    ],
+  });
+
+  let gamesScraped = 0;
+  let rowsWritten = 0;
+  let marketsProbed = 0;
+  let marketsPopulated = 0;
+
+  try {
+    const context = await browser.newContext({
+      userAgent:
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      viewport: { width: 1440, height: 900 },
+      locale: "en-US",
+      timezoneId: "America/New_York",
+    });
+    await context.addInitScript({
+      content: `
+        globalThis.__name = globalThis.__name || function(fn){ return fn; };
+        try {
+          Object.defineProperty(navigator, 'webdriver', { get: function(){ return undefined; } });
+        } catch (e) {}
+      `,
+    });
+
+    const discoveryPage = await createPage(context);
+    const urls = await discoverGameUrls(discoveryPage, NBA_LEAGUE_URL);
+    await discoveryPage.close();
+    console.log(`[scraper:nba] discovered ${urls.length} game URLs`);
+
+    // ESPN excludes already-final and in-progress games from its scoreboard
+    // count, so it can be smaller than DK's discovery (e.g. 3 vs 8). The DB
+    // `gamesExpected` is what the front end's "Syncing N/M" indicator reads;
+    // align it to the actual planned scrape count so the indicator never
+    // shows scraped > expected. The off-day shortcircuit above already
+    // handles the genuine `expectedGames.length === 0` case before we get
+    // here, so taking max preserves that signal.
+    const gamesExpected = Math.max(
+      urls.length,
+      expectedGames?.length ?? 0,
+    );
+    await db
+      .update(scrapeRuns)
+      .set({ gamesExpected })
+      .where(eq(scrapeRuns.id, runId));
+
+    const gamePage = await createPage(context);
+
+    for (const [i, url] of urls.entries()) {
+      try {
+        // Resolve teams from the slug — DK's NBA per-game page header has
+        // historically been more variable than MLB's, so we lean on the URL
+        // slug + ESPN match rather than parsing an h1.
+        const slugTeams = parseSlugTeams(url);
+        const homeName = slugTeams?.home ?? "Home";
+        const awayName = slugTeams?.away ?? "Away";
+        const matched = expectedGames
+          ? matchExpectedNbaGame(expectedGames, homeName, awayName)
+          : null;
+
+        const dkEventId = parseDkEventIdSafe(url);
+        const externalId = matched
+          ? `nba:${matched.espnEventId}`
+          : `dk:${dkEventId}`;
+        const startTime = matched?.gameDate ?? new Date();
+
+        const homeTeamId = await upsertNbaTeamRow(
+          db,
+          nba.id,
+          matched?.home ?? null,
+          matched?.home.name ?? homeName,
+        );
+        const awayTeamId = await upsertNbaTeamRow(
+          db,
+          nba.id,
+          matched?.away ?? null,
+          matched?.away.name ?? awayName,
+        );
+        const gameId = await upsertNbaGameRow(db, {
+          sportId: nba.id,
+          externalId,
+          sourceUrl: url,
+          homeTeamId,
+          awayTeamId,
+          startTime,
+        });
+
+        const gameOdds: RawOdds[] = [];
+        const emptyMarkets: NbaPropMarket[] = [];
+        const degradedMarkets: string[] = [];
+
+        for (const market of NBA_PROP_MARKETS) {
+          const sub = NBA_SUBCATEGORIES[market];
+          await jitter();
+          await navigateToGame(gamePage, nbaSubcategoryUrl(url, sub));
+
+          const rows = await extractNbaPropOU(gamePage, market).catch((err) => {
+            const msg = err instanceof Error ? err.message : String(err);
+            console.warn(`[scraper:nba] ${market}: extract failed — ${msg}`);
+            return [] as RawOdds[];
+          });
+
+          if (rows.length === 0) {
+            emptyMarkets.push(market);
+            continue;
+          }
+
+          // Post-extraction shape validation. The deterministic walk should
+          // always produce paired Over/Under rows with matching lines; if it
+          // doesn't, log it but still persist what we got — degraded data is
+          // better than no data and easier to investigate.
+          const validation = validatePropRows(rows);
+          if (!validation.passes) {
+            degradedMarkets.push(`${market}(${validation.reason ?? "shape"})`);
+            console.warn(
+              `[scraper:nba] ${market}: shape check failed — ${validation.reason} · pairs=${validation.validPairs}/${validation.playersSeen}`,
+            );
+          }
+          gameOdds.push(...rows);
+        }
+
+        const oddsRows: OddsRow[] = gameOdds.map((o) => ({
+          gameId,
+          market: o.market,
+          field: o.field,
+          line: o.line,
+          priceAmerican: o.priceAmerican,
+          player: o.player,
+        }));
+        const written = await insertOddsSnapshots(db, runId, oddsRows);
+        rowsWritten += written;
+        // Count a game as "scraped" only when at least one market produced
+        // rows. Off-day cards or DK-pulled games would otherwise inflate the
+        // gamesScraped counter while writing no odds.
+        if (written > 0) gamesScraped += 1;
+
+        marketsProbed += NBA_PROP_MARKETS.length;
+        marketsPopulated += NBA_PROP_MARKETS.length - emptyMarkets.length;
+
+        const matchTag = matched ? " · espn" : " · unmapped";
+        const emptyTag = emptyMarkets.length
+          ? ` — empty: ${emptyMarkets.join(",")}`
+          : "";
+        const degradedTag = degradedMarkets.length
+          ? ` — degraded: ${degradedMarkets.join(",")}`
+          : "";
+        console.log(
+          `[scraper:nba] (${i + 1}/${urls.length}) ${awayName} @ ${homeName} — ${written} rows${emptyTag}${degradedTag}${matchTag}`,
+        );
+
+        await db
+          .update(scrapeRuns)
+          .set({ gamesScraped, rowsWritten })
+          .where(eq(scrapeRuns.id, runId));
+      } catch (err) {
+        const msg = err instanceof Error ? err.message : String(err);
+        console.warn(`[scraper:nba] game ${url} failed: ${msg}`);
+      }
+    }
+
+    await gamePage.close();
+    await context.close();
+
+    const shapePassRate =
+      marketsProbed === 0 ? 1 : marketsPopulated / marketsProbed;
+
+    if (expectedGames && expectedGames.length > 0 && rowsWritten === 0) {
+      console.warn(
+        `[scraper:nba] run ${runId}: ESPN expected ${expectedGames.length} games but no rows written — likely broken extractors`,
+      );
+    }
+
+    return {
+      gamesExpected,
+      gamesScraped,
+      rowsWritten,
+      shapePassRate,
+      // NBA does not LLM-heal in this milestone — see banner comment.
+      healed: false,
+      healMarkets: [],
+      healLlmTokens: 0,
+    };
+  } finally {
+    await browser.close();
+  }
+}
+
+// ---- helpers --------------------------------------------------------------
+
 interface HealCounter {
   readonly attempts: number;
   increment(): void;
@@ -297,15 +660,16 @@ async function healEmptyMarkets(
   counter: HealCounter,
   setSelectors: (next: MarketSelectors) => void,
   current: MarketSelectors,
+  healCap: number,
 ): Promise<{ healedAny: boolean; tokens: number }> {
   let healedAny = false;
   let tokens = 0;
   let mutable = current;
   for (const market of emptyMarkets) {
     if (healedMarkets.has(market)) continue;
-    if (counter.attempts >= MAX_HEAL_ATTEMPTS_PER_RUN) {
+    if (counter.attempts >= healCap) {
       console.warn(
-        `[scraper] heal budget exhausted (${counter.attempts}/${MAX_HEAL_ATTEMPTS_PER_RUN}); skipping ${market}`,
+        `[scraper] heal budget exhausted (${counter.attempts}/${healCap}); skipping ${market}`,
       );
       continue;
     }
@@ -359,4 +723,107 @@ async function loadMarketSelectors(db: Db, sportId: number): Promise<MarketSelec
 function s(sel: string | null): string {
   if (!sel) return "<none>";
   return sel.length > 60 ? `${sel.slice(0, 60)}…` : sel;
+}
+
+// Local helpers — keep the NBA path off the MLB-tied utilities in
+// odds-parser.ts so its surface stays MLB-shaped for now.
+function parseDkEventIdSafe(url: string): string {
+  const m = /\/event\/[^/?#]+\/(\d+)/.exec(url);
+  if (m && m[1]) return m[1];
+  try {
+    return new URL(url).pathname;
+  } catch {
+    return url;
+  }
+}
+
+const SLUG_SEP_RE = /-(?:vs|at|%2540|%40|@)-/i;
+function parseSlugTeams(url: string): { away: string; home: string } | null {
+  const m = /\/event\/([^/?#]+)\/\d+/.exec(url);
+  if (!m || !m[1]) return null;
+  const parts = m[1].split(SLUG_SEP_RE);
+  if (parts.length !== 2) return null;
+  const titleCase = (slug: string) =>
+    slug
+      .split("-")
+      .filter(Boolean)
+      .map((w) => w[0]!.toUpperCase() + w.slice(1))
+      .join(" ");
+  const [awaySlug, homeSlug] = parts as [string, string];
+  return { away: titleCase(awaySlug), home: titleCase(homeSlug) };
+}
+
+async function upsertNbaTeamRow(
+  db: Db,
+  sportId: number,
+  team: NbaTeam | null,
+  fallbackName: string,
+): Promise<number> {
+  const externalId = team
+    ? `nba:${team.id}`
+    : `dk:${fallbackName.trim().toLowerCase()}`;
+  const displayName = team ? team.name : fallbackName;
+  const abbreviation = team
+    ? team.abbreviation
+    : fallbackName.slice(0, 3).toUpperCase() || "TBD";
+
+  const existing = await db
+    .select({ id: teams.id })
+    .from(teams)
+    .where(and(eq(teams.sportId, sportId), eq(teams.externalId, externalId)))
+    .limit(1);
+  if (existing[0]) {
+    await db
+      .update(teams)
+      .set({ name: displayName, abbreviation })
+      .where(eq(teams.id, existing[0].id));
+    return existing[0].id;
+  }
+  const [inserted] = await db
+    .insert(teams)
+    .values({ sportId, externalId, name: displayName, abbreviation })
+    .onConflictDoNothing({ target: [teams.sportId, teams.externalId] })
+    .returning({ id: teams.id });
+  if (inserted) return inserted.id;
+  const [raced] = await db
+    .select({ id: teams.id })
+    .from(teams)
+    .where(and(eq(teams.sportId, sportId), eq(teams.externalId, externalId)))
+    .limit(1);
+  if (!raced) throw new Error(`team upsert failed for ${displayName}`);
+  return raced.id;
+}
+
+interface NbaGameUpsert {
+  sportId: number;
+  externalId: string;
+  sourceUrl: string;
+  homeTeamId: number;
+  awayTeamId: number;
+  startTime: Date;
+}
+
+async function upsertNbaGameRow(db: Db, g: NbaGameUpsert): Promise<string> {
+  const [inserted] = await db
+    .insert(games)
+    .values({
+      sportId: g.sportId,
+      externalId: g.externalId,
+      sourceUrl: g.sourceUrl,
+      homeTeamId: g.homeTeamId,
+      awayTeamId: g.awayTeamId,
+      startTime: g.startTime,
+    })
+    .onConflictDoUpdate({
+      target: [games.sportId, games.externalId],
+      set: {
+        sourceUrl: g.sourceUrl,
+        homeTeamId: g.homeTeamId,
+        awayTeamId: g.awayTeamId,
+        startTime: g.startTime,
+      },
+    })
+    .returning({ id: games.id });
+  if (!inserted) throw new Error(`game upsert failed for ${g.externalId}`);
+  return inserted.id;
 }

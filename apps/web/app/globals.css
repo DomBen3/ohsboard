@@ -76,8 +76,13 @@ body {
 }
 
 .row-rise {
-  opacity: 0;
-  animation: row-rise 520ms cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+  /* `both` = `backwards` (apply the `from` keyframe state during the delay,
+     so rows are invisible before they animate in) + `forwards` (hold the
+     `to` state after end). Don't use a static `opacity: 0` here — when
+     `.row-flash` is added on a tick, its own `animation` property replaces
+     row-rise's, dropping the forwards-held opacity:1 and causing the row to
+     re-pin at the static 0 value. */
+  animation: row-rise 520ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
 
 /* Live dot pulse ——————————————————————————————————————————————————— */

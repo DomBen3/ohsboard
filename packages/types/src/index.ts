@@ -1,4 +1,5 @@
 export * from "./mlb-teams";
+export * from "./nba-teams";
 
 export type SportSlug = "mlb" | "nba" | "nfl";
 
@@ -13,7 +14,11 @@ export type Market =
   | "prop_total_bases"
   | "prop_home_runs"
   | "prop_hits"
-  | "prop_rbis";
+  | "prop_rbis"
+  | "prop_nba_points"
+  | "prop_nba_threes"
+  | "prop_nba_rebounds"
+  | "prop_nba_assists";
 
 export type OddsField =
   | "home"

@@ -1,31 +1,42 @@
 "use client";
 
 import type { GameDto } from "@/lib/games";
+import type { SportSlug } from "@/lib/teams";
 import { useMarketFilter, type MarketKey } from "./market-filter-context";
 import { ScoreboardRow } from "./scoreboard-row";
 
 interface ScoreboardProps {
+  sport: SportSlug;
   games: GameDto[];
 }
 
-/** Shared grid template — header row + each data row both use this. */
-export function gridTemplate(vis: Set<MarketKey>): string {
+/**
+ * Shared grid template — header row + each data row both use this.
+ * The column shape depends on the sport:
+ *   - MLB: matchup | (Total/Over/Under)? | (ML)? | Updated | chevron
+ *   - NBA: matchup | Tip | Updated | chevron   (Props live in expanded panel)
+ */
+export function gridTemplate(sport: SportSlug, vis: Set<MarketKey>): string {
   const cols: string[] = ["minmax(260px, 1.8fr)"]; // matchup
-  if (vis.has("total")) cols.push("96px", "100px", "100px");
-  if (vis.has("moneyline")) cols.push("116px");
+  if (sport === "mlb") {
+    if (vis.has("total")) cols.push("96px", "100px", "100px");
+    if (vis.has("moneyline")) cols.push("116px");
+  } else if (sport === "nba") {
+    cols.push("minmax(120px, 0.8fr)"); // tip-off time
+  }
   cols.push("minmax(140px, 0.7fr)", "28px");
   return cols.join(" ");
 }
 
-export function Scoreboard({ games }: ScoreboardProps) {
+export function Scoreboard({ sport, games }: ScoreboardProps) {
   if (games.length === 0) return <EmptyBoard />;
 
   return (
     <section className="border border-[var(--color-rule)] bg-[var(--color-ink-soft)]/80">
-      <ScoreboardHeader count={games.length} />
+      <ScoreboardHeader sport={sport} count={games.length} />
       <div role="rowgroup">
         {games.map((game, i) => (
-          <ScoreboardRow key={game.id} game={game} index={i} />
+          <ScoreboardRow key={game.id} sport={sport} game={game} index={i} />
         ))}
       </div>
       <ScoreboardFooter />
@@ -33,7 +44,13 @@ export function Scoreboard({ games }: ScoreboardProps) {
   );
 }
 
-function ScoreboardHeader({ count }: { count: number }) {
+function ScoreboardHeader({
+  sport,
+  count,
+}: {
+  sport: SportSlug;
+  count: number;
+}) {
   const { visible } = useMarketFilter();
   return (
     <header className="border-b border-[var(--color-rule)] bg-[var(--color-ink-raised)]/40">
@@ -57,21 +74,28 @@ function ScoreboardHeader({ count }: { count: number }) {
         className="px-6 pb-3 text-[10px] uppercase tracking-[0.28em] text-[var(--color-chalk-dim)]"
         style={{
           display: "grid",
-          gridTemplateColumns: gridTemplate(visible),
+          gridTemplateColumns: gridTemplate(sport, visible),
           alignItems: "center",
           columnGap: "18px",
         }}
       >
         <div className="font-display">Matchup</div>
-        {visible.has("total") ? (
+        {sport === "mlb" ? (
           <>
-            <div className="justify-self-center font-display">Total</div>
-            <div className="justify-self-center font-display">Over</div>
-            <div className="justify-self-center font-display">Under</div>
+            {visible.has("total") ? (
+              <>
+                <div className="justify-self-center font-display">Total</div>
+                <div className="justify-self-center font-display">Over</div>
+                <div className="justify-self-center font-display">Under</div>
+              </>
+            ) : null}
+            {visible.has("moneyline") ? (
+              <div className="justify-self-center font-display">Moneyline</div>
+            ) : null}
           </>
         ) : null}
-        {visible.has("moneyline") ? (
-          <div className="justify-self-center font-display">Moneyline</div>
+        {sport === "nba" ? (
+          <div className="justify-self-center font-display">Tip-off</div>
         ) : null}
         <div className="justify-self-end font-display">Updated</div>
         <div />

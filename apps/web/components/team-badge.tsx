@@ -1,17 +1,24 @@
 import clsx from "clsx";
-import type { MlbTeam } from "@/lib/teams";
+import type { AnyTeam, SportSlug } from "@/lib/teams";
+import { teamLogoPath } from "@/lib/teams";
 
 interface TeamBadgeProps {
-  team: MlbTeam | null;
+  sport: SportSlug;
+  team: AnyTeam | null;
   fallbackCode: string;
   size?: "sm" | "lg";
 }
 
 /**
  * A team logo chip: circular bezel, logo on top, city-tinted background.
- * Falls back to a generic token when the DK name didn't resolve.
+ * Falls back to a generic token when the source name didn't resolve.
  */
-export function TeamBadge({ team, fallbackCode, size = "sm" }: TeamBadgeProps) {
+export function TeamBadge({
+  sport,
+  team,
+  fallbackCode,
+  size = "sm",
+}: TeamBadgeProps) {
   const dims = size === "sm" ? "h-7 w-7" : "h-12 w-12";
   const tint = team ? team.primaryColor : "#1a202e";
 
@@ -28,7 +35,7 @@ export function TeamBadge({ team, fallbackCode, size = "sm" }: TeamBadgeProps) {
     >
       {team ? (
         <img
-          src={`/teams/mlb/${team.abbreviation}.svg`}
+          src={teamLogoPath(sport, team.abbreviation)}
           alt=""
           className={clsx(
             size === "sm" ? "h-5 w-5" : "h-9 w-9",

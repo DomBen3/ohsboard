@@ -2,35 +2,40 @@
 
 import clsx from "clsx";
 import {
-  ALL_MARKETS,
+  marketsForSport,
   useMarketFilter,
   type MarketKey,
 } from "./market-filter-context";
 
-const CHIPS: Array<{ key: MarketKey; label: string }> = [
-  { key: "moneyline", label: "Moneyline" },
-  { key: "run_line", label: "Run Line" },
-  { key: "total", label: "Total" },
-  { key: "prop_pitcher_strikeouts", label: "Strikeouts" },
-  { key: "prop_pitcher_outs_recorded", label: "Outs Recorded" },
-];
+const CHIP_LABELS: Record<MarketKey, string> = {
+  moneyline: "Moneyline",
+  run_line: "Run Line",
+  total: "Total",
+  prop_pitcher_strikeouts: "Strikeouts",
+  prop_pitcher_outs_recorded: "Outs Recorded",
+  prop_nba_points: "Points",
+  prop_nba_threes: "Threes",
+  prop_nba_rebounds: "Rebounds",
+  prop_nba_assists: "Assists",
+};
 
 export function MarketFilterBar() {
-  const { isVisible, toggle, visible, setAll } = useMarketFilter();
-  const anyOff = visible.size < ALL_MARKETS.length;
+  const { isVisible, toggle, visible, setAll, sport } = useMarketFilter();
+  const chips = marketsForSport(sport);
+  const anyOff = visible.size < chips.length;
 
   return (
     <div className="flex flex-wrap items-center gap-2">
       <span className="font-display text-[10px] uppercase tracking-[0.28em] text-[var(--color-chalk-dim)]">
         Markets
       </span>
-      {CHIPS.map((chip) => {
-        const active = isVisible(chip.key);
+      {chips.map((key) => {
+        const active = isVisible(key);
         return (
           <button
-            key={chip.key}
+            key={key}
             type="button"
-            onClick={() => toggle(chip.key)}
+            onClick={() => toggle(key)}
             aria-pressed={active}
             className={clsx(
               "relative inline-flex items-center gap-1.5 border px-3 py-1",
@@ -49,7 +54,7 @@ export function MarketFilterBar() {
                   : "border border-[var(--color-chalk-dimmer)] bg-transparent",
               )}
             />
-            {chip.label}
+            {CHIP_LABELS[key]}
           </button>
         );
       })}

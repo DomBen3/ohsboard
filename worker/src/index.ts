@@ -1,13 +1,13 @@
 import cron from "node-cron";
 import { env } from "./env";
-import { runMlbScrape } from "./run";
+import { runScrape } from "./run";
 import { startHttpServer } from "./server";
 
 async function main() {
   startHttpServer();
 
   cron.schedule(env.CRON_SCHEDULE, () => {
-    runMlbScrape("cron").catch((err) => {
+    runScrape("cron").catch((err) => {
       console.error("[cron] scrape failed to start:", err);
     });
   });

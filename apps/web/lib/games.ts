@@ -2,6 +2,7 @@ import { db } from "@/lib/db";
 import { games, oddsSnapshots, sports, teams } from "@ohsboard/db";
 import { desc, eq } from "drizzle-orm";
 import { alias } from "drizzle-orm/pg-core";
+import type { SportSlug } from "@ohsboard/types";
 
 const homeTeam = alias(teams, "home_team");
 const awayTeam = alias(teams, "away_team");
@@ -13,12 +14,27 @@ export interface PitcherPropOutcome {
   underPrice: number | null;
 }
 
-export interface GameDto {
+/** NBA player prop outcome — same shape as MLB but renamed for clarity. */
+export type PlayerPropOutcome = PitcherPropOutcome;
+
+/**
+ * Sport-tagged DTO. MLB rows use `sport: "mlb"` and carry game-level lines
+ * plus pitcher-prop sections; NBA rows use `sport: "nba"` and carry only the
+ * four player-prop sections (game-level lines absent).
+ */
+export type GameDto = MlbGameDto | NbaGameDto;
+
+interface BaseGameDto {
   id: string;
   sourceUrl: string;
   startTime: string;
   home: { name: string | null; abbreviation: string | null };
   away: { name: string | null; abbreviation: string | null };
+  capturedAt: string | null;
+}
+
+export interface MlbGameDto extends BaseGameDto {
+  sport: "mlb";
   moneyline: { home: number | null; away: number | null };
   total: { line: number | null; over: number | null; under: number | null } | null;
   runLine: {
@@ -29,10 +45,20 @@ export interface GameDto {
     strikeouts: PitcherPropOutcome[];
     outsRecorded: PitcherPropOutcome[];
   };
-  capturedAt: string | null;
 }
 
-export async function loadMlbGames(): Promise<GameDto[]> {
+export interface NbaGameDto extends BaseGameDto {
+  sport: "nba";
+  /** No game-level moneyline/total/run-line for NBA in v1. */
+  props: {
+    points: PlayerPropOutcome[];
+    threes: PlayerPropOutcome[];
+    rebounds: PlayerPropOutcome[];
+    assists: PlayerPropOutcome[];
+  };
+}
+
+export async function loadMlbGames(): Promise<MlbGameDto[]> {
   const mlb = await db.query.sports.findFirst({ where: eq(sports.slug, "mlb") });
   if (!mlb) return [];
 
@@ -104,12 +130,13 @@ export async function loadMlbGames(): Promise<GameDto[]> {
     const rlHome = pick("run_line", "home");
     const rlAway = pick("run_line", "away");
 
-    const strikeouts = groupPitcherProps(odds, "prop_pitcher_strikeouts");
-    const outsRecorded = groupPitcherProps(odds, "prop_pitcher_outs_recorded");
+    const strikeouts = groupPlayerProps(odds, "prop_pitcher_strikeouts");
+    const outsRecorded = groupPlayerProps(odds, "prop_pitcher_outs_recorded");
 
     const capturedAts = odds.map((o) => new Date(o.capturedAt).getTime());
     const newest = capturedAts.length ? new Date(Math.max(...capturedAts)) : null;
     return {
+      sport: "mlb",
       id: g.id,
       sourceUrl: g.sourceUrl,
       startTime: g.startTime.toISOString(),
@@ -151,7 +178,93 @@ export async function loadMlbGames(): Promise<GameDto[]> {
   });
 }
 
-function groupPitcherProps(
+export async function loadNbaGames(): Promise<NbaGameDto[]> {
+  const nba = await db.query.sports.findFirst({ where: eq(sports.slug, "nba") });
+  if (!nba) return [];
+
+  const gameRows = await db
+    .select({
+      id: games.id,
+      sourceUrl: games.sourceUrl,
+      startTime: games.startTime,
+      homeName: homeTeam.name,
+      homeAbbr: homeTeam.abbreviation,
+      awayName: awayTeam.name,
+      awayAbbr: awayTeam.abbreviation,
+    })
+    .from(games)
+    .leftJoin(homeTeam, eq(homeTeam.id, games.homeTeamId))
+    .leftJoin(awayTeam, eq(awayTeam.id, games.awayTeamId))
+    .where(eq(games.sportId, nba.id))
+    .orderBy(desc(games.startTime))
+    .limit(30);
+
+  if (gameRows.length === 0) return [];
+
+  const latestOdds = await db
+    .selectDistinctOn(
+      [
+        oddsSnapshots.gameId,
+        oddsSnapshots.market,
+        oddsSnapshots.player,
+        oddsSnapshots.field,
+      ],
+      {
+        gameId: oddsSnapshots.gameId,
+        market: oddsSnapshots.market,
+        field: oddsSnapshots.field,
+        player: oddsSnapshots.player,
+        line: oddsSnapshots.line,
+        priceAmerican: oddsSnapshots.priceAmerican,
+        capturedAt: oddsSnapshots.capturedAt,
+      },
+    )
+    .from(oddsSnapshots)
+    .orderBy(
+      oddsSnapshots.gameId,
+      oddsSnapshots.market,
+      oddsSnapshots.player,
+      oddsSnapshots.field,
+      desc(oddsSnapshots.capturedAt),
+    );
+
+  const byGame = new Map<string, typeof latestOdds>();
+  for (const row of latestOdds) {
+    const arr = byGame.get(row.gameId) ?? [];
+    arr.push(row);
+    byGame.set(row.gameId, arr);
+  }
+
+  return gameRows.map((g) => {
+    const odds = byGame.get(g.id) ?? [];
+    const points = groupPlayerProps(odds, "prop_nba_points");
+    const threes = groupPlayerProps(odds, "prop_nba_threes");
+    const rebounds = groupPlayerProps(odds, "prop_nba_rebounds");
+    const assists = groupPlayerProps(odds, "prop_nba_assists");
+
+    const capturedAts = odds.map((o) => new Date(o.capturedAt).getTime());
+    const newest = capturedAts.length ? new Date(Math.max(...capturedAts)) : null;
+    return {
+      sport: "nba",
+      id: g.id,
+      sourceUrl: g.sourceUrl,
+      startTime: g.startTime.toISOString(),
+      home: { name: g.homeName, abbreviation: g.homeAbbr },
+      away: { name: g.awayName, abbreviation: g.awayAbbr },
+      props: { points, threes, rebounds, assists },
+      capturedAt: newest?.toISOString() ?? null,
+    };
+  });
+}
+
+/** Sport-agnostic loader. */
+export async function loadGames(sport: SportSlug): Promise<GameDto[]> {
+  if (sport === "nba") return loadNbaGames();
+  if (sport === "mlb") return loadMlbGames();
+  return [];
+}
+
+function groupPlayerProps(
   odds: Array<{
     market: string;
     field: string;
@@ -160,8 +273,8 @@ function groupPitcherProps(
     priceAmerican: number;
   }>,
   market: string,
-): PitcherPropOutcome[] {
-  const byPlayer = new Map<string, PitcherPropOutcome>();
+): PlayerPropOutcome[] {
+  const byPlayer = new Map<string, PlayerPropOutcome>();
   for (const o of odds) {
     if (o.market !== market || !o.player) continue;
     const existing = byPlayer.get(o.player) ?? {

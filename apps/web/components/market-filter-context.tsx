@@ -8,15 +8,22 @@ import {
   useMemo,
   useState,
 } from "react";
+import type { SportSlug } from "@/lib/teams";
 
 export type MarketKey =
+  // MLB markets
   | "moneyline"
   | "run_line"
   | "total"
   | "prop_pitcher_strikeouts"
-  | "prop_pitcher_outs_recorded";
+  | "prop_pitcher_outs_recorded"
+  // NBA markets
+  | "prop_nba_points"
+  | "prop_nba_threes"
+  | "prop_nba_rebounds"
+  | "prop_nba_assists";
 
-export const ALL_MARKETS: readonly MarketKey[] = [
+export const MLB_MARKETS: readonly MarketKey[] = [
   "moneyline",
   "run_line",
   "total",
@@ -24,9 +31,30 @@ export const ALL_MARKETS: readonly MarketKey[] = [
   "prop_pitcher_outs_recorded",
 ];
 
-const STORAGE_KEY = "ohs.visibleMarkets";
+export const NBA_MARKETS: readonly MarketKey[] = [
+  "prop_nba_points",
+  "prop_nba_threes",
+  "prop_nba_rebounds",
+  "prop_nba_assists",
+];
+
+export function marketsForSport(sport: SportSlug): readonly MarketKey[] {
+  if (sport === "nba") return NBA_MARKETS;
+  return MLB_MARKETS;
+}
+
+/** Back-compat: the old single-set ALL_MARKETS, used by the reset button. */
+export const ALL_MARKETS = MLB_MARKETS;
+
+const STORAGE_PREFIX = "ohs.visibleMarkets";
+const LEGACY_KEY = "ohs.visibleMarkets";
+
+function storageKey(sport: SportSlug): string {
+  return `${STORAGE_PREFIX}.${sport}`;
+}
 
 interface MarketFilterContextValue {
+  sport: SportSlug;
   visible: Set<MarketKey>;
   isVisible(key: MarketKey): boolean;
   toggle(key: MarketKey): void;
@@ -35,41 +63,61 @@ interface MarketFilterContextValue {
 
 const Ctx = createContext<MarketFilterContextValue | null>(null);
 
-export function MarketFilterProvider({
-  children,
-}: {
+interface ProviderProps {
+  sport: SportSlug;
   children: React.ReactNode;
-}) {
+}
+
+export function MarketFilterProvider({ sport, children }: ProviderProps) {
+  const sportMarkets = useMemo(() => marketsForSport(sport), [sport]);
+
   const [visible, setVisible] = useState<Set<MarketKey>>(
-    () => new Set(ALL_MARKETS),
+    () => new Set(sportMarkets),
   );
 
-  // Hydrate from localStorage on first client render.
+  // Hydrate from localStorage on first client render. We migrate the legacy
+  // single-key layout to a sport-scoped key so MLB users keep their prefs
+  // when MLB un-pauses.
   useEffect(() => {
     try {
-      const raw = window.localStorage.getItem(STORAGE_KEY);
-      if (!raw) return;
+      // One-shot legacy migration: the v1 app stored a single
+      // `ohs.visibleMarkets` array (MLB-only). Copy it forward to the
+      // mlb-scoped key so MLB chip prefs survive the unpause.
+      const legacy = window.localStorage.getItem(LEGACY_KEY);
+      if (legacy && !window.localStorage.getItem(storageKey("mlb"))) {
+        window.localStorage.setItem(storageKey("mlb"), legacy);
+      }
+
+      const raw = window.localStorage.getItem(storageKey(sport));
+      if (!raw) {
+        // No stored value for this sport — keep the default (all on).
+        setVisible(new Set(sportMarkets));
+        return;
+      }
       const parsed = JSON.parse(raw);
       if (!Array.isArray(parsed)) return;
       const filtered = parsed.filter((k): k is MarketKey =>
-        ALL_MARKETS.includes(k as MarketKey),
+        sportMarkets.includes(k as MarketKey),
       );
       setVisible(new Set(filtered));
     } catch {
       /* localStorage unavailable or corrupt — fall back to defaults */
     }
-  }, []);
+  }, [sport, sportMarkets]);
 
-  const persist = useCallback((next: Set<MarketKey>) => {
-    try {
-      window.localStorage.setItem(
-        STORAGE_KEY,
-        JSON.stringify(Array.from(next)),
-      );
-    } catch {
-      /* ignore */
-    }
-  }, []);
+  const persist = useCallback(
+    (next: Set<MarketKey>) => {
+      try {
+        window.localStorage.setItem(
+          storageKey(sport),
+          JSON.stringify(Array.from(next)),
+        );
+      } catch {
+        /* ignore */
+      }
+    },
+    [sport],
+  );
 
   const toggle = useCallback(
     (key: MarketKey) => {
@@ -86,21 +134,22 @@ export function MarketFilterProvider({
 
   const setAll = useCallback(
     (visibleFlag: boolean) => {
-      const next = new Set(visibleFlag ? ALL_MARKETS : []);
+      const next = new Set(visibleFlag ? sportMarkets : []);
       setVisible(next);
       persist(next);
     },
-    [persist],
+    [persist, sportMarkets],
   );
 
   const value = useMemo<MarketFilterContextValue>(
     () => ({
+      sport,
       visible,
       isVisible: (k) => visible.has(k),
       toggle,
       setAll,
     }),
-    [visible, toggle, setAll],
+    [sport, visible, toggle, setAll],
   );
 
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;

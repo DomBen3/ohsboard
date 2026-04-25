@@ -73,9 +73,10 @@ export function parseDkEventId(url: string): string {
   }
 }
 
-// Parse "nationals-vs-mariners" or "yankees-at-redsox" slugs into two display
-// names when we can't read them from the DOM. Capitalizes each token.
-const SLUG_SEP_RE = /-(?:vs|at)-/i;
+// Parse "nationals-vs-mariners" / "yankees-at-redsox" / "la-lakers-%40-hou-rockets"
+// (or `%2540` double-encoded) slugs into two display names when we can't read
+// them from the DOM. Capitalizes each token.
+const SLUG_SEP_RE = /-(?:vs|at|%2540|%40|@)-/i;
 
 export function parseTeamsFromSlug(url: string): { away: string; home: string } | null {
   const m = EVENT_PATH_RE.exec(url);

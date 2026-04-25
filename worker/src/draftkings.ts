@@ -20,7 +20,12 @@ export type MainMarket = "moneyline" | "total" | "run_line";
 export type PropMarket =
   | "prop_pitcher_strikeouts"
   | "prop_pitcher_outs_recorded";
-export type AnyMarket = MainMarket | PropMarket;
+export type NbaPropMarket =
+  | "prop_nba_points"
+  | "prop_nba_threes"
+  | "prop_nba_rebounds"
+  | "prop_nba_assists";
+export type AnyMarket = MainMarket | PropMarket | NbaPropMarket;
 
 export interface RawOdds {
   market: AnyMarket;
@@ -66,8 +71,30 @@ export function pitcherPropsUrl(gameUrl: string): string {
   return u.toString();
 }
 
-export async function discoverGameUrls(page: Page): Promise<string[]> {
-  const response = await page.goto(LEAGUE_URL, {
+export const NBA_LEAGUE_URL = "https://sportsbook.draftkings.com/leagues/basketball/nba";
+
+export type NbaSubcategory = "points" | "threes" | "rebounds" | "assists";
+
+/**
+ * NBA per-game subcategory URL. The path-level `@` in DK slugs is
+ * double-encoded as `%2540` in their hrefs; the URL constructor preserves
+ * that verbatim (it doesn't re-encode the path), so the same form survives a
+ * round-trip through `new URL(href).toString()`. Single-encoded `%40` causes
+ * DK to drop the `subcategory` param and fall back to the default tab.
+ */
+export function nbaSubcategoryUrl(gameUrl: string, sub: NbaSubcategory): string {
+  const u = new URL(gameUrl);
+  u.search = "";
+  u.searchParams.set("category", "all-odds");
+  u.searchParams.set("subcategory", sub);
+  return u.toString();
+}
+
+export async function discoverGameUrls(
+  page: Page,
+  leagueUrl: string = LEAGUE_URL,
+): Promise<string[]> {
+  const response = await page.goto(leagueUrl, {
     waitUntil: "commit",
     timeout: 60_000,
   });

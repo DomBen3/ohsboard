@@ -116,11 +116,15 @@ export interface OddsRow {
     | "total"
     | "run_line"
     | "prop_pitcher_strikeouts"
-    | "prop_pitcher_outs_recorded";
+    | "prop_pitcher_outs_recorded"
+    | "prop_nba_points"
+    | "prop_nba_threes"
+    | "prop_nba_rebounds"
+    | "prop_nba_assists";
   field: "home" | "away" | "over" | "under";
   line: number | null;
   priceAmerican: number;
-  /** Pitcher name for prop markets; null for game-level markets. */
+  /** Player name for prop markets; null for game-level markets. */
   player: string | null;
 }
 

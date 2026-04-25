@@ -1,6 +1,6 @@
 import { createServer } from "node:http";
 import { env } from "./env";
-import { runMlbScrape } from "./run";
+import { runScrape } from "./run";
 
 export function startHttpServer(): void {
   const server = createServer(async (req, res) => {
@@ -18,9 +18,15 @@ export function startHttpServer(): void {
         return;
       }
       try {
-        const outcome = await runMlbScrape("manual");
+        const outcome = await runScrape("manual");
         res.writeHead(202, { "content-type": "application/json" });
-        res.end(JSON.stringify(outcome));
+        res.end(
+          JSON.stringify({
+            runId: outcome.runId,
+            cached: outcome.cached,
+            runIds: outcome.runIds,
+          }),
+        );
       } catch (err) {
         const message = err instanceof Error ? err.message : String(err);
         res.writeHead(500, { "content-type": "application/json" });
