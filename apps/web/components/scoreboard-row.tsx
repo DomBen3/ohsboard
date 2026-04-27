@@ -10,6 +10,7 @@ import type {
 } from "@/lib/games";
 import { findTeam, type AnyTeam, type SportSlug } from "@/lib/teams";
 import { useGameHistory } from "@/lib/use-game-history";
+import { DownloadCsvButton } from "./download-csv-button";
 import { HistoryCharts } from "./history-charts";
 import { useMarketFilter, type MarketKey } from "./market-filter-context";
 import { PlayerChartPair } from "./player-chart-pair";
@@ -338,22 +339,25 @@ function ExpandedPanel({ sport, game, home, away, open }: ExpandedPanelProps) {
   return (
     <div className="px-6 pb-6 pt-1">
       <div className="border-t border-[var(--color-rule-bright)] pt-5">
-        <div className="flex items-center gap-5">
-          <TeamSummary
-            sport={sport}
-            team={away}
-            fallback={game.away.name}
-            label="Away"
-          />
-          <div className="font-display text-3xl font-black uppercase text-[var(--color-chalk-dimmer)]">
-            @
+        <div className="flex items-center justify-between gap-5">
+          <div className="flex items-center gap-5">
+            <TeamSummary
+              sport={sport}
+              team={away}
+              fallback={game.away.name}
+              label="Away"
+            />
+            <div className="font-display text-3xl font-black uppercase text-[var(--color-chalk-dimmer)]">
+              @
+            </div>
+            <TeamSummary
+              sport={sport}
+              team={home}
+              fallback={game.home.name}
+              label="Home"
+            />
           </div>
-          <TeamSummary
-            sport={sport}
-            team={home}
-            fallback={game.home.name}
-            label="Home"
-          />
+          {sport === "nba" ? <DownloadCsvButton gameId={game.id} /> : null}
         </div>
       </div>
 

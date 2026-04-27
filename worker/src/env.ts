@@ -13,6 +13,6 @@ export const env = {
   OPENAI_ORG_ID: process.env.OPENAI_ORG_ID ?? "",
   OPENAI_MODEL: process.env.OPENAI_MODEL ?? "gpt-5",
   PORT: Number(process.env.PORT ?? 8080),
-  CRON_SCHEDULE: process.env.CRON_SCHEDULE ?? "*/5 * * * *",
+  CRON_SCHEDULE: process.env.CRON_SCHEDULE ?? "* * * * *",
   HEADLESS: (process.env.HEADLESS ?? "true") !== "false",
 };

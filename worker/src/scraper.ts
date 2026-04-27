@@ -7,8 +7,8 @@ import {
   type Db,
 } from "@ohsboard/db";
 import { findMlbTeam, type NbaTeam } from "@ohsboard/types";
-import { and, eq } from "drizzle-orm";
-import { chromium, type Page } from "playwright";
+import { and, eq, sql } from "drizzle-orm";
+import { chromium, type BrowserContext, type Page } from "playwright";
 import {
   createPage,
   discoverGameUrls,
@@ -502,121 +502,70 @@ export async function scrapeNba(db: Db, runId: string): Promise<ScrapeResult> {
       .set({ gamesExpected })
       .where(eq(scrapeRuns.id, runId));
 
-    const gamePage = await createPage(context);
+    // Cross-game parallelism. Up to NBA_GAME_CONCURRENCY games are scraped
+    // concurrently in their own `Page` objects on a shared `BrowserContext`
+    // (cookies + UA shared, memory bounded). On a 403/429 response from DK
+    // the run flips to serial mode for the rest of the run; the next cron
+    // tick starts parallel again. Override via env: NBA_GAME_CONCURRENCY.
+    const concurrency = Math.max(
+      1,
+      Number(process.env.NBA_GAME_CONCURRENCY ?? 4),
+    );
+    let parallelMode = concurrency > 1;
+    console.log(
+      `[scraper:nba] running with concurrency=${parallelMode ? concurrency : 1}`,
+    );
 
-    for (const [i, url] of urls.entries()) {
-      try {
-        // Resolve teams from the slug — DK's NBA per-game page header has
-        // historically been more variable than MLB's, so we lean on the URL
-        // slug + ESPN match rather than parsing an h1.
-        const slugTeams = parseSlugTeams(url);
-        const homeName = slugTeams?.home ?? "Home";
-        const awayName = slugTeams?.away ?? "Away";
-        const matched = expectedGames
-          ? matchExpectedNbaGame(expectedGames, homeName, awayName)
-          : null;
+    const deps: NbaGameDeps = {
+      db,
+      context,
+      expectedGames,
+      sportId: nba.id,
+      runId,
+      total: urls.length,
+    };
 
-        const dkEventId = parseDkEventIdSafe(url);
-        const externalId = matched
-          ? `nba:${matched.espnEventId}`
-          : `dk:${dkEventId}`;
-        const startTime = matched?.gameDate ?? new Date();
+    let cursor = 0;
+    while (cursor < urls.length) {
+      const chunkSize = parallelMode ? concurrency : 1;
+      const chunk = urls.slice(cursor, cursor + chunkSize);
+      const offsets = chunk.map((_, i) => cursor + i);
+      cursor += chunk.length;
 
-        const homeTeamId = await upsertNbaTeamRow(
-          db,
-          nba.id,
-          matched?.home ?? null,
-          matched?.home.name ?? homeName,
-        );
-        const awayTeamId = await upsertNbaTeamRow(
-          db,
-          nba.id,
-          matched?.away ?? null,
-          matched?.away.name ?? awayName,
-        );
-        const gameId = await upsertNbaGameRow(db, {
-          sportId: nba.id,
-          externalId,
-          sourceUrl: url,
-          homeTeamId,
-          awayTeamId,
-          startTime,
-        });
+      const settled = await Promise.allSettled(
+        chunk.map((url, i) =>
+          scrapeOneNbaGame(deps, url, offsets[i]!),
+        ),
+      );
 
-        const gameOdds: RawOdds[] = [];
-        const emptyMarkets: NbaPropMarket[] = [];
-        const degradedMarkets: string[] = [];
-
-        for (const market of NBA_PROP_MARKETS) {
-          const sub = NBA_SUBCATEGORIES[market];
-          await jitter();
-          await navigateToGame(gamePage, nbaSubcategoryUrl(url, sub));
-
-          const rows = await extractNbaPropOU(gamePage, market).catch((err) => {
-            const msg = err instanceof Error ? err.message : String(err);
-            console.warn(`[scraper:nba] ${market}: extract failed — ${msg}`);
-            return [] as RawOdds[];
-          });
-
-          if (rows.length === 0) {
-            emptyMarkets.push(market);
-            continue;
-          }
-
-          // Post-extraction shape validation. The deterministic walk should
-          // always produce paired Over/Under rows with matching lines; if it
-          // doesn't, log it but still persist what we got — degraded data is
-          // better than no data and easier to investigate.
-          const validation = validatePropRows(rows);
-          if (!validation.passes) {
-            degradedMarkets.push(`${market}(${validation.reason ?? "shape"})`);
+      for (const r of settled) {
+        if (r.status === "fulfilled") {
+          const o = r.value;
+          gamesScraped += o.scraped;
+          rowsWritten += o.written;
+          marketsProbed += o.marketsProbed;
+          marketsPopulated += o.marketsPopulated;
+          if (o.blocked && parallelMode) {
             console.warn(
-              `[scraper:nba] ${market}: shape check failed — ${validation.reason} · pairs=${validation.validPairs}/${validation.playersSeen}`,
+              `[scraper:nba] DK block detected (HTTP ${o.blockedStatus}) — falling back to serial for the rest of this run`,
             );
+            parallelMode = false;
           }
-          gameOdds.push(...rows);
+        } else {
+          const reason = r.reason;
+          if (reason instanceof DkBlockedError) {
+            console.warn(
+              `[scraper:nba] DK block thrown (HTTP ${reason.status}) — falling back to serial for the rest of this run`,
+            );
+            parallelMode = false;
+          } else {
+            const msg = reason instanceof Error ? reason.message : String(reason);
+            console.warn(`[scraper:nba] game failed: ${msg}`);
+          }
         }
-
-        const oddsRows: OddsRow[] = gameOdds.map((o) => ({
-          gameId,
-          market: o.market,
-          field: o.field,
-          line: o.line,
-          priceAmerican: o.priceAmerican,
-          player: o.player,
-        }));
-        const written = await insertOddsSnapshots(db, runId, oddsRows);
-        rowsWritten += written;
-        // Count a game as "scraped" only when at least one market produced
-        // rows. Off-day cards or DK-pulled games would otherwise inflate the
-        // gamesScraped counter while writing no odds.
-        if (written > 0) gamesScraped += 1;
-
-        marketsProbed += NBA_PROP_MARKETS.length;
-        marketsPopulated += NBA_PROP_MARKETS.length - emptyMarkets.length;
-
-        const matchTag = matched ? " · espn" : " · unmapped";
-        const emptyTag = emptyMarkets.length
-          ? ` — empty: ${emptyMarkets.join(",")}`
-          : "";
-        const degradedTag = degradedMarkets.length
-          ? ` — degraded: ${degradedMarkets.join(",")}`
-          : "";
-        console.log(
-          `[scraper:nba] (${i + 1}/${urls.length}) ${awayName} @ ${homeName} — ${written} rows${emptyTag}${degradedTag}${matchTag}`,
-        );
-
-        await db
-          .update(scrapeRuns)
-          .set({ gamesScraped, rowsWritten })
-          .where(eq(scrapeRuns.id, runId));
-      } catch (err) {
-        const msg = err instanceof Error ? err.message : String(err);
-        console.warn(`[scraper:nba] game ${url} failed: ${msg}`);
       }
     }
 
-    await gamePage.close();
     await context.close();
 
     const shapePassRate =
@@ -801,6 +750,155 @@ interface NbaGameUpsert {
   homeTeamId: number;
   awayTeamId: number;
   startTime: Date;
+}
+
+// ---- NBA per-game worker (parallel-safe) ----------------------------------
+
+class DkBlockedError extends Error {
+  constructor(public readonly status: number, url: string) {
+    super(`DK returned ${status} for ${url}`);
+    this.name = "DkBlockedError";
+  }
+}
+
+interface NbaGameDeps {
+  db: Db;
+  context: BrowserContext;
+  expectedGames: ExpectedNbaGame[] | null;
+  sportId: number;
+  runId: string;
+  total: number;
+}
+
+interface PerGameOutcome {
+  written: number;
+  scraped: 0 | 1;
+  marketsProbed: number;
+  marketsPopulated: number;
+  blocked: boolean;
+  blockedStatus: number | null;
+}
+
+async function scrapeOneNbaGame(
+  deps: NbaGameDeps,
+  url: string,
+  index: number,
+): Promise<PerGameOutcome> {
+  const slugTeams = parseSlugTeams(url);
+  const homeName = slugTeams?.home ?? "Home";
+  const awayName = slugTeams?.away ?? "Away";
+  const matched = deps.expectedGames
+    ? matchExpectedNbaGame(deps.expectedGames, homeName, awayName)
+    : null;
+
+  const dkEventId = parseDkEventIdSafe(url);
+  const externalId = matched ? `nba:${matched.espnEventId}` : `dk:${dkEventId}`;
+  const startTime = matched?.gameDate ?? new Date();
+
+  const homeTeamId = await upsertNbaTeamRow(
+    deps.db,
+    deps.sportId,
+    matched?.home ?? null,
+    matched?.home.name ?? homeName,
+  );
+  const awayTeamId = await upsertNbaTeamRow(
+    deps.db,
+    deps.sportId,
+    matched?.away ?? null,
+    matched?.away.name ?? awayName,
+  );
+  const gameId = await upsertNbaGameRow(deps.db, {
+    sportId: deps.sportId,
+    externalId,
+    sourceUrl: url,
+    homeTeamId,
+    awayTeamId,
+    startTime,
+  });
+
+  const page = await createPage(deps.context);
+  let blocked = false;
+  let blockedStatus: number | null = null;
+  const gameOdds: RawOdds[] = [];
+  const emptyMarkets: NbaPropMarket[] = [];
+  const degradedMarkets: string[] = [];
+
+  try {
+    for (const market of NBA_PROP_MARKETS) {
+      const sub = NBA_SUBCATEGORIES[market];
+      await jitter();
+      const status = await navigateToGame(page, nbaSubcategoryUrl(url, sub));
+
+      if (status === 403 || status === 429) {
+        // Surface block; let caller decide to flip serial. We still bail out
+        // of the remaining markets for this game — the rest of the page
+        // shell will likely be blocked too.
+        blocked = true;
+        blockedStatus = status;
+        emptyMarkets.push(market);
+        break;
+      }
+
+      const rows = await extractNbaPropOU(page, market).catch((err) => {
+        const msg = err instanceof Error ? err.message : String(err);
+        console.warn(`[scraper:nba] ${market}: extract failed — ${msg}`);
+        return [] as RawOdds[];
+      });
+
+      if (rows.length === 0) {
+        emptyMarkets.push(market);
+        continue;
+      }
+
+      const validation = validatePropRows(rows);
+      if (!validation.passes) {
+        degradedMarkets.push(`${market}(${validation.reason ?? "shape"})`);
+        console.warn(
+          `[scraper:nba] ${market}: shape check failed — ${validation.reason} · pairs=${validation.validPairs}/${validation.playersSeen}`,
+        );
+      }
+      gameOdds.push(...rows);
+    }
+  } finally {
+    await page.close().catch(() => undefined);
+  }
+
+  const oddsRows: OddsRow[] = gameOdds.map((o) => ({
+    gameId,
+    market: o.market,
+    field: o.field,
+    line: o.line,
+    priceAmerican: o.priceAmerican,
+    player: o.player,
+  }));
+  const written = await insertOddsSnapshots(deps.db, deps.runId, oddsRows);
+  const scraped: 0 | 1 = written > 0 ? 1 : 0;
+  const marketsProbed = NBA_PROP_MARKETS.length;
+  const marketsPopulated = marketsProbed - emptyMarkets.length;
+
+  // Atomic increment so concurrent games don't clobber each other's counts.
+  // COALESCE handles the initial-NULL case before the first per-game write.
+  if (written > 0 || scraped > 0) {
+    await deps.db
+      .update(scrapeRuns)
+      .set({
+        gamesScraped: sql`COALESCE(${scrapeRuns.gamesScraped}, 0) + ${scraped}`,
+        rowsWritten: sql`COALESCE(${scrapeRuns.rowsWritten}, 0) + ${written}`,
+      })
+      .where(eq(scrapeRuns.id, deps.runId));
+  }
+
+  const matchTag = matched ? " · espn" : " · unmapped";
+  const blockedTag = blocked ? ` — BLOCKED ${blockedStatus}` : "";
+  const emptyTag = emptyMarkets.length ? ` — empty: ${emptyMarkets.join(",")}` : "";
+  const degradedTag = degradedMarkets.length
+    ? ` — degraded: ${degradedMarkets.join(",")}`
+    : "";
+  console.log(
+    `[scraper:nba] (${index + 1}/${deps.total}) ${awayName} @ ${homeName} — ${written} rows${blockedTag}${emptyTag}${degradedTag}${matchTag}`,
+  );
+
+  return { written, scraped, marketsProbed, marketsPopulated, blocked, blockedStatus };
 }
 
 async function upsertNbaGameRow(db: Db, g: NbaGameUpsert): Promise<string> {

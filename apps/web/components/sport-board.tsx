@@ -1,3 +1,4 @@
+import { LiveRefresh } from "@/components/live-refresh";
 import { MarketFilterBar } from "@/components/market-filter-bar";
 import { MarketFilterProvider } from "@/components/market-filter-context";
 import { RefreshButton } from "@/components/refresh-button";
@@ -27,6 +28,7 @@ export async function SportBoard({ sport }: { sport: SportNavItem }) {
 
   return (
     <MarketFilterProvider sport={sport.slug}>
+      <LiveRefresh sport={sport.slug} initialCapturedAt={newestCapture} />
       <div className="flex min-h-screen flex-col">
         <TopBar
           sportName={sport.name}

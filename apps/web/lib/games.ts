@@ -1,11 +1,63 @@
 import { db } from "@/lib/db";
 import { games, oddsSnapshots, sports, teams } from "@ohsboard/db";
-import { desc, eq } from "drizzle-orm";
+import { and, desc, eq, gte, lte, sql } from "drizzle-orm";
 import { alias } from "drizzle-orm/pg-core";
 import type { SportSlug } from "@ohsboard/types";
 
+// Visibility window. A game appears on the board from PRE_TIPOFF_MIN before
+// `start_time` through POST_END_MIN after the game's nominal end. NBA games
+// run ~150 min in regulation; we use 180 to cover most overtimes plus a
+// small post-game cushion before the trailing window applies. Same numbers
+// fit MLB (~180 min for 9 innings) so we keep them sport-agnostic.
+//
+// Equivalent SQL filter on `games.start_time`:
+//   now() - (GAME_DURATION_MIN + POST_END_MIN) minutes
+//     <= start_time
+//     <= now() + PRE_TIPOFF_MIN minutes
+//
+// This replaces the prior snapshot-recency filter — that was a workaround
+// for yesterday's games lingering. Time-window naturally drops past games
+// AND surfaces upcoming games even before the worker has scraped them, so
+// users see the slate ~15 min ahead of tip-off.
+const PRE_TIPOFF_MIN = 15;
+const GAME_DURATION_MIN = 180;
+const POST_END_MIN = 30;
+
+const VISIBILITY_PAST_MIN = GAME_DURATION_MIN + POST_END_MIN;
+const VISIBILITY_FUTURE_MIN = PRE_TIPOFF_MIN;
+
 const homeTeam = alias(teams, "home_team");
 const awayTeam = alias(teams, "away_team");
+
+/**
+ * Display label for a market slug. Centralized here so the scoreboard row,
+ * the CSV export, and any future market-aware UI all agree on one
+ * canonical name. Falls back to the raw slug for unknown markets.
+ */
+export function marketLabel(slug: string): string {
+  switch (slug) {
+    case "moneyline":
+      return "Moneyline";
+    case "total":
+      return "Total";
+    case "run_line":
+      return "Run Line";
+    case "prop_pitcher_strikeouts":
+      return "Strikeouts Thrown";
+    case "prop_pitcher_outs_recorded":
+      return "Outs Recorded";
+    case "prop_nba_points":
+      return "Points";
+    case "prop_nba_threes":
+      return "Threes";
+    case "prop_nba_rebounds":
+      return "Rebounds";
+    case "prop_nba_assists":
+      return "Assists";
+    default:
+      return slug;
+  }
+}
 
 export interface PitcherPropOutcome {
   player: string;
@@ -75,7 +127,19 @@ export async function loadMlbGames(): Promise<MlbGameDto[]> {
     .from(games)
     .leftJoin(homeTeam, eq(homeTeam.id, games.homeTeamId))
     .leftJoin(awayTeam, eq(awayTeam.id, games.awayTeamId))
-    .where(eq(games.sportId, mlb.id))
+    .where(
+      and(
+        eq(games.sportId, mlb.id),
+        gte(
+          games.startTime,
+          sql`now() - interval '${sql.raw(String(VISIBILITY_PAST_MIN))} minutes'`,
+        ),
+        lte(
+          games.startTime,
+          sql`now() + interval '${sql.raw(String(VISIBILITY_FUTURE_MIN))} minutes'`,
+        ),
+      ),
+    )
     .orderBy(desc(games.startTime))
     .limit(30);
 
@@ -195,7 +259,19 @@ export async function loadNbaGames(): Promise<NbaGameDto[]> {
     .from(games)
     .leftJoin(homeTeam, eq(homeTeam.id, games.homeTeamId))
     .leftJoin(awayTeam, eq(awayTeam.id, games.awayTeamId))
-    .where(eq(games.sportId, nba.id))
+    .where(
+      and(
+        eq(games.sportId, nba.id),
+        gte(
+          games.startTime,
+          sql`now() - interval '${sql.raw(String(VISIBILITY_PAST_MIN))} minutes'`,
+        ),
+        lte(
+          games.startTime,
+          sql`now() + interval '${sql.raw(String(VISIBILITY_FUTURE_MIN))} minutes'`,
+        ),
+      ),
+    )
     .orderBy(desc(games.startTime))
     .limit(30);
 

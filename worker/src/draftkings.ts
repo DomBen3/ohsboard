@@ -135,12 +135,19 @@ export async function discoverGameUrls(
   return deduped;
 }
 
-export async function navigateToGame(page: Page, url: string): Promise<void> {
-  await page.goto(url, { waitUntil: "commit", timeout: 60_000 });
+/**
+ * Navigate to a DK page. Returns the HTTP status from the navigation response
+ * so callers can detect 403/429 (DK bot-block) without re-fetching. MLB call
+ * sites ignore the return value; the NBA cross-game-parallel path uses it to
+ * fall back to serial mode on first block.
+ */
+export async function navigateToGame(page: Page, url: string): Promise<number | null> {
+  const response = await page.goto(url, { waitUntil: "commit", timeout: 60_000 });
   // Let hydration attach dynamic odds before anything tries to read them.
   await page.waitForLoadState("domcontentloaded", { timeout: 30_000 }).catch(() => undefined);
   // Give the odds table a moment to render — it shows up after hydration.
   await page.waitForTimeout(1500);
+  return response?.status() ?? null;
 }
 
 export async function extractMainMarkets(
