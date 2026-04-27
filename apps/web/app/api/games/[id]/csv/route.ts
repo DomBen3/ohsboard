@@ -141,7 +141,7 @@ export async function GET(_req: Request, { params }: RouteParams) {
   const filename = buildFilename(
     meta.awayAbbr,
     meta.homeAbbr,
-    new Date(meta.startTime),
+    meta.startTime ? new Date(meta.startTime) : null,
   );
 
   return new Response(body, {
@@ -193,11 +193,11 @@ function formatEt(d: Date): string {
 function buildFilename(
   awayAbbr: string | null,
   homeAbbr: string | null,
-  startTime: Date,
+  startTime: Date | null,
 ): string {
   const away = sanitizeAbbr(awayAbbr) ?? "AWY";
   const home = sanitizeAbbr(homeAbbr) ?? "HOM";
-  const datePart = ET_DATE_FORMATTER.format(startTime); // YYYY-MM-DD
+  const datePart = startTime ? ET_DATE_FORMATTER.format(startTime) : "tbd";
   return `nba-${away}-at-${home}-${datePart}.csv`;
 }
 

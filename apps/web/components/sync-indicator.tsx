@@ -2,13 +2,40 @@ import clsx from "clsx";
 
 interface SyncIndicatorProps {
   capturedAt: string | null;
+  /** Tip-off, when known. Drives the "Game Over" state once now is past
+   *  start + GAME_DURATION_MIN. Optional so aggregate header indicators
+   *  (which span many games) can omit it. */
+  startTime?: string | null;
 }
+
+// Mirrors `GAME_DURATION_MIN` in lib/games.ts. Hardcoded here to avoid
+// importing a server-only module into a client component; if the duration
+// changes, update both.
+const GAME_DURATION_MIN = 180;
 
 /**
  * Live sync dot + last-synced relative time. Green dot pulses when data is
- * fresh (<15 min). Amber static dot when stale. Ghost dot when we have no data.
+ * fresh (<15 min). Amber static dot when stale. Red dot + "Game Over" once
+ * the game has been over for long enough that a stale price is expected.
+ * Ghost dot when we have no data.
  */
-export function SyncIndicator({ capturedAt }: SyncIndicatorProps) {
+export function SyncIndicator({ capturedAt, startTime }: SyncIndicatorProps) {
+  const isGameOver =
+    !!startTime &&
+    Date.now() >
+      new Date(startTime).getTime() + GAME_DURATION_MIN * 60_000;
+
+  if (isGameOver) {
+    return (
+      <div className="flex items-center gap-2.5">
+        <span className="h-2 w-2 rounded-full bg-[var(--color-alert)] shadow-[0_0_6px_rgba(255,90,95,0.4)]" />
+        <span className="font-display text-[11px] uppercase tracking-[0.22em] text-[var(--color-alert)]">
+          Game Over
+        </span>
+      </div>
+    );
+  }
+
   if (!capturedAt) {
     return (
       <div className="flex items-center gap-2 font-seg text-[11px] uppercase tracking-[0.18em] text-[var(--color-chalk-dimmer)]">

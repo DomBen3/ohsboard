@@ -1,6 +1,7 @@
 import { db } from "@/lib/db";
-import { oddsSnapshots } from "@ohsboard/db";
-import { asc, eq } from "drizzle-orm";
+import { HISTORY_PRE_TIPOFF_MIN } from "@/lib/games";
+import { games, oddsSnapshots } from "@ohsboard/db";
+import { and, asc, eq, gte } from "drizzle-orm";
 import { NextResponse } from "next/server";
 
 export const runtime = "nodejs";
@@ -17,6 +18,28 @@ export async function GET(_req: Request, { params }: RouteParams) {
     return NextResponse.json({ error: "bad_id" }, { status: 400 });
   }
 
+  const [game] = await db
+    .select({ startTime: games.startTime })
+    .from(games)
+    .where(eq(games.id, id))
+    .limit(1);
+
+  if (!game) {
+    return NextResponse.json({ error: "not_found" }, { status: 404 });
+  }
+
+  // When tip-off is unknown (TBD), the pre-tipoff cutoff doesn't apply —
+  // return all snapshots and let the chart show what we have.
+  const windowFilter = game.startTime
+    ? and(
+        eq(oddsSnapshots.gameId, id),
+        gte(
+          oddsSnapshots.capturedAt,
+          new Date(game.startTime.getTime() - HISTORY_PRE_TIPOFF_MIN * 60_000),
+        ),
+      )
+    : eq(oddsSnapshots.gameId, id);
+
   const rows = await db
     .select({
       market: oddsSnapshots.market,
@@ -27,7 +50,7 @@ export async function GET(_req: Request, { params }: RouteParams) {
       capturedAt: oddsSnapshots.capturedAt,
     })
     .from(oddsSnapshots)
-    .where(eq(oddsSnapshots.gameId, id))
+    .where(windowFilter)
     .orderBy(asc(oddsSnapshots.capturedAt));
 
   const snapshots = rows.map((r) => ({

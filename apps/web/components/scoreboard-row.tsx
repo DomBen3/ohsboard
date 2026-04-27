@@ -110,7 +110,7 @@ export function ScoreboardRow({ sport, game, index }: ScoreboardRowProps) {
         {sport === "nba" ? <NbaTipCell startTime={game.startTime} /> : null}
 
         <div className="justify-self-end pr-1">
-          <SyncIndicator capturedAt={game.capturedAt} />
+          <SyncIndicator capturedAt={game.capturedAt} startTime={game.startTime} />
         </div>
 
         <span
@@ -191,7 +191,17 @@ function MlbRowMarkets({
   );
 }
 
-function NbaTipCell({ startTime }: { startTime: string }) {
+function NbaTipCell({ startTime }: { startTime: string | null }) {
+  if (!startTime) {
+    return (
+      <div className="justify-self-center text-center">
+        <div className="font-seg text-base text-[var(--color-brass)]">TBD</div>
+        <div className="mt-0.5 font-display text-[9px] uppercase tracking-[0.28em] text-[var(--color-chalk-dim)]">
+          Tip-off
+        </div>
+      </div>
+    );
+  }
   const date = new Date(startTime);
   const time = date.toLocaleTimeString(undefined, {
     hour: "numeric",
@@ -201,15 +211,39 @@ function NbaTipCell({ startTime }: { startTime: string }) {
     month: "short",
     day: "numeric",
   });
+  // When the tip-off is not today, lead with the day so users immediately
+  // see "Apr 28 / 7:30 PM" instead of mistaking it for tonight.
+  const isToday = isSameLocalDay(date, new Date());
   return (
     <div className="justify-self-center text-center">
-      <div className="font-seg text-base text-[var(--color-brass)]">
-        {time}
-      </div>
-      <div className="mt-0.5 font-display text-[9px] uppercase tracking-[0.28em] text-[var(--color-chalk-dim)]">
-        {day}
-      </div>
+      {isToday ? (
+        <>
+          <div className="font-seg text-base text-[var(--color-brass)]">
+            {time}
+          </div>
+          <div className="mt-0.5 font-display text-[9px] uppercase tracking-[0.28em] text-[var(--color-chalk-dim)]">
+            {day}
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="font-display text-[10px] uppercase tracking-[0.28em] text-[var(--color-signal)]">
+            {day}
+          </div>
+          <div className="mt-0.5 font-seg text-sm text-[var(--color-brass)]">
+            {time}
+          </div>
+        </>
+      )}
     </div>
+  );
+}
+
+function isSameLocalDay(a: Date, b: Date): boolean {
+  return (
+    a.getFullYear() === b.getFullYear() &&
+    a.getMonth() === b.getMonth() &&
+    a.getDate() === b.getDate()
   );
 }
 

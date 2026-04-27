@@ -749,7 +749,10 @@ interface NbaGameUpsert {
   sourceUrl: string;
   homeTeamId: number;
   awayTeamId: number;
-  startTime: Date;
+  // Real tip-off (ESPN-derived) on insert. Null when no authoritative time
+  // is available — the caller should refuse to upsert in that case rather
+  // than poison `start_time` with `new Date()`. See `upsertNbaGameRow`.
+  startTime: Date | null;
 }
 
 // ---- NBA per-game worker (parallel-safe) ----------------------------------
@@ -793,7 +796,14 @@ async function scrapeOneNbaGame(
 
   const dkEventId = parseDkEventIdSafe(url);
   const externalId = matched ? `nba:${matched.espnEventId}` : `dk:${dkEventId}`;
-  const startTime = matched?.gameDate ?? new Date();
+  // Only ESPN gives us a real tip-off; never fall back to `new Date()` here.
+  // Persisting null lets the UI render "TBD" instead of dropping the game.
+  const startTime = matched?.gameDate ?? null;
+  if (!startTime) {
+    console.warn(
+      `[scraper:nba] no ESPN match for ${awayName} @ ${homeName} (url=${url}); persisting with TBD tip-off`,
+    );
+  }
 
   const homeTeamId = await upsertNbaTeamRow(
     deps.db,
@@ -902,6 +912,13 @@ async function scrapeOneNbaGame(
 }
 
 async function upsertNbaGameRow(db: Db, g: NbaGameUpsert): Promise<string> {
+  // Two invariants encoded here:
+  //   1. `start_time` is intentionally absent from the conflict-update set so
+  //      that once a game's tip-off is known it can never be overwritten by
+  //      a later scrape (e.g. a follow-up tick that fails to match ESPN).
+  //   2. `start_time` is only INCLUDED in the insert payload when we have a
+  //      real value. On a fresh insert with `g.startTime === null` the
+  //      column defaults to NULL, which the UI renders as "TBD".
   const [inserted] = await db
     .insert(games)
     .values({
@@ -918,7 +935,6 @@ async function upsertNbaGameRow(db: Db, g: NbaGameUpsert): Promise<string> {
         sourceUrl: g.sourceUrl,
         homeTeamId: g.homeTeamId,
         awayTeamId: g.awayTeamId,
-        startTime: g.startTime,
       },
     })
     .returning({ id: games.id });

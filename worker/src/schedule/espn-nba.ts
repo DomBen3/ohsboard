@@ -62,14 +62,17 @@ function mapTeam(ref: EspnTeamRef): NbaTeam | null {
 }
 
 /**
- * Return the NBA games scheduled for the given date (default: today, in ET).
- * Throws on transport/HTTP failure; callers decide whether to proceed without
- * the cross-check.
+ * Return the NBA games scheduled for the given date and the following day (in
+ * ET). The window covers today + tomorrow because DraftKings shows games up
+ * to ~48h ahead on the league board, and we need ESPN matches for tomorrow's
+ * preview games too. Throws on transport/HTTP failure; callers decide
+ * whether to proceed without the cross-check.
  */
 export async function fetchExpectedNbaGames(
   date: Date = new Date(),
 ): Promise<ExpectedNbaGame[]> {
-  const url = `https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=${toYmd(date)}`;
+  const tomorrow = new Date(date.getTime() + 24 * 60 * 60 * 1000);
+  const url = `https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=${toYmd(date)}-${toYmd(tomorrow)}`;
   const res = await fetch(url, {
     headers: { accept: "application/json" },
     signal: AbortSignal.timeout(10_000),

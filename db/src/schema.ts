@@ -57,7 +57,10 @@ export const games = pgTable(
     sourceUrl: text("source_url").notNull(),
     homeTeamId: integer("home_team_id").references(() => teams.id),
     awayTeamId: integer("away_team_id").references(() => teams.id),
-    startTime: timestamp("start_time", { withTimezone: true }).notNull(),
+    // Nullable: NBA games we discover via DraftKings before ESPN's schedule
+    // window catches up have no authoritative tip-off yet. The UI renders
+    // "TBD" for nulls; never write `new Date()` here as a placeholder.
+    startTime: timestamp("start_time", { withTimezone: true }),
   },
   (t) => ({
     sportExternalUnique: uniqueIndex("games_sport_external_unique").on(

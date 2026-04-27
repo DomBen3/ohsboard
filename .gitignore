@@ -48,5 +48,14 @@ test-results/
 blob-report/
 playwright/.cache/
 
+# Playwright MCP debug output (per-run console + DOM snapshots from
+# automation runs — never application data).
+.playwright-mcp/
+
+# Top-level screenshots from local verification / debugging runs. The
+# leading slash scopes the rule to the repo root, so legitimate assets
+# like `apps/web/public/teams/nba/*.png` are still tracked.
+/*.png
+
 # Archives
 *.zip

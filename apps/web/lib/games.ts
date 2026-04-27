@@ -23,8 +23,19 @@ const PRE_TIPOFF_MIN = 15;
 const GAME_DURATION_MIN = 180;
 const POST_END_MIN = 30;
 
+// DraftKings posts NBA props for games up to ~48h in advance. We show the
+// full preview window so users see tomorrow's slate alongside today's, and
+// the per-row date subtitle (e.g. "Apr 28") makes the day clear.
+const PREVIEW_WINDOW_MIN = 48 * 60;
+
 const VISIBILITY_PAST_MIN = GAME_DURATION_MIN + POST_END_MIN;
-const VISIBILITY_FUTURE_MIN = PRE_TIPOFF_MIN;
+const VISIBILITY_FUTURE_MIN = PREVIEW_WINDOW_MIN;
+
+// History-chart window. Snapshots captured before this many minutes ahead of
+// `start_time` are hidden from the per-game charts — the overnight line drift
+// isn't representative of the live betting market. Distinct from
+// `PRE_TIPOFF_MIN` (board visibility, 15 min) on purpose.
+export const HISTORY_PRE_TIPOFF_MIN = 30;
 
 const homeTeam = alias(teams, "home_team");
 const awayTeam = alias(teams, "away_team");
@@ -79,7 +90,9 @@ export type GameDto = MlbGameDto | NbaGameDto;
 interface BaseGameDto {
   id: string;
   sourceUrl: string;
-  startTime: string;
+  /** ISO timestamp, or null when no authoritative tip-off is known yet
+   *  (rendered as "TBD" by the scoreboard). */
+  startTime: string | null;
   home: { name: string | null; abbreviation: string | null };
   away: { name: string | null; abbreviation: string | null };
   capturedAt: string | null;
@@ -203,7 +216,7 @@ export async function loadMlbGames(): Promise<MlbGameDto[]> {
       sport: "mlb",
       id: g.id,
       sourceUrl: g.sourceUrl,
-      startTime: g.startTime.toISOString(),
+      startTime: g.startTime?.toISOString() ?? null,
       home: { name: g.homeName, abbreviation: g.homeAbbr },
       away: { name: g.awayName, abbreviation: g.awayAbbr },
       moneyline: {
@@ -262,14 +275,13 @@ export async function loadNbaGames(): Promise<NbaGameDto[]> {
     .where(
       and(
         eq(games.sportId, nba.id),
-        gte(
-          games.startTime,
-          sql`now() - interval '${sql.raw(String(VISIBILITY_PAST_MIN))} minutes'`,
-        ),
-        lte(
-          games.startTime,
-          sql`now() + interval '${sql.raw(String(VISIBILITY_FUTURE_MIN))} minutes'`,
-        ),
+        // TBD games (start_time IS NULL) are always visible: we know they
+        // exist from DK but ESPN hasn't published the tip-off yet, and
+        // hiding them entirely was confusing.
+        sql`(${games.startTime} IS NULL OR (
+          ${games.startTime} >= now() - interval '${sql.raw(String(VISIBILITY_PAST_MIN))} minutes'
+          AND ${games.startTime} <= now() + interval '${sql.raw(String(VISIBILITY_FUTURE_MIN))} minutes'
+        ))`,
       ),
     )
     .orderBy(desc(games.startTime))
@@ -324,7 +336,7 @@ export async function loadNbaGames(): Promise<NbaGameDto[]> {
       sport: "nba",
       id: g.id,
       sourceUrl: g.sourceUrl,
-      startTime: g.startTime.toISOString(),
+      startTime: g.startTime?.toISOString() ?? null,
       home: { name: g.homeName, abbreviation: g.homeAbbr },
       away: { name: g.awayName, abbreviation: g.awayAbbr },
       props: { points, threes, rebounds, assists },
