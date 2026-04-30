@@ -36,6 +36,19 @@ export function SyncIndicator({ capturedAt, startTime }: SyncIndicatorProps) {
     );
   }
 
+  // No tip-off published yet → STALE has no meaningful anchor; show a
+  // neutral indicator instead of the amber "stale" pill. `startTime` is
+  // optional on the props so this also no-ops for aggregate header usages
+  // that omit it (they pass `undefined`, not `null`-from-a-game).
+  if (startTime === null) {
+    return (
+      <div className="flex items-center gap-2 font-seg text-[11px] uppercase tracking-[0.18em] text-[var(--color-chalk-dimmer)]">
+        <span className="h-2 w-2 rounded-full border border-[var(--color-chalk-dimmer)]" />
+        <span>Awaiting tip-off</span>
+      </div>
+    );
+  }
+
   if (!capturedAt) {
     return (
       <div className="flex items-center gap-2 font-seg text-[11px] uppercase tracking-[0.18em] text-[var(--color-chalk-dimmer)]">
